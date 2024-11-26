@@ -1,0 +1,15 @@
+Conenct it to the powerbank, the robot should start automatically when the Raspberry Pi starts
+Now you can copy the code into the thymio using scp in terminal. Eg.
+	scp IAR2_ML.py pi@134.34.225.155:/home/pi
+
+Now enter the virtual env. 
+	source iar_venv/bin/activate
+	
+now you can run the code you copied
+	python3 IAR2_ML.py
+	
+	
+** Copy from remote server to local
+
+scp pi@134.34.225.192:/home/pi/prox* D:\server_incoming
+
