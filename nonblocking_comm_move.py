@@ -1,8 +1,11 @@
 import socket
+import sys
 import threading
 import time
 from thymiodirect import Connection
 from thymiodirect import Thymio
+import queue
+import select
 
 
 class PeerToPeerNode:
@@ -12,6 +15,7 @@ class PeerToPeerNode:
         self.peers = []  # List of peer IPs
         self.server = None
         self.running = True
+        self.message_queue = queue.Queue()  # Queue for inter-thread communication
 
     def start_server(self):
         """Start the server to listen for incoming connections."""
@@ -36,36 +40,14 @@ class PeerToPeerNode:
                 if message:
                     print(f"Message from {addr}: {message}")
                     if message == "rotate":
-                        self.rotate_robot()
+                        self.message_queue.put(1)
+                        print(f"message_queue size = {self.message_queue.qsize()}")
                 else:
                     break
             except ConnectionResetError:
                 print(f"Peer {addr} disconnected")
                 break
         conn.close()
-
-    def rotate_robot(self):
-        port = Connection.serial_default_port()
-        th = Thymio(serial_port=port,
-                    on_connect=lambda node_id: print(f'Thymio {node_id} is connected'))
-        # Connect to Robot
-        th.connect()
-        robot = th[th.first_node()]
-
-        # Delay to allow robot initialization of all variables
-        time.sleep(1)
-
-        # b) print all variables
-        print(th.variables(th.first_node()))
-        counter = 10
-        while counter > 0:
-            robot['motor.left.target'] = 100
-            robot['motor.right.target'] = -100
-            counter -= 1
-        else:
-            robot['motor.left.target'] = 0
-            robot['motor.right.target'] = 0
-
 
     def connect_to_peers(self, peer_ips):
         """Connect to the provided peer IPs."""
@@ -111,7 +93,46 @@ class PeerToPeerNode:
         print("Node stopped.")
 
 
+robot = None
+
+
+def establish_robot_connection():
+    global robot
+    port = Connection.serial_default_port()
+    th = Thymio(serial_port=port,
+                on_connect=lambda node_id: print(f'Thymio {node_id} is connected'))
+    # Connect to Robot
+    th.connect()
+    robot = th[th.first_node()]
+
+    # Delay to allow robot initialization of all variables
+    time.sleep(1)
+    # b) print all variables
+    print(th.variables(th.first_node()))
+    print("Robot connected")
+
+
+def rotate_robot():
+    global robot
+    if robot is not None:
+        counter = 10000
+        print("Rotate 180")
+        while counter > 0:
+            if counter % 1000 == 0:
+                print(f"Rotation={counter}")
+            robot['motor.left.target'] = 200
+            robot['motor.right.target'] = -200
+            counter -= 1
+        else:
+            print("robot stop")
+            robot['motor.left.target'] = 0
+            robot['motor.right.target'] = 0
+
+
 if __name__ == "__main__":
+
+    establish_robot_connection()
+
     # Example usage
     host = "0.0.0.0"  # Use "0.0.0.0" to allow connections from any IP
     port = 12345
@@ -128,11 +149,37 @@ if __name__ == "__main__":
     node.connect_to_peers(peer_ips)
 
     try:
+        print("Type your message below or wait for incoming commands...")
         while True:
-            # Input messages to broadcast
-            message_input = input("Enter message to send (type 'exit' to quit): ")
-            if message_input.lower() == "exit":
-                break
-            node.broadcast_message(message_input)
+            # Non-blocking input using select
+            ready, _, _ = select.select([sys.stdin], [], [], 0.1)  # Timeout of 0.1 seconds
+            if ready:
+                message = sys.stdin.readline().strip()
+                if message.lower() == "exit":
+                    break
+                node.broadcast_message(message)
+
+            # Check for messages in the queue
+            if not node.message_queue.empty():
+                message_code = node.message_queue.get()
+                if message_code == 1:  # Rotate command received
+                    print("Rotate command received in main thread. Calling rotate function.")
+                    rotate_robot()
     finally:
         node.stop()
+
+    # try:
+    #     while True:
+    #         if not node.message_queue.empty():
+    #             message_code = node.message_queue.get()
+    #             if message_code == 1:
+    #                 print("Rotate robot message received")
+    #                 rotate_robot()
+    #
+    #         # Input messages to broadcast
+    #         message_input = input("Enter message to send (type 'exit' to quit): ")
+    #         if message_input.lower() == "exit":
+    #             break
+    #         node.broadcast_message(message_input)
+    # finally:
+    #     node.stop()
