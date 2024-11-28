@@ -6,7 +6,8 @@ from thymiodirect import Connection
 from thymiodirect import Thymio
 import queue
 import select
-
+from random_move_robot import RandomRobotMove
+from read_temp import TemperatureSensor
 
 class PeerToPeerNode:
     def __init__(self, host, port):
@@ -21,6 +22,10 @@ class PeerToPeerNode:
         """Start the server to listen for incoming connections."""
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server.bind((self.host, self.port))
+        '''server.listen()
+        Enable a server to accept connections. If backlog is specified, it must be at least 0 (if it is lower, it is set to 0); 
+        it specifies the number of unaccepted connections that the system will allow before refusing new connections.
+        '''
         self.server.listen(5)
         print(f"Server started on {self.host}:{self.port}")
         while self.running:
@@ -93,45 +98,11 @@ class PeerToPeerNode:
         print("Node stopped.")
 
 
-robot = None
-
-
-def establish_robot_connection():
-    global robot
-    port = Connection.serial_default_port()
-    th = Thymio(serial_port=port,
-                on_connect=lambda node_id: print(f'Thymio {node_id} is connected'))
-    # Connect to Robot
-    th.connect()
-    robot = th[th.first_node()]
-
-    # Delay to allow robot initialization of all variables
-    time.sleep(1)
-    # b) print all variables
-    print(th.variables(th.first_node()))
-    print("Robot connected")
-
-
-def rotate_robot():
-    global robot
-    if robot is not None:
-        counter = 10000
-        print("Rotate 180")
-        while counter > 0:
-            if counter % 1000 == 0:
-                print(f"Rotation={counter}")
-            robot['motor.left.target'] = 200
-            robot['motor.right.target'] = -200
-            counter -= 1
-        else:
-            print("robot stop")
-            robot['motor.left.target'] = 0
-            robot['motor.right.target'] = 0
-
 
 if __name__ == "__main__":
 
-    establish_robot_connection()
+    robot = RandomRobotMove()
+    tempSensor = TemperatureSensor()
 
     # Example usage
     host = "0.0.0.0"  # Use "0.0.0.0" to allow connections from any IP
@@ -144,42 +115,71 @@ if __name__ == "__main__":
 
     # Connect to peers (add the IP addresses of other peers)
     # Get peer IPs to connect to
+    ## TODO: Commenting peer ip setip for now to test temprature stuff.
     peer_ips = input("Enter peer IPs (comma-separated, leave blank if none): ").strip().split(',')
     peer_ips = [ip.strip() for ip in peer_ips if ip.strip()]  # Clean the list
     node.connect_to_peers(peer_ips)
 
+    # Queue to communicate temperature data between threads
+    temp_queue = queue.Queue()
+
+    # def rotate_robot_thread():
+    #     # print("Rotating robot in a separate thread...")
+    #     robot.rotate_right()
+    #
+    # def forward_robot_thread():
+    #     # print("Rotating robot in a separate thread...")
+    #     robot.move_forward()
+    #
+    # def back_robot_thread():
+    #     # print("Rotating robot in a separate thread...")
+    #     robot.move_back()
+    def random_robot_move():
+        robot.random_move()
+
+    def get_temp_thread():
+        # print("Getting temperature in a separate thread...")
+        temp_c_t = tempSensor.get_temp_c()
+        temp_queue.put(temp_c_t)
+
     try:
-        print("Type your message below or wait for incoming commands...")
+        print("Type your message below or wait for incoming commands... (Type 'exit' to exit)")
         while True:
             # Non-blocking input using select
             ready, _, _ = select.select([sys.stdin], [], [], 0.1)  # Timeout of 0.1 seconds
+
+            # Threadsafe printing on main, Check for temperature updates from the queue
+            while not temp_queue.empty():
+                temp_c = temp_queue.get()
+                print(f"Temperature (C): {temp_c}")
             if ready:
                 message = sys.stdin.readline().strip()
                 if message.lower() == "exit":
                     break
-                node.broadcast_message(message)
+                if message.lower() == "random":
+                    threading.Thread(target=random_robot_move, daemon=True).start()
 
+                # if message.lower() == "rotate":
+                #     # print("Rotating..")
+                #     threading.Thread(target=rotate_robot_thread, daemon=True).start()
+                # if message.lower() == "forward":
+                #     # print("Rotating..")
+                #     threading.Thread(target=forward_robot_thread, daemon=True).start()
+                # if message.lower() == "back":
+                #     # print("Rotating..")
+                #     threading.Thread(target=back_robot_thread, daemon=True).start()
+                if message.lower() == "get_temp":
+                    threading.Thread(target=get_temp_thread, daemon=True).start()
+
+                #TODO: Commenting temporarly as no brodcast, testing
+                # node.broadcast_message(message)
+
+            # TODO: Commenting temporarly as no peers, testing
             # Check for messages in the queue
-            if not node.message_queue.empty():
-                message_code = node.message_queue.get()
-                if message_code == 1:  # Rotate command received
-                    print("Rotate command received in main thread. Calling rotate function.")
-                    rotate_robot()
+            # if not node.message_queue.empty():
+            #     message_code = node.message_queue.get()
+            #     if message_code == 1:  # Rotate command received
+            #         print("Rotate command received in main thread. Calling rotate function.")
+            #         robot.rotate_robot()
     finally:
         node.stop()
-
-    # try:
-    #     while True:
-    #         if not node.message_queue.empty():
-    #             message_code = node.message_queue.get()
-    #             if message_code == 1:
-    #                 print("Rotate robot message received")
-    #                 rotate_robot()
-    #
-    #         # Input messages to broadcast
-    #         message_input = input("Enter message to send (type 'exit' to quit): ")
-    #         if message_input.lower() == "exit":
-    #             break
-    #         node.broadcast_message(message_input)
-    # finally:
-    #     node.stop()
