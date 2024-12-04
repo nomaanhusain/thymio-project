@@ -8,7 +8,8 @@ import queue
 import select
 from random_move_robot import RandomRobotMove
 from read_temp import TemperatureSensor
-
+import csv
+import random
 class PeerToPeerNode:
     def __init__(self, host, port):
         self.host = host
@@ -98,11 +99,27 @@ class PeerToPeerNode:
         print("Node stopped.")
 
 
-
 if __name__ == "__main__":
+    def get_physical_ip():
+        try:
+            # Connect to an external host to get the local network IP
+            with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+                s.connect(("8.8.8.8", 80))  # Using Google's DNS server
+                ip_address = s.getsockname()[0]
+            return ip_address
+        except Exception as e:
+            return f"Error: {e}"
+    # Get and print the physical IP address
+    physical_ip = get_physical_ip()
+    print(f"Physical IP Address: {physical_ip}")
+
+    # Extract the last part of the IP address
+    last_part = physical_ip.split('.')[-1]
+    print(f"Last part of Physical IP Address: {last_part}")
+    csv_file_name = f"csv_{last_part}.csv"
 
     robot = RandomRobotMove()
-    tempSensor = TemperatureSensor()
+    # tempSensor = TemperatureSensor()
 
     # Example usage
     host = "0.0.0.0"  # Use "0.0.0.0" to allow connections from any IP
@@ -115,64 +132,64 @@ if __name__ == "__main__":
 
     # Connect to peers (add the IP addresses of other peers)
     # Get peer IPs to connect to
-    peer_ips = input("Enter peer IPs (comma-separated, leave blank if none): ").strip().split(',')
-    peer_ips = [ip.strip() for ip in peer_ips if ip.strip()]  # Clean the list
-    node.connect_to_peers(peer_ips)
+    # peer_ips = input("Enter peer IPs (comma-separated, leave blank if none): ").strip().split(',')
+    # peer_ips = [ip.strip() for ip in peer_ips if ip.strip()]  # Clean the list
+    #
+    # node.connect_to_peers(peer_ips)
 
     # Queue to communicate temperature data between threads
     temp_queue = queue.Queue()
 
+
     def rotate_robot_thread():
         # print("Rotating robot in a separate thread...")
         robot.rotate_right()
-    #
-    # def forward_robot_thread():
-    #     # print("Rotating robot in a separate thread...")
-    #     robot.move_forward()
-    #
-    # def back_robot_thread():
-    #     # print("Rotating robot in a separate thread...")
-    #     robot.move_back()
+
+
     def random_robot_move():
         robot.random_move()
 
+
     def get_temp_thread():
         # print("Getting temperature in a separate thread...")
-        temp_c_t = tempSensor.get_temp_c()
-        temp_queue.put(temp_c_t)
+        # temp_c_t = tempSensor.get_temp_c()
+        temp_c_t = random.uniform(20.5, 38.2)
+        time.sleep(3)
+        return temp_c_t
+        # temp_queue.put(temp_c_t)
+
 
     try:
         print("Type your message below or wait for incoming commands... (Type 'exit' to exit)")
+        counter = 0
+        rand_sender = random.randint(1000, 5000)
+        print("rand_sender = ", rand_sender)
+        start_behaviour = False
         while True:
             # Non-blocking input using select
-            ready, _, _ = select.select([sys.stdin], [], [], 0.1)  # Timeout of 0.1 seconds
+            if not start_behaviour:
+                ready, _, _ = select.select([sys.stdin], [], [], 0.1)  # Timeout of 0.1 seconds
+                if ready:
+                    message = sys.stdin.readline().strip()
+                    if message.lower() == "connect":
+                        peer_ip_list = [item for row in csv.reader(open(csv_file_name)) for item in row]
+                        node.connect_to_peers(peer_ip_list)
+                    if message.lower() == "s":
+                        start_behaviour = True
+                    if message.lower() == "exit":
+                        break
+            if counter == rand_sender:
+                message = f"Temp: {get_temp_thread()}"
+                # Threadsafe printing on main, Check for temperature updates from the queue
+                # while not temp_queue.empty():
+                #     temp_c = temp_queue.get()
+                #     print(f"Temperature (C): {temp_c}")
 
-            # Threadsafe printing on main, Check for temperature updates from the queue
-            while not temp_queue.empty():
-                temp_c = temp_queue.get()
-                print(f"Temperature (C): {temp_c}")
-            if ready:
-                message = sys.stdin.readline().strip()
-                if message.lower() == "exit":
-                    break
-                if message.lower() == "random":
-                    threading.Thread(target=random_robot_move, daemon=True).start()
-
-                # if message.lower() == "rotate":
-                #     # print("Rotating..")
-                #     threading.Thread(target=rotate_robot_thread, daemon=True).start()
-                # if message.lower() == "forward":
-                #     # print("Rotating..")
-                #     threading.Thread(target=forward_robot_thread, daemon=True).start()
-                # if message.lower() == "back":
-                #     # print("Rotating..")
-                #     threading.Thread(target=back_robot_thread, daemon=True).start()
-                if message.lower() == "get_temp":
-                    threading.Thread(target=get_temp_thread, daemon=True).start()
-
-                #TODO: Commenting temporarly as no brodcast, testing
                 node.broadcast_message(message)
-
+                print("Message sent, message: {}".format(message))
+                counter = 0
+                rand_sender = random.randint(1000, 5000)
+            counter += 1
             # TODO: Commenting temporarily as no peers, testing
             # Check for messages in the queue
             if not node.message_queue.empty():
