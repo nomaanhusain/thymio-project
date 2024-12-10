@@ -1,0 +1,12 @@
+First source ros: source /opt/ros/humble/setup.bash
+
+Then build the project
+colcon build --packages-select py_pubsub
+
+Now source
+source install/setup.bash
+
+then run
+ros2 run py_pubsub talker
+
+we write talker as it is defined in the setup.py file in the package.

@@ -1,0 +1,29 @@
+Enable 1 Pin:
+
+sudo nano /boot/firmware/config.txt
+
+add to the end of txt:
+dtoverlay=w1-gpio
+
+then reboot:
+sudo reboot
+
+-----
+Now install packages
+
+sudo apt update
+sudo apt install raspi-config
+
+---Now install necessary kernel modules:
+sudo modprobe w1-gpio
+sudo modprobe w1-therm
+
+---Now you can check if it shows up first cd:
+cd /sys/bus/w1/devices
+
+ls
+
+cd 28-*
+cat w1_slave
+
+you can see the temp

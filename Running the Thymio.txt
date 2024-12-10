@@ -13,3 +13,14 @@ now you can run the code you copied
 
 scp pi@134.34.225.192:/home/pi/prox* D:\server_incoming
 
+
+ROs and thymio stuff
+
+open terminal here: D:\Uni Konstanz\Masters Thesis\Thymio\ros_src_folder\src
+
+
+Now to copy the simple_publisher_package execute the following command:
+scp -r .\simple_publisher_package\ thymio@134.34.225.155:/home/thymio/ros2_ws/src
+
+To copy from thymio to pc:
+ scp -r thymio@134.34.225.155:/home/thymio/ros2_ws/src "D:\Uni Konstanz\Masters Thesis\Thymio\ros_src_folder"
