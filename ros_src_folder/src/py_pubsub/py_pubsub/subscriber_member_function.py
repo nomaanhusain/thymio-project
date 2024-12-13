@@ -22,11 +22,13 @@ class MinimalSubscriber(Node):
 
     def __init__(self):
         super().__init__('minimal_subscriber')
+        topic = 'temp_topic'
         self.subscription = self.create_subscription(
             String,
-            'temp_topic',
+            topic,
             self.listener_callback,
             10)
+        print(f'Subscribed to: {topic}')
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):

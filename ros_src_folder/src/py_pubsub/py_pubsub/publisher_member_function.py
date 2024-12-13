@@ -80,7 +80,8 @@ class MinimalPublisher(Node):
 
         self.robot_control = Robot()
         self.temp_sensor = TemperatureSensor()
-        self.publisher_ = self.create_publisher(String, 'temp_topic', 10)
+        topic = 'temp_topic'
+        self.publisher_ = self.create_publisher(String, topic, 10)
 
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.main_callback)
