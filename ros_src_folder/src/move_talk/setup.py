@@ -24,6 +24,7 @@ setup(
             'robot_move = move_talk.random_move:main',
             'publish_temperature = move_talk.publish_temperature:main',
             'subscribe_temperature = move_talk.subscribe_temperature:main',
+            'subscribe_quad = move_talk.subscribe_quadrant:main',
         ],
     },
 )
