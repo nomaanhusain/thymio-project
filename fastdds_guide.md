@@ -8,3 +8,5 @@
 5. Now on your thymio source the setup file ```source setup-ros2-discovery.sh```. make sure here the ip is that of the machine running the server.
 6. now run your publisher
 7. you should now be able to see the topics on your pc. if not do a ```ros2 daemon stop``` and then list the topics again, everything should work
+
+Note: In every terminal that you want to see the topic, you need to source the setup file. (on the pi with the ip of the PC, and on the pc with local host IP).
