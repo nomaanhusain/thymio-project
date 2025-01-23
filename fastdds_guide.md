@@ -2,7 +2,7 @@
 
 1. copy the setup-ros2-discovery.sh file to the thymio
 2. In file change the ip to the ip of your pc (do ifconfig to get your ip), the line would look like : export ROS_DISCOVERY_SERVER=134.34.231.109:11811
-3. you should also have this file on your pc, here the ip should be localhost, i.e.: ROS_DISCOVERY_SERVER=127.0.0.1:11811
+3. you should also have this file on your pc, here the ip should be localhost, i.e.: export ROS_DISCOVERY_SERVER=127.0.0.1:11811
 4. source this setup file: ```source setup-ros2-discovery.sh```
 4. now start the discovery server on your pc using ```fastdds discovery --server-id 0```
 5. Now on your thymio source the setup file ```source setup-ros2-discovery.sh```. make sure here the ip is that of the machine running the server.
