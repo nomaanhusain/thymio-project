@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'move_talk'
+package_name = 'simple_hello'
 
 setup(
     name=package_name,
@@ -10,7 +10,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['launch/move_talk_launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -21,10 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'robot_move = move_talk.random_move:main',
-            'publish_temperature = move_talk.publish_temperature:main',
-            'subscribe_temperature = move_talk.subscribe_temperature:main',
-            'subscribe_quad = move_talk.subscribe_quadrant:main',
+            'talker = simple_hello.simple_hello_publisher:main',
+            'listener = simple_hello.simple_hello_subscriber:main',
         ],
     },
 )
