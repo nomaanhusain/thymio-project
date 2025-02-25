@@ -76,7 +76,6 @@ class SubscribeQuadrant(Node):
                 if int(msg.positions[i].subject_name) == self.id:
                     self.my_position = [self.positions[i].x_trans, self.positions[i].y_trans]
                 else:
-
                     self.all_robots_position_by_id_vicon[int(msg.positions[i].subject_name)] = [self.positions[i].x_trans, self.positions[i].y_trans]
             for id_vicon in self.all_robots_position_by_id_vicon:
                 if self.check_distance(self.my_position, self.all_robots_position_by_id_vicon[id_vicon]):

@@ -4,6 +4,9 @@ import subprocess
 import cv2
 import numpy as np
 from std_msgs.msg import String
+from vicon_receiver.msg import Position
+from vicon_receiver.msg import PositionList
+import math
 import socket
 
 class PublishWindDirection(Node):
@@ -17,6 +20,15 @@ class PublishWindDirection(Node):
         self.publisher_ = self.create_publisher(String, 'wind_direction', 10)
         timer_period = 3  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.my_position = None
+        self.my_position_xy = None
+        self.neighbours_by_id = set()
+        self.all_robots_position_by_id_vicon = dict()
+        self.neighbourhood_size = 5
+        self.informed = True
+        self.neighbour_distance_mm = 200 #so 20 cm
+        self.my_vicon_yaw = 0.0
+        self.wind_direction = None
 
     def timer_callback(self):
         msg = String()
@@ -25,6 +37,40 @@ class PublishWindDirection(Node):
         msg.data = f"{self.id}:{angle_dir}"
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
+
+    def vicon_callback(self, msg):
+        if self.timer_ % 1 == 0:
+            print("vicon message")
+            self.neighbours_by_id = set()
+            for i in range(msg.n):
+                # you are expected to set the id of each robot in the vicon system, you will receive it and compare here
+                if int(msg.positions[i].subject_name) == self.id:
+                    self.my_position = msg.position[i]
+                    self.my_position_xy = [msg.positions[i].x_trans, msg.positions[i].y_trans]
+                    self.my_vicon_yaw = self.quaternion_to_yaw()
+                else:
+                    self.all_robots_position_by_id_vicon[int(msg.positions[i].subject_name)] = [self.positions[i].x_trans, self.positions[i].y_trans]
+            for id_vicon in self.all_robots_position_by_id_vicon:
+                if self.check_distance(self.my_position, self.all_robots_position_by_id_vicon[id_vicon]):
+                    self.neighbours_by_id.add(id_vicon)
+
+    def quaternion_to_yaw(self):
+        """Convert a quaternion (x, y, z, w) to a yaw angle (in radians)."""
+        yaw = np.arctan2(2 * (self.my_position.w * self.my_position.z_rot + self.my_position.x_rot * self.my_position.y_rot), 1 - 2 * (self.my_position.y_rot ** 2 + self.my_position.z_rot ** 2))
+        yaw_degrees = math.degrees(yaw)
+        print('calculated yaw: %f' %yaw_degrees)
+        return yaw
+
+    def check_distance(self,my_pos, neighbour_pos):
+        distance = math.sqrt((neighbour_pos[0] - my_pos[0])**2 + (neighbour_pos[1] - my_pos[1])**2)
+        if distance < self.neighbour_distance_mm:
+            return True
+        return False
+    
+    def get_true_wind_direction(self, cam_angle):
+        ground_truth_wind_direction = math.abs(cam_angle - self.my_vicon_yaw)
+        print('Ground Truth= ',ground_truth_wind_direction)
+        
 
 
     def get_physical_ip(self):
@@ -61,6 +107,7 @@ class PublishWindDirection(Node):
             tvecs.append(t)
             trash.append(nada)
         return rvecs, tvecs, trash
+    
     
     def get_marker_rotation_angle(self, rvec):
         # Convert rotation vector to rotation matrix, this uses the Rodrigues rotation formula
@@ -108,16 +155,21 @@ class PublishWindDirection(Node):
 
         marker_length = 0.02375 #in meters, it is 23.75mm
         angle_degrees = -999.0
+        true_cam_angle = -999.0
         if ids is not None:
             rvec, tvec, _ = self.my_estimatePoseSingleMarkers(corners, marker_length, camera_matrix, dist_coeffs)
             for idx in range(len(ids)):
                 cv2.drawFrameAxes(image, camera_matrix, dist_coeffs, rvec[idx], tvec[idx], 0.05)
                 angle_degrees= self.get_marker_rotation_angle(rvec[idx])
+
+                #angle_degrees is at a 90 degree offset to robot front as the cam is mounted at 90 degrees, also the angles range from 0-180 and -1 to -180
+                true_cam_angle = angle_degrees - 90
+                if true_cam_angle < 0 : true_cam_angle = true_cam_angle + 360
                 # print("Angle = ",angle_degrees)
-        image = cv2.putText(image, f'Angle={angle_degrees:.2f}', (1296,972), cv2.FONT_HERSHEY_SIMPLEX, 
+        image = cv2.putText(image, f'Angle={true_cam_angle:.2f}', (1296,972), cv2.FONT_HERSHEY_SIMPLEX, 
                    fontScale=2, color=(5, 10, 255), thickness=5, lineType=cv2.LINE_AA)
         cv2.imwrite(f'processed_{img_name}', image)
-        return angle_degrees
+        return true_cam_angle
         
     def take_picture(self, save_image_name):
         capture_dir = "captures"
