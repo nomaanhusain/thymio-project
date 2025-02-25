@@ -17,31 +17,98 @@ class PublishWindDirection(Node):
         print(f"Physical Ip={self.physical_ip}, id={self.id}")
         print("CV2 Ver. = ", cv2.__version__)
         self.lens_position = 6
+        vicon_topic = "vicon/default/data"
         self.publisher_ = self.create_publisher(String, 'wind_direction', 10)
         timer_period = 3  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.my_position = None
+
+        self.vicon_subscription =  self.create_subscription(
+            PositionList,
+            vicon_topic,
+            self.vicon_callback,
+            10
+        )
+
+        self.subscription = self.create_subscription(
+            String,
+            'wind_direction',
+            self.listener_callback,
+            10
+        )
+
         self.my_position_xy = None
         self.neighbours_by_id = set()
         self.all_robots_position_by_id_vicon = dict()
         self.neighbourhood_size = 5
         self.informed = True
         self.neighbour_distance_mm = 200 #so 20 cm
-        self.my_vicon_yaw = 0.0
-        self.wind_direction = None
+        self.social_info_counts = dict()
+        self.neighbours_opinions = dict()
+        self.personal_info_weight = 0.6
 
+        self.my_position = None
+        self.my_vicon_yaw = 0.0
+        self.my_wind_direction = None
+        self.cam_angle = -999.0
+        # Random wind direction init
+        self.my_wind_direction_opinion = np.random.choice(['N','S','E','W'])
+        self.timer_ = 0
+
+    def listener_callback(self, msg):
+        id = msg.data.split(':')[0]
+        wind_direction = msg.data.split(':')[1]
+
+        print(f'Received from {id}, wind direction {wind_direction}')
+
+        #Check if this robot is in close proximity to us, this info comes from the vicon system
+        if id in self.neighbours_by_id:
+            self.neighbours_opinions[id] = wind_direction
+        self.get_logger().info(f"msg: {msg.data}")
+        # Sound logic, decision making would be triggered only after receiving of some message, so record temp after receiving message ie. calculate quad based on
+        # sensor input
+        self.cam_angle = self.process_image_get_direction()
+        self.get_true_wind_direction(self.cam_angle)
+        if(len(self.neighbours_opinions) == self.neighbourhood_size):
+            self.make_wind_direction_opinion()
+
+    def make_wind_direction_opinion(self):
+        self.majority_vote()
+        m = len(self.neighbours_opinions)
+        decision_dict = dict()
+        for direction in ['N','S','E','W']:
+            if self.informed:
+                mi = self.social_info_counts.get(direction,0)
+
+                decision_dict[direction] = mi + (self.personal_info_weight
+                                            * m * 
+                                            (1 if direction == self.my_wind_direction else 0))
+                
+        if self.informed:
+            self.my_wind_direction_opinion = self.get_highest_in_dict(decision_dict)
+        else:
+            self.my_wind_direction_opinion = self.get_highest_in_dict(self.social_info_counts)
+
+    def get_highest_in_dict(self, the_dict):
+        max_count = max(the_dict.values())
+        keys_with_max_count = [key for key, value in the_dict.items() if value == max_count]
+
+        if len(keys_with_max_count) > 1:
+            return np.random.choice(keys_with_max_count)
+        else:
+            return keys_with_max_count[0]
+        
     def timer_callback(self):
+        # Publishing stuff
         msg = String()
-        angle_dir = self.process_image_get_direction()
-        print(f"Id:{self.id}, Angle:{angle_dir}")
-        msg.data = f"{self.id}:{angle_dir}"
+        print(f"Id:{self.id}, Angle:{self.my_wind_direction_opinion}")
+        print(f"Ground Truth= {self.get_true_wind_direction(self.cam_angle)}")
+        msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
 
     def vicon_callback(self, msg):
         if self.timer_ % 1 == 0:
             print("vicon message")
-            self.neighbours_by_id = set()
             for i in range(msg.n):
                 # you are expected to set the id of each robot in the vicon system, you will receive it and compare here
                 if int(msg.positions[i].subject_name) == self.id:
@@ -51,8 +118,17 @@ class PublishWindDirection(Node):
                 else:
                     self.all_robots_position_by_id_vicon[int(msg.positions[i].subject_name)] = [self.positions[i].x_trans, self.positions[i].y_trans]
             for id_vicon in self.all_robots_position_by_id_vicon:
-                if self.check_distance(self.my_position, self.all_robots_position_by_id_vicon[id_vicon]):
+                if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
                     self.neighbours_by_id.add(id_vicon)
+            self.timer_ = 0
+        else:
+            self.timer_ = self.timer_ + 1
+
+    def check_distance(self,my_pos, neighbour_pos):
+        distance = math.sqrt((neighbour_pos[0] - my_pos[0])**2 + (neighbour_pos[1] - my_pos[1])**2)
+        if distance < self.neighbour_distance_mm:
+            return True
+        return False
 
     def quaternion_to_yaw(self):
         """Convert a quaternion (x, y, z, w) to a yaw angle (in radians)."""
@@ -61,15 +137,31 @@ class PublishWindDirection(Node):
         print('calculated yaw: %f' %yaw_degrees)
         return yaw
 
-    def check_distance(self,my_pos, neighbour_pos):
-        distance = math.sqrt((neighbour_pos[0] - my_pos[0])**2 + (neighbour_pos[1] - my_pos[1])**2)
-        if distance < self.neighbour_distance_mm:
-            return True
-        return False
+    
     
     def get_true_wind_direction(self, cam_angle):
         ground_truth_wind_direction = math.abs(cam_angle - self.my_vicon_yaw)
         print('Ground Truth= ',ground_truth_wind_direction)
+        self.my_wind_direction = '1'
+        if (ground_truth_wind_direction < 45 and ground_truth_wind_direction >= 0) or (ground_truth_wind_direction < 360 and ground_truth_wind_direction >= 315):
+            self.my_wind_direction = 'N'
+        if ground_truth_wind_direction >= 255 and ground_truth_wind_direction < 315:
+            self.my_wind_direction = 'E'
+        if ground_truth_wind_direction >= 135 and ground_truth_wind_direction < 225:
+            self.my_wind_direction = 'S'
+        if ground_truth_wind_direction >= 45  and ground_truth_wind_direction < 135:
+            self.my_wind_direction = 'E'
+        print("Wind Direction from sensor= ", self.my_wind_direction)
+        
+
+    def majority_vote(self):
+        self.social_info_counts.clear()
+
+        for wind_dir in self.neighbours_opinions.values():
+            if wind_dir in self.social_info_counts:
+                self.social_info_counts[wind_dir] += 1
+            else:
+                self.social_info_counts[wind_dir] = 1
         
 
 
