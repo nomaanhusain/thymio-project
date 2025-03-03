@@ -14,6 +14,7 @@ class PublishWindDirection(Node):
         super().__init__('publish_wind_direction')
         self.physical_ip = self.get_physical_ip()
         self.id= self.physical_ip.split('.')[-1]
+        self.id=f'id{self.id}'
         print(f"Physical Ip={self.physical_ip}, id={self.id}")
         print("CV2 Ver. = ", cv2.__version__)
         self.lens_position = 6
@@ -55,21 +56,59 @@ class PublishWindDirection(Node):
         self.timer_ = 0
 
     def listener_callback(self, msg):
+        # This is listening to the wind_direction topic, if someone publishes there opinion, we listen here
+        # Once we have enough unique opinions, we trigger the decision making
         id = msg.data.split(':')[0]
         wind_direction = msg.data.split(':')[1]
 
         print(f'Received from {id}, wind direction {wind_direction}')
+        print("**************************")
 
         #Check if this robot is in close proximity to us, this info comes from the vicon system
         if id in self.neighbours_by_id:
             self.neighbours_opinions[id] = wind_direction
-        self.get_logger().info(f"msg: {msg.data}")
+        # self.get_logger().info(f"msg: {msg.data}")
         # Sound logic, decision making would be triggered only after receiving of some message, so record temp after receiving message ie. calculate quad based on
         # sensor input
-        self.cam_angle = self.process_image_get_direction()
-        self.get_true_wind_direction(self.cam_angle)
+        # self.cam_angle = self.process_image_get_direction()
+        # self.get_true_wind_direction(self.cam_angle)
         if(len(self.neighbours_opinions) == self.neighbourhood_size):
             self.make_wind_direction_opinion()
+    
+    def timer_callback(self):
+        # Publishing stuff to the wind_direction topic
+        msg = String()
+        self.cam_angle = self.process_image_get_direction()
+        print("cam angle= ",self.cam_angle)
+        self.get_true_wind_direction(self.cam_angle)
+        # print(f"Id:{self.id}, Angle:{self.my_wind_direction_opinion}")
+        msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
+        self.publisher_.publish(msg)
+        self.get_logger().info('Publishing: "%s"' % msg.data)
+
+    def vicon_callback(self, msg):
+        if self.timer_ % 100 == 0:
+            print("vicon message received")
+            for i in range(msg.n):
+                # you are expected to set the id of each robot in the vicon system, you will receive it and compare here
+                if msg.positions[i].subject_name == self.id:
+                    self.my_position = msg.positions[i]
+                    self.my_position_xy = [msg.positions[i].x_trans, msg.positions[i].y_trans]
+                    vicon_yaw_radians = self.quaternion_to_yaw()
+                    self.my_vicon_yaw = vicon_yaw_radians * (180/np.pi) # rads to degrees
+                    self.get_logger().info(f'Vicon Yaw= {self.my_vicon_yaw}')
+                    self.get_logger().info(f'Vicon Position= {self.my_position_xy}')
+                    # self.get_logger().info(f'my_Id_msg={msg}')
+                    self.get_logger().info(f'--------------------')
+                else:
+                    # self.get_logger().info(f'msg={msg}')
+                    self.all_robots_position_by_id_vicon[msg.positions[i].subject_name] = [msg.positions[i].x_trans, msg.positions[i].y_trans]
+            for id_vicon in self.all_robots_position_by_id_vicon:
+                if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
+                    self.neighbours_by_id.add(id_vicon)
+            self.timer_ = 0
+        else:
+            self.timer_ = self.timer_ + 1
 
     def make_wind_direction_opinion(self):
         self.majority_vote()
@@ -97,34 +136,9 @@ class PublishWindDirection(Node):
         else:
             return keys_with_max_count[0]
         
-    def timer_callback(self):
-        # Publishing stuff
-        msg = String()
-        print(f"Id:{self.id}, Angle:{self.my_wind_direction_opinion}")
-        print(f"Ground Truth= {self.get_true_wind_direction(self.cam_angle)}")
-        msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+    
 
-    def vicon_callback(self, msg):
-        if self.timer_ % 1 == 0:
-            print("vicon message")
-            for i in range(msg.n):
-                # you are expected to set the id of each robot in the vicon system, you will receive it and compare here
-                if int(msg.positions[i].subject_name) == self.id:
-                    self.my_position = msg.position[i]
-                    self.my_position_xy = [msg.positions[i].x_trans, msg.positions[i].y_trans]
-                    self.my_vicon_yaw = self.quaternion_to_yaw()
-                else:
-                    self.all_robots_position_by_id_vicon[int(msg.positions[i].subject_name)] = [self.positions[i].x_trans, self.positions[i].y_trans]
-            for id_vicon in self.all_robots_position_by_id_vicon:
-                if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
-                    self.neighbours_by_id.add(id_vicon)
-            self.timer_ = 0
-        else:
-            self.timer_ = self.timer_ + 1
-
-    def check_distance(self,my_pos, neighbour_pos):
+    def check_distance(self, my_pos, neighbour_pos):
         distance = math.sqrt((neighbour_pos[0] - my_pos[0])**2 + (neighbour_pos[1] - my_pos[1])**2)
         if distance < self.neighbour_distance_mm:
             return True
@@ -134,29 +148,31 @@ class PublishWindDirection(Node):
         """Convert a quaternion (x, y, z, w) to a yaw angle (in radians)."""
         yaw = np.arctan2(2 * (self.my_position.w * self.my_position.z_rot + self.my_position.x_rot * self.my_position.y_rot), 1 - 2 * (self.my_position.y_rot ** 2 + self.my_position.z_rot ** 2))
         yaw_degrees = math.degrees(yaw)
-        print('calculated yaw: %f' %yaw_degrees)
+        # print('calculated yaw: %f' %yaw_degrees)
         return yaw
 
     
     
     def get_true_wind_direction(self, cam_angle):
-        ground_truth_wind_direction = math.abs(cam_angle - self.my_vicon_yaw)
+        ground_truth_wind_direction = abs(cam_angle - self.my_vicon_yaw)
         print('Ground Truth= ',ground_truth_wind_direction)
         self.my_wind_direction = '1'
         if (ground_truth_wind_direction < 45 and ground_truth_wind_direction >= 0) or (ground_truth_wind_direction < 360 and ground_truth_wind_direction >= 315):
             self.my_wind_direction = 'N'
-        if ground_truth_wind_direction >= 255 and ground_truth_wind_direction < 315:
+        if ground_truth_wind_direction >= 225 and ground_truth_wind_direction < 315:
             self.my_wind_direction = 'E'
         if ground_truth_wind_direction >= 135 and ground_truth_wind_direction < 225:
             self.my_wind_direction = 'S'
         if ground_truth_wind_direction >= 45  and ground_truth_wind_direction < 135:
-            self.my_wind_direction = 'E'
-        print("Wind Direction from sensor= ", self.my_wind_direction)
+            self.my_wind_direction = 'W'
+        if self.my_wind_direction == '1':
+            print('taking random opinion as angle could not be read')
+            self.my_wind_direction = np.random.choice(['N','S','E','W'])
+        print("Corrected Wind Direction= ", self.my_wind_direction)
         
 
     def majority_vote(self):
         self.social_info_counts.clear()
-
         for wind_dir in self.neighbours_opinions.values():
             if wind_dir in self.social_info_counts:
                 self.social_info_counts[wind_dir] += 1
@@ -204,7 +220,7 @@ class PublishWindDirection(Node):
     def get_marker_rotation_angle(self, rvec):
         # Convert rotation vector to rotation matrix, this uses the Rodrigues rotation formula
         R, _ = cv2.Rodrigues(rvec)
-        print(R)
+        # print(R)
 
         # Extract yaw angle (rotation around Z-axis)
         yaw = np.arctan2(R[1, 0], R[0, 0])  # R[1,0] = sin(theta), R[0,0] = cos(theta)
