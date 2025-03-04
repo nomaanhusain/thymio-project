@@ -6,8 +6,10 @@ import numpy as np
 from std_msgs.msg import String
 from vicon_receiver.msg import Position
 from vicon_receiver.msg import PositionList
+from scipy.spatial.transform import Rotation as R
 import math
 import socket
+import time
 
 class PublishWindDirection(Node):
     def __init__(self):
@@ -54,6 +56,7 @@ class PublishWindDirection(Node):
         # Random wind direction init
         self.my_wind_direction_opinion = np.random.choice(['N','S','E','W'])
         self.timer_ = 0
+        self.start_time_ = time.time()
 
     def listener_callback(self, msg):
         # This is listening to the wind_direction topic, if someone publishes there opinion, we listen here
@@ -78,7 +81,8 @@ class PublishWindDirection(Node):
     def timer_callback(self):
         # Publishing stuff to the wind_direction topic
         msg = String()
-        self.cam_angle = self.process_image_get_direction()
+        # self.cam_angle = self.process_image_get_direction()
+        self.cam_angle = 90.0
         print("cam angle= ",self.cam_angle)
         self.get_true_wind_direction(self.cam_angle)
         # print(f"Id:{self.id}, Angle:{self.my_wind_direction_opinion}")
@@ -87,16 +91,25 @@ class PublishWindDirection(Node):
         self.get_logger().info('Publishing: "%s"' % msg.data)
 
     def vicon_callback(self, msg):
-        if self.timer_ % 100 == 0:
+        if time.time() - self.start_time_ > 2:
+        # if self.timer_ % 1000 == 0:
             print("vicon message received")
+            self.start_time_ = time.time()
             for i in range(msg.n):
                 # you are expected to set the id of each robot in the vicon system, you will receive it and compare here
                 if msg.positions[i].subject_name == self.id:
                     self.my_position = msg.positions[i]
                     self.my_position_xy = [msg.positions[i].x_trans, msg.positions[i].y_trans]
                     vicon_yaw_radians = self.quaternion_to_yaw()
+                    # vicon_yaw_radians = self.quat_to_yaw()
                     self.my_vicon_yaw = vicon_yaw_radians * (180/np.pi) # rads to degrees
-                    self.get_logger().info(f'Vicon Yaw= {self.my_vicon_yaw}')
+                    offset = -165 # offset to correct the difference from the vicon output, so what I expect to be 0 is outputted as -165 so i just sub that
+                    self.my_vicon_yaw = self.my_vicon_yaw - offset
+                    self.my_vicon_yaw = self.my_vicon_yaw % 360
+                    self.get_logger().info(f'--------------------')
+                    # self.get_logger().info(f"w={self.my_position.w} x_rot={self.my_position.x_rot}  y_rot={self.my_position.y_rot} z_rot={self.my_position.z_rot}")
+                    self.get_logger().info(f'Vicon Yaw Rads= {vicon_yaw_radians}')
+                    self.get_logger().info(f'Vicon Yaw Degrees= {self.my_vicon_yaw}')
                     self.get_logger().info(f'Vicon Position= {self.my_position_xy}')
                     # self.get_logger().info(f'my_Id_msg={msg}')
                     self.get_logger().info(f'--------------------')
@@ -108,7 +121,8 @@ class PublishWindDirection(Node):
                     self.neighbours_by_id.add(id_vicon)
             self.timer_ = 0
         else:
-            self.timer_ = self.timer_ + 1
+            # self.timer_ = self.timer_ + 1
+            self.timer_ = 0
 
     def make_wind_direction_opinion(self):
         self.majority_vote()
@@ -146,11 +160,19 @@ class PublishWindDirection(Node):
 
     def quaternion_to_yaw(self):
         """Convert a quaternion (x, y, z, w) to a yaw angle (in radians)."""
-        yaw = np.arctan2(2 * (self.my_position.w * self.my_position.z_rot + self.my_position.x_rot * self.my_position.y_rot), 1 - 2 * (self.my_position.y_rot ** 2 + self.my_position.z_rot ** 2))
-        yaw_degrees = math.degrees(yaw)
-        # print('calculated yaw: %f' %yaw_degrees)
+        w = round(self.my_position.w, 4)
+        x_rot = round(self.my_position.x_rot,4)
+        y_rot = round(self.my_position.y_rot,4)
+        z_rot = round(self.my_position.z_rot, 4)
+        # if w < 0: w = w * -1.0
+        # if x_rot < 0: x_rot = x_rot * -1.0
+        # if y_rot < 0: y_rot = y_rot * -1.0
+        # if z_rot < 0: z_rot = z_rot * -1.0
+        self.get_logger().info(f"w={w} x_rot={x_rot}  y_rot={y_rot} z_rot={z_rot}")   
+        yaw = np.arctan2(2 * (w * z_rot + x_rot * y_rot), 1 - 2 * (y_rot ** 2 + z_rot ** 2))
+        yaw_degrees = np.degrees(yaw)
+        print('calculated yaw: %f' %(yaw_degrees % 360))
         return yaw
-
     
     
     def get_true_wind_direction(self, cam_angle):
@@ -303,17 +325,24 @@ class PublishWindDirection(Node):
             print(f"Error capturing image: {e}")
 
 def main(args=None):
-    rclpy.init(args=args)
 
-    wind_direction_sensor = PublishWindDirection()
+    try:
+        rclpy.init(args=args)
 
-    rclpy.spin(wind_direction_sensor)
+        wind_direction_sensor = PublishWindDirection()
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    wind_direction_sensor.destroy_node()
-    rclpy.shutdown()
+        rclpy.spin(wind_direction_sensor)
+
+        # Destroy the node explicitly
+        # (optional - otherwise it will be done automatically
+        # when the garbage collector destroys the node object)
+        # wind_direction_sensor.destroy_node()
+        # rclpy.shutdown()
+    except KeyboardInterrupt:
+        print("Stopping, Keyboard Interrupt")
+        wind_direction_sensor.destroy_node()
+        rclpy.shutdown()
+
 
 
 if __name__ == '__main__':
