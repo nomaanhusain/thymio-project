@@ -17,6 +17,8 @@ class PublishWindDirection(Node):
         self.physical_ip = self.get_physical_ip()
         self.id= self.physical_ip.split('.')[-1]
         self.id=f'id{self.id}'
+        # TODO: Remove this, for test for now
+        self.id = 'rob0'
         print(f"Physical Ip={self.physical_ip}, id={self.id}")
         print("CV2 Ver. = ", cv2.__version__)
         self.lens_position = 6
@@ -52,6 +54,7 @@ class PublishWindDirection(Node):
         self.my_position = None
         self.my_vicon_yaw = 0.0
         self.my_wind_direction = None
+        self.vicon_angle_offset = 0
         self.cam_angle = -999.0
         # Random wind direction init
         self.my_wind_direction_opinion = np.random.choice(['N','S','E','W'])
@@ -73,15 +76,15 @@ class PublishWindDirection(Node):
         # self.get_logger().info(f"msg: {msg.data}")
         # Sound logic, decision making would be triggered only after receiving of some message, so record temp after receiving message ie. calculate quad based on
         # sensor input
-        # self.cam_angle = self.process_image_get_direction()
-        # self.get_true_wind_direction(self.cam_angle)
+        self.cam_angle = self.process_image_get_direction()
+        self.get_true_wind_direction(self.cam_angle)
         if(len(self.neighbours_opinions) == self.neighbourhood_size):
             self.make_wind_direction_opinion()
     
     def timer_callback(self):
         # Publishing stuff to the wind_direction topic
         msg = String()
-        # self.cam_angle = self.process_image_get_direction()
+        self.cam_angle = self.process_image_get_direction()
         self.cam_angle = 90.0
         print("cam angle= ",self.cam_angle)
         self.get_true_wind_direction(self.cam_angle)
@@ -104,7 +107,7 @@ class PublishWindDirection(Node):
                     # vicon_yaw_radians = self.quat_to_yaw()
                     self.my_vicon_yaw = vicon_yaw_radians * (180/np.pi) # rads to degrees
                     offset = -165 # offset to correct the difference from the vicon output, so what I expect to be 0 is outputted as -165 so i just sub that
-                    self.my_vicon_yaw = self.my_vicon_yaw - offset
+                    self.my_vicon_yaw = self.my_vicon_yaw - self.vicon_angle_offset
                     self.my_vicon_yaw = self.my_vicon_yaw % 360
                     self.get_logger().info(f'--------------------')
                     # self.get_logger().info(f"w={self.my_position.w} x_rot={self.my_position.x_rot}  y_rot={self.my_position.y_rot} z_rot={self.my_position.z_rot}")
@@ -168,7 +171,7 @@ class PublishWindDirection(Node):
         # if x_rot < 0: x_rot = x_rot * -1.0
         # if y_rot < 0: y_rot = y_rot * -1.0
         # if z_rot < 0: z_rot = z_rot * -1.0
-        self.get_logger().info(f"w={w} x_rot={x_rot}  y_rot={y_rot} z_rot={z_rot}")   
+        self.get_logger().info(f"w={w} x_rot={x_rot}  y_rot={y_rot} z_rot={z_rot}")
         yaw = np.arctan2(2 * (w * z_rot + x_rot * y_rot), 1 - 2 * (y_rot ** 2 + z_rot ** 2))
         yaw_degrees = np.degrees(yaw)
         print('calculated yaw: %f' %(yaw_degrees % 360))

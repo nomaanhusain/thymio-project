@@ -1,0 +1,1 @@
+Json files to make the autofocus on the camera work in Raspberry Pi with Ubuntu

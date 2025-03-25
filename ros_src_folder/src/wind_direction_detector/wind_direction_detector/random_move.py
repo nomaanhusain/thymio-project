@@ -186,7 +186,9 @@ def main(args=None):
         rclpy.spin(random_robot_move)
     except KeyboardInterrupt:
         random_robot_move.get_logger().info("Shutting down node...")
+        random_robot_move.stop()
     finally:
+        random_robot_move.stop()
         random_robot_move.destroy_node()
         rclpy.shutdown()
 
