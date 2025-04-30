@@ -6,7 +6,7 @@
 
 3. Make sure ros2 is sourced, then source vicon_receiver/install/setup.bash
 
-4. Go to the Vicon PC and do a ipconfig to ge the ip of the vicon pc
+4. Go to the Vicon PC and do a ipconfig to get the ip of the vicon pc
 
 5. In the launch file here /home/nomaan/ros2-vicon-receiver/vicon_receiver/launch/client.launch.py replace the *ip* with the ip of the vicon pc (134.34.231.219)
 
