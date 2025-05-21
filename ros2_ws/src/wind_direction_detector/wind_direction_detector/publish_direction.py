@@ -12,6 +12,7 @@ import socket
 import time
 import datetime
 import csv
+import json
 
 class PublishWindDirection(Node):
     def __init__(self):
@@ -19,10 +20,10 @@ class PublishWindDirection(Node):
         self.physical_ip = self.get_physical_ip()
         self.id= self.physical_ip.split('.')[-1]
         self.id=f'id{self.id}'
-        self.id = 'rob0'
+        # self.id = 'rob0'
         print(f"Physical Ip={self.physical_ip}, id={self.id}")
         print("CV2 Ver. = ", cv2.__version__)
-        self.lens_position = 6
+        self.lens_position = 8
         vicon_topic = "vicon/default/data"
         self.publisher_ = self.create_publisher(String, 'wind_direction', 10)
         timer_period = 3  # seconds
@@ -41,6 +42,9 @@ class PublishWindDirection(Node):
             self.listener_callback,
             10
         )
+
+        with open("vicon_angle_correction.json", "r") as f:
+                self.corrections = json.load(f)
 
         self.my_position_xy = None
         self.neighbours_by_id = set()
@@ -126,6 +130,7 @@ class PublishWindDirection(Node):
                     self.my_position = msg.positions[i]
                     self.my_position_xy = [msg.positions[i].x_trans, msg.positions[i].y_trans]
                     vicon_yaw_radians = self.quaternion_to_yaw()
+
                     # self.vicon_rad_readings[time.time()] = vicon_yaw_radians
                     # vicon_yaw_radians = self.quat_to_yaw()
                     self.my_vicon_yaw = vicon_yaw_radians * (180/np.pi) # rads to degrees
@@ -144,6 +149,7 @@ class PublishWindDirection(Node):
                     # self.get_logger().info(f'msg={msg}')
                     self.all_robots_position_by_id_vicon[msg.positions[i].subject_name] = [msg.positions[i].x_trans, msg.positions[i].y_trans]
             for id_vicon in self.all_robots_position_by_id_vicon:
+                print(f"My Pos {self.my_position_xy}, All Robs: {self.all_robots_position_by_id_vicon}")
                 if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
                     self.neighbours_by_id.add(id_vicon)
             self.timer_ = 0
@@ -197,14 +203,14 @@ class PublishWindDirection(Node):
         # if z_rot < 0: z_rot = z_rot * -1.0
         self.get_logger().info(f"w={w} x_rot={x_rot}  y_rot={y_rot} z_rot={z_rot}")
         yaw = np.arctan2(2 * (w * z_rot + x_rot * y_rot), 1 - 2 * (y_rot ** 2 + z_rot ** 2))
-        yaw_degrees = np.degrees(yaw)
-        print('calculated yaw: %f' %(yaw_degrees % 360))
-        return yaw
+        # yaw_degrees = np.degrees(yaw)
+        # print('calculated yaw: %f' %(yaw_degrees % 360))
+        return yaw + self.corrections.get(self.id)
     
     
     def get_true_wind_direction(self, cam_angle):
         ground_truth_wind_direction = (cam_angle + self.my_vicon_yaw) % 360
-        self.get_logger().info(f"***Cam angle= {cam_angle}, vico ang= {self.my_vicon_yaw} Ground Truth= {ground_truth_wind_direction}")
+        self.get_logger().info(f"***Cam angle= {cam_angle}, vico ang deg= {self.my_vicon_yaw} Ground Truth= {ground_truth_wind_direction}")
         self.my_wind_direction = '1'
         if (ground_truth_wind_direction < 45 and ground_truth_wind_direction >= 0) or (ground_truth_wind_direction < 360 and ground_truth_wind_direction >= 315):
             self.my_wind_direction = 'N'
