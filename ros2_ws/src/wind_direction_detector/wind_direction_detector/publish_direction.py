@@ -19,6 +19,8 @@ class PublishWindDirection(Node):
         super().__init__('publish_wind_direction')
         self.physical_ip = self.get_physical_ip()
         self.id= self.physical_ip.split('.')[-1]
+        if self.physical_ip.split('.')[-2] == "231" and self.physical_ip.split('.')[-1] == "193":
+            self.id = "1193"
         self.id=f'id{self.id}'
         # self.id = 'rob0'
         print(f"Physical Ip={self.physical_ip}, id={self.id}")
