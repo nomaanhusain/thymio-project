@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from thymiodirect import Connection
 from thymiodirect import Thymio
+from std_msgs.msg import String
 import time
 import random
 
@@ -9,13 +10,13 @@ class RandomRobotMove(Node):
     def __init__(self):
         super().__init__('random_move')
         print("Initializing Thymio Robot")
-        print('works')
         port = Connection.serial_default_port()
         th = Thymio(serial_port=port,
                     on_connect=lambda node_id: print(f'Thymio {node_id} is connected'))
         # Connect to Robot
         th.connect()
         self.robot = th[th.first_node()]
+        self.start_time_ = time.time()
 
         # Delay to allow robot initialization of all variables
         time.sleep(1)
@@ -25,6 +26,7 @@ class RandomRobotMove(Node):
         self.stop_bool = False
         self.timer = self.create_timer(0.1, self.random_move)
         self.get_logger().info("Robot Control Node started.")
+        self.consecutive_ir_hits = 0
 
     def random_move(self):
         if self.stop_bool:
@@ -38,24 +40,29 @@ class RandomRobotMove(Node):
             self.rotate_right()
         else:
             self.rotate_left()
+        if time.time() - self.start_time_ > 900:
+            self.stop_bool = True
+            raise Exception
     
     def on_arena_edge(self):
         if self.robot is not None:
             # print(f"Prox 0: {self.robot['prox.ground.delta'][0]}, Prox 1: {self.robot['prox.ground.delta'][1]}")
-            if self.robot['prox.ground.delta'][0] > 900  or self.robot['prox.ground.delta'][1] > 900:
+            if self.robot['prox.ground.delta'][0] > 800  or self.robot['prox.ground.delta'][1] > 800:
                 return True
         return False
     
     def move_forward(self):
         if self.robot is not None:
-            counter = 20000
-            while counter > 0:
+            move_time = 20
+            start_time= time.time()
+            # counter = 25000
+            while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
                     print("stop all motion: move forward")
                     self.stop_bool = True
                     break
-                self.robot['motor.left.target'] = 200
-                self.robot['motor.right.target'] = 200
+                self.robot['motor.left.target'] = 400
+                self.robot['motor.right.target'] = 400
                 if self.on_arena_edge():
                     print('on arena edge')
                     self.collision_avoidance()
@@ -64,7 +71,7 @@ class RandomRobotMove(Node):
                     print('collision avoidance')
                     self.collision_avoidance()
                     continue
-                counter -= 1
+                # counter -= 1
 
             else:
                 self.robot['motor.left.target'] = 0
@@ -72,8 +79,10 @@ class RandomRobotMove(Node):
     
     def rotate_right(self):
         if self.robot is not None:
-            counter = 5000
-            while counter > 0:
+            move_time = 5
+            start_time= time.time()
+            # counter = 3000
+            while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
                     print("stop all motion: rotate right")
                     self.stop_bool = True
@@ -88,15 +97,17 @@ class RandomRobotMove(Node):
                     print('collision avoidance')
                     self.collision_avoidance()
                     continue
-                counter -= 1
+                # counter -= 1
             else:
                 self.robot['motor.left.target'] = 0
                 self.robot['motor.right.target'] = 0
     
     def rotate_left(self):
         if self.robot is not None:
-            counter = 5000
-            while counter > 0:
+            move_time = 5
+            start_time= time.time()
+            # counter = 3000
+            while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
                     print("stop all motion: rotate left")
                     self.stop_bool = True
@@ -111,7 +122,7 @@ class RandomRobotMove(Node):
                     print('collision avoidance')
                     self.collision_avoidance()
                     continue
-                counter -= 1
+                # counter -= 1
             else:
                 # print("robot stop")
                 self.robot['motor.left.target'] = 0
@@ -119,8 +130,10 @@ class RandomRobotMove(Node):
     
     def move_back(self):
         if self.robot is not None:
-            counter = 20000
-            while counter > 0:
+            move_time = 6
+            start_time= time.time()
+            # counter = 20000
+            while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
                     print("stop all motion: move back")
                     self.stop_bool = True
@@ -130,7 +143,7 @@ class RandomRobotMove(Node):
                     continue
                 self.robot['motor.left.target'] = -200
                 self.robot['motor.right.target'] = -200
-                counter -= 1
+                # counter -= 1
             else:
                 # print("robot stop")
                 self.robot['motor.left.target'] = 0
@@ -165,17 +178,27 @@ class RandomRobotMove(Node):
             counter = 3000
             print("Turn")
             while counter > 0:
-                self.robot['motor.left.target'] = -300
-                self.robot['motor.right.target'] = 300
+                self.robot['motor.left.target'] = -350
+                self.robot['motor.right.target'] = 350
                 counter -= 1
             self.robot['leds.top'] = [0, 32, 0]
 
     def obstacle_ahead(self):
         if self.robot is not None:
-            if (self.robot['prox.horizontal'][0] > 3000 or self.robot['prox.horizontal'][1] > 3000 or
-                    self.robot['prox.horizontal'][2] > 3000 or self.robot['prox.horizontal'][3] > 3000 or self.robot['prox.horizontal'][4] > 3000):
-                print(f"Prox 0: {self.robot['prox.horizontal'][0]}, Prox 1: {self.robot['prox.horizontal'][1]},  Prox 2: {self.robot['prox.horizontal'][2]}, Prox 3: {self.robot['prox.horizontal'][3]}")
-                return True
+            readings = self.robot['prox.horizontal'][:5]
+            # print(readings)
+            if any(r > 800 for r in readings):
+                self.consecutive_ir_hits += 1
+                # print(f"IR hits: {self.consecutive_ir_hits}")
+                # Temporal filtering as IR strobes from Vicon system trigger collision avoidance
+                if self.consecutive_ir_hits > 600:
+                    # print("consecutive hits: ", self.consecutive_ir_hits)
+                    print(f"Prox 0: {self.robot['prox.horizontal'][0]}, Prox 1: {self.robot['prox.horizontal'][1]},  Prox 2: {self.robot['prox.horizontal'][2]}, Prox 3: {self.robot['prox.horizontal'][3]}")
+                    return True
+            else:
+                if self.consecutive_ir_hits > 0:
+                    print("consecutive hits: ", self.consecutive_ir_hits)
+                self.consecutive_ir_hits = 0
         return False
     
 def main(args=None):
@@ -188,14 +211,17 @@ def main(args=None):
     except KeyboardInterrupt:
         random_robot_move.get_logger().info("Shutting down node...")
         random_robot_move.stop()
+    except Exception:
+        random_robot_move.get_logger().info("Exception, shutting down")
+        random_robot_move.stop()
     finally:
         random_robot_move.stop()
         random_robot_move.destroy_node()
         rclpy.shutdown()
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
 
 
         

@@ -1,0 +1,621 @@
+[INFO] [launch]: All log files can be found below /home/thymio/.ros/log/2025-06-05-12-24-18-511351-thymio-822
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [random_robot_move-1]: process started with pid [844]
+[INFO] [publish_wind_direction-2]: process started with pid [846]
+[publish_wind_direction-2] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+[publish_wind_direction-2]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[publish_wind_direction-2] [INFO] [1749126262.454933147] [publish_wind_direction]: Physical Ip=134.34.225.195, id=id195
+[publish_wind_direction-2] [INFO] [1749126264.981651249] [publish_wind_direction]: * Received from id192, wind direction W
+[publish_wind_direction-2] [INFO] [1749126264.985470751] [publish_wind_direction]: Publisher, neighbours_by_id=set()
+[random_robot_move-1] [INFO] [1749126265.416729480] [random_robot_move]: Robot Control Node started.
+[publish_wind_direction-2] [INFO] [1749126269.309395712] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 0.0 Ground Truth= 81.0
+[publish_wind_direction-2] [INFO] [1749126269.311931658] [publish_wind_direction]: Publisher, Neighbourhood size: 0
+[publish_wind_direction-2] [INFO] [1749126269.316472862] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126269.322182486] [publish_wind_direction]: Vicon Position= [-947.20849609375, -442.5591125488281]
+[publish_wind_direction-2] [INFO] [1749126269.324906784] [publish_wind_direction]: Neighbourhood size: 7
+[publish_wind_direction-2] [INFO] [1749126269.329961508] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126269.332384513] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id192', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126273.250026241] [publish_wind_direction]: ***Cam angle= -133.89622454993764, vico ang deg= 2.9641087601854212 Ground Truth= 229.06788421024777
+[publish_wind_direction-2] [INFO] [1749126273.252682311] [publish_wind_direction]: Publisher, Neighbourhood size: 7
+[publish_wind_direction-2] [INFO] [1749126273.254998793] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126273.257364725] [publish_wind_direction]: Publisher, Neighbours Opinion: 0
+[publish_wind_direction-2] [INFO] [1749126273.259732081] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {}
+[publish_wind_direction-2] [INFO] [1749126273.262362474] [publish_wind_direction]: Inside Decision Making, social opinions: {}
+[publish_wind_direction-2] [INFO] [1749126273.266876591] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126273.271131036] [publish_wind_direction]: * Received from id192, wind direction W
+[publish_wind_direction-2] [INFO] [1749126273.273519632] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id192', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126277.573577894] [publish_wind_direction]: ***Cam angle= -138.1049140452078, vico ang deg= 2.9641087601854212 Ground Truth= 224.8591947149776
+[publish_wind_direction-2] [INFO] [1749126277.577450177] [publish_wind_direction]: Publisher, Neighbourhood size: 7
+[publish_wind_direction-2] [INFO] [1749126277.581232775] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126277.584976115] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126277.588609447] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126277.591091780] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126277.595365093] [publish_wind_direction]: Publishing: "id195:S"
+[publish_wind_direction-2] [INFO] [1749126277.599441543] [publish_wind_direction]: Vicon Position= [-922.4700927734375, -273.549560546875]
+[publish_wind_direction-2] [INFO] [1749126277.601799981] [publish_wind_direction]: Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126277.604411127] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126277.606670226] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126281.798534090] [publish_wind_direction]: ***Cam angle= -224.14890667296757, vico ang deg= 241.72667072971134 Ground Truth= 17.577764056743774
+[publish_wind_direction-2] [INFO] [1749126281.801124738] [publish_wind_direction]: Publisher, Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126281.803481966] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126281.806096105] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126281.808799266] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126281.811601141] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126281.816651227] [publish_wind_direction]: * Received from id195, wind direction S
+[publish_wind_direction-2] [INFO] [1749126281.819158643] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126285.863563496] [publish_wind_direction]: ***Cam angle= -197.65678838894877, vico ang deg= 241.72667072971134 Ground Truth= 44.069882340762575
+[publish_wind_direction-2] [INFO] [1749126285.866163172] [publish_wind_direction]: Publisher, Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126285.868623249] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126285.870991161] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126285.873395221] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126285.875791031] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126285.880313018] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126285.884620206] [publish_wind_direction]: Vicon Position= [-877.7908325195312, -652.7379150390625]
+[publish_wind_direction-2] [INFO] [1749126285.887339334] [publish_wind_direction]: Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126285.890449672] [publish_wind_direction]: * Received from id192, wind direction N
+[publish_wind_direction-2] [INFO] [1749126285.893170593] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126289.756660687] [publish_wind_direction]: ***Cam angle= -169.5447752328534, vico ang deg= 130.5072178974931 Ground Truth= 320.9624426646397
+[publish_wind_direction-2] [INFO] [1749126289.763410029] [publish_wind_direction]: Publisher, Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126289.769133015] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126289.774888471] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126289.779109482] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126289.782943499] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126289.793642368] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126289.799754215] [publish_wind_direction]: * Received from id142, wind direction E
+[publish_wind_direction-2] [INFO] [1749126289.804262731] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126293.637079470] [publish_wind_direction]: ***Cam angle= -171.96959580761896, vico ang deg= 130.5072178974931 Ground Truth= 318.53762208987416
+[publish_wind_direction-2] [INFO] [1749126293.639911552] [publish_wind_direction]: Publisher, Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126293.643045642] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126293.645853168] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126293.649040569] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126293.651812234] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126293.656830561] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126293.661620211] [publish_wind_direction]: Vicon Position= [-871.4068603515625, -629.103515625]
+[publish_wind_direction-2] [INFO] [1749126293.664242491] [publish_wind_direction]: Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126293.667512347] [publish_wind_direction]: * Received from id192, wind direction N
+[publish_wind_direction-2] [INFO] [1749126293.670396351] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126297.848950613] [publish_wind_direction]: ***Cam angle= -187.35730550745023, vico ang deg= 182.33652533849587 Ground Truth= 354.9792198310456
+[publish_wind_direction-2] [INFO] [1749126297.851388594] [publish_wind_direction]: Publisher, Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126297.853795911] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126297.856119342] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126297.858510374] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126297.860888563] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126297.864952729] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126297.869089753] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126297.871456153] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126301.956188667] [publish_wind_direction]: ***Cam angle= -139.75407314061837, vico ang deg= 182.33652533849587 Ground Truth= 42.5824521978775
+[publish_wind_direction-2] [INFO] [1749126301.958775902] [publish_wind_direction]: Publisher, Neighbourhood size: 6
+[publish_wind_direction-2] [INFO] [1749126301.961194001] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126301.963563871] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126301.966017022] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126301.968650525] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126301.973602855] [publish_wind_direction]: Vicon Position= [-1050.453125, -375.3799743652344]
+[publish_wind_direction-2] [INFO] [1749126301.976135938] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126301.979005703] [publish_wind_direction]: * Received from id192, wind direction N
+[publish_wind_direction-2] [INFO] [1749126301.981432944] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224'}
+[publish_wind_direction-2] [INFO] [1749126305.724723329] [publish_wind_direction]: ***Cam angle= -170.27253645474343, vico ang deg= -0.48008086992344084 Ground Truth= 189.24738267533314
+[publish_wind_direction-2] [INFO] [1749126305.727166185] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126305.729596085] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126305.731955748] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126305.734369879] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126305.736766132] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126305.740925460] [publish_wind_direction]: Publishing: "id195:S"
+[publish_wind_direction-2] [INFO] [1749126305.744999188] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126305.747394497] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224'}
+[publish_wind_direction-2] [INFO] [1749126309.806555986] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= -0.48008086992344084 Ground Truth= 80.51991913007657
+[publish_wind_direction-2] [INFO] [1749126309.809052150] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126309.811419864] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126309.813826410] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126309.816217223] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126309.818846706] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126309.822973826] [publish_wind_direction]: Publishing: "id195:W"
+[publish_wind_direction-2] [INFO] [1749126309.826907491] [publish_wind_direction]: Vicon Position= [-1112.052490234375, -438.17919921875]
+[publish_wind_direction-2] [INFO] [1749126309.829489444] [publish_wind_direction]: Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126309.832430874] [publish_wind_direction]: * Received from id192, wind direction N
+[publish_wind_direction-2] [INFO] [1749126309.834857631] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id236', 'id206', 'id224'}
+[publish_wind_direction-2] [INFO] [1749126313.551403453] [publish_wind_direction]: ***Cam angle= -214.39954475515304, vico ang deg= 11.009923004857512 Ground Truth= 156.61037824970447
+[publish_wind_direction-2] [INFO] [1749126313.553794394] [publish_wind_direction]: Publisher, Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126313.556200550] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126313.558626640] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126313.561012361] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126313.563420479] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126313.567555294] [publish_wind_direction]: Publishing: "id195:S"
+[publish_wind_direction-2] [INFO] [1749126313.571806366] [publish_wind_direction]: * Received from id142, wind direction E
+[publish_wind_direction-2] [INFO] [1749126313.574375107] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id236', 'id206', 'id224'}
+[publish_wind_direction-2] [INFO] [1749126317.391728473] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 11.009923004857512 Ground Truth= 92.00992300485746
+[publish_wind_direction-2] [INFO] [1749126317.394346659] [publish_wind_direction]: Publisher, Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126317.396774268] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126317.399152790] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126317.401772327] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126317.404166230] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126317.408971491] [publish_wind_direction]: Vicon Position= [-1056.9134521484375, -474.3161315917969]
+[publish_wind_direction-2] [INFO] [1749126317.411550917] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126317.414509331] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126317.416981068] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224'}
+[publish_wind_direction-2] [INFO] [1749126321.162718269] [publish_wind_direction]: ***Cam angle= -5.021235145617567, vico ang deg= 141.47927663858957 Ground Truth= 136.458041492972
+[publish_wind_direction-2] [INFO] [1749126321.165261648] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126321.167622017] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126321.170008504] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126321.172380053] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126321.174920600] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126321.179013106] [publish_wind_direction]: Publishing: "id195:S"
+[publish_wind_direction-2] [INFO] [1749126321.183094025] [publish_wind_direction]: * Received from id192, wind direction N
+[publish_wind_direction-2] [INFO] [1749126321.185530822] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id236', 'id151', 'id224'}
+[publish_wind_direction-2] [INFO] [1749126325.230804237] [publish_wind_direction]: ***Cam angle= -144.46312092121607, vico ang deg= 141.47927663858957 Ground Truth= 357.0161557173735
+[publish_wind_direction-2] [INFO] [1749126325.233300746] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126325.235675179] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126325.238081469] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126325.240449830] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126325.243068156] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126325.247217231] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126325.251131207] [publish_wind_direction]: Vicon Position= [-950.21142578125, -477.892822265625]
+[publish_wind_direction-2] [INFO] [1749126325.253784517] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126325.256680349] [publish_wind_direction]: * Received from id142, wind direction E
+[publish_wind_direction-2] [INFO] [1749126325.259199108] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126329.092416457] [publish_wind_direction]: ***Cam angle= -153.15990552612334, vico ang deg= 151.37072644779732 Ground Truth= 358.210820921674
+[publish_wind_direction-2] [INFO] [1749126329.095876448] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126329.099200905] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126329.102555275] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126329.106127403] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126329.109538767] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126329.115378252] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126329.121289317] [publish_wind_direction]: * Received from id236, wind direction N
+[publish_wind_direction-2] [INFO] [1749126329.124845323] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id206', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126332.913863029] [publish_wind_direction]: ***Cam angle= -164.2951397543401, vico ang deg= 151.37072644779732 Ground Truth= 347.07558669345724
+[publish_wind_direction-2] [INFO] [1749126332.917337869] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126332.920860356] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126332.924367535] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126332.927839433] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126332.931239953] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126332.937129399] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126332.943000093] [publish_wind_direction]: Vicon Position= [-434.3254699707031, -560.2883911132812]
+[publish_wind_direction-2] [INFO] [1749126332.946616744] [publish_wind_direction]: Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126332.950608551] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126332.953954298] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126336.786029944] [publish_wind_direction]: ***Cam angle= -207.69538555456475, vico ang deg= 131.23611629812498 Ground Truth= 283.54073074356023
+[publish_wind_direction-2] [INFO] [1749126336.788475053] [publish_wind_direction]: Publisher, Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126336.790884899] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126336.793294597] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126336.795749554] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126336.798361741] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126336.803108890] [publish_wind_direction]: * Received from id195, wind direction S
+[publish_wind_direction-2] [INFO] [1749126336.805548594] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126340.663082313] [publish_wind_direction]: ***Cam angle= -208.79918917781058, vico ang deg= 131.23611629812498 Ground Truth= 282.4369271203144
+[publish_wind_direction-2] [INFO] [1749126340.665551037] [publish_wind_direction]: Publisher, Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126340.667902920] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126340.670286826] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126340.672688281] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126340.675219109] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126340.679400367] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126340.683395462] [publish_wind_direction]: Vicon Position= [-377.93792724609375, -315.86944580078125]
+[publish_wind_direction-2] [INFO] [1749126340.685974658] [publish_wind_direction]: Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126340.688998005] [publish_wind_direction]: * Received from id195, wind direction W
+[publish_wind_direction-2] [INFO] [1749126340.691388557] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126344.560612065] [publish_wind_direction]: ***Cam angle= -119.8452935235187, vico ang deg= 197.46397924569624 Ground Truth= 77.61868572217753
+[publish_wind_direction-2] [INFO] [1749126344.563074098] [publish_wind_direction]: Publisher, Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126344.565488743] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126344.567838895] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126344.570369474] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126344.573080220] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126344.577289225] [publish_wind_direction]: Publishing: "id195:W"
+[publish_wind_direction-2] [INFO] [1749126344.581347643] [publish_wind_direction]: * Received from id195, wind direction S
+[publish_wind_direction-2] [INFO] [1749126344.583731986] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id151', 'id224', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126348.396784204] [publish_wind_direction]: ***Cam angle= -219.690356803818, vico ang deg= 197.46397924569624 Ground Truth= 337.7736224418783
+[publish_wind_direction-2] [INFO] [1749126348.399227881] [publish_wind_direction]: Publisher, Neighbourhood size: 4
+[publish_wind_direction-2] [INFO] [1749126348.401751971] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126348.404105092] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126348.406581368] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126348.409368591] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126348.413584459] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126348.417492840] [publish_wind_direction]: Vicon Position= [-337.7485656738281, -15.704707145690918]
+[publish_wind_direction-2] [INFO] [1749126348.420004249] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126348.422847265] [publish_wind_direction]: * Received from id195, wind direction S
+[publish_wind_direction-2] [INFO] [1749126348.425250108] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id151', 'id224', 'id192', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126352.295699925] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 204.60339084454722 Ground Truth= 285.6033908445472
+[publish_wind_direction-2] [INFO] [1749126352.298196717] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126352.300585885] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126352.302952155] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126352.305509849] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126352.307868326] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126352.312644126] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126352.315022003] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id151', 'id224', 'id192', 'id207'}
+[publish_wind_direction-2] [INFO] [1749126356.154801373] [publish_wind_direction]: ***Cam angle= 46.83405224078436, vico ang deg= 204.60339084454722 Ground Truth= 251.43744308533158
+[publish_wind_direction-2] [INFO] [1749126356.158358393] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126356.161775673] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126356.165419547] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126356.168904152] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126356.172339795] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126356.178360995] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126356.184255561] [publish_wind_direction]: Vicon Position= [574.7479248046875, -561.4263305664062]
+[publish_wind_direction-2] [INFO] [1749126356.187891382] [publish_wind_direction]: Neighbourhood size: 2
+[publish_wind_direction-2] [INFO] [1749126356.191906090] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126356.195374349] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126360.087805733] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 77.65088392583917 Ground Truth= 158.65088392583914
+[publish_wind_direction-2] [INFO] [1749126360.091307941] [publish_wind_direction]: Publisher, Neighbourhood size: 2
+[publish_wind_direction-2] [INFO] [1749126360.097453655] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126360.103461073] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126360.106893376] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126364.277529021] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 77.65088392583917 Ground Truth= 158.65088392583914
+[publish_wind_direction-2] [INFO] [1749126364.280043176] [publish_wind_direction]: Publisher, Neighbourhood size: 2
+[publish_wind_direction-2] [INFO] [1749126364.284245215] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126364.288361271] [publish_wind_direction]: Vicon Position= [581.0716552734375, -566.5577392578125]
+[publish_wind_direction-2] [INFO] [1749126364.290982169] [publish_wind_direction]: Neighbourhood size: 2
+[publish_wind_direction-2] [INFO] [1749126364.293860700] [publish_wind_direction]: * Received from id192, wind direction N
+[publish_wind_direction-2] [INFO] [1749126364.296268222] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126368.315590035] [publish_wind_direction]: ***Cam angle= -182.1947085190791, vico ang deg= 81.92426720959739 Ground Truth= 259.7295586905183
+[publish_wind_direction-2] [INFO] [1749126368.318174810] [publish_wind_direction]: Publisher, Neighbourhood size: 2
+[publish_wind_direction-2] [INFO] [1749126368.322500994] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126368.326746000] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126368.329175198] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126372.040328451] [publish_wind_direction]: ***Cam angle= -179.08142378405398, vico ang deg= 81.92426720959739 Ground Truth= 262.8428434255434
+[publish_wind_direction-2] [INFO] [1749126372.042787287] [publish_wind_direction]: Publisher, Neighbourhood size: 2
+[publish_wind_direction-2] [INFO] [1749126372.047432945] [publish_wind_direction]: Vicon Position= [743.08154296875, -712.8055419921875]
+[publish_wind_direction-2] [INFO] [1749126372.049967536] [publish_wind_direction]: Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126372.052988176] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126372.055352240] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126375.848857383] [publish_wind_direction]: ***Cam angle= -202.58455126694602, vico ang deg= 98.03371089575907 Ground Truth= 255.44915962881305
+[publish_wind_direction-2] [INFO] [1749126375.851289237] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126375.855470468] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126375.859536348] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126375.862124630] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126380.023897025] [publish_wind_direction]: ***Cam angle= 57.00822095477909, vico ang deg= 98.03371089575907 Ground Truth= 155.04193185053816
+[publish_wind_direction-2] [INFO] [1749126380.026348516] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126380.030598304] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126380.034749922] [publish_wind_direction]: Vicon Position= [887.8672485351562, -475.3268127441406]
+[publish_wind_direction-2] [INFO] [1749126380.037333728] [publish_wind_direction]: Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126380.040113411] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126380.042487882] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126383.803987925] [publish_wind_direction]: ***Cam angle= -155.25389300078422, vico ang deg= 182.75839149149303 Ground Truth= 27.504498490708812
+[publish_wind_direction-2] [INFO] [1749126383.806458415] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126383.810654562] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126383.814916114] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126383.817383157] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126387.652461542] [publish_wind_direction]: ***Cam angle= -233.204146085541, vico ang deg= 182.75839149149303 Ground Truth= 309.55424540595203
+[publish_wind_direction-2] [INFO] [1749126387.655858823] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126387.661898014] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126387.667653231] [publish_wind_direction]: Vicon Position= [891.0447387695312, -470.99407958984375]
+[publish_wind_direction-2] [INFO] [1749126387.671199300] [publish_wind_direction]: Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126387.675231944] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126387.678655595] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126391.523569593] [publish_wind_direction]: ***Cam angle= -143.08487006591145, vico ang deg= 182.75028085373316 Ground Truth= 39.66541078782171
+[publish_wind_direction-2] [INFO] [1749126391.526087302] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126391.530860486] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126391.533358496] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126395.415459812] [publish_wind_direction]: ***Cam angle= -177.12809476764926, vico ang deg= 182.75028085373316 Ground Truth= 5.6221860860839
+[publish_wind_direction-2] [INFO] [1749126395.419052848] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126395.425351743] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126395.430974886] [publish_wind_direction]: Vicon Position= [1163.1676025390625, -62.842864990234375]
+[publish_wind_direction-2] [INFO] [1749126395.434522852] [publish_wind_direction]: Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126395.438728145] [publish_wind_direction]: * Received from id192, wind direction S
+[publish_wind_direction-2] [INFO] [1749126395.442176731] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126399.232905855] [publish_wind_direction]: ***Cam angle= -249.38583782619676, vico ang deg= 238.9579936980165 Ground Truth= 349.57215587181975
+[publish_wind_direction-2] [INFO] [1749126399.235327646] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126399.239506937] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126399.243555003] [publish_wind_direction]: * Received from id192, wind direction S
+[publish_wind_direction-2] [INFO] [1749126399.246125168] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126403.078093791] [publish_wind_direction]: ***Cam angle= 82.64878395390494, vico ang deg= 238.9579936980165 Ground Truth= 321.60677765192145
+[publish_wind_direction-2] [INFO] [1749126403.081589838] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126403.087831740] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126403.093406291] [publish_wind_direction]: Vicon Position= [1163.1676025390625, -62.842864990234375]
+[publish_wind_direction-2] [INFO] [1749126403.097002998] [publish_wind_direction]: Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126403.101270092] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126403.104658887] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126406.905897078] [publish_wind_direction]: ***Cam angle= -205.1377671501827, vico ang deg= 238.9579936980165 Ground Truth= 33.82022654783381
+[publish_wind_direction-2] [INFO] [1749126406.908341843] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126406.913098389] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126406.915473161] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126411.114203225] [publish_wind_direction]: ***Cam angle= -173.21827401931395, vico ang deg= 238.9579936980165 Ground Truth= 65.73971967870256
+[publish_wind_direction-2] [INFO] [1749126411.116726675] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126411.120952737] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126411.124848575] [publish_wind_direction]: Vicon Position= [1107.24609375, -36.33936309814453]
+[publish_wind_direction-2] [INFO] [1749126411.127604262] [publish_wind_direction]: Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126411.130454990] [publish_wind_direction]: * Received from id142, wind direction E
+[publish_wind_direction-2] [INFO] [1749126411.132863098] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126414.868089919] [publish_wind_direction]: ***Cam angle= -38.28803418591019, vico ang deg= -33.16666356814118 Ground Truth= 288.5453022459486
+[publish_wind_direction-2] [INFO] [1749126414.870579364] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126414.874761010] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126414.879013100] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126414.881504787] [publish_wind_direction]: Publisher, neighbours_by_id={'id1193'}
+[publish_wind_direction-2] [INFO] [1749126418.983525015] [publish_wind_direction]: ***Cam angle= -229.46390166771943, vico ang deg= -33.16666356814118 Ground Truth= 97.36943476413938
+[publish_wind_direction-2] [INFO] [1749126418.986027677] [publish_wind_direction]: Publisher, Neighbourhood size: 1
+[publish_wind_direction-2] [INFO] [1749126418.990198015] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126418.994356775] [publish_wind_direction]: Vicon Position= [278.7517395019531, 366.5700988769531]
+[publish_wind_direction-2] [INFO] [1749126418.997011537] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126418.999926098] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126419.002429131] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id151', 'id192'}
+[publish_wind_direction-2] [INFO] [1749126423.209688137] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 154.91603857965382 Ground Truth= 235.9160385796538
+[publish_wind_direction-2] [INFO] [1749126423.212125060] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126423.214533862] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126423.216960819] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126423.219342335] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126423.221759325] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126423.226221462] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126423.230215225] [publish_wind_direction]: * Received from id142, wind direction S
+[publish_wind_direction-2] [INFO] [1749126423.232669283] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id151', 'id192'}
+[publish_wind_direction-2] [INFO] [1749126427.045677686] [publish_wind_direction]: ***Cam angle= -209.80498329061518, vico ang deg= 154.91603857965382 Ground Truth= 305.11105528903863
+[publish_wind_direction-2] [INFO] [1749126427.048138440] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126427.050615292] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126427.053037570] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126427.055585354] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126427.058049888] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126427.062611680] [publish_wind_direction]: Vicon Position= [273.6441650390625, 363.30340576171875]
+[publish_wind_direction-2] [INFO] [1749126427.065187974] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126427.068059259] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126427.070510361] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id151', 'id192'}
+[publish_wind_direction-2] [INFO] [1749126431.141246126] [publish_wind_direction]: ***Cam angle= -177.29349827612936, vico ang deg= 139.422377325659 Ground Truth= 322.12887904952964
+[publish_wind_direction-2] [INFO] [1749126431.144719946] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126431.148022315] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126431.151617197] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126431.155069805] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126431.158373527] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126431.164382775] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126431.170382333] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126431.173805579] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id151', 'id192'}
+[publish_wind_direction-2] [INFO] [1749126435.386296472] [publish_wind_direction]: ***Cam angle= -124.24516180195076, vico ang deg= 139.422377325659 Ground Truth= 15.177215523708242
+[publish_wind_direction-2] [INFO] [1749126435.388739931] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126435.391051545] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126435.393390373] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126435.395722513] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126435.398244483] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126435.402395573] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126435.406302703] [publish_wind_direction]: Vicon Position= [270.27520751953125, 362.1759948730469]
+[publish_wind_direction-2] [INFO] [1749126435.408807999] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126435.411574634] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126435.414112887] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id151', 'id192'}
+[publish_wind_direction-2] [INFO] [1749126439.251010755] [publish_wind_direction]: ***Cam angle= 44.829143678742895, vico ang deg= 130.6994368663862 Ground Truth= 175.5285805451291
+[publish_wind_direction-2] [INFO] [1749126439.253480115] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126439.255825818] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126439.258241343] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126439.260675671] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126439.263044827] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126439.267368574] [publish_wind_direction]: Publishing: "id195:S"
+[publish_wind_direction-2] [INFO] [1749126439.271376461] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126439.273795265] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id151', 'id192'}
+[publish_wind_direction-2] [INFO] [1749126443.367732853] [publish_wind_direction]: ***Cam angle= -149.81330080135953, vico ang deg= 130.6994368663862 Ground Truth= 340.8861360650267
+[publish_wind_direction-2] [INFO] [1749126443.370239744] [publish_wind_direction]: Publisher, Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126443.372629572] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126443.374961896] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126443.377382346] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'W'}
+[publish_wind_direction-2] [INFO] [1749126443.379718468] [publish_wind_direction]: Inside Decision Making, social opinions: {'W': 1}
+[publish_wind_direction-2] [INFO] [1749126443.384104545] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126443.387975091] [publish_wind_direction]: Vicon Position= [263.8567199707031, 359.710205078125]
+[publish_wind_direction-2] [INFO] [1749126443.390523183] [publish_wind_direction]: Neighbourhood size: 5
+[publish_wind_direction-2] [INFO] [1749126447.481266693] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126451.597046402] [publish_wind_direction]: Vicon Position= [176.95591735839844, 426.58392333984375]
+[publish_wind_direction-2] [INFO] [1749126451.600014072] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126452.481204739] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126455.912225076] [publish_wind_direction]: * Received from id192, wind direction E
+[publish_wind_direction-2] [INFO] [1749126455.914890972] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id192'}
+[publish_wind_direction-2] [INFO] [1749126459.681084923] [publish_wind_direction]: ***Cam angle= -139.57328991801316, vico ang deg= 21.670780974465004 Ground Truth= 242.09749105645184
+[publish_wind_direction-2] [INFO] [1749126459.683486229] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126459.685878984] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126459.688187352] [publish_wind_direction]: Publisher, Neighbours Opinion: 1
+[publish_wind_direction-2] [INFO] [1749126459.690565707] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E'}
+[publish_wind_direction-2] [INFO] [1749126459.693057602] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1}
+[publish_wind_direction-2] [INFO] [1749126459.697267968] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126459.701120665] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126459.703593384] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126459.706406317] [publish_wind_direction]: * Received from id142, wind direction W
+[publish_wind_direction-2] [INFO] [1749126459.708838017] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126463.469392067] [publish_wind_direction]: ***Cam angle= -177.97039663551757, vico ang deg= 176.24983547885083 Ground Truth= 358.27943884333325
+[publish_wind_direction-2] [INFO] [1749126463.471796903] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126463.474175564] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126463.476522328] [publish_wind_direction]: Publisher, Neighbours Opinion: 2
+[publish_wind_direction-2] [INFO] [1749126463.479030700] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W'}
+[publish_wind_direction-2] [INFO] [1749126463.481534370] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1}
+[publish_wind_direction-2] [INFO] [1749126463.485777991] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126463.488780829] [publish_wind_direction]: * Received from id142, wind direction W
+[publish_wind_direction-2] [INFO] [1749126463.491145494] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126467.493590431] [publish_wind_direction]: ***Cam angle= -208.19795101712438, vico ang deg= 176.24983547885083 Ground Truth= 328.05188446172644
+[publish_wind_direction-2] [INFO] [1749126467.496012601] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126467.498427716] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126467.500822726] [publish_wind_direction]: Publisher, Neighbours Opinion: 2
+[publish_wind_direction-2] [INFO] [1749126467.503186635] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W'}
+[publish_wind_direction-2] [INFO] [1749126467.505562003] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1}
+[publish_wind_direction-2] [INFO] [1749126467.509903098] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126467.513783900] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126467.516293285] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126467.519184411] [publish_wind_direction]: * Received from id236, wind direction S
+[publish_wind_direction-2] [INFO] [1749126467.522132890] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126471.298367757] [publish_wind_direction]: ***Cam angle= -184.3742961549068, vico ang deg= 176.24983547885083 Ground Truth= 351.87553932394405
+[publish_wind_direction-2] [INFO] [1749126471.301934473] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126471.305372828] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126471.308851619] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126471.312434238] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126471.315969979] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126471.322976513] [publish_wind_direction]: * Received from id236, wind direction S
+[publish_wind_direction-2] [INFO] [1749126471.326763217] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126475.122070482] [publish_wind_direction]: ***Cam angle= -208.86386789994566, vico ang deg= 176.24983547885083 Ground Truth= 327.38596757890514
+[publish_wind_direction-2] [INFO] [1749126475.124531573] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126475.126914584] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126475.129333737] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126475.131720988] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126475.134291618] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126475.138449255] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126475.142403979] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126475.144982830] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126475.147840488] [publish_wind_direction]: * Received from id192, wind direction E
+[publish_wind_direction-2] [INFO] [1749126475.150309041] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126479.343927914] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 176.24983547885083 Ground Truth= 257.24983547885085
+[publish_wind_direction-2] [INFO] [1749126479.346411395] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126479.348846307] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126479.351337028] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126479.353961920] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126479.356308768] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126479.360553768] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126479.364549424] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126479.367057662] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126483.546800586] [publish_wind_direction]: ***Cam angle= -104.71732803163307, vico ang deg= 176.24983547885083 Ground Truth= 71.53250744721775
+[publish_wind_direction-2] [INFO] [1749126483.549280518] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126483.551611848] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126483.554030007] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126483.556382983] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126483.558897951] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126483.563375862] [publish_wind_direction]: Publishing: "id195:W"
+[publish_wind_direction-2] [INFO] [1749126483.567308768] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126483.569849178] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126483.572660944] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126483.575015346] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126487.335744808] [publish_wind_direction]: ***Cam angle= -224.89020357197708, vico ang deg= 176.24983547885083 Ground Truth= 311.35963190687374
+[publish_wind_direction-2] [INFO] [1749126487.338231122] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126487.340637364] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126487.342997920] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126487.345564289] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126487.347962160] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126487.352776013] [publish_wind_direction]: * Received from id195, wind direction S
+[publish_wind_direction-2] [INFO] [1749126487.355168162] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126491.115398164] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 176.24983547885083 Ground Truth= 257.24983547885085
+[publish_wind_direction-2] [INFO] [1749126491.118038591] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126491.120460959] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126491.122879104] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126491.125478012] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126491.127866823] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126491.132050247] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126491.135945591] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126491.138493961] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126491.141454192] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126491.143856707] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126494.932774149] [publish_wind_direction]: ***Cam angle= -219.8323537802318, vico ang deg= 176.24983547885083 Ground Truth= 316.417481698619
+[publish_wind_direction-2] [INFO] [1749126494.935359640] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126494.937756622] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126494.940077618] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126494.942462173] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126494.945003995] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126494.949332159] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126494.953495871] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126494.955908168] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126498.631264527] [publish_wind_direction]: ***Cam angle= -162.7946907812353, vico ang deg= 176.24983547885083 Ground Truth= 13.455144697615538
+[publish_wind_direction-2] [INFO] [1749126498.633786867] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126498.636166288] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126498.638667941] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126498.641283918] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126498.643677174] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126498.647891420] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126498.651873296] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126498.654472512] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126502.481331398] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126502.485168344] [publish_wind_direction]: * Received from id195, wind direction E
+[publish_wind_direction-2] [INFO] [1749126502.487800168] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126506.555801039] [publish_wind_direction]: ***Cam angle= -166.46546066926825, vico ang deg= 176.24983547885083 Ground Truth= 9.784374809582573
+[publish_wind_direction-2] [INFO] [1749126506.558378713] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126506.560812591] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126506.563199537] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126506.565658270] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126506.568201069] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126506.572866781] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126506.575432509] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126506.578311535] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126506.580789196] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126510.360815765] [publish_wind_direction]: ***Cam angle= -163.95377000255752, vico ang deg= 176.24983547885083 Ground Truth= 12.296065476293307
+[publish_wind_direction-2] [INFO] [1749126510.364181365] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126510.367543760] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126510.370933733] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126510.374415515] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126510.377969290] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126510.383944823] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126510.389904188] [publish_wind_direction]: * Received from id192, wind direction E
+[publish_wind_direction-2] [INFO] [1749126510.393527732] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126514.617064514] [publish_wind_direction]: ***Cam angle= -203.14291197903358, vico ang deg= 176.24983547885083 Ground Truth= 333.10692349981724
+[publish_wind_direction-2] [INFO] [1749126514.619760453] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126514.622422516] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126514.625072707] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126514.627833582] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126514.630286741] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126514.634733020] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126514.638651954] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126514.641349153] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126517.481255041] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126517.485101324] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126517.487755177] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126521.358831077] [publish_wind_direction]: ***Cam angle= -188.57911360645818, vico ang deg= 176.24983547885083 Ground Truth= 347.6707218723926
+[publish_wind_direction-2] [INFO] [1749126521.362262244] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126521.365598485] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126521.368923984] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126521.372345816] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126521.375783687] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126521.382387268] [publish_wind_direction]: Vicon Position= [344.78485107421875, 429.9532775878906]
+[publish_wind_direction-2] [INFO] [1749126521.385963444] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126522.481275430] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126525.448761405] [publish_wind_direction]: * Received from id142, wind direction W
+[publish_wind_direction-2] [INFO] [1749126525.451566748] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126529.351925227] [publish_wind_direction]: ***Cam angle= -265.2077935465929, vico ang deg= 176.24983547885083 Ground Truth= 271.0420419322579
+[publish_wind_direction-2] [INFO] [1749126529.354416256] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126529.356899617] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126529.359421764] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126529.361878267] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126529.364420456] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126529.368705626] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126529.372565742] [publish_wind_direction]: Vicon Position= [366.71868896484375, 442.3920593261719]
+[publish_wind_direction-2] [INFO] [1749126529.375076627] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126529.379847197] [publish_wind_direction]: * Received from id195, wind direction W
+[publish_wind_direction-2] [INFO] [1749126529.382301348] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126533.240460596] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 171.14706834788385 Ground Truth= 252.14706834788387
+[publish_wind_direction-2] [INFO] [1749126533.243077121] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126533.245507365] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126533.247887561] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126533.250201501] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'S'}
+[publish_wind_direction-2] [INFO] [1749126533.252787186] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 1, 'S': 1}
+[publish_wind_direction-2] [INFO] [1749126533.257056376] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126533.454757528] [publish_wind_direction]: * Received from id236, wind direction W
+[publish_wind_direction-2] [INFO] [1749126533.457555761] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126537.305660532] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 171.14706834788385 Ground Truth= 252.14706834788387
+[publish_wind_direction-2] [INFO] [1749126537.308103578] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126537.310535898] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126537.312935730] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126537.315498080] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'W'}
+[publish_wind_direction-2] [INFO] [1749126537.317938810] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 2}
+[publish_wind_direction-2] [INFO] [1749126537.322521127] [publish_wind_direction]: Vicon Position= [280.9621276855469, 494.02447509765625]
+[publish_wind_direction-2] [INFO] [1749126537.325114133] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126537.481206782] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126542.481277284] [publish_wind_direction]: Publishing: "id195:E"
+[publish_wind_direction-2] [INFO] [1749126542.485249497] [publish_wind_direction]: * Received from id195, wind direction N
+[publish_wind_direction-2] [INFO] [1749126542.487866217] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126546.294026641] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= 254.42563276165433 Ground Truth= 335.42563276165436
+[publish_wind_direction-2] [INFO] [1749126546.296477856] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126546.298953800] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126546.301495149] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126546.303913948] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'W'}
+[publish_wind_direction-2] [INFO] [1749126546.306483841] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 2}
+[publish_wind_direction-2] [INFO] [1749126546.311024127] [publish_wind_direction]: Vicon Position= [248.02133178710938, 518.0227661132812]
+[publish_wind_direction-2] [INFO] [1749126546.313536876] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126547.481256531] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126547.920902929] [publish_wind_direction]: * Received from id192, wind direction W
+[publish_wind_direction-2] [INFO] [1749126547.924414041] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126551.761469118] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= -95.01714313079091 Ground Truth= 345.9828568692092
+[publish_wind_direction-2] [INFO] [1749126551.763876265] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126551.766259258] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126551.768604816] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126551.770965970] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'W'}
+[publish_wind_direction-2] [INFO] [1749126551.773483422] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 2}
+[publish_wind_direction-2] [INFO] [1749126551.778155236] [publish_wind_direction]: * Received from id142, wind direction W
+[publish_wind_direction-2] [INFO] [1749126551.780677394] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126555.604050521] [publish_wind_direction]: ***Cam angle= -237.06253611129236, vico ang deg= -95.01714313079091 Ground Truth= 27.920320757916727
+[publish_wind_direction-2] [INFO] [1749126555.607511211] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126555.610886268] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126555.614259677] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126555.617744725] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'W'}
+[publish_wind_direction-2] [INFO] [1749126555.621185150] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 2}
+[publish_wind_direction-2] [INFO] [1749126555.627162620] [publish_wind_direction]: Publishing: "id195:N"
+[publish_wind_direction-2] [INFO] [1749126555.632958376] [publish_wind_direction]: Vicon Position= [248.02133178710938, 518.0227661132812]
+[publish_wind_direction-2] [INFO] [1749126555.636521018] [publish_wind_direction]: Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126555.640476670] [publish_wind_direction]: * Received from id142, wind direction W
+[publish_wind_direction-2] [INFO] [1749126555.643867934] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126559.489506721] [publish_wind_direction]: ***Cam angle= -166.81578911496035, vico ang deg= -95.01714313079091 Ground Truth= 98.1670677542487
+[publish_wind_direction-2] [INFO] [1749126559.491952438] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126559.494382872] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126559.496803581] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126559.499213566] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'W'}
+[publish_wind_direction-2] [INFO] [1749126559.501815545] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 2}
+[publish_wind_direction-2] [INFO] [1749126559.506020890] [publish_wind_direction]: Publishing: "id195:W"
+[publish_wind_direction-2] [INFO] [1749126559.510031739] [publish_wind_direction]: * Received from id192, wind direction E
+[publish_wind_direction-2] [INFO] [1749126559.512410679] [publish_wind_direction]: Publisher, neighbours_by_id={'id193', 'id223', 'id68', 'id236', 'id189', 'id151', 'id142', 'id1193'}
+[publish_wind_direction-2] [INFO] [1749126563.464034881] [publish_wind_direction]: ***Cam angle= -180.02222055180823, vico ang deg= -95.01714313079091 Ground Truth= 84.96063631740083
+[publish_wind_direction-2] [INFO] [1749126563.466524174] [publish_wind_direction]: Publisher, Neighbourhood size: 8
+[publish_wind_direction-2] [INFO] [1749126563.468940688] [publish_wind_direction]: Decision Making Triggered
+[publish_wind_direction-2] [INFO] [1749126563.471392044] [publish_wind_direction]: Publisher, Neighbours Opinion: 3
+[publish_wind_direction-2] [INFO] [1749126563.474012612] [publish_wind_direction]: Inside Decision Making, neighbours opinion: {'id192': 'E', 'id142': 'W', 'id236': 'W'}
+[publish_wind_direction-2] [INFO] [1749126563.476378946] [publish_wind_direction]: Inside Decision Making, social opinions: {'E': 1, 'W': 2}
+[publish_wind_direction-2] [INFO] [1749126563.480234695] [publish_wind_direction]: Raising exception
+[publish_wind_direction-2] [INFO] [1749126563.482765887] [publish_wind_direction]: Publisher stopping, exception
+[INFO] [publish_wind_direction-2]: process has finished cleanly [pid 846]
+[random_robot_move-1] [INFO] [1749126569.920066013] [random_robot_move]: Exception, shutting down

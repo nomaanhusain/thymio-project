@@ -1,0 +1,12 @@
+scp ros2_autostart.service thymio@134.34.225.224:/home/thymio/
+scp start_ros_launch_on_boot.sh thymio@134.34.225.224:/home/thymio/
+sudo cp ros2_autostart.service /etc/systemd/system/
+--Restart Service:
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl enable ros2_autostart.service
+
+
+In the ros2_autostart.service add timeout and say reboot=no do: sudo nano /etc/systemd/system/ros2_autostart.service
+RuntimeMaxSec=300
+Restart=no

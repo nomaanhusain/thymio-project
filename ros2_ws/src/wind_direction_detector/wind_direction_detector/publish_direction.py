@@ -23,12 +23,12 @@ class PublishWindDirection(Node):
             self.id = "1193"
         self.id=f'id{self.id}'
         # self.id = 'rob0'
-        print(f"Physical Ip={self.physical_ip}, id={self.id}")
+        self.get_logger().info(f"Physical Ip={self.physical_ip}, id={self.id}")
         print("CV2 Ver. = ", cv2.__version__)
         self.lens_position = 8
         vicon_topic = "vicon/default/data"
-        self.publisher_ = self.create_publisher(String, 'wind_direction', 10)
-        timer_period = 3  # seconds
+        self.publisher_ = self.create_publisher(String, f'wind_direction/{self.id}', 10)
+        timer_period = 5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.vicon_subscription =  self.create_subscription(
@@ -38,12 +38,21 @@ class PublishWindDirection(Node):
             10
         )
         self.vicon_rad_readings = dict()
-        self.subscription = self.create_subscription(
-            String,
-            'wind_direction',
-            self.listener_callback,
-            10
-        )
+        thymio_ips = ['id68','id136','id137','id142','id151','id152','id155','id189','id192','id193','id194','id195','id200','id206',
+                      'id207','id223','id224','id236','id247','id1193']
+        
+        self.other_devices = [i for i in thymio_ips if i != self.id]
+        for dev in self.other_devices:
+            topic_name = f'wind_direction/{dev}'
+            self.create_subscription(
+                String,
+                topic_name,
+                self.listener_callback,
+                10
+            )
+            self.get_logger().info(f'Subscribed to: {topic_name}')
+        
+
 
         with open("vicon_angle_correction.json", "r") as f:
                 self.corrections = json.load(f)
@@ -51,22 +60,22 @@ class PublishWindDirection(Node):
         self.my_position_xy = None
         self.neighbours_by_id = set()
         self.all_robots_position_by_id_vicon = dict()
-        self.neighbourhood_size = 5
+        self.neighbourhood_size = 3
         self.informed = True
-        self.neighbour_distance_mm = 200 #so 20 cm
+        self.neighbour_distance_mm = 800 #so 40 cm
         self.social_info_counts = dict()
         self.neighbours_opinions = dict()
+        self.all_opinions = dict() # Keep track of all opinions you have received until now, there are cases where a robot is in neighbourhood but not publishing at that exact moment, these should not be missed
         self.personal_info_weight = 0.6
 
         self.my_position = None
         self.my_vicon_yaw = 0.0
         self.my_wind_direction = None
-        self.vicon_angle_offset = -35
         self.cam_angle = -999.0
         # Random wind direction init
         self.my_wind_direction_opinion = np.random.choice(['N','S','E','W'])
-        self.timer_ = 0
         self.start_time_ = time.time()
+        self.node_start_time = time.time()
         self.csv_file = f"log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
         self.csv_index = 0
         self.init_csv()
@@ -76,36 +85,37 @@ class PublishWindDirection(Node):
         with open(self.csv_file, 'w', newline='') as f:
             writer = csv.writer(f)
             writer.writerow(['index', 'timestamp', 'message'])
+        
 
     def listener_callback(self, msg):
         # This is listening to the wind_direction topic, if someone publishes there opinion, we listen here
         # Once we have enough unique opinions, we trigger the decision making
         id = msg.data.split(':')[0]
         wind_direction = msg.data.split(':')[1]
+        if id == self.id: return # Return incase it is your own message
 
-        print(f'Received from {id}, wind direction {wind_direction}')
-        print("**************************")
+        self.get_logger().info(f'* Received from {id}, wind direction {wind_direction}')
+        if id != self.id:
+            self.all_opinions[id] = wind_direction
+        # print("**************************")
 
         #Check if this robot is in close proximity to us, this info comes from the vicon system
+        self.get_logger().info(f"Publisher, neighbours_by_id={self.neighbours_by_id}")
         if id in self.neighbours_by_id:
-            self.neighbours_opinions[id] = wind_direction
-        # self.get_logger().info(f"msg: {msg.data}")
+            self.neighbours_opinions[id] = self.all_opinions[id] # Get the opinion of the neighbour
         # Sound logic, decision making would be triggered only after receiving of some message, so record temp after receiving message ie. calculate quad based on
         # sensor input
         self.cam_angle = self.process_image_get_direction()
-        # self.cam_angle = 0
         self.get_true_wind_direction(self.cam_angle)
-        if(len(self.neighbours_opinions) == self.neighbourhood_size):
+        self.get_logger().info(f"Publisher, Neighbourhood size: {len(self.neighbours_by_id)}")
+        if(len(self.neighbours_by_id) >= self.neighbourhood_size):
+            self.get_logger().info('Decision Making Triggered')
+            self.get_logger().info(f"Publisher, Neighbours Opinion: {len(self.neighbours_opinions)}")
             self.make_wind_direction_opinion()
     
     def timer_callback(self):
         # Publishing stuff to the wind_direction topic
         msg = String()
-        # self.cam_angle = self.process_image_get_direction()
-        # self.cam_angle = 90.0
-        # print("cam angle= ",self.cam_angle)
-        # self.get_true_wind_direction(self.cam_angle)
-        # print(f"Id:{self.id}, Angle:{self.my_wind_direction_opinion}")
 
         timestamp = datetime.datetime.now().isoformat()
 
@@ -116,15 +126,20 @@ class PublishWindDirection(Node):
 
         self.csv_index += 1
 
+        if time.time() - self.node_start_time > 900:
+            self.get_logger().info('Raising exception')
+            raise Exception
 
         msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
 
     def vicon_callback(self, msg):
-        if time.time() - self.start_time_ > 2:
-        # if self.timer_ % 1000 == 0:
-            print("vicon message received")
+        # if time.time() - self.start_time_ > 60:
+        #     self.get_logger().info('Raising exception')
+        #     raise Exception
+        if time.time() - self.start_time_ > 1:
+
             self.start_time_ = time.time()
             for i in range(msg.n):
                 # you are expected to set the id of each robot in the vicon system, you will receive it and compare here
@@ -133,35 +148,29 @@ class PublishWindDirection(Node):
                     self.my_position_xy = [msg.positions[i].x_trans, msg.positions[i].y_trans]
                     vicon_yaw_radians = self.quaternion_to_yaw()
 
-                    # self.vicon_rad_readings[time.time()] = vicon_yaw_radians
-                    # vicon_yaw_radians = self.quat_to_yaw()
                     self.my_vicon_yaw = vicon_yaw_radians * (180/np.pi) # rads to degrees
-                    offset = -165 # offset to correct the difference from the vicon output, so what I expect to be 0 is outputted as -165 so i just sub that
-                    # self.my_vicon_yaw = self.my_vicon_yaw - self.vicon_angle_offset
-                    # self.my_vicon_yaw = self.my_vicon_yaw % 360
-                    self.get_logger().info(f'--------------------')
-                    # self.get_logger().info(f"w={self.my_position.w} x_rot={self.my_position.x_rot}  y_rot={self.my_position.y_rot} z_rot={self.my_position.z_rot}")
-                    self.get_logger().info(f'Vicon Yaw Rads= {vicon_yaw_radians}')
-                    self.get_logger().info(f'** Vicon Yaw Degrees= {self.my_vicon_yaw}')
-                    # print("vicon rad  hist= ",self.vicon_rad_readings)
+
+                    # self.get_logger().info(f'Vicon Yaw Rads= {vicon_yaw_radians}')
+                    # self.get_logger().info(f'Vicon Yaw Degrees= {self.my_vicon_yaw}')
                     self.get_logger().info(f'Vicon Position= {self.my_position_xy}')
-                    # self.get_logger().info(f'my_Id_msg={msg}')
-                    self.get_logger().info(f'--------------------')
+
                 else:
                     # self.get_logger().info(f'msg={msg}')
                     self.all_robots_position_by_id_vicon[msg.positions[i].subject_name] = [msg.positions[i].x_trans, msg.positions[i].y_trans]
+            self.neighbours_by_id.clear() # clear to keep updated the neighbours and remove old ones
             for id_vicon in self.all_robots_position_by_id_vicon:
-                print(f"My Pos {self.my_position_xy}, All Robs: {self.all_robots_position_by_id_vicon}")
+                # print(f"My Pos {self.my_position_xy}, All Robs: {self.all_robots_position_by_id_vicon}")
+                if self.all_robots_position_by_id_vicon[id_vicon] == [0,0]: continue
                 if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
                     self.neighbours_by_id.add(id_vicon)
-            self.timer_ = 0
-        else:
-            # self.timer_ = self.timer_ + 1
-            self.timer_ = 0
+            self.get_logger().info(f"Neighbourhood size: {len(self.neighbours_by_id)}")
+            # print(f"My Pos {self.my_position_xy} My current neighbours: {self.neighbours_by_id}")
 
     def make_wind_direction_opinion(self):
         self.majority_vote()
         m = len(self.neighbours_opinions)
+        self.get_logger().info(f"Inside Decision Making, neighbours opinion: {self.neighbours_opinions}")
+        self.get_logger().info(f"Inside Decision Making, social opinions: {self.social_info_counts}")
         decision_dict = dict()
         for direction in ['N','S','E','W']:
             if self.informed:
@@ -199,11 +208,7 @@ class PublishWindDirection(Node):
         x_rot = round(self.my_position.x_rot,4)
         y_rot = round(self.my_position.y_rot,4)
         z_rot = round(self.my_position.z_rot, 4)
-        # if w < 0: w = w * -1.0
-        # if x_rot < 0: x_rot = x_rot * -1.0
-        # if y_rot < 0: y_rot = y_rot * -1.0
-        # if z_rot < 0: z_rot = z_rot * -1.0
-        self.get_logger().info(f"w={w} x_rot={x_rot}  y_rot={y_rot} z_rot={z_rot}")
+        # self.get_logger().info(f"w={w} x_rot={x_rot}  y_rot={y_rot} z_rot={z_rot}")
         yaw = np.arctan2(2 * (w * z_rot + x_rot * y_rot), 1 - 2 * (y_rot ** 2 + z_rot ** 2))
         # yaw_degrees = np.degrees(yaw)
         # print('calculated yaw: %f' %(yaw_degrees % 360))
@@ -223,9 +228,8 @@ class PublishWindDirection(Node):
         if ground_truth_wind_direction >= 45  and ground_truth_wind_direction < 135:
             self.my_wind_direction = 'W'
         if self.my_wind_direction == '1':
-            print('taking random opinion as angle could not be read')
             self.my_wind_direction = np.random.choice(['N','S','E','W'])
-        self.get_logger().info(f"***Corrected Wind Direction= {self.my_wind_direction}")
+        # self.get_logger().info(f"***Corrected Wind Direction= {self.my_wind_direction}")
         
 
     def majority_vote(self):
@@ -289,6 +293,8 @@ class PublishWindDirection(Node):
     
     def process_image_get_direction(self, img_name='cam_pic.jpg'):
         self.take_picture(img_name)
+        time.sleep(2)
+        print("--Processing Picture--")
         # Load the image
         image = cv2.imread(f'{img_name}')
 
@@ -304,13 +310,6 @@ class PublishWindDirection(Node):
         if ids is not None:
             # Draw detected markers
             cv2.aruco.drawDetectedMarkers(image, corners, ids, (0,0,225))
-            (topLeft, topRight, bottomRight, bottomLeft) = corners[0][0]
-            # print(f"Image Name={img_name}: ")
-            # print(topLeft, topRight, bottomLeft, bottomRight)
-            # cv2.namedWindow("Detected_ArUco_Marker", cv2.WINDOW_NORMAL)
-            # cv2.imshow("Detected_ArUco_Marker", image)
-            # cv2.waitKey(0)
-            # cv2.destroyAllWindows()
         else:
             print("No ArUco marker detected.")
 
@@ -334,9 +333,11 @@ class PublishWindDirection(Node):
         image = cv2.putText(image, f'Angle={true_cam_angle:.2f}', (1296,972), cv2.FONT_HERSHEY_SIMPLEX, 
                    fontScale=2, color=(5, 10, 255), thickness=5, lineType=cv2.LINE_AA)
         cv2.imwrite(f'processed_{img_name}', image)
+        print("--Picture Processing Done--")
         return true_cam_angle
         
     def take_picture(self, save_image_name):
+        print("--Taking picture--")
         
         tuning_file = "af_jsons/ov5647_af.json"
         # Run the libcamera-still command with autofocus configuration
@@ -350,8 +351,9 @@ class PublishWindDirection(Node):
         ]
 
         try:
-            subprocess.run(command, check=True, stdout = subprocess.DEVNULL, stderr = subprocess.STDOUT) #stdout, stderr supress terminal output
-            # print(f"Image saved at: {image_path}")
+            subprocess.run(command, check=True, stdout = subprocess.DEVNULL, stderr = subprocess.STDOUT, timeout=10)
+        except subprocess.TimeoutExpired:
+            print("--Timeout: libcamera-still took too long. Skipping this attempt.")
         except subprocess.CalledProcessError as e:
             print(f"Error capturing image: {e}")
 
@@ -370,8 +372,12 @@ def main(args=None):
         # wind_direction_sensor.destroy_node()
         # rclpy.shutdown()
     except KeyboardInterrupt:
-        print("Stopping, Keyboard Interrupt")
+        wind_direction_sensor.get_logger().info("Stopping, Keyboard Interrupt")
         wind_direction_sensor.destroy_node()
+    except Exception:
+        wind_direction_sensor.get_logger().info("Publisher stopping, exception")
+        wind_direction_sensor.destroy_node()
+    finally:
         rclpy.shutdown()
 
 
