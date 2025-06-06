@@ -1,5 +1,6 @@
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 import subprocess
 import cv2
 import numpy as np
@@ -27,7 +28,14 @@ class PublishWindDirection(Node):
         print("CV2 Ver. = ", cv2.__version__)
         self.lens_position = 8
         vicon_topic = "vicon/default/data"
-        self.publisher_ = self.create_publisher(String, f'wind_direction/{self.id}', 10)
+        qos_profile = QoSProfile(
+            reliability=ReliabilityPolicy.RELIABLE,
+            history=rclpy.qos.HistoryPolicy.KEEP_LAST,
+            depth=5
+        )
+        # self.publisher_ = self.create_publisher(String, f'wind_direction/{self.id}', 10)
+
+        self.publisher_ = self.create_publisher(String, 'wind_direction', qos_profile)
         timer_period = 5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
@@ -35,22 +43,31 @@ class PublishWindDirection(Node):
             PositionList,
             vicon_topic,
             self.vicon_callback,
-            10
+            qos_profile
         )
+
+        self.get_logger().info(f"Subscribed to: {vicon_topic}")
         self.vicon_rad_readings = dict()
-        thymio_ips = ['id68','id136','id137','id142','id151','id152','id155','id189','id192','id193','id194','id195','id200','id206',
-                      'id207','id223','id224','id236','id247','id1193']
-        
-        self.other_devices = [i for i in thymio_ips if i != self.id]
-        for dev in self.other_devices:
-            topic_name = f'wind_direction/{dev}'
-            self.create_subscription(
-                String,
-                topic_name,
-                self.listener_callback,
-                10
-            )
-            self.get_logger().info(f'Subscribed to: {topic_name}')
+        self.subscription = self.create_subscription(
+            String,
+            'wind_direction',
+            self.listener_callback,
+            qos_profile
+        )
+
+        # thymio_ips = ['id68','id136','id137','id142','id151','id152','id155','id189','id192','id193','id194','id195','id200','id206',
+        #               'id207','id223','id224','id236','id247','id1193']     
+        # self.other_devices = [i for i in thymio_ips if i != self.id]
+        # for dev in self.other_devices:
+        #     topic_name = f'wind_direction/{dev}'
+        #     self.create_subscription(
+        #         String,
+        #         topic_name,
+        #         self.listener_callback,
+        #         qos_profile
+        #     )
+        #     self.get_logger().info(f'Subscribed to: {topic_name}')
+
         
 
 
@@ -70,7 +87,7 @@ class PublishWindDirection(Node):
 
         self.my_position = None
         self.my_vicon_yaw = 0.0
-        self.my_wind_direction = None
+        self.my_wind_direction = np.random.choice(['N','S','E','W'])
         self.cam_angle = -999.0
         # Random wind direction init
         self.my_wind_direction_opinion = np.random.choice(['N','S','E','W'])
@@ -84,7 +101,7 @@ class PublishWindDirection(Node):
         # Always overwrite the file at the start of the node
         with open(self.csv_file, 'w', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(['index', 'timestamp', 'message'])
+            writer.writerow(['index', 'timestamp', 'message', 'cam_wind_direction'])
         
 
     def listener_callback(self, msg):
@@ -97,6 +114,7 @@ class PublishWindDirection(Node):
         self.get_logger().info(f'* Received from {id}, wind direction {wind_direction}')
         if id != self.id:
             self.all_opinions[id] = wind_direction
+        self.get_logger().info(f"All opinions = {self.all_opinions}")
         # print("**************************")
 
         #Check if this robot is in close proximity to us, this info comes from the vicon system
@@ -122,7 +140,7 @@ class PublishWindDirection(Node):
         # Log to CSV
         with open(self.csv_file, 'a', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow([self.csv_index, timestamp, self.my_wind_direction_opinion])
+            writer.writerow([self.csv_index, timestamp, self.my_wind_direction_opinion, self.my_wind_direction])
 
         self.csv_index += 1
 
@@ -138,6 +156,7 @@ class PublishWindDirection(Node):
         # if time.time() - self.start_time_ > 60:
         #     self.get_logger().info('Raising exception')
         #     raise Exception
+        # print("Vicon message received: ", msg)
         if time.time() - self.start_time_ > 1:
 
             self.start_time_ = time.time()
