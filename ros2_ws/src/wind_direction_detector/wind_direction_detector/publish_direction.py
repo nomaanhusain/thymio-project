@@ -20,24 +20,30 @@ class PublishWindDirection(Node):
         super().__init__('publish_wind_direction')
         self.physical_ip = self.get_physical_ip()
         self.id= self.physical_ip.split('.')[-1]
-        if self.physical_ip.split('.')[-2] == "231" and self.physical_ip.split('.')[-1] == "193":
-            self.id = "1193"
+        # if self.physical_ip.split('.')[-2] == "231" and self.physical_ip.split('.')[-1] == "193":
+        #     self.id = "1193"
         self.id=f'id{self.id}'
         # self.id = 'rob0'
         self.get_logger().info(f"Physical Ip={self.physical_ip}, id={self.id}")
+        with open("wifi_id_mappings.json", "r") as f:
+            wifi_id_mappings = json.load(f)
+        self.id=wifi_id_mappings.get(self.id)
+
+        self.get_logger().info(f"Updated ID from mapping: {self.id}")
+        
         print("CV2 Ver. = ", cv2.__version__)
         self.lens_position = 8
         vicon_topic = "vicon/default/data"
         qos_profile = QoSProfile(
-            reliability=ReliabilityPolicy.RELIABLE,
+            reliability=ReliabilityPolicy.BEST_EFFORT,
             history=rclpy.qos.HistoryPolicy.KEEP_LAST,
-            depth=5
+            depth=1
         )
-        # self.publisher_ = self.create_publisher(String, f'wind_direction/{self.id}', 10)
-
-        self.publisher_ = self.create_publisher(String, 'wind_direction', qos_profile)
-        timer_period = 5  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.publisher_ = self.create_publisher(String, f'wind_direction/{self.id}', qos_profile)
+        self.get_logger().info(f"Publsihing on: wind_direction/{self.id}")
+        # self.publisher_ = self.create_publisher(String, 'wind_direction', qos_profile)
+        # timer_period = 1.0  # seconds
+        # self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.vicon_subscription =  self.create_subscription(
             PositionList,
@@ -48,25 +54,26 @@ class PublishWindDirection(Node):
 
         self.get_logger().info(f"Subscribed to: {vicon_topic}")
         self.vicon_rad_readings = dict()
-        self.subscription = self.create_subscription(
-            String,
-            'wind_direction',
-            self.listener_callback,
-            qos_profile
-        )
+        # self.subscription = self.create_subscription(
+        #     String,
+        #     'wind_direction',
+        #     self.listener_callback,
+        #     qos_profile
+        # )
 
-        # thymio_ips = ['id68','id136','id137','id142','id151','id152','id155','id189','id192','id193','id194','id195','id200','id206',
-        #               'id207','id223','id224','id236','id247','id1193']     
-        # self.other_devices = [i for i in thymio_ips if i != self.id]
-        # for dev in self.other_devices:
-        #     topic_name = f'wind_direction/{dev}'
-        #     self.create_subscription(
-        #         String,
-        #         topic_name,
-        #         self.listener_callback,
-        #         qos_profile
-        #     )
-        #     self.get_logger().info(f'Subscribed to: {topic_name}')
+        thymio_ips = ['id68','id136','id137','id142','id151','id152','id155','id189','id192','id193','id194','id195','id200','id206',
+                      'id207','id223','id224','id236','id247','id1193']
+        # thymio_ips = ['id136','id195','id151','id207','id224','id192','id193','id142','id206','id194','id137','id223']
+        self.other_devices = [i for i in thymio_ips if i != self.id]
+        for dev in self.other_devices:
+            topic_name = f'wind_direction/{dev}'
+            self.create_subscription(
+                String,
+                topic_name,
+                self.listener_callback,
+                qos_profile
+            )
+            self.get_logger().info(f'Subscribed to: {topic_name}')
 
         
 
@@ -79,11 +86,18 @@ class PublishWindDirection(Node):
         self.all_robots_position_by_id_vicon = dict()
         self.neighbourhood_size = 3
         self.informed = True
-        self.neighbour_distance_mm = 800 #so 40 cm
+        self.neighbour_distance_mm = 900 #so 80 cm
         self.social_info_counts = dict()
         self.neighbours_opinions = dict()
         self.all_opinions = dict() # Keep track of all opinions you have received until now, there are cases where a robot is in neighbourhood but not publishing at that exact moment, these should not be missed
         self.personal_info_weight = 0.6
+
+        with open("uninformed_mapping.json", "r") as f:
+            uniformed_mapping = json.load(f)
+        
+        if(uniformed_mapping.get(self.id)==0): self.personal_info_weight=0.0
+
+        self.commnunication_noise = 0.2
 
         self.my_position = None
         self.my_vicon_yaw = 0.0
@@ -95,6 +109,7 @@ class PublishWindDirection(Node):
         self.node_start_time = time.time()
         self.csv_file = f"log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
         self.csv_index = 0
+        self.runtime = 60 #60 secs
         self.init_csv()
 
     def init_csv(self):
@@ -107,15 +122,20 @@ class PublishWindDirection(Node):
     def listener_callback(self, msg):
         # This is listening to the wind_direction topic, if someone publishes there opinion, we listen here
         # Once we have enough unique opinions, we trigger the decision making
+        start_t = time.time()
         id = msg.data.split(':')[0]
         wind_direction = msg.data.split(':')[1]
         if id == self.id: return # Return incase it is your own message
 
         self.get_logger().info(f'* Received from {id}, wind direction {wind_direction}')
         if id != self.id:
+            # Simulate communication noise
+            if np.random.random() < self.commnunication_noise:
+                other_opinions = [opinion for opinion in ['N','S','E','W'] if opinion!=wind_direction]
+                wind_direction = np.random.choice(other_opinions)
+                self.get_logger().info(f"Comm. Noise, new received opinion: {wind_direction}")
             self.all_opinions[id] = wind_direction
         self.get_logger().info(f"All opinions = {self.all_opinions}")
-        # print("**************************")
 
         #Check if this robot is in close proximity to us, this info comes from the vicon system
         self.get_logger().info(f"Publisher, neighbours_by_id={self.neighbours_by_id}")
@@ -130,33 +150,23 @@ class PublishWindDirection(Node):
             self.get_logger().info('Decision Making Triggered')
             self.get_logger().info(f"Publisher, Neighbours Opinion: {len(self.neighbours_opinions)}")
             self.make_wind_direction_opinion()
+        self.get_logger().info(f"Time taken for picture and decision making: {time.time()-start_t}")
     
-    def timer_callback(self):
-        # Publishing stuff to the wind_direction topic
-        msg = String()
+    # def timer_callback(self):
+    #     # Publishing stuff to the wind_direction topic
+    #     msg = String()
+    #     start_t = time.time()
 
-        timestamp = datetime.datetime.now().isoformat()
+    #     if time.time() - self.node_start_time > 600:
+    #         self.get_logger().info('Raising exception')
+    #         raise Exception
 
-        # Log to CSV
-        with open(self.csv_file, 'a', newline='') as f:
-            writer = csv.writer(f)
-            writer.writerow([self.csv_index, timestamp, self.my_wind_direction_opinion, self.my_wind_direction])
-
-        self.csv_index += 1
-
-        if time.time() - self.node_start_time > 900:
-            self.get_logger().info('Raising exception')
-            raise Exception
-
-        msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+    #     msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
+    #     self.publisher_.publish(msg)
+    #     self.get_logger().info(f'Publishing: {msg.data}, Time needed to publish: {time.time()-start_t}, Starttime:{start_t}')
 
     def vicon_callback(self, msg):
-        # if time.time() - self.start_time_ > 60:
-        #     self.get_logger().info('Raising exception')
-        #     raise Exception
-        # print("Vicon message received: ", msg)
+
         if time.time() - self.start_time_ > 1:
 
             self.start_time_ = time.time()
@@ -169,8 +179,6 @@ class PublishWindDirection(Node):
 
                     self.my_vicon_yaw = vicon_yaw_radians * (180/np.pi) # rads to degrees
 
-                    # self.get_logger().info(f'Vicon Yaw Rads= {vicon_yaw_radians}')
-                    # self.get_logger().info(f'Vicon Yaw Degrees= {self.my_vicon_yaw}')
                     self.get_logger().info(f'Vicon Position= {self.my_position_xy}')
 
                 else:
@@ -183,6 +191,11 @@ class PublishWindDirection(Node):
                 if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
                     self.neighbours_by_id.add(id_vicon)
             self.get_logger().info(f"Neighbourhood size: {len(self.neighbours_by_id)}")
+            # To induce decision making, we need something to publish something first, then publishing will continue
+            if self.csv_index == 0:
+                m_rand = String()
+                m_rand.data = f"{self.id}:{self.my_wind_direction_opinion}"
+                self.publisher_.publish(m_rand)
             # print(f"My Pos {self.my_position_xy} My current neighbours: {self.neighbours_by_id}")
 
     def make_wind_direction_opinion(self):
@@ -191,6 +204,7 @@ class PublishWindDirection(Node):
         self.get_logger().info(f"Inside Decision Making, neighbours opinion: {self.neighbours_opinions}")
         self.get_logger().info(f"Inside Decision Making, social opinions: {self.social_info_counts}")
         decision_dict = dict()
+        self.get_logger().info(f"Inside Decision Making, My Wind Direction: {self.my_wind_direction}")
         for direction in ['N','S','E','W']:
             if self.informed:
                 mi = self.social_info_counts.get(direction,0)
@@ -198,11 +212,33 @@ class PublishWindDirection(Node):
                 decision_dict[direction] = mi + (self.personal_info_weight
                                             * m * 
                                             (1 if direction == self.my_wind_direction else 0))
-                
+
+        
         if self.informed:
+            self.get_logger().info(f"Inside Decision Making, Decision dict: {decision_dict}")
             self.my_wind_direction_opinion = self.get_highest_in_dict(decision_dict)
         else:
+            self.get_logger().info(f"Uninformed decision making: {self.social_info_counts}")
             self.my_wind_direction_opinion = self.get_highest_in_dict(self.social_info_counts)
+        
+        timestamp = datetime.datetime.now().isoformat()
+        self.csv_index += 1
+        # Log to CSV
+        with open(self.csv_file, 'a', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow([self.csv_index, timestamp, self.my_wind_direction_opinion, self.my_wind_direction])
+
+        # Publishing stuff to the wind_direction topic
+        msg = String()
+
+        if time.time() - self.node_start_time > self.runtime:
+            self.get_logger().info('Raising exception')
+            raise Exception
+
+        msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
+        self.publisher_.publish(msg)
+        self.get_logger().info(f'Publishing: {msg.data}')
+        self.get_logger().info(f"-----------------------------------------------------")
 
     def get_highest_in_dict(self, the_dict):
         max_count = max(the_dict.values())

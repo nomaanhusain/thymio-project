@@ -1,0 +1,304 @@
+[INFO] [launch]: All log files can be found below /home/thymio/.ros/log/2025-06-13-15-45-03-683178-thymio-820
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [random_robot_move-1]: process started with pid [842]
+[INFO] [publish_wind_direction-2]: process started with pid [844]
+[publish_wind_direction-2] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+[publish_wind_direction-2]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[publish_wind_direction-2] [INFO] [1749829507.574326511] [publish_wind_direction]: Physical Ip=Error: [Errno 101] Network is unreachable, id=idError: [Errno 101] Network is unreachable
+[publish_wind_direction-2] [INFO] [1749829507.577929844] [publish_wind_direction]: Updated ID from mapping: None
+[publish_wind_direction-2] [INFO] [1749829507.602969770] [publish_wind_direction]: Publsihing on: wind_direction/None
+[publish_wind_direction-2] [INFO] [1749829507.619083141] [publish_wind_direction]: Subscribed to: vicon/default/data
+[publish_wind_direction-2] [INFO] [1749829507.623411196] [publish_wind_direction]: Subscribed to: wind_direction/id68
+[publish_wind_direction-2] [INFO] [1749829507.627559993] [publish_wind_direction]: Subscribed to: wind_direction/id136
+[publish_wind_direction-2] [INFO] [1749829507.631127270] [publish_wind_direction]: Subscribed to: wind_direction/id137
+[publish_wind_direction-2] [INFO] [1749829507.634564585] [publish_wind_direction]: Subscribed to: wind_direction/id142
+[publish_wind_direction-2] [INFO] [1749829507.637960678] [publish_wind_direction]: Subscribed to: wind_direction/id151
+[publish_wind_direction-2] [INFO] [1749829507.641381122] [publish_wind_direction]: Subscribed to: wind_direction/id152
+[publish_wind_direction-2] [INFO] [1749829507.644811048] [publish_wind_direction]: Subscribed to: wind_direction/id155
+[publish_wind_direction-2] [INFO] [1749829507.648226381] [publish_wind_direction]: Subscribed to: wind_direction/id189
+[publish_wind_direction-2] [INFO] [1749829507.651797733] [publish_wind_direction]: Subscribed to: wind_direction/id192
+[publish_wind_direction-2] [INFO] [1749829507.655261215] [publish_wind_direction]: Subscribed to: wind_direction/id193
+[publish_wind_direction-2] [INFO] [1749829507.658648678] [publish_wind_direction]: Subscribed to: wind_direction/id194
+[publish_wind_direction-2] [INFO] [1749829507.662137215] [publish_wind_direction]: Subscribed to: wind_direction/id195
+[publish_wind_direction-2] [INFO] [1749829507.665516178] [publish_wind_direction]: Subscribed to: wind_direction/id200
+[publish_wind_direction-2] [INFO] [1749829507.668975141] [publish_wind_direction]: Subscribed to: wind_direction/id206
+[publish_wind_direction-2] [INFO] [1749829507.672380937] [publish_wind_direction]: Subscribed to: wind_direction/id207
+[publish_wind_direction-2] [INFO] [1749829507.675820604] [publish_wind_direction]: Subscribed to: wind_direction/id223
+[publish_wind_direction-2] [INFO] [1749829507.679183492] [publish_wind_direction]: Subscribed to: wind_direction/id224
+[publish_wind_direction-2] [INFO] [1749829507.682614067] [publish_wind_direction]: Subscribed to: wind_direction/id236
+[publish_wind_direction-2] [INFO] [1749829507.686059548] [publish_wind_direction]: Subscribed to: wind_direction/id247
+[publish_wind_direction-2] [INFO] [1749829507.689430659] [publish_wind_direction]: Subscribed to: wind_direction/id1193
+[random_robot_move-1] [INFO] [1749829510.587616972] [random_robot_move]: Robot Control Node started.
+[publish_wind_direction-2] [INFO] [1749829512.607565101] [publish_wind_direction]: Publishing: "None:N"
+[random_robot_move-1] Exception in thread Thread-2:
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+[random_robot_move-1]     self.run()
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 69, in run
+[random_robot_move-1]     msg = self.read_message()
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 62, in read_message
+[random_robot_move-1]     raise error
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 54, in read_message
+[random_robot_move-1]     payload_len = self.read_uint16()
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 39, in read_uint16
+[random_robot_move-1]     b = self.io.read(2)
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 595, in read
+[random_robot_move-1]     raise SerialException(
+[random_robot_move-1] serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+[random_robot_move-1] [INFO] [1749829514.529428840] [random_robot_move]: Exception, shutting down
+[random_robot_move-1] Task exception was never retrieved
+[random_robot_move-1] future: <Task finished name='Task-129' coro=<Connection.handle_message.<locals>.do_refresh() done, defined at /usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py:451> exception=SerialException('write failed: [Errno 5] Input/output error')>
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 621, in write
+[random_robot_move-1]     n = os.write(self.fd, d)
+[random_robot_move-1] OSError: [Errno 5] Input/output error
+[random_robot_move-1] 
+[random_robot_move-1] During handling of the above exception, another exception occurred:
+[random_robot_move-1] 
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 458, in do_refresh
+[random_robot_move-1]     self.get_variables(source_node)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 580, in get_variables
+[random_robot_move-1]     self.send(msg)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 530, in send
+[random_robot_move-1]     raise error
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 525, in send
+[random_robot_move-1]     self.io.write(msg.serialize())
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 655, in write
+[random_robot_move-1]     raise SerialException('write failed: {}'.format(e))
+[random_robot_move-1] serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 621, in write
+[random_robot_move-1]     n = os.write(self.fd, d)
+[random_robot_move-1] OSError: [Errno 5] Input/output error
+[random_robot_move-1] 
+[random_robot_move-1] During handling of the above exception, another exception occurred:
+[random_robot_move-1] 
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 210, in main
+[random_robot_move-1]     rclpy.spin(random_robot_move)
+[random_robot_move-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[random_robot_move-1]     executor.spin_once()
+[random_robot_move-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[random_robot_move-1]     self._spin_once_impl(timeout_sec)
+[random_robot_move-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+[random_robot_move-1]     raise handler.exception()
+[random_robot_move-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[random_robot_move-1]     self._handler.send(None)
+[random_robot_move-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+[random_robot_move-1]     await call_coroutine(entity, arg)
+[random_robot_move-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+[random_robot_move-1]     await await_or_execute(tmr.callback)
+[random_robot_move-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[random_robot_move-1]     return callback(*args)
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 35, in random_move
+[random_robot_move-1]     self.move_forward()
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 72, in move_forward
+[random_robot_move-1]     self.collision_avoidance()
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 175, in collision_avoidance
+[random_robot_move-1]     self.robot['motor.left.target'] = -200
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/thymio.py", line 194, in __setitem__
+[random_robot_move-1]     self.thymio_proxy.connection.set_var(self_node.node_id, name, val)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 629, in set_var
+[random_robot_move-1]     self.set_variables(target_node_id, node.var_offset[name] + index, [val])
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 590, in set_variables
+[random_robot_move-1]     self.send(msg)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 530, in send
+[random_robot_move-1]     raise error
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 525, in send
+[random_robot_move-1]     self.io.write(msg.serialize())
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 655, in write
+[random_robot_move-1]     raise SerialException('write failed: {}'.format(e))
+[random_robot_move-1] serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+[random_robot_move-1] 
+[random_robot_move-1] During handling of the above exception, another exception occurred:
+[random_robot_move-1] 
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 621, in write
+[random_robot_move-1]     n = os.write(self.fd, d)
+[random_robot_move-1] OSError: [Errno 5] Input/output error
+[random_robot_move-1] 
+[random_robot_move-1] During handling of the above exception, another exception occurred:
+[random_robot_move-1] 
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 216, in main
+[random_robot_move-1]     random_robot_move.stop()
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 162, in stop
+[random_robot_move-1]     self.robot['motor.left.target'] = 0
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/thymio.py", line 194, in __setitem__
+[random_robot_move-1]     self.thymio_proxy.connection.set_var(self_node.node_id, name, val)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 629, in set_var
+[random_robot_move-1]     self.set_variables(target_node_id, node.var_offset[name] + index, [val])
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 590, in set_variables
+[random_robot_move-1]     self.send(msg)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 530, in send
+[random_robot_move-1]     raise error
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 525, in send
+[random_robot_move-1]     self.io.write(msg.serialize())
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 655, in write
+[random_robot_move-1]     raise SerialException('write failed: {}'.format(e))
+[random_robot_move-1] serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+[random_robot_move-1] 
+[random_robot_move-1] During handling of the above exception, another exception occurred:
+[random_robot_move-1] 
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 621, in write
+[random_robot_move-1]     n = os.write(self.fd, d)
+[random_robot_move-1] OSError: [Errno 5] Input/output error
+[random_robot_move-1] 
+[random_robot_move-1] During handling of the above exception, another exception occurred:
+[random_robot_move-1] 
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/random_robot_move", line 33, in <module>
+[random_robot_move-1]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'random_robot_move')())
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 218, in main
+[random_robot_move-1]     random_robot_move.stop()
+[random_robot_move-1]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/random_move.py", line 162, in stop
+[random_robot_move-1]     self.robot['motor.left.target'] = 0
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/thymio.py", line 194, in __setitem__
+[random_robot_move-1]     self.thymio_proxy.connection.set_var(self_node.node_id, name, val)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 629, in set_var
+[random_robot_move-1]     self.set_variables(target_node_id, node.var_offset[name] + index, [val])
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 590, in set_variables
+[random_robot_move-1]     self.send(msg)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 530, in send
+[random_robot_move-1]     raise error
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 525, in send
+[random_robot_move-1]     self.io.write(msg.serialize())
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 655, in write
+[random_robot_move-1]     raise SerialException('write failed: {}'.format(e))
+[random_robot_move-1] serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+[random_robot_move-1] Task exception was never retrieved
+[random_robot_move-1] future: <Task finished name='Task-1' coro=<Connection.__init__.<locals>.discover() done, defined at /usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py:236> exception=SerialException('write failed: [Errno 5] Input/output error')>
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 621, in write
+[random_robot_move-1]     n = os.write(self.fd, d)
+[random_robot_move-1] OSError: [Errno 5] Input/output error
+[random_robot_move-1] 
+[random_robot_move-1] During handling of the above exception, another exception occurred:
+[random_robot_move-1] 
+[random_robot_move-1] Traceback (most recent call last):
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 238, in discover
+[random_robot_move-1]     self.handshake()
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 363, in handshake
+[random_robot_move-1]     self.list_nodes()
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 543, in list_nodes
+[random_robot_move-1]     self.send(msg)
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 530, in send
+[random_robot_move-1]     raise error
+[random_robot_move-1]   File "/usr/local/lib/python3.10/dist-packages/thymiodirect/connection.py", line 525, in send
+[random_robot_move-1]     self.io.write(msg.serialize())
+[random_robot_move-1]   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 655, in write
+[random_robot_move-1]     raise SerialException('write failed: {}'.format(e))
+[random_robot_move-1] serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+[publish_wind_direction-2] [INFO] [1749829517.607612709] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829522.607469835] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829527.607604888] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829532.607150200] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829537.611350993] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829542.611496546] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829547.611335209] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829552.611304077] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829557.611427592] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829562.611472015] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829567.611474772] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829572.611478287] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829577.611383025] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829582.611276985] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829587.611262167] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829592.611418405] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829597.611323717] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829602.610408658] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829607.611463544] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829612.610521745] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829617.611315020] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829622.611285461] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829627.611273014] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829632.611500714] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829637.611272730] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829642.611291468] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829647.611235928] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829652.611298276] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829657.611185607] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829662.611273771] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829667.610401564] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829672.611381783] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829677.611438058] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829682.611257055] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829687.611301589] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829692.611275123] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829697.611349787] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829702.610382765] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829707.611289929] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829712.611248981] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829717.610448219] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829722.611301975] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829727.611320435] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829732.611261303] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829737.611286967] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829742.611240260] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829747.611243387] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829752.611309846] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829757.610380492] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829762.611469211] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829767.611324004] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829772.611286723] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829777.611294295] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829782.611358958] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829787.611446122] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829792.611309212] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829797.611231894] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829802.611308539] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829807.611252462] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829812.611280329] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829817.611366919] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829822.611337842] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829827.611265672] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829832.611339262] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829837.611319111] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829842.611304589] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829847.611385790] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829852.610442879] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829857.611340914] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829862.611300207] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829867.611420889] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829872.611308312] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829877.611321753] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829882.611316213] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829887.611278729] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829892.611260837] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829897.611254945] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829902.611230887] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829907.611461439] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829912.611321714] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829917.611304915] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829922.611409930] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829927.611307224] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829932.611279980] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829937.611336458] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829942.611295215] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829947.611304064] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829952.611236875] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829957.611482669] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829962.611378907] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829967.611326607] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829972.611345549] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829977.611270194] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829982.611266709] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829987.611295132] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829992.610731296] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749829997.610320886] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830002.611256679] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830007.611271324] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830012.611396414] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830017.611292503] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830022.611280926] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830027.611272442] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830032.611256106] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830037.611430936] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830042.610417618] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830047.610445152] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830052.611304408] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830057.611326850] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830062.611291310] [publish_wind_direction]: Publishing: "None:N"
+[publish_wind_direction-2] [INFO] [1749830067.611259899] [publish_wind_direction]: Publishing: "None:N"

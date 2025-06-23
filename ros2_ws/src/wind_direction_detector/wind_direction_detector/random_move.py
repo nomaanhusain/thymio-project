@@ -27,6 +27,7 @@ class RandomRobotMove(Node):
         self.timer = self.create_timer(0.1, self.random_move)
         self.get_logger().info("Robot Control Node started.")
         self.consecutive_ir_hits = 0
+        self.runtime = 60 #60 secs
 
     def random_move(self):
         if self.stop_bool:
@@ -40,8 +41,9 @@ class RandomRobotMove(Node):
             self.rotate_right()
         else:
             self.rotate_left()
-        if time.time() - self.start_time_ > 900:
+        if time.time() - self.start_time_ > self.runtime:
             self.stop_bool = True
+            self.robot['leds.top'] = [0, 0, 32]
             raise Exception
     
     def on_arena_edge(self):
@@ -61,8 +63,8 @@ class RandomRobotMove(Node):
                     print("stop all motion: move forward")
                     self.stop_bool = True
                     break
-                self.robot['motor.left.target'] = 400
-                self.robot['motor.right.target'] = 400
+                self.robot['motor.left.target'] = 100
+                self.robot['motor.right.target'] = 100
                 if self.on_arena_edge():
                     print('on arena edge')
                     self.collision_avoidance()

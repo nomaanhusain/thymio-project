@@ -1,0 +1,24 @@
+[INFO] [launch]: All log files can be found below /home/thymio/.ros/log/2025-06-13-15-45-20-510947-thymio-821
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [random_robot_move-1]: process started with pid [843]
+[INFO] [publish_wind_direction-2]: process started with pid [845]
+[publish_wind_direction-2] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+[publish_wind_direction-2]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[publish_wind_direction-2] Traceback (most recent call last):
+[publish_wind_direction-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 394, in main
+[publish_wind_direction-2]     wind_direction_sensor = PublishWindDirection()
+[publish_wind_direction-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 23, in __init__
+[publish_wind_direction-2]     if self.physical_ip.split('.')[-2] == "231" and self.physical_ip.split('.')[-1] == "193":
+[publish_wind_direction-2] IndexError: list index out of range
+[publish_wind_direction-2] 
+[publish_wind_direction-2] During handling of the above exception, another exception occurred:
+[publish_wind_direction-2] 
+[publish_wind_direction-2] Traceback (most recent call last):
+[publish_wind_direction-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction", line 33, in <module>
+[publish_wind_direction-2]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'publish_wind_direction')())
+[publish_wind_direction-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 407, in main
+[publish_wind_direction-2]     wind_direction_sensor.get_logger().info("Publisher stopping, exception")
+[publish_wind_direction-2] UnboundLocalError: local variable 'wind_direction_sensor' referenced before assignment
+[ERROR] [publish_wind_direction-2]: process has died [pid 845, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction --ros-args -r __node:=publish_wind_direction'].
+[random_robot_move-1] [INFO] [1749829527.458286491] [random_robot_move]: Robot Control Node started.
+[random_robot_move-1] [INFO] [1749829908.499108134] [random_robot_move]: Exception, shutting down

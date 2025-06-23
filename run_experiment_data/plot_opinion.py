@@ -4,11 +4,14 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 
 # Set path to your root directory
-root_dir = 'ir1.0/run_8_piw_0.6/'
+# root_dir = 'run_experiment_data/ir0.7/run_1/'
+root_dir = 'run_experiment_data/ir1.0/run_21/'
 
 # Nested dict: counts[index][message] = count
 counts = defaultdict(lambda: defaultdict(int))
-
+right_option = 'N'
+tot_cnt=0
+right_cnt=0
 # Loop through folders
 for folder in os.listdir(root_dir):
     folder_path = os.path.join(root_dir, folder)
@@ -20,7 +23,10 @@ for folder in os.listdir(root_dir):
             df = pd.read_csv(file_path)
             for _, row in df.iterrows():
                 idx = int(row['index'])
+                # msg = row['cam_wind_direction']
                 msg = row['message']
+                tot_cnt+=1
+                if msg == right_option: right_cnt += 1
                 counts[idx][msg] += 1
 
 # Convert to a DataFrame
@@ -32,6 +38,7 @@ for idx in indices:
     for d in directions:
         plot_data[d].append(counts[idx].get(d, 0))
 
+print(f"Ratio of right opinion over total opinions ({right_cnt}/{tot_cnt}): {right_cnt/tot_cnt}")
 # Plotting
 plt.figure(figsize=(12, 6))
 colors = {'N': 'blue', 'S': 'red', 'E': 'green', 'W': 'orange'}
