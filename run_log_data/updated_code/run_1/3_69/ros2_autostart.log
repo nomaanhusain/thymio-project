@@ -1,0 +1,520 @@
+[INFO] [launch]: All log files can be found below /home/thymio/.ros/log/2025-06-13-15-42-49-844686-thymio-837
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [random_robot_move-1]: process started with pid [864]
+[INFO] [service_vicon_node-2]: process started with pid [866]
+[INFO] [service_neighbours_opinions-3]: process started with pid [868]
+[INFO] [publish_wind_direction-4]: process started with pid [870]
+[service_vicon_node-2] [INFO] [1749829372.686806519] [service_vicon_node]: Physical Ip=192.168.3.69, id=id69
+[service_neighbours_opinions-3] [INFO] [1749829372.687117482] [service_neighbours_opinions]: Physical Ip=192.168.3.69, id=id69
+[service_vicon_node-2] [INFO] [1749829372.692052870] [service_vicon_node]: Updated ID from mapping: id247
+[service_neighbours_opinions-3] [INFO] [1749829372.692032278] [service_neighbours_opinions]: Updated ID from mapping: id247
+[service_vicon_node-2] [INFO] [1749829372.773238611] [service_vicon_node]: Subscribed to: vicon/default/data
+[service_neighbours_opinions-3] [INFO] [1749829372.774057056] [service_neighbours_opinions]: Subscribed to: wind_direction/id68
+[service_neighbours_opinions-3] [INFO] [1749829372.778059333] [service_neighbours_opinions]: Subscribed to: wind_direction/id136
+[service_neighbours_opinions-3] [INFO] [1749829372.782059352] [service_neighbours_opinions]: Subscribed to: wind_direction/id137
+[service_neighbours_opinions-3] [INFO] [1749829372.785869185] [service_neighbours_opinions]: Subscribed to: wind_direction/id142
+[service_neighbours_opinions-3] [INFO] [1749829372.789707296] [service_neighbours_opinions]: Subscribed to: wind_direction/id151
+[service_neighbours_opinions-3] [INFO] [1749829372.793529333] [service_neighbours_opinions]: Subscribed to: wind_direction/id152
+[service_neighbours_opinions-3] [INFO] [1749829372.797105963] [service_neighbours_opinions]: Subscribed to: wind_direction/id155
+[service_neighbours_opinions-3] [INFO] [1749829372.800955111] [service_neighbours_opinions]: Subscribed to: wind_direction/id189
+[service_neighbours_opinions-3] [INFO] [1749829372.804791833] [service_neighbours_opinions]: Subscribed to: wind_direction/id192
+[service_neighbours_opinions-3] [INFO] [1749829372.808523296] [service_neighbours_opinions]: Subscribed to: wind_direction/id193
+[service_neighbours_opinions-3] [INFO] [1749829372.812472944] [service_neighbours_opinions]: Subscribed to: wind_direction/id194
+[service_neighbours_opinions-3] [INFO] [1749829372.816578722] [service_neighbours_opinions]: Subscribed to: wind_direction/id195
+[service_neighbours_opinions-3] [INFO] [1749829372.820957963] [service_neighbours_opinions]: Subscribed to: wind_direction/id200
+[service_neighbours_opinions-3] [INFO] [1749829372.824688963] [service_neighbours_opinions]: Subscribed to: wind_direction/id206
+[service_neighbours_opinions-3] [INFO] [1749829372.829601685] [service_neighbours_opinions]: Subscribed to: wind_direction/id207
+[service_neighbours_opinions-3] [INFO] [1749829372.834117333] [service_neighbours_opinions]: Subscribed to: wind_direction/id223
+[service_neighbours_opinions-3] [INFO] [1749829372.837968685] [service_neighbours_opinions]: Subscribed to: wind_direction/id224
+[service_neighbours_opinions-3] [INFO] [1749829372.841822333] [service_neighbours_opinions]: Subscribed to: wind_direction/id236
+[service_neighbours_opinions-3] [INFO] [1749829372.845627426] [service_neighbours_opinions]: Subscribed to: wind_direction/id1193
+[publish_wind_direction-4] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+[publish_wind_direction-4]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[publish_wind_direction-4] [INFO] [1749829374.657655258] [publish_wind_direction]: Physical Ip=192.168.3.69, id=id69
+[publish_wind_direction-4] [INFO] [1749829374.660890962] [publish_wind_direction]: Updated ID from mapping: id247
+[publish_wind_direction-4] [INFO] [1749829374.669008425] [publish_wind_direction]: Publsihing on: wind_direction/id247
+[random_robot_move-1] [INFO] [1749829377.317346071] [random_robot_move]: Robot Control Node started.
+[service_neighbours_opinions-3] [INFO] [1749829382.710405364] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829382.718597716] [service_neighbours_opinions]: All opinions = {'id137': 'W'}
+[service_vicon_node-2] [INFO] [1749829382.808476772] [service_vicon_node]: Vicon Position= [317.7413024902344, 1054.012451171875], yaw: -238.5200295031919
+[service_vicon_node-2] [INFO] [1749829382.811554661] [service_vicon_node]: Neighbours: {'id1193', 'id193', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id189', 'id200', 'id192'}
+[service_neighbours_opinions-3] [INFO] [1749829383.898262067] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829383.901812123] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W'}
+[publish_wind_direction-4] [INFO] [1749829384.254334197] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829384.258077771] [service_vicon_node]: Request received. Responding with pos=array('f', [314.9271240234375, 1137.964599609375]), yaw=-97.28100792691976, neigh=['id1193', 'id193', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[314.9271240234375, 1137.964599609375], my_vicon_yaw=-97.28100792691976, neighbours_by_id=['id1193', 'id193', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829384.262601901] [publish_wind_direction]: Pose Response: pos=array('f', [314.9271240234375, 1137.964599609375]) yaw=-97.281005859375
+[publish_wind_direction-4] [INFO] [1749829384.264983419] [publish_wind_direction]: ***Cam angle= -77.84765458795246, vico ang deg= -97.281005859375 Ground Truth= 184.87133955267254
+[publish_wind_direction-4] [INFO] [1749829384.267355826] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829384.272398012] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id192'], responding ['W', 'W']
+[publish_wind_direction-4] [INFO] [1749829384.276679771] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829384.279141252] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W']
+[publish_wind_direction-4] [INFO] [1749829384.281555086] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 2}
+[publish_wind_direction-4] [INFO] [1749829384.284342919] [publish_wind_direction]: Inside Decision Making, My Wind Direction: S
+[publish_wind_direction-4] [INFO] [1749829384.286809660] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.8, 'E': 0.0, 'W': 2.0}
+[publish_wind_direction-4] [INFO] [1749829384.290176771] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829384.292723734] [publish_wind_direction]: TIME: Decision making completed at: 15:43:04.
+[publish_wind_direction-4] [INFO] [1749829384.296148475] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829387.334213232] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829387.339084436] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829388.078027565] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829388.082557269] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829388.259742546] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829388.263948120] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W'}
+[publish_wind_direction-4] [INFO] [1749829388.592564750] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829388.596435787] [service_vicon_node]: Request received. Responding with pos=array('f', [181.14817810058594, 1164.4327392578125]), yaw=12.444879094538802, neigh=['id1193', 'id193', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[181.14817810058594, 1164.4327392578125], my_vicon_yaw=12.444879094538802, neighbours_by_id=['id1193', 'id193', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829388.600573991] [publish_wind_direction]: Pose Response: pos=array('f', [181.14817810058594, 1164.4327392578125]) yaw=12.444879531860352
+[publish_wind_direction-4] [INFO] [1749829388.603219620] [publish_wind_direction]: ***Cam angle= -207.3304323570611, vico ang deg= 12.444879531860352 Ground Truth= 165.11444717479924
+[publish_wind_direction-4] [INFO] [1749829388.605591713] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829388.615519268] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'], responding ['W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829388.620479361] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829388.623007639] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829388.625672472] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 3}
+[publish_wind_direction-4] [INFO] [1749829388.628058620] [publish_wind_direction]: Inside Decision Making, My Wind Direction: S
+[publish_wind_direction-4] [INFO] [1749829388.630534305] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 1.2000000000000002, 'E': 0.0, 'W': 3.0}
+[publish_wind_direction-4] [INFO] [1749829388.634000750] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829388.636826676] [publish_wind_direction]: TIME: Decision making completed at: 15:43:08.
+[publish_wind_direction-4] [INFO] [1749829388.639400620] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829391.289167489] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829391.298957637] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829392.197601600] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829392.202080470] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829392.380513340] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829392.391060988] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W'}
+[service_vicon_node-2] [INFO] [1749829392.832205118] [service_vicon_node]: Vicon Position= [64.882080078125, 1061.8218994140625], yaw: -339.4232833662799
+[service_vicon_node-2] [INFO] [1749829392.835227118] [service_vicon_node]: Neighbours: {'id1193', 'id193', 'id223', 'id195', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'}
+[service_neighbours_opinions-3] [INFO] [1749829392.878420562] [service_neighbours_opinions]: * Received from id192, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829392.881128062] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829393.421281117] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829393.428676821] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'W'}
+[publish_wind_direction-4] [INFO] [1749829393.692251099] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829393.699272858] [service_vicon_node]: Request received. Responding with pos=array('f', [40.32455825805664, 1041.8336181640625]), yaw=-332.56209261958685, neigh=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[40.32455825805664, 1041.8336181640625], my_vicon_yaw=-332.56209261958685, neighbours_by_id=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829393.703506173] [publish_wind_direction]: Pose Response: pos=array('f', [40.32455825805664, 1041.8336181640625]) yaw=-332.5621032714844
+[publish_wind_direction-4] [INFO] [1749829393.706262691] [publish_wind_direction]: ***Cam angle= 31.482176921975835, vico ang deg= -332.5621032714844 Ground Truth= 58.920073650491474
+[publish_wind_direction-4] [INFO] [1749829393.709141784] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829393.713196654] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'], responding ['W', 'W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829393.722645117] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829393.727426617] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829393.729778339] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 5}
+[publish_wind_direction-4] [INFO] [1749829393.732115450] [publish_wind_direction]: Inside Decision Making, My Wind Direction: W
+[publish_wind_direction-4] [INFO] [1749829393.734609839] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 7.0}
+[publish_wind_direction-4] [INFO] [1749829393.737939525] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829393.741870043] [publish_wind_direction]: TIME: Decision making completed at: 15:43:13.
+[publish_wind_direction-4] [INFO] [1749829393.744186321] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829395.868640894] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829395.881243727] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829395.883990357] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'E', 'id192': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829397.163167411] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829397.169089819] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'E', 'id192': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829397.256875559] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829397.261857226] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'E', 'id192': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829397.267154152] [service_neighbours_opinions]: * Received from id192, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829397.275113522] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'E', 'id192': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829398.038139892] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829398.049031726] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829398.052955744] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'N', 'id142': 'W', 'id223': 'E', 'id192': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829398.272314133] [service_neighbours_opinions]: * Received from id151, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829398.285471892] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'N', 'id142': 'W', 'id223': 'E', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829398.523915559] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829398.528414985] [service_vicon_node]: Request received. Responding with pos=array('f', [155.31961059570312, 1024.4453125]), yaw=-303.34502202751725, neigh=['id1193', 'id193', 'id223', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[155.31961059570312, 1024.4453125], my_vicon_yaw=-303.34502202751725, neighbours_by_id=['id1193', 'id193', 'id223', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829398.532498244] [publish_wind_direction]: Pose Response: pos=array('f', [155.31961059570312, 1024.4453125]) yaw=-303.34503173828125
+[publish_wind_direction-4] [INFO] [1749829398.534987744] [publish_wind_direction]: ***Cam angle= -63.91447889358082, vico ang deg= -303.34503173828125 Ground Truth= 352.7404893681379
+[publish_wind_direction-4] [INFO] [1749829398.537786262] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829398.543888151] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id223', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'], responding ['E', 'W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829398.548266281] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['E', 'W', 'W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829398.550820448] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['E', 'W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829398.553194503] [publish_wind_direction]: Inside Decision Making, computed social info: {'E': 1, 'W': 4}
+[publish_wind_direction-4] [INFO] [1749829398.555639336] [publish_wind_direction]: Inside Decision Making, My Wind Direction: N
+[publish_wind_direction-4] [INFO] [1749829398.558143392] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 2.0, 'S': 0.0, 'E': 1.0, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829398.561262448] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829398.563772448] [publish_wind_direction]: TIME: Decision making completed at: 15:43:18.
+[publish_wind_direction-4] [INFO] [1749829398.566182985] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829400.796547687] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829400.799577965] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'N', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829402.364815408] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829402.369202464] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829402.372180390] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'N', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829402.420799112] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829402.423837464] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'N', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829402.491621649] [service_neighbours_opinions]: * Received from id192, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829402.494378205] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'N', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829402.608929890] [service_neighbours_opinions]: * Received from id151, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829402.611808964] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'N', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[service_vicon_node-2] [INFO] [1749829402.988184686] [service_vicon_node]: Vicon Position= [226.9065399169922, 1017.7076416015625], yaw: -244.11293875196102
+[service_vicon_node-2] [INFO] [1749829402.990910130] [service_vicon_node]: Neighbours: {'id1193', 'id193', 'id223', 'id195', 'id207', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'}
+[service_neighbours_opinions-3] [INFO] [1749829403.113698260] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829403.116463982] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829403.515137537] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829403.519650482] [service_vicon_node]: Request received. Responding with pos=array('f', [0.0, 0.0]), yaw=-166.73071838306956, neigh=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id142', 'id152', 'id151', 'id137', 'id194', 'id155', 'id189', 'id200', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[0.0, 0.0], my_vicon_yaw=-166.73071838306956, neighbours_by_id=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id142', 'id152', 'id151', 'id137', 'id194', 'id155', 'id189', 'id200', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829403.530391074] [publish_wind_direction]: Pose Response: pos=array('f', [0.0, 0.0]) yaw=-166.730712890625
+[publish_wind_direction-4] [INFO] [1749829403.534043278] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= -166.730712890625 Ground Truth= 274.269287109375
+[publish_wind_direction-4] [INFO] [1749829403.537549537] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829403.541864296] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id142', 'id152', 'id151', 'id137', 'id194', 'id155', 'id189', 'id200', 'id192'], responding ['W', 'W', 'W', 'E', 'W']
+[publish_wind_direction-4] [INFO] [1749829403.548112871] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'E', 'W'])
+[publish_wind_direction-4] [INFO] [1749829403.550820019] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'E', 'W']
+[publish_wind_direction-4] [INFO] [1749829403.553363982] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4, 'E': 1}
+[publish_wind_direction-4] [INFO] [1749829403.555902019] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+[publish_wind_direction-4] [INFO] [1749829403.558398000] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 3.0, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829403.561575408] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829403.564026630] [publish_wind_direction]: TIME: Decision making completed at: 15:43:23.
+[publish_wind_direction-4] [INFO] [1749829403.566526463] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829405.747597703] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829405.750596499] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829407.029231091] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829407.031904739] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829407.107400887] [service_neighbours_opinions]: * Received from id192, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829407.110660850] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829407.113464591] [service_neighbours_opinions]: All opinions = {'id137': 'E', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829407.118093017] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829407.120659961] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829407.655406442] [service_neighbours_opinions]: * Received from id151, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829407.658701479] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829408.317520701] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829408.329304108] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829408.461262016] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829408.465806294] [service_vicon_node]: Request received. Responding with pos=array('f', [259.9455261230469, 1071.7130126953125]), yaw=-105.09590718756662, neigh=['id1193', 'id193', 'id223', 'id195', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[259.9455261230469, 1071.7130126953125], my_vicon_yaw=-105.09590718756662, neighbours_by_id=['id1193', 'id193', 'id223', 'id195', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829408.470785257] [publish_wind_direction]: Pose Response: pos=array('f', [259.9455261230469, 1071.7130126953125]) yaw=-105.09590911865234
+[publish_wind_direction-4] [INFO] [1749829408.480326608] [publish_wind_direction]: ***Cam angle= -80.93233031471135, vico ang deg= -105.09590911865234 Ground Truth= 173.9717605666363
+[publish_wind_direction-4] [INFO] [1749829408.483437053] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829408.487311368] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id223', 'id195', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'], responding ['W', 'W', 'W', 'W', 'E']
+[publish_wind_direction-4] [INFO] [1749829408.491351849] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'W', 'E'])
+[publish_wind_direction-4] [INFO] [1749829408.493914127] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'W', 'E']
+[publish_wind_direction-4] [INFO] [1749829408.496425868] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4, 'E': 1}
+[publish_wind_direction-4] [INFO] [1749829408.498953442] [publish_wind_direction]: Inside Decision Making, My Wind Direction: S
+[publish_wind_direction-4] [INFO] [1749829408.501353571] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 2.0, 'E': 1.0, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829408.504512794] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829408.506977442] [publish_wind_direction]: TIME: Decision making completed at: 15:43:28.
+[publish_wind_direction-4] [INFO] [1749829408.509298664] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829410.732947033] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829410.735796829] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829412.077496940] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829412.081645532] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829412.131454569] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829412.134547106] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829412.137200662] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829412.177423088] [service_neighbours_opinions]: * Received from id192, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829412.180529236] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829412.183379921] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'E', 'id151': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829412.318579069] [service_neighbours_opinions]: * Received from id151, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829412.321416439] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'E', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829413.049722939] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_vicon_node-2] [INFO] [1749829413.051159235] [service_vicon_node]: Vicon Position= [28.728761672973633, 1028.482666015625], yaw: 11.670809776589655
+[service_vicon_node-2] [INFO] [1749829413.054082161] [service_vicon_node]: Neighbours: {'id1193', 'id193', 'id224', 'id223', 'id142', 'id207', 'id236', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id192'}
+[service_neighbours_opinions-3] [INFO] [1749829413.055910754] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'E', 'id151': 'S'}
+[publish_wind_direction-4] [INFO] [1749829413.477715679] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829413.482549716] [service_vicon_node]: Request received. Responding with pos=array('f', [20.992830276489258, 1026.3839111328125]), yaw=9.489068733933678, neigh=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[20.992830276489258, 1026.3839111328125], my_vicon_yaw=9.489068733933678, neighbours_by_id=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829413.488660365] [publish_wind_direction]: Pose Response: pos=array('f', [20.992830276489258, 1026.3839111328125]) yaw=9.489068984985352
+[publish_wind_direction-4] [INFO] [1749829413.491203513] [publish_wind_direction]: ***Cam angle= 74.84251872762215, vico ang deg= 9.489068984985352 Ground Truth= 84.3315877126075
+[publish_wind_direction-4] [INFO] [1749829413.493611550] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829413.497307142] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id194', 'id206', 'id137', 'id155', 'id189', 'id200', 'id192'], responding ['W', 'E', 'S', 'W', 'W', 'E']
+[publish_wind_direction-4] [INFO] [1749829413.501604735] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'E', 'S', 'W', 'W', 'E'])
+[publish_wind_direction-4] [INFO] [1749829413.504336291] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'E', 'S', 'W', 'W', 'E']
+[publish_wind_direction-4] [INFO] [1749829413.507905291] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 3, 'E': 2, 'S': 1}
+[publish_wind_direction-4] [INFO] [1749829413.512996254] [publish_wind_direction]: Inside Decision Making, My Wind Direction: W
+[publish_wind_direction-4] [INFO] [1749829413.515716439] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 1.0, 'E': 2.0, 'W': 5.4}
+[publish_wind_direction-4] [INFO] [1749829413.518796087] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829413.521257531] [publish_wind_direction]: TIME: Decision making completed at: 15:43:33.
+[publish_wind_direction-4] [INFO] [1749829413.523640346] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829417.110979918] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829417.114283251] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829417.117030640] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'E', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829417.204470585] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829417.207080918] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'E', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829417.493617696] [service_neighbours_opinions]: * Received from id192, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829417.496585159] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829417.507727529] [service_neighbours_opinions]: * Received from id151, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829417.510194047] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829418.119715991] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829418.122327658] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[publish_wind_direction-4] [INFO] [1749829418.443984843] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829418.447794825] [service_vicon_node]: Request received. Responding with pos=array('f', [154.3836669921875, 1026.9539794921875]), yaw=-182.98656582548065, neigh=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[154.3836669921875, 1026.9539794921875], my_vicon_yaw=-182.98656582548065, neighbours_by_id=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829418.451822028] [publish_wind_direction]: Pose Response: pos=array('f', [154.3836669921875, 1026.9539794921875]) yaw=-182.986572265625
+[publish_wind_direction-4] [INFO] [1749829418.454315491] [publish_wind_direction]: ***Cam angle= -32.20851387621956, vico ang deg= -182.986572265625 Ground Truth= 144.80491385815543
+[publish_wind_direction-4] [INFO] [1749829418.456671825] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829418.462086714] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id194', 'id137', 'id155', 'id189', 'id200', 'id136', 'id192'], responding ['W', 'N', 'S', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829418.470967639] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'N', 'S', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829418.475047973] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'N', 'S', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829418.477564121] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 3, 'N': 1, 'S': 1}
+[publish_wind_direction-4] [INFO] [1749829418.479942214] [publish_wind_direction]: Inside Decision Making, My Wind Direction: S
+[publish_wind_direction-4] [INFO] [1749829418.482479102] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 1.0, 'S': 3.0, 'E': 0.0, 'W': 3.0}
+[publish_wind_direction-4] [INFO] [1749829418.485891139] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829418.489528102] [publish_wind_direction]: TIME: Decision making completed at: 15:43:38.
+[publish_wind_direction-4] [INFO] [1749829418.491938028] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829422.154666656] [service_neighbours_opinions]: * Received from id142, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829422.160304785] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829422.218921396] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829422.221785396] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829422.592793230] [service_neighbours_opinions]: * Received from id151, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829422.595751415] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'W', 'id151': 'E'}
+[service_vicon_node-2] [INFO] [1749829423.164246933] [service_vicon_node]: Vicon Position= [230.73500061035156, 1062.6358642578125], yaw: -269.4978802224629
+[service_vicon_node-2] [INFO] [1749829423.167291303] [service_vicon_node]: Neighbours: {'id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id206', 'id155', 'id200', 'id136', 'id192'}
+[publish_wind_direction-4] [INFO] [1749829423.523955136] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829423.527646359] [service_vicon_node]: Request received. Responding with pos=array('f', [212.1446533203125, 1062.6116943359375]), yaw=-280.3485128197778, neigh=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id206', 'id155', 'id200', 'id136', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[212.1446533203125, 1062.6116943359375], my_vicon_yaw=-280.3485128197778, neighbours_by_id=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id206', 'id155', 'id200', 'id136', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829423.531555025] [publish_wind_direction]: Pose Response: pos=array('f', [212.1446533203125, 1062.6116943359375]) yaw=-280.3485107421875
+[publish_wind_direction-4] [INFO] [1749829423.534073007] [publish_wind_direction]: ***Cam angle= -105.10677075933177, vico ang deg= -280.3485107421875 Ground Truth= 334.54471849848073
+[publish_wind_direction-4] [INFO] [1749829423.536559729] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829423.542854525] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id206', 'id155', 'id200', 'id136', 'id192'], responding ['W', 'E', 'E', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829423.549036322] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'E', 'E', 'W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829423.551484655] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'E', 'E', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829423.553932766] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4, 'E': 2}
+[publish_wind_direction-4] [INFO] [1749829423.556385025] [publish_wind_direction]: Inside Decision Making, My Wind Direction: N
+[publish_wind_direction-4] [INFO] [1749829423.558834544] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 2.4000000000000004, 'S': 0.0, 'E': 2.0, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829423.561961488] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829423.564362192] [publish_wind_direction]: TIME: Decision making completed at: 15:43:43.
+[publish_wind_direction-4] [INFO] [1749829423.566740507] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829427.009675245] [service_neighbours_opinions]: * Received from id142, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829427.012627116] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829427.411961264] [service_neighbours_opinions]: * Received from id151, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829427.416427875] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'N'}
+[publish_wind_direction-4] [INFO] [1749829428.435746504] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829428.441291171] [service_vicon_node]: Request received. Responding with pos=array('f', [71.08123779296875, 1120.908447265625]), yaw=-317.7094704855877, neigh=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id206', 'id155', 'id200', 'id136', 'id192']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[71.08123779296875, 1120.908447265625], my_vicon_yaw=-317.7094704855877, neighbours_by_id=['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id206', 'id155', 'id200', 'id136', 'id192'])
+[publish_wind_direction-4] [INFO] [1749829428.446196504] [publish_wind_direction]: Pose Response: pos=array('f', [71.08123779296875, 1120.908447265625]) yaw=-317.70947265625
+[publish_wind_direction-4] [INFO] [1749829428.448657837] [publish_wind_direction]: ***Cam angle= -114.05041532616654, vico ang deg= -317.70947265625 Ground Truth= 288.24011201758344
+[publish_wind_direction-4] [INFO] [1749829428.451092504] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829428.457473745] [service_neighbours_opinions]: Requested ['id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id206', 'id155', 'id200', 'id136', 'id192'], responding ['W', 'N', 'N', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829428.462270485] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'N', 'N', 'W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829428.464813485] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'N', 'N', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829428.467381782] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4, 'N': 2}
+[publish_wind_direction-4] [INFO] [1749829428.469915022] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+[publish_wind_direction-4] [INFO] [1749829428.472435856] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 2.0, 'S': 0.0, 'E': 2.4000000000000004, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829428.475522856] [publish_wind_direction]: Publishing: id247:W
+[publish_wind_direction-4] [INFO] [1749829428.477974263] [publish_wind_direction]: TIME: Decision making completed at: 15:43:48.
+[publish_wind_direction-4] [INFO] [1749829428.480304948] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829432.299704613] [service_neighbours_opinions]: * Received from id151, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829432.304468946] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829432.308678650] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829432.468817464] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829432.471774464] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[service_vicon_node-2] [INFO] [1749829433.185978834] [service_vicon_node]: Vicon Position= [260.2997131347656, 1113.9964599609375], yaw: -254.95086109103082
+[service_vicon_node-2] [INFO] [1749829433.216488834] [service_vicon_node]: Neighbours: {'id1193', 'id193', 'id224', 'id223', 'id195', 'id207', 'id236', 'id142', 'id152', 'id68', 'id151', 'id137', 'id155', 'id200', 'id136', 'id192'}
+[publish_wind_direction-4] [INFO] [1749829433.434470334] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829437.137085888] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829437.140213684] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829437.143024332] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829437.291360036] [service_neighbours_opinions]: * Received from id151, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829437.294104573] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829438.401661091] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829442.033810348] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829442.036772959] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829442.039442996] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829443.449611199] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829447.135073696] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829447.137996400] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829447.140338363] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829448.437319288] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829452.456300638] [service_neighbours_opinions]: * Received from id142, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829452.459137397] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829453.425714952] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829457.064078413] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829457.067154505] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'W', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829458.437823171] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829462.763192298] [service_neighbours_opinions]: * Received from id142, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829462.766119613] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829463.380820853] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829467.128454703] [service_neighbours_opinions]: * Received from id142, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829467.131644796] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829468.394722239] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829472.315013237] [service_neighbours_opinions]: * Received from id142, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829472.317730700] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'S', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829473.402208588] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829477.061834790] [service_neighbours_opinions]: * Received from id142, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829477.064608753] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'S', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829478.420089641] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829482.052745639] [service_neighbours_opinions]: * Received from id142, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829482.055488194] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'S', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829483.445222323] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829487.470963580] [service_neighbours_opinions]: * Received from id142, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829487.473901043] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829488.393354727] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829491.991263225] [service_neighbours_opinions]: * Received from id142, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829491.994205170] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'S', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829493.443318687] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829497.009270759] [service_neighbours_opinions]: * Received from id142, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829497.012002593] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'S', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829498.399619092] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829502.108145793] [service_neighbours_opinions]: * Received from id142, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829502.112521960] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'S', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829503.800168552] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829506.999620550] [service_neighbours_opinions]: * Received from id142, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829507.002684939] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'E', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829508.392718993] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829512.041375195] [service_neighbours_opinions]: * Received from id142, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829512.044397621] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829512.047093028] [service_neighbours_opinions]: All opinions = {'id137': 'W', 'id206': 'W', 'id142': 'N', 'id223': 'W', 'id192': 'W', 'id151': 'W'}
+[publish_wind_direction-4] [INFO] [1749829513.424972453] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829518.361697117] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829523.493694910] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829528.343224889] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829533.464747997] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829538.511418068] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829543.471738065] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829548.528037821] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829553.570788837] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829558.536152315] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829563.596907460] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829568.404889402] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829573.423853306] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829578.456043155] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829583.519237448] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829588.443551186] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829593.352796794] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829598.575500810] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829603.539251418] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829608.521875637] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829613.549454319] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829618.443074631] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829623.426613777] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829628.414672607] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829633.495867974] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829638.463352490] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829643.515327950] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829648.503116243] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829653.361234314] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829658.481160385] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829663.544249308] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829668.445917972] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829673.622555061] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829678.505801670] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829683.570351259] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829688.512271738] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829693.440068013] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829698.441563917] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829703.471727136] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829708.403525300] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829713.437735982] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829718.426059813] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829723.390587921] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829728.410380121] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829733.388854230] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829738.365271393] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829743.486127038] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829748.348732424] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829753.439036551] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829758.360702178] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829763.696230619] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829768.357939190] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829773.390291539] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829778.378693425] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829783.455529755] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829788.385773252] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829793.418953434] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829798.385799043] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829803.355505503] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829808.361320074] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829813.648347478] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829818.379777068] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829823.378908287] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829828.383519580] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829833.388206596] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829838.371325685] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829843.427075664] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829848.413909179] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829853.374882788] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829858.396455266] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829863.433468522] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829868.426572390] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829873.395499665] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829878.408165439] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829883.386431085] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829888.369342785] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829893.331687060] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829898.375054650] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829903.395391128] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829908.401120310] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829913.403534289] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829918.372690767] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829923.396195672] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829928.391863836] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829933.510496962] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829938.413058496] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829943.373472752] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829948.367576731] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829953.404545209] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829958.358285836] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829963.392956944] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829968.377375738] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829973.378220179] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829978.381921435] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829983.367634210] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829988.383752374] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829993.420171075] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829998.405190831] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830003.410878087] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830008.402897714] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830013.401108544] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830018.389929874] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830023.402865816] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830028.374596387] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830033.414232440] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830038.481043807] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830043.601433693] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830048.434767894] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830053.511552872] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830058.397066702] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830063.426210125] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830068.422447400] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830072.849184046] [service_neighbours_opinions]: Raising exception at 15:54:32
+[service_neighbours_opinions-3] Traceback (most recent call last):
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 111, in main
+[service_neighbours_opinions-3]     rclpy.spin(neighbours_node)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[service_neighbours_opinions-3]     executor.spin_once()
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[service_neighbours_opinions-3]     self._spin_once_impl(timeout_sec)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+[service_neighbours_opinions-3]     raise handler.exception()
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[service_neighbours_opinions-3]     self._handler.send(None)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+[service_neighbours_opinions-3]     await call_coroutine(entity, arg)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+[service_neighbours_opinions-3]     await await_or_execute(tmr.callback)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[service_neighbours_opinions-3]     return callback(*args)
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 64, in stop_execution
+[service_neighbours_opinions-3]     raise Exception
+[service_neighbours_opinions-3] Exception
+[service_neighbours_opinions-3] 
+[service_neighbours_opinions-3] During handling of the above exception, another exception occurred:
+[service_neighbours_opinions-3] 
+[service_neighbours_opinions-3] Traceback (most recent call last):
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions", line 33, in <module>
+[service_neighbours_opinions-3]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'service_neighbours_opinions')())
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 117, in main
+[service_neighbours_opinions-3]     neighbours_node.get_logger().error(e)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 345, in error
+[service_neighbours_opinions-3]     return self.log(message, LoggingSeverity.ERROR, **kwargs)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 318, in log
+[service_neighbours_opinions-3]     _rclpy.rclpy_logging_rcutils_log(
+[service_neighbours_opinions-3] TypeError: rclpy_logging_rcutils_log(): incompatible function arguments. The following argument types are supported:
+[service_neighbours_opinions-3]     1. (arg0: int, arg1: str, arg2: str, arg3: str, arg4: str, arg5: int) -> None
+[service_neighbours_opinions-3] 
+[service_neighbours_opinions-3] Invoked with: <LoggingSeverity.ERROR: 40>, 'service_neighbours_opinions', Exception(), 'main', '/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py', 117
+[ERROR] [service_neighbours_opinions-3]: process has died [pid 868, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions --ros-args -r __node:=service_neighbours_opinions'].
+[publish_wind_direction-4] [INFO] [1749830073.820318008] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830078.435852691] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830078.439593746] [publish_wind_direction]: Raising exception at 15:54:38
+[publish_wind_direction-4] Traceback (most recent call last):
+[publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction", line 33, in <module>
+[publish_wind_direction-4]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'publish_wind_direction')())
+[publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 331, in main
+[publish_wind_direction-4]     rclpy.spin(wind_direction_sensor)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[publish_wind_direction-4]     executor.spin_once()
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[publish_wind_direction-4]     self._spin_once_impl(timeout_sec)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+[publish_wind_direction-4]     raise handler.exception()
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[publish_wind_direction-4]     self._handler.send(None)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+[publish_wind_direction-4]     await call_coroutine(entity, arg)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+[publish_wind_direction-4]     await await_or_execute(tmr.callback)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[publish_wind_direction-4]     return callback(*args)
+[publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 169, in make_wind_direction_opinion
+[publish_wind_direction-4]     raise Exception
+[publish_wind_direction-4] Exception
+[ERROR] [publish_wind_direction-4]: process has died [pid 870, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction --ros-args -r __node:=publish_wind_direction'].
+[random_robot_move-1] [INFO] [1749830094.149656718] [random_robot_move]: robot move: excetion raised at 15:54:54
+[random_robot_move-1] [INFO] [1749830094.152573866] [random_robot_move]: Exception, shutting down

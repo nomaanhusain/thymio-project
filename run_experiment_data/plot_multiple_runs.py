@@ -2,13 +2,18 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from collections import defaultdict
+import pickle
 
 # Set path to root directory
 root_dir = 'run_experiment_data/ir1.0/'
+# root_dir = 'run_experiment_data/ir_4_uninf/'
+save_pkl_file_name = "run_experiment_data/avg_opinion_ir1.0.pkl"
+# save_pkl_file_name = "run_experiment_data/avg_opinion_ir_4_uninf.pkl"
 
+selected_runs = ['run_22', 'run_23', 'run_24', 'run_1_1', 'run_3_3']
+# selected_runs = ['run_1', 'run_2', 'run_3']
 
-selected_runs = ['run_20', 'run_21']
-
+save_data = False
 # counts[index][direction] = list of counts across runs
 counts = defaultdict(lambda: defaultdict(list))
 
@@ -37,7 +42,8 @@ for run in selected_runs:
                 df = pd.read_csv(file_path)
                 for _, row in df.iterrows():
                     idx = int(row['index'])
-                    msg = row['message']
+                    # msg = row['message']
+                    msg = row['cam_wind_direction']
                     tot_cnt += 1
                     if msg == right_option:
                         right_cnt += 1
@@ -66,6 +72,11 @@ colors = {'N': 'blue', 'S': 'red', 'E': 'green', 'W': 'orange'}
 for d in ['N', 'S', 'E', 'W']:
     plt.plot(indices, avg_plot_data[d], label=f"{d} (avg)", color=colors[d])
 
+if save_data:
+    with open(save_pkl_file_name, 'wb') as f:
+        pickle.dump({'indices': indices, 'avg_plot_data': avg_plot_data}, f)
+
+    print(f"Averaged data saved to: {save_pkl_file_name}")
 plt.xlabel("Index")
 plt.ylabel("Average Count")
 plt.title("Average Wind Direction Opinion by Index (Selected Runs)")

@@ -86,11 +86,11 @@ class PublishWindDirection(Node):
         self.all_robots_position_by_id_vicon = dict()
         self.neighbourhood_size = 3
         self.informed = True
-        self.neighbour_distance_mm = 900 #so 80 cm
+        self.neighbour_distance_mm = 700 #so 80 cm
         self.social_info_counts = dict()
         self.neighbours_opinions = dict()
         self.all_opinions = dict() # Keep track of all opinions you have received until now, there are cases where a robot is in neighbourhood but not publishing at that exact moment, these should not be missed
-        self.personal_info_weight = 0.6
+        self.personal_info_weight = 0.4
 
         with open("uninformed_mapping.json", "r") as f:
             uniformed_mapping = json.load(f)
@@ -109,7 +109,7 @@ class PublishWindDirection(Node):
         self.node_start_time = time.time()
         self.csv_file = f"log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
         self.csv_index = 0
-        self.runtime = 60 #60 secs
+        self.runtime = 600
         self.init_csv()
 
     def init_csv(self):
@@ -167,7 +167,7 @@ class PublishWindDirection(Node):
 
     def vicon_callback(self, msg):
 
-        if time.time() - self.start_time_ > 1:
+        if time.time() - self.start_time_ > 0.1:
 
             self.start_time_ = time.time()
             for i in range(msg.n):
@@ -197,6 +197,9 @@ class PublishWindDirection(Node):
                 m_rand.data = f"{self.id}:{self.my_wind_direction_opinion}"
                 self.publisher_.publish(m_rand)
             # print(f"My Pos {self.my_position_xy} My current neighbours: {self.neighbours_by_id}")
+            now = datetime.datetime.now()
+            current_time = now.strftime("%H:%M:%S")
+            self.get_logger().info(f"TIME: Vicon pose update at: {current_time}")
 
     def make_wind_direction_opinion(self):
         self.majority_vote()
@@ -232,12 +235,17 @@ class PublishWindDirection(Node):
         msg = String()
 
         if time.time() - self.node_start_time > self.runtime:
-            self.get_logger().info('Raising exception')
+            now = datetime.datetime.now()
+            current_time = now.strftime("%H:%M:%S")
+            self.get_logger().info(f'Raising exception at {current_time}')
             raise Exception
 
         msg.data = f"{self.id}:{self.my_wind_direction_opinion}"
         self.publisher_.publish(msg)
         self.get_logger().info(f'Publishing: {msg.data}')
+        now = datetime.datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        self.get_logger().info(f"TIME: Decision making completed at: {current_time}.")
         self.get_logger().info(f"-----------------------------------------------------")
 
     def get_highest_in_dict(self, the_dict):

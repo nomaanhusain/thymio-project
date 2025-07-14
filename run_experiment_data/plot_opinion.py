@@ -5,11 +5,13 @@ from collections import defaultdict
 
 # Set path to your root directory
 # root_dir = 'run_experiment_data/ir0.7/run_1/'
-root_dir = 'run_experiment_data/ir1.0/run_21/'
+# root_dir = 'run_experiment_data/ir1.0/run_23/'
+# root_dir = 'run_experiment_data/ir_4_uninf/run_6/'
+root_dir = 'ir_4_uninf/run_6/'
 
 # Nested dict: counts[index][message] = count
 counts = defaultdict(lambda: defaultdict(int))
-right_option = 'N'
+right_option = 'W'
 tot_cnt=0
 right_cnt=0
 # Loop through folders
@@ -23,8 +25,8 @@ for folder in os.listdir(root_dir):
             df = pd.read_csv(file_path)
             for _, row in df.iterrows():
                 idx = int(row['index'])
-                # msg = row['cam_wind_direction']
-                msg = row['message']
+                msg = row['cam_wind_direction']
+                # msg = row['message']
                 tot_cnt+=1
                 if msg == right_option: right_cnt += 1
                 counts[idx][msg] += 1

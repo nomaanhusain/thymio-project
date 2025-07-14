@@ -1,0 +1,959 @@
+[INFO] [launch]: All log files can be found below /home/thymio/.ros/log/2025-06-13-15-43-04-654529-thymio-818
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [random_robot_move-1]: process started with pid [847]
+[INFO] [service_vicon_node-2]: process started with pid [849]
+[INFO] [service_neighbours_opinions-3]: process started with pid [851]
+[INFO] [publish_wind_direction-4]: process started with pid [853]
+[service_vicon_node-2] [INFO] [1749829387.660166814] [service_vicon_node]: Physical Ip=192.168.3.74, id=id74
+[service_vicon_node-2] [INFO] [1749829387.665949259] [service_vicon_node]: Updated ID from mapping: id192
+[service_neighbours_opinions-3] [INFO] [1749829387.756317851] [service_neighbours_opinions]: Physical Ip=192.168.3.74, id=id74
+[service_neighbours_opinions-3] [INFO] [1749829387.760027370] [service_neighbours_opinions]: Updated ID from mapping: id192
+[service_neighbours_opinions-3] [INFO] [1749829387.777787851] [service_neighbours_opinions]: Subscribed to: wind_direction/id68
+[service_vicon_node-2] [INFO] [1749829387.779658629] [service_vicon_node]: Subscribed to: vicon/default/data
+[service_neighbours_opinions-3] [INFO] [1749829387.785654870] [service_neighbours_opinions]: Subscribed to: wind_direction/id136
+[service_neighbours_opinions-3] [INFO] [1749829387.791167314] [service_neighbours_opinions]: Subscribed to: wind_direction/id137
+[service_neighbours_opinions-3] [INFO] [1749829387.796657629] [service_neighbours_opinions]: Subscribed to: wind_direction/id142
+[service_neighbours_opinions-3] [INFO] [1749829387.802020703] [service_neighbours_opinions]: Subscribed to: wind_direction/id151
+[service_neighbours_opinions-3] [INFO] [1749829387.807252666] [service_neighbours_opinions]: Subscribed to: wind_direction/id152
+[service_neighbours_opinions-3] [INFO] [1749829387.811734592] [service_neighbours_opinions]: Subscribed to: wind_direction/id155
+[service_neighbours_opinions-3] [INFO] [1749829387.815540685] [service_neighbours_opinions]: Subscribed to: wind_direction/id189
+[service_neighbours_opinions-3] [INFO] [1749829387.819288499] [service_neighbours_opinions]: Subscribed to: wind_direction/id193
+[service_neighbours_opinions-3] [INFO] [1749829387.823582629] [service_neighbours_opinions]: Subscribed to: wind_direction/id194
+[service_neighbours_opinions-3] [INFO] [1749829387.831173073] [service_neighbours_opinions]: Subscribed to: wind_direction/id195
+[service_neighbours_opinions-3] [INFO] [1749829387.837090444] [service_neighbours_opinions]: Subscribed to: wind_direction/id200
+[service_neighbours_opinions-3] [INFO] [1749829387.841902740] [service_neighbours_opinions]: Subscribed to: wind_direction/id206
+[service_neighbours_opinions-3] [INFO] [1749829387.846166444] [service_neighbours_opinions]: Subscribed to: wind_direction/id207
+[service_neighbours_opinions-3] [INFO] [1749829387.850262388] [service_neighbours_opinions]: Subscribed to: wind_direction/id223
+[service_neighbours_opinions-3] [INFO] [1749829387.854810536] [service_neighbours_opinions]: Subscribed to: wind_direction/id224
+[service_neighbours_opinions-3] [INFO] [1749829387.867826240] [service_neighbours_opinions]: Subscribed to: wind_direction/id236
+[service_neighbours_opinions-3] [INFO] [1749829387.872009666] [service_neighbours_opinions]: Subscribed to: wind_direction/id247
+[service_neighbours_opinions-3] [INFO] [1749829387.875479944] [service_neighbours_opinions]: Subscribed to: wind_direction/id1193
+[publish_wind_direction-4] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+[publish_wind_direction-4]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[publish_wind_direction-4] [INFO] [1749829389.750543165] [publish_wind_direction]: Physical Ip=192.168.3.74, id=id74
+[publish_wind_direction-4] [INFO] [1749829389.753301350] [publish_wind_direction]: Updated ID from mapping: id192
+[publish_wind_direction-4] [INFO] [1749829389.761199572] [publish_wind_direction]: Publsihing on: wind_direction/id192
+[service_neighbours_opinions-3] [INFO] [1749829390.469411998] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829390.471957461] [service_neighbours_opinions]: All opinions = {'id206': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829390.858061072] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829390.861072201] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W'}
+[random_robot_move-1] [INFO] [1749829392.335078386] [random_robot_move]: Robot Control Node started.
+[service_neighbours_opinions-3] [INFO] [1749829393.905570329] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829393.908534051] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829394.647350977] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829394.652046866] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829394.828511292] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829394.831425236] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829395.218928699] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829395.223674921] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W'}
+[service_vicon_node-2] [INFO] [1749829397.853115364] [service_vicon_node]: Vicon Position= [631.2384643554688, -573.7655029296875], yaw: -299.62469555886537
+[service_vicon_node-2] [INFO] [1749829397.857462105] [service_vicon_node]: Neighbours: {'id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id136', 'id152', 'id1193', 'id200', 'id68'}
+[service_neighbours_opinions-3] [INFO] [1749829397.866663975] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829397.870465549] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829398.785259252] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829398.810696289] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829398.902622956] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829398.914567382] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829399.309842974] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829399.318724289] [service_vicon_node]: Request received. Responding with pos=array('f', [605.5004272460938, -588.4260864257812]), yaw=-324.7832678997859, neigh=['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id136', 'id152', 'id1193', 'id200', 'id68']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[605.5004272460938, -588.4260864257812], my_vicon_yaw=-324.7832678997859, neighbours_by_id=['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id136', 'id152', 'id1193', 'id200', 'id68'])
+[publish_wind_direction-4] [INFO] [1749829399.324753122] [publish_wind_direction]: Pose Response: pos=array('f', [605.5004272460938, -588.4260864257812]) yaw=-324.78326416015625
+[publish_wind_direction-4] [INFO] [1749829399.328895900] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= -324.78326416015625 Ground Truth= 116.21673583984375
+[publish_wind_direction-4] [INFO] [1749829399.335325159] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829399.347435159] [service_neighbours_opinions]: Requested ['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id136', 'id152', 'id1193', 'id200', 'id68'], responding ['W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829399.354330196] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829399.358888326] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829399.362942326] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4}
+[publish_wind_direction-4] [INFO] [1749829399.366807567] [publish_wind_direction]: Inside Decision Making, My Wind Direction: W
+[publish_wind_direction-4] [INFO] [1749829399.372297215] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 5.6}
+[publish_wind_direction-4] [INFO] [1749829399.378240493] [publish_wind_direction]: Publishing: id192:W
+[publish_wind_direction-4] [INFO] [1749829399.382299270] [publish_wind_direction]: TIME: Decision making completed at: 15:43:19.
+[publish_wind_direction-4] [INFO] [1749829399.386129733] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829399.954894974] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829399.958470585] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829400.363212714] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829400.370492677] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829402.451652805] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829402.454602250] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829403.753404731] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829403.757157916] [service_vicon_node]: Request received. Responding with pos=array('f', [515.7513427734375, -545.2108154296875]), yaw=-53.35879970220054, neigh=['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[515.7513427734375, -545.2108154296875], my_vicon_yaw=-53.35879970220054, neighbours_by_id=['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68'])
+[publish_wind_direction-4] [INFO] [1749829403.761242360] [publish_wind_direction]: Pose Response: pos=array('f', [515.7513427734375, -545.2108154296875]) yaw=-53.35879898071289
+[publish_wind_direction-4] [INFO] [1749829403.764094138] [publish_wind_direction]: ***Cam angle= -39.405394684272075, vico ang deg= -53.35879898071289 Ground Truth= 267.235806335015
+[publish_wind_direction-4] [INFO] [1749829403.766619157] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829403.770700397] [service_neighbours_opinions]: Requested ['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68'], responding ['W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829403.774984620] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829403.777616416] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829403.780310082] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4}
+[publish_wind_direction-4] [INFO] [1749829403.782819212] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+[service_neighbours_opinions-3] [INFO] [1749829403.786892305] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829403.789770527] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829403.789770545] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 1.6, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829403.793706934] [publish_wind_direction]: Publishing: id192:W
+[publish_wind_direction-4] [INFO] [1749829403.796065860] [publish_wind_direction]: TIME: Decision making completed at: 15:43:23.
+[publish_wind_direction-4] [INFO] [1749829403.798361101] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829403.861398286] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829403.866201194] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829404.632161230] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829404.634618323] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829405.216436859] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829405.221441785] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829407.274571451] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829407.289662951] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_vicon_node-2] [INFO] [1749829407.977879506] [service_vicon_node]: Vicon Position= [546.8912963867188, -583.8522338867188], yaw: -13.079380275570704
+[service_vicon_node-2] [INFO] [1749829407.980897876] [service_vicon_node]: Neighbours: {'id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id136', 'id152', 'id1193', 'id200', 'id68'}
+[service_neighbours_opinions-3] [INFO] [1749829408.873919598] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829408.879055024] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829408.951962598] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829408.959142765] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829408.963483376] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829408.994252357] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829408.999933394] [service_vicon_node]: Request received. Responding with pos=array('f', [531.3381958007812, -570.6832275390625]), yaw=-30.081430723727145, neigh=['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[531.3381958007812, -570.6832275390625], my_vicon_yaw=-30.081430723727145, neighbours_by_id=['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68'])
+[publish_wind_direction-4] [INFO] [1749829409.006574209] [publish_wind_direction]: Pose Response: pos=array('f', [531.3381958007812, -570.6832275390625]) yaw=-30.081430435180664
+[publish_wind_direction-4] [INFO] [1749829409.010340672] [publish_wind_direction]: ***Cam angle= 47.03889805154432, vico ang deg= -30.081430435180664 Ground Truth= 16.957467616363658
+[publish_wind_direction-4] [INFO] [1749829409.012793468] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829409.017719579] [service_neighbours_opinions]: Requested ['id224', 'id189', 'id247', 'id195', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68'], responding ['W', 'E', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829409.025978098] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'E', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829409.028532413] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'E', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829409.031045913] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 3, 'E': 1}
+[publish_wind_direction-4] [INFO] [1749829409.033907302] [publish_wind_direction]: Inside Decision Making, My Wind Direction: N
+[publish_wind_direction-4] [INFO] [1749829409.036761635] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 1.6, 'S': 0.0, 'E': 1.0, 'W': 3.0}
+[publish_wind_direction-4] [INFO] [1749829409.041291468] [publish_wind_direction]: Publishing: id192:W
+[publish_wind_direction-4] [INFO] [1749829409.044196246] [publish_wind_direction]: TIME: Decision making completed at: 15:43:29.
+[publish_wind_direction-4] [INFO] [1749829409.046890950] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829409.689264375] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829409.696207690] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829409.702634709] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829410.319239504] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829410.326192856] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829412.302784540] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829412.306457392] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829413.609602836] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829413.610510077] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829413.613448003] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_vicon_node-2] [INFO] [1749829413.615393762] [service_vicon_node]: Request received. Responding with pos=array('f', [556.912353515625, -457.97467041015625]), yaw=-142.12462356086283, neigh=['id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[556.912353515625, -457.97467041015625], my_vicon_yaw=-142.12462356086283, neighbours_by_id=['id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68'])
+[publish_wind_direction-4] [INFO] [1749829413.621000614] [publish_wind_direction]: Pose Response: pos=array('f', [556.912353515625, -457.97467041015625]) yaw=-142.12461853027344
+[publish_wind_direction-4] [INFO] [1749829413.623580910] [publish_wind_direction]: ***Cam angle= 40.865721117100435, vico ang deg= -142.12461853027344 Ground Truth= 258.74110258682697
+[publish_wind_direction-4] [INFO] [1749829413.626016262] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829413.630783428] [service_neighbours_opinions]: Requested ['id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id206', 'id193', 'id155', 'id151', 'id207', 'id152', 'id136', 'id200', 'id1193', 'id68'], responding ['W', 'W', 'W', 'W', 'E']
+[publish_wind_direction-4] [INFO] [1749829413.634997632] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'W', 'E'])
+[publish_wind_direction-4] [INFO] [1749829413.637599354] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'W', 'E']
+[publish_wind_direction-4] [INFO] [1749829413.640146058] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4, 'E': 1}
+[publish_wind_direction-4] [INFO] [1749829413.642619762] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+[publish_wind_direction-4] [INFO] [1749829413.645165965] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 3.0, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829413.648438577] [publish_wind_direction]: Publishing: id192:W
+[publish_wind_direction-4] [INFO] [1749829413.650988836] [publish_wind_direction]: TIME: Decision making completed at: 15:43:33.
+[publish_wind_direction-4] [INFO] [1749829413.653487688] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829413.701968540] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829413.705095873] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829413.707732780] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'E', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829414.880983946] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829414.885433576] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'E', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829415.427634076] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829415.430777816] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'E', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829417.284350186] [service_neighbours_opinions]: * Received from id223, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829417.287618797] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'E', 'id142': 'W', 'id223': 'W'}
+[service_vicon_node-2] [INFO] [1749829418.075698778] [service_vicon_node]: Vicon Position= [563.4072875976562, -457.1473388671875], yaw: -147.84100317027725
+[service_vicon_node-2] [INFO] [1749829418.079245241] [service_vicon_node]: Neighbours: {'id247', 'id142', 'id155', 'id151', 'id136', 'id207', 'id236', 'id194', 'id206', 'id68', 'id223', 'id193', 'id152', 'id200', 'id224', 'id189', 'id195', 'id137', 'id1193'}
+[publish_wind_direction-4] [INFO] [1749829418.590920259] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829418.594714333] [service_vicon_node]: Request received. Responding with pos=array('f', [576.3687744140625, -455.8609924316406]), yaw=-157.82202262600603, neigh=['id247', 'id142', 'id155', 'id151', 'id136', 'id207', 'id236', 'id194', 'id206', 'id68', 'id223', 'id193', 'id152', 'id200', 'id224', 'id189', 'id195', 'id137', 'id1193']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[576.3687744140625, -455.8609924316406], my_vicon_yaw=-157.82202262600603, neighbours_by_id=['id247', 'id142', 'id155', 'id151', 'id136', 'id207', 'id236', 'id194', 'id206', 'id68', 'id223', 'id193', 'id152', 'id200', 'id224', 'id189', 'id195', 'id137', 'id1193'])
+[publish_wind_direction-4] [INFO] [1749829418.601020574] [publish_wind_direction]: Pose Response: pos=array('f', [576.3687744140625, -455.8609924316406]) yaw=-157.822021484375
+[publish_wind_direction-4] [INFO] [1749829418.604832333] [publish_wind_direction]: ***Cam angle= -999.0, vico ang deg= -157.822021484375 Ground Truth= 283.177978515625
+[publish_wind_direction-4] [INFO] [1749829418.608742259] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829418.612989444] [service_neighbours_opinions]: Requested ['id247', 'id142', 'id155', 'id151', 'id136', 'id207', 'id236', 'id194', 'id206', 'id68', 'id223', 'id193', 'id152', 'id200', 'id224', 'id189', 'id195', 'id137', 'id1193'], responding ['W', 'W', 'W', 'W', 'E']
+[service_neighbours_opinions-3] [INFO] [1749829418.618303463] [service_neighbours_opinions]: * Received from id137, wind direction W
+[publish_wind_direction-4] [INFO] [1749829418.618303555] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'W', 'E'])
+[publish_wind_direction-4] [INFO] [1749829418.621043518] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'W', 'E']
+[service_neighbours_opinions-3] [INFO] [1749829418.621043481] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829418.623859277] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4, 'E': 1}
+[publish_wind_direction-4] [INFO] [1749829418.626560648] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+[publish_wind_direction-4] [INFO] [1749829418.629258388] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 3.0, 'W': 4.0}
+[publish_wind_direction-4] [INFO] [1749829418.632502814] [publish_wind_direction]: Publishing: id192:W
+[publish_wind_direction-4] [INFO] [1749829418.634919111] [publish_wind_direction]: TIME: Decision making completed at: 15:43:38.
+[publish_wind_direction-4] [INFO] [1749829418.637311185] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829418.688798740] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829418.691345037] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829419.613239758] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829419.617569888] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829419.620219703] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829420.238851850] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829420.243560332] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829423.573653941] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829423.578782904] [service_vicon_node]: Request received. Responding with pos=array('f', [652.5640258789062, -523.8760375976562]), yaw=-250.07033490640623, neigh=['id236', 'id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id193', 'id155', 'id151', 'id136', 'id207', 'id152', 'id1193', 'id200', 'id68']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[652.5640258789062, -523.8760375976562], my_vicon_yaw=-250.07033490640623, neighbours_by_id=['id236', 'id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id193', 'id155', 'id151', 'id136', 'id207', 'id152', 'id1193', 'id200', 'id68'])
+[publish_wind_direction-4] [INFO] [1749829423.583412737] [publish_wind_direction]: Pose Response: pos=array('f', [652.5640258789062, -523.8760375976562]) yaw=-250.07032775878906
+[publish_wind_direction-4] [INFO] [1749829423.586445460] [publish_wind_direction]: ***Cam angle= -61.18207519483285, vico ang deg= -250.07032775878906 Ground Truth= 48.747597046378075
+[publish_wind_direction-4] [INFO] [1749829423.589235237] [publish_wind_direction]: Neighbour info requested
+[service_neighbours_opinions-3] [INFO] [1749829423.594951793] [service_neighbours_opinions]: Requested ['id236', 'id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id193', 'id155', 'id151', 'id136', 'id207', 'id152', 'id1193', 'id200', 'id68'], responding ['W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829423.599384274] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=['W', 'W', 'W', 'W'])
+[publish_wind_direction-4] [INFO] [1749829423.602200441] [publish_wind_direction]: Inside Decision Making, neighbours opinion: ['W', 'W', 'W', 'W']
+[publish_wind_direction-4] [INFO] [1749829423.604962552] [publish_wind_direction]: Inside Decision Making, computed social info: {'W': 4}
+[publish_wind_direction-4] [INFO] [1749829423.607840367] [publish_wind_direction]: Inside Decision Making, My Wind Direction: W
+[publish_wind_direction-4] [INFO] [1749829423.611138034] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 5.6}
+[publish_wind_direction-4] [INFO] [1749829423.614813293] [publish_wind_direction]: Publishing: id192:W
+[publish_wind_direction-4] [INFO] [1749829423.617744200] [publish_wind_direction]: TIME: Decision making completed at: 15:43:43.
+[publish_wind_direction-4] [INFO] [1749829423.620468774] [publish_wind_direction]: -----------------------------------------------------
+[service_neighbours_opinions-3] [INFO] [1749829423.636701145] [service_neighbours_opinions]: * Received from id142, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829423.639384960] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'W', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829423.828523978] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829423.833270256] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829423.835963033] [service_neighbours_opinions]: All opinions = {'id206': 'E', 'id247': 'W', 'id137': 'S', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829424.699647681] [service_neighbours_opinions]: * Received from id206, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829424.702332329] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'S', 'id142': 'W', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829426.240036458] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829426.243176588] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'S', 'id142': 'W', 'id223': 'W'}
+[service_vicon_node-2] [INFO] [1749829428.253857086] [service_vicon_node]: Vicon Position= [576.7070922851562, -596.0523071289062], yaw: -346.9899470988938
+[service_vicon_node-2] [INFO] [1749829428.259022698] [service_vicon_node]: Neighbours: {'id236', 'id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id193', 'id155', 'id151', 'id136', 'id207', 'id152', 'id1193', 'id200', 'id68'}
+[service_neighbours_opinions-3] [INFO] [1749829428.670615660] [service_neighbours_opinions]: * Received from id142, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829428.673277068] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'S', 'id142': 'E', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829428.764499142] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829428.825617179] [service_neighbours_opinions]: * Received from id137, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829428.828142160] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829430.277662252] [service_neighbours_opinions]: * Received from id247, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829430.281132881] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W'}
+[publish_wind_direction-4] [INFO] [1749829433.558106305] [publish_wind_direction]: Pose info requested
+[service_vicon_node-2] [INFO] [1749829438.284712710] [service_vicon_node]: Vicon Position= [621.4453735351562, -469.3326721191406], yaw: -197.51193083248717
+[service_vicon_node-2] [INFO] [1749829438.289201154] [service_vicon_node]: Neighbours: {'id236', 'id224', 'id189', 'id247', 'id195', 'id137', 'id142', 'id194', 'id223', 'id193', 'id151', 'id136', 'id1193', 'id207', 'id152', 'id200', 'id68'}
+[publish_wind_direction-4] [INFO] [1749829438.803377728] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829443.673123059] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829448.563421685] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829453.604867034] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829458.648044068] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829463.595151306] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829468.655390544] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829473.707626911] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829478.599065130] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829483.550178628] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829488.605363699] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829493.686502955] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829498.845644692] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829503.594301430] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829508.788558242] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829513.707030832] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829518.715012144] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829523.608894455] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829527.872139212] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829527.875414416] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829528.672165045] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829533.692098190] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829537.145229855] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829537.148002021] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E'}
+[publish_wind_direction-4] [INFO] [1749829538.651257409] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829542.112428926] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829542.115572093] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829543.645133221] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829547.046219812] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829547.049051775] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829548.695051904] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829552.324131420] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829552.326968975] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829553.697959715] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829557.653934954] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829557.658044602] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829558.594358805] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829562.424241766] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829562.429740803] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829563.648298376] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829567.025561115] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829567.030166337] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829568.590619151] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829572.484193852] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829572.489212852] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829573.745875370] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829577.386663886] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829577.389577312] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W'}
+[publish_wind_direction-4] [INFO] [1749829578.663131886] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829582.068598272] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829582.071397254] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829582.073963272] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E'}
+[publish_wind_direction-4] [INFO] [1749829583.583211605] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829588.550195213] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829593.558163414] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829598.616376985] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829603.595185130] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829608.564761257] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829613.797386087] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829618.684637806] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829623.552376359] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829628.558492874] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829633.632396131] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829638.706582979] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829643.745127680] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829648.590808400] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829653.575442508] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829658.698005042] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829663.553766946] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829668.536054721] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829673.574270199] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829678.549391048] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829683.626136916] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829688.616365079] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749829693.580862317] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829695.572675964] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829695.578638964] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829697.557957556] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829697.561189944] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829697.563885852] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N'}
+[publish_wind_direction-4] [INFO] [1749829698.710062777] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829700.435933443] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829700.441144072] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829700.444297146] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829702.401631423] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829702.405325386] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829702.408833738] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E'}
+[publish_wind_direction-4] [INFO] [1749829703.635952922] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829705.995252347] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829706.000434069] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829706.005439050] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829706.008066439] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829706.011004569] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829706.013813458] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829706.016417310] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829706.047198013] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829706.050387032] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829706.065696236] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829706.070285791] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829707.249326790] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829707.252786346] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829708.608717882] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829710.523979659] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829710.527244863] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+[service_neighbours_opinions-3] [INFO] [1749829710.530048381] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829710.566447177] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829710.571035881] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829712.018072584] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829712.020808917] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829713.693461861] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829715.343891100] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829715.347117193] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829715.365939008] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829715.369109656] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829715.371985767] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829716.938823007] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829716.942053803] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+[service_neighbours_opinions-3] [INFO] [1749829716.945156507] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829718.752188210] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829720.277684820] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829720.280767598] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829720.283488579] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829720.394121672] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829720.397640153] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829722.228496985] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829722.231603393] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749829723.570309521] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829725.366042780] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829725.368949669] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829725.413065113] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829725.415970946] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829727.167089667] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829727.169935686] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829728.655456981] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829730.264648295] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829730.267493703] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829730.324751462] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829730.327575832] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829731.938431628] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829731.941428387] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829731.944115442] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829733.548247034] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829735.206192718] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829735.209411385] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+[service_neighbours_opinions-3] [INFO] [1749829735.212445607] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'W', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829735.374355811] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829735.377228848] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829737.014169458] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829737.017114291] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829738.553841013] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829740.228010141] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829740.230944789] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829740.235383678] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829740.426283808] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829740.429481937] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829740.432485771] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829742.205247918] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829742.208158473] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829743.526737824] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829745.242095972] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829745.244868823] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829745.323247786] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829745.326427453] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829747.066175248] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829747.068783230] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749829748.516848340] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829750.245400191] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829750.250526913] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829750.255154283] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829750.332548283] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829750.336900376] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829751.929679708] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829751.932518097] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829753.574658207] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829755.298047021] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829755.300650391] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829755.531054521] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829755.534455873] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829756.884746483] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829756.887488483] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829758.564390186] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829760.232277981] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829760.235174259] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829760.358586296] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829760.361258555] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829761.908645443] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829761.911983202] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829763.668175553] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829765.295930941] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829765.300110256] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829765.413660404] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829765.416803330] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829765.419496571] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829766.911555125] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829766.914143848] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829768.564269958] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829770.252693846] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829770.255443734] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829770.366797660] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829770.369562457] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829771.911201622] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829771.914509752] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829771.917344474] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'W', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829773.545658307] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829775.291712954] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829775.295264676] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829775.348856528] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829775.351759342] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829777.240830267] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829777.243620397] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829778.573498526] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829780.233552062] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829780.236416562] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829780.335596580] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829780.338410451] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829782.169052079] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829782.171726912] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829783.745157300] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829785.207430466] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829785.210417411] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829785.357710855] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829785.360738003] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829785.363416318] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829787.233601817] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829787.236582576] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829787.239217465] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749829788.547729909] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829790.281149241] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829790.284270000] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829790.354327611] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829790.357283445] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829791.937610740] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829791.940229759] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829793.583547017] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829795.300431997] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829795.303225164] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829795.307399238] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829795.313920868] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829795.317916886] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829795.321918127] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829797.146329774] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829797.149273589] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749829798.494508995] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829800.276003809] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829800.279088661] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829800.282223809] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829800.402749309] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829800.405678346] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829802.209399104] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829802.212223549] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829803.621484048] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829805.257724047] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829805.260675454] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829805.266853732] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829805.269888991] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829805.272596306] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829807.027966490] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829807.031066046] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829807.033866324] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749829808.590170378] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829810.298853322] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829810.301943896] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+[service_neighbours_opinions-3] [INFO] [1749829810.304713562] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829810.338319822] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829810.341350266] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829811.916110654] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829811.918932635] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'W', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829813.746534597] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829815.295752596] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829815.298771708] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'W', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829815.338209930] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829815.340948337] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'W', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829817.276920114] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829817.279726836] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829818.573944094] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829820.185665131] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829820.188753927] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829820.191431890] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829820.325626668] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829820.328678593] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829820.331373168] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829821.962868352] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829821.965647222] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829823.583888480] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829825.308068683] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829825.310762387] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829825.570347683] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829825.573148535] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829826.889801478] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829826.892676238] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829828.586388385] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829830.335384976] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829830.338316254] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829830.430432958] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829830.433639402] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829830.436494532] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829831.986099753] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829831.988948327] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829833.665837937] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829835.185850640] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829835.188527177] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829835.327999270] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829835.332692418] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829836.916364398] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829836.918959769] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829838.620306971] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829840.239660656] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829840.242486730] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829840.339839082] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829840.342498711] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829841.945952988] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829841.948708377] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829841.951223321] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829843.546589061] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829845.220340708] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829845.223108579] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829845.252179486] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829845.254904245] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829847.005501652] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829847.008342707] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'W', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829848.527949021] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829850.222071502] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829850.224867909] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829850.330042113] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829850.332725576] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829852.306387834] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829852.309009982] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829853.727867277] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829855.212878573] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829855.215803276] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'S', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829855.298507350] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829855.301351054] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829856.941074498] [service_neighbours_opinions]: * Received from id136, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829856.943745201] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'S', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749829858.566813997] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829860.309920033] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829860.312867384] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829860.333859903] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829860.336815162] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829862.232667235] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829862.235237754] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749829863.487976975] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829865.275103659] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829865.277891937] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749829865.281235696] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829865.285777326] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829867.204442566] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829867.207231528] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829868.582253880] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829870.308067212] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829870.310709101] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829870.365460749] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829870.368371915] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829871.919287637] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829871.922367785] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829871.925155896] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829873.583387117] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829875.257811357] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829875.261005338] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749829875.263864653] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829875.338675579] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829875.341441042] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829877.233689134] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829877.236449337] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829878.603122781] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829880.270927910] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829880.273799743] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829880.315080798] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829880.317919576] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829882.366309408] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829882.369062908] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829883.486678000] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829885.303319666] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829885.306113370] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829885.335941758] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829885.338706592] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829887.319861220] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829887.322531072] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829888.610488312] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829890.263809922] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829890.266784978] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829890.309597811] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829890.313103330] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829891.920380069] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829891.922949847] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829893.603049735] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829895.318029882] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829895.321192252] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829895.334452401] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829895.338924808] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829895.342814234] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829897.178533233] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829897.181656103] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829897.184379437] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829898.664650102] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829900.261676935] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829900.264919324] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829900.268039305] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829900.323503601] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829900.326891175] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829902.256691285] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829902.259359841] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829903.555938285] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829905.270003395] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829905.272819969] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829905.300385561] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829905.303361395] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829907.206420097] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829907.209047023] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829908.521868763] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829910.279329707] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829910.282227984] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829910.336038725] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829910.338753929] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829911.849285669] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829911.851993761] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829913.679072667] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829915.226575815] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829915.229429407] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829915.386905000] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829915.389908889] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829916.872822628] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829916.875810110] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829918.592402368] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829920.212238145] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829920.215024034] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829920.320248830] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829920.323240089] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829922.008763088] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829922.011303366] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829923.670187939] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829925.186486475] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829925.189401735] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829925.267565364] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829925.270558883] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829927.086984326] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829927.089723067] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829928.513397936] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829930.230167565] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829930.232975213] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829930.304928676] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829930.307595306] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829932.047294619] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829932.049918564] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829933.553699082] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829935.258200636] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829935.260888747] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829935.315306173] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829935.318244155] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'W', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829936.897805265] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829936.900697691] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829938.546183116] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829940.177705763] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829940.180563689] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829940.338110281] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829940.340992596] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829941.976643262] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829941.979167836] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829943.552654687] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829945.205852926] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829945.208579630] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829945.306673241] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829945.309551537] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829946.924625333] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829946.927502574] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829948.492758369] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829950.139483423] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829950.143875053] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829950.311627553] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829950.315357479] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+[service_neighbours_opinions-3] [INFO] [1749829950.318675183] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829951.870801348] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829951.873865941] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829951.876616237] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829953.598002162] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829955.238698883] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829955.241712865] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829955.303379180] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829955.307002180] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829956.907469290] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829956.910482364] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829958.583969252] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829960.251272325] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829960.254013621] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829960.288137658] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829960.292349454] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829961.958492305] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829961.961329268] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829963.628768027] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829965.235166952] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829965.237981007] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829965.266160433] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829965.269105581] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829966.889078784] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829966.892123302] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829966.894841265] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749829968.635477449] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829970.259283578] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829970.262078449] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749829970.267995708] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829970.271399726] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829971.901086096] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829971.903900762] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829973.602459039] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829975.259653909] [service_neighbours_opinions]: * Received from id194, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829975.262643649] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829975.267691649] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829975.270602316] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749829976.918107593] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829976.920942833] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749829978.526235573] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829980.304385350] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829980.307554461] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829980.313248368] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749829980.316326091] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829981.907126349] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829981.909976571] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829983.574197144] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829985.279119995] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829985.282038958] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829985.353740402] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829985.356680902] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829987.002601309] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829987.005491383] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829988.564473901] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829990.280934881] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829990.283686696] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829990.292866974] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829990.296147640] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749829990.298980085] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829991.966109084] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829991.968949102] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829993.764985435] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749829995.251250841] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749829995.254435230] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749829995.257403211] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829995.289415822] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749829995.292483934] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749829996.990599340] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749829996.993434210] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749829998.682663283] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830000.214812986] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830000.217718116] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749830000.220293301] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749830000.413591153] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830000.416985671] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830001.877040467] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830001.880010226] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749830003.584598818] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830005.261393946] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830005.264390576] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749830005.266962483] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830005.316780946] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830005.321390798] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830006.937469575] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830006.940329223] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830008.570242648] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830010.228999591] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830010.231675684] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830010.414207999] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830010.416884184] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830011.926609276] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830011.929419850] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749830013.606042867] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830015.278118459] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830015.281789662] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749830015.284328218] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830015.328109588] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830015.331876792] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+[service_neighbours_opinions-3] [INFO] [1749830015.334790070] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830016.868671347] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830016.871187495] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749830018.499302105] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830020.262763585] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830020.265973122] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830020.314785345] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830020.318543771] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830021.981624566] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830021.984493510] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830023.723636824] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830025.315398453] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749830025.318314508] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830025.321691638] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830025.324893638] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749830025.327739582] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749830026.907816063] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830026.910459711] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749830028.523345692] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830030.185184728] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830030.188504598] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749830030.191276617] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749830030.334519098] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830030.337567246] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749830030.340293079] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830031.868169801] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830031.870943134] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830033.693111744] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830035.266233484] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830035.268958336] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830035.278408391] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830035.281091021] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830036.892065575] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830036.894997631] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749830036.897612927] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'S', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749830038.518316575] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830040.214588611] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830040.217894962] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749830040.220828481] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'N', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830040.311040036] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830040.313873129] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830041.881525887] [service_neighbours_opinions]: * Received from id136, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830041.884467610] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+[service_neighbours_opinions-3] [INFO] [1749830041.886960665] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830043.642899331] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830045.249783108] [service_neighbours_opinions]: * Received from id152, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830045.252688645] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830045.340699996] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830045.343192737] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830046.944723032] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830046.947134495] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'W', 'id194': 'W'}
+[publish_wind_direction-4] [INFO] [1749830048.585926606] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830050.206517345] [service_neighbours_opinions]: * Received from id152, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749830050.209607734] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'W'}
+[service_neighbours_opinions-3] [INFO] [1749830050.271739345] [service_neighbours_opinions]: * Received from id194, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830050.274938660] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749830050.277787864] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830051.990482233] [service_neighbours_opinions]: * Received from id136, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830051.993359511] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'E', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830053.644305917] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830055.205666157] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830055.209181342] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830055.341465583] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830055.345262416] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'S', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830056.966364452] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830056.969290749] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830058.638250840] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830060.306922024] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830060.309938469] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830060.336259302] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830060.338983562] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830061.926150098] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830061.929135931] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830063.561522911] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830065.253771966] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830065.256608484] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830065.353694355] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830065.356989651] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749830065.359903688] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749830066.937867391] [service_neighbours_opinions]: * Received from id136, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830066.940539928] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'E'}
+[publish_wind_direction-4] [INFO] [1749830068.538249001] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830070.278543926] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830070.281567870] [service_neighbours_opinions]: Comm. Noise, new received opinion: S
+[service_neighbours_opinions-3] [INFO] [1749830070.284438852] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'E'}
+[service_neighbours_opinions-3] [INFO] [1749830070.352859796] [service_neighbours_opinions]: * Received from id194, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830070.355720222] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749830072.269500314] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830072.272352684] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[publish_wind_direction-4] [INFO] [1749830073.640877517] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830075.226206460] [service_neighbours_opinions]: * Received from id152, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830075.229336849] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'N'}
+[service_neighbours_opinions-3] [INFO] [1749830075.535609497] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830075.538445367] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'W', 'id152': 'S', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830076.929497403] [service_neighbours_opinions]: * Received from id136, wind direction W
+[service_neighbours_opinions-3] [INFO] [1749830076.932662533] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749830076.935394885] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'S', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830078.622677643] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830080.239298753] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830080.242369587] [service_neighbours_opinions]: Comm. Noise, new received opinion: E
+[service_neighbours_opinions-3] [INFO] [1749830080.245290105] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830080.284510309] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830080.288699513] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'E', 'id152': 'E', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830081.976113271] [service_neighbours_opinions]: * Received from id136, wind direction E
+[service_neighbours_opinions-3] [INFO] [1749830081.978924160] [service_neighbours_opinions]: Comm. Noise, new received opinion: N
+[service_neighbours_opinions-3] [INFO] [1749830081.982738623] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'E', 'id194': 'S'}
+[publish_wind_direction-4] [INFO] [1749830083.551973900] [publish_wind_direction]: Pose info requested
+[service_neighbours_opinions-3] [INFO] [1749830085.254105436] [service_neighbours_opinions]: * Received from id152, wind direction N
+[service_neighbours_opinions-3] [INFO] [1749830085.256656806] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830085.266475954] [service_neighbours_opinions]: * Received from id194, wind direction S
+[service_neighbours_opinions-3] [INFO] [1749830085.270500528] [service_neighbours_opinions]: All opinions = {'id206': 'W', 'id247': 'W', 'id137': 'W', 'id142': 'E', 'id223': 'W', 'id136': 'N', 'id152': 'N', 'id194': 'S'}
+[service_neighbours_opinions-3] [INFO] [1749830087.878966249] [service_neighbours_opinions]: Raising exception at 15:54:47
+[service_neighbours_opinions-3] Traceback (most recent call last):
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 111, in main
+[service_neighbours_opinions-3]     rclpy.spin(neighbours_node)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[service_neighbours_opinions-3]     executor.spin_once()
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[service_neighbours_opinions-3]     self._spin_once_impl(timeout_sec)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+[service_neighbours_opinions-3]     raise handler.exception()
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[service_neighbours_opinions-3]     self._handler.send(None)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+[service_neighbours_opinions-3]     await call_coroutine(entity, arg)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+[service_neighbours_opinions-3]     await await_or_execute(tmr.callback)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[service_neighbours_opinions-3]     return callback(*args)
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 64, in stop_execution
+[service_neighbours_opinions-3]     raise Exception
+[service_neighbours_opinions-3] Exception
+[service_neighbours_opinions-3] 
+[service_neighbours_opinions-3] During handling of the above exception, another exception occurred:
+[service_neighbours_opinions-3] 
+[service_neighbours_opinions-3] Traceback (most recent call last):
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions", line 33, in <module>
+[service_neighbours_opinions-3]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'service_neighbours_opinions')())
+[service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 117, in main
+[service_neighbours_opinions-3]     neighbours_node.get_logger().error(e)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 345, in error
+[service_neighbours_opinions-3]     return self.log(message, LoggingSeverity.ERROR, **kwargs)
+[service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 318, in log
+[service_neighbours_opinions-3]     _rclpy.rclpy_logging_rcutils_log(
+[service_neighbours_opinions-3] TypeError: rclpy_logging_rcutils_log(): incompatible function arguments. The following argument types are supported:
+[service_neighbours_opinions-3]     1. (arg0: int, arg1: str, arg2: str, arg3: str, arg4: str, arg5: int) -> None
+[service_neighbours_opinions-3] 
+[service_neighbours_opinions-3] Invoked with: <LoggingSeverity.ERROR: 40>, 'service_neighbours_opinions', Exception(), 'main', '/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py', 117
+[ERROR] [service_neighbours_opinions-3]: process has died [pid 851, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions --ros-args -r __node:=service_neighbours_opinions'].
+[publish_wind_direction-4] [INFO] [1749830088.619756193] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830093.595997856] [publish_wind_direction]: Pose info requested
+[publish_wind_direction-4] [INFO] [1749830093.598576282] [publish_wind_direction]: Raising exception at 15:54:53
+[publish_wind_direction-4] Traceback (most recent call last):
+[publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction", line 33, in <module>
+[publish_wind_direction-4]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'publish_wind_direction')())
+[publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 331, in main
+[publish_wind_direction-4]     rclpy.spin(wind_direction_sensor)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[publish_wind_direction-4]     executor.spin_once()
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[publish_wind_direction-4]     self._spin_once_impl(timeout_sec)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+[publish_wind_direction-4]     raise handler.exception()
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[publish_wind_direction-4]     self._handler.send(None)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+[publish_wind_direction-4]     await call_coroutine(entity, arg)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+[publish_wind_direction-4]     await await_or_execute(tmr.callback)
+[publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[publish_wind_direction-4]     return callback(*args)
+[publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 169, in make_wind_direction_opinion
+[publish_wind_direction-4]     raise Exception
+[publish_wind_direction-4] Exception
+[ERROR] [publish_wind_direction-4]: process has died [pid 853, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction --ros-args -r __node:=publish_wind_direction'].
+[random_robot_move-1] [INFO] [1749830096.427451040] [random_robot_move]: robot move: excetion raised at 15:54:56
+[random_robot_move-1] [INFO] [1749830096.430058336] [random_robot_move]: Exception, shutting down
