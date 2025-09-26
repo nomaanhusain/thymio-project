@@ -20,7 +20,7 @@ class RandomRobotMove(Node):
         self.start_time_ = time.time()
 
         # Delay to allow robot initialization of all variables
-        time.sleep(1)
+        time.sleep(4)
         # b) print all variables
         print(th.variables(th.first_node()))
         print("Robot connected")
@@ -28,7 +28,7 @@ class RandomRobotMove(Node):
         self.timer = self.create_timer(0.1, self.random_move)
         self.get_logger().info("Robot Control Node started.")
         self.consecutive_ir_hits = 0
-        self.runtime = 600
+        self.runtime = 1200
 
     def random_move(self):
         if self.stop_bool:

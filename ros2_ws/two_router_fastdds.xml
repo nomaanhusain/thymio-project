@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dds>
+  <participant>
+    <rtps>
+      <builtin>
+        <metatrafficUnicastLocatorList>
+          <!-- IPs of the raspberry pis -->
+          <locator>
+            <udpv4>
+              <address>192.168.3.69</address>
+              <port>7400</port>
+            </udpv4>
+          </locator>
+          <locator>
+            <udpv4>
+              <address>192.168.4.71</address>
+              <port>7400</port>
+            </udpv4>
+          </locator>
+        </metatrafficUnicastLocatorList>
+        <initialPeersList>
+          <locator>
+            <udpv4>
+              <address>192.168.3.69</address>
+              <port>7400</port>
+            </udpv4>
+          </locator>
+          <locator>
+            <udpv4>
+              <address>192.168.4.71</address>
+              <port>7400</port>
+            </udpv4>
+          </locator>
+        </initialPeersList>
+        <domainId>67</domainId>
+      </builtin>
+    </rtps>
+  </participant>
+</dds>

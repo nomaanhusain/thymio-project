@@ -28,7 +28,7 @@ class RandomRobotMove(Node):
         self.timer = self.create_timer(0.1, self.random_move)
         self.get_logger().info("Robot Control Node started.")
         self.consecutive_ir_hits = 0
-        self.runtime = 700
+        self.runtime = 300
 
     def random_move(self):
         if self.stop_bool:
@@ -85,7 +85,7 @@ class RandomRobotMove(Node):
     
     def rotate_right(self):
         if self.robot is not None:
-            move_time = 5
+            move_time = 3
             start_time= time.time()
             # counter = 3000
             while (time.time() - start_time) < move_time:
@@ -110,7 +110,7 @@ class RandomRobotMove(Node):
     
     def rotate_left(self):
         if self.robot is not None:
-            move_time = 5
+            move_time = 3
             start_time= time.time()
             # counter = 3000
             while (time.time() - start_time) < move_time:

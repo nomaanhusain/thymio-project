@@ -1,0 +1,533 @@
+1753363702.0729740 [INFO] [launch]: All log files can be found below /home/thymio/ros_logs/2025-07-24-13-28-22-069672-thymio-7312
+1753363702.0735443 [INFO] [launch]: Default logging verbosity is set to INFO
+1753363702.2896507 [INFO] [service_vicon_node-1]: process started with pid [7313]
+1753363702.2905531 [INFO] [service_neighbours_opinions-2]: process started with pid [7315]
+1753363702.2914104 [INFO] [random_robot_move-3]: process started with pid [7317]
+1753363702.2920694 [INFO] [publish_wind_direction-4]: process started with pid [7319]
+1753363711.7749059 [random_robot_move-3] [INFO] [1753363711.774188733] [random_robot_move]: Robot Control Node started.
+1753364409.5268524 [random_robot_move-3] Initializing Thymio Robot
+1753364409.5272644 [random_robot_move-3] Thymio 1 is connected
+1753364409.5275030 [random_robot_move-3] ['_id', 'event.source', 'event.args', '_fwversion', '_productId', 'buttons._raw', 'button.backward', 'button.left', 'button.center', 'button.forward', 'button.right', 'buttons._mean', 'buttons._noise', 'prox.horizontal', 'prox.comm.rx._payloads', 'prox.comm.rx._intensities', 'prox.comm.rx', 'prox.comm.tx', 'prox.ground.ambiant', 'prox.ground.reflected', 'prox.ground.delta', 'motor.left.target', 'motor.right.target', '_vbat', '_imot', 'motor.left.speed', 'motor.right.speed', 'motor.left.pwm', 'motor.right.pwm', '_integrator', 'acc', 'leds.top', 'leds.bottom.left', 'leds.bottom.right', 'leds.circle', 'temperature', 'rc5.address', 'rc5.command', 'mic.intensity', 'mic.threshold', 'mic._mean', 'timer.period', 'acc._tap', 'sd.present']
+1753364409.5277140 [random_robot_move-3] Robot connected
+1753364409.5279055 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5280790 [random_robot_move-3] collision avoidance
+1753364409.5282545 [random_robot_move-3] Starting Collision avoidance
+1753364409.5284379 [random_robot_move-3] Move back
+1753364409.5286045 [random_robot_move-3] Turn
+1753364409.5287631 [random_robot_move-3] consecutive hits:  601
+1753364409.5289204 [random_robot_move-3] consecutive hits:  345
+1753364409.5290732 [random_robot_move-3] on arena edge
+1753364409.5292251 [random_robot_move-3] Starting Collision avoidance
+1753364409.5293741 [random_robot_move-3] Move back
+1753364409.5295255 [random_robot_move-3] Turn
+1753364409.5296748 [random_robot_move-3] on arena edge
+1753364409.5298252 [random_robot_move-3] Starting Collision avoidance
+1753364409.5299821 [random_robot_move-3] Move back
+1753364409.5301862 [random_robot_move-3] Turn
+1753364409.5303493 [random_robot_move-3] on arena edge
+1753364409.5305028 [random_robot_move-3] Starting Collision avoidance
+1753364409.5306540 [random_robot_move-3] Move back
+1753364409.5308034 [random_robot_move-3] Turn
+1753364409.5309539 [random_robot_move-3] consecutive hits:  349
+1753364409.5311029 [random_robot_move-3] Prox 0: 1378, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5312512 [random_robot_move-3] collision avoidance
+1753364409.5313978 [random_robot_move-3] Starting Collision avoidance
+1753364409.5315449 [random_robot_move-3] Move back
+1753364409.5316913 [random_robot_move-3] Turn
+1753364409.5318379 [random_robot_move-3] consecutive hits:  601
+1753364409.5319862 [random_robot_move-3] Prox 0: 1755, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5321326 [random_robot_move-3] collision avoidance
+1753364409.5322783 [random_robot_move-3] Starting Collision avoidance
+1753364409.5324259 [random_robot_move-3] Move back
+1753364409.5325708 [random_robot_move-3] Turn
+1753364409.5327189 [random_robot_move-3] consecutive hits:  601
+1753364409.5328662 [random_robot_move-3] on arena edge
+1753364409.5330136 [random_robot_move-3] Starting Collision avoidance
+1753364409.5331585 [random_robot_move-3] Move back
+1753364409.5333076 [random_robot_move-3] Turn
+1753364409.5334532 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1530, Prox 3: 0
+1753364409.5335994 [random_robot_move-3] collision avoidance
+1753364409.5337460 [random_robot_move-3] Starting Collision avoidance
+1753364409.5338919 [random_robot_move-3] Move back
+1753364409.5340562 [random_robot_move-3] Turn
+1753364409.5343003 [random_robot_move-3] consecutive hits:  601
+1753364409.5344732 [random_robot_move-3] Prox 0: 0, Prox 1: 1150,  Prox 2: 0, Prox 3: 0
+1753364409.5346286 [random_robot_move-3] collision avoidance
+1753364409.5347819 [random_robot_move-3] Starting Collision avoidance
+1753364409.5349319 [random_robot_move-3] Move back
+1753364409.5350771 [random_robot_move-3] Turn
+1753364409.5352261 [random_robot_move-3] consecutive hits:  601
+1753364409.5353744 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1346
+1753364409.5355213 [random_robot_move-3] collision avoidance
+1753364409.5356684 [random_robot_move-3] Starting Collision avoidance
+1753364409.5358164 [random_robot_move-3] Move back
+1753364409.5359640 [random_robot_move-3] Turn
+1753364409.5361090 [random_robot_move-3] consecutive hits:  601
+1753364409.5362551 [random_robot_move-3] Prox 0: 0, Prox 1: 1485,  Prox 2: 0, Prox 3: 0
+1753364409.5364008 [random_robot_move-3] collision avoidance
+1753364409.5365460 [random_robot_move-3] Starting Collision avoidance
+1753364409.5366919 [random_robot_move-3] Move back
+1753364409.5368361 [random_robot_move-3] Turn
+1753364409.5369825 [random_robot_move-3] consecutive hits:  601
+1753364409.5371292 [random_robot_move-3] on arena edge
+1753364409.5372739 [random_robot_move-3] Starting Collision avoidance
+1753364409.5374200 [random_robot_move-3] Move back
+1753364409.5375664 [random_robot_move-3] Turn
+1753364409.5377123 [random_robot_move-3] consecutive hits:  50
+1753364409.5378623 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1887
+1753364409.5380101 [random_robot_move-3] collision avoidance
+1753364409.5381892 [random_robot_move-3] Starting Collision avoidance
+1753364409.5383406 [random_robot_move-3] Move back
+1753364409.5384901 [random_robot_move-3] Turn
+1753364409.5386388 [random_robot_move-3] consecutive hits:  601
+1753364409.5387888 [random_robot_move-3] on arena edge
+1753364409.5389352 [random_robot_move-3] Starting Collision avoidance
+1753364409.5390823 [random_robot_move-3] Move back
+1753364409.5392282 [random_robot_move-3] Turn
+1753364409.5393751 [random_robot_move-3] on arena edge
+1753364409.5395219 [random_robot_move-3] Starting Collision avoidance
+1753364409.5396688 [random_robot_move-3] Move back
+1753364409.5398147 [random_robot_move-3] Turn
+1753364409.5399585 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1596, Prox 3: 0
+1753364409.5401058 [random_robot_move-3] collision avoidance
+1753364409.5402527 [random_robot_move-3] Starting Collision avoidance
+1753364409.5404048 [random_robot_move-3] Move back
+1753364409.5405552 [random_robot_move-3] Turn
+1753364409.5407073 [random_robot_move-3] Prox 0: 2557, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5408573 [random_robot_move-3] collision avoidance
+1753364409.5410049 [random_robot_move-3] Starting Collision avoidance
+1753364409.5411513 [random_robot_move-3] Move back
+1753364409.5412953 [random_robot_move-3] Turn
+1753364409.5414412 [random_robot_move-3] consecutive hits:  602
+1753364409.5415869 [random_robot_move-3] on arena edge
+1753364409.5417342 [random_robot_move-3] Starting Collision avoidance
+1753364409.5418785 [random_robot_move-3] Move back
+1753364409.5420232 [random_robot_move-3] Turn
+1753364409.5422027 [random_robot_move-3] consecutive hits:  349
+1753364409.5423555 [random_robot_move-3] consecutive hits:  349
+1753364409.5424957 [random_robot_move-3] Prox 0: 1538, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5426235 [random_robot_move-3] collision avoidance
+1753364409.5427518 [random_robot_move-3] Starting Collision avoidance
+1753364409.5428774 [random_robot_move-3] Move back
+1753364409.5429990 [random_robot_move-3] Turn
+1753364409.5431213 [random_robot_move-3] consecutive hits:  601
+1753364409.5432420 [random_robot_move-3] consecutive hits:  348
+1753364409.5433648 [random_robot_move-3] Prox 0: 1693, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5434883 [random_robot_move-3] collision avoidance
+1753364409.5436096 [random_robot_move-3] Starting Collision avoidance
+1753364409.5437305 [random_robot_move-3] Move back
+1753364409.5438535 [random_robot_move-3] Turn
+1753364409.5440171 [random_robot_move-3] consecutive hits:  601
+1753364409.5441508 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5442762 [random_robot_move-3] collision avoidance
+1753364409.5444014 [random_robot_move-3] Starting Collision avoidance
+1753364409.5445230 [random_robot_move-3] Move back
+1753364409.5446470 [random_robot_move-3] Turn
+1753364409.5447705 [random_robot_move-3] consecutive hits:  601
+1753364409.5448954 [random_robot_move-3] Prox 0: 1607, Prox 1: 1237,  Prox 2: 0, Prox 3: 0
+1753364409.5450134 [random_robot_move-3] collision avoidance
+1753364409.5451360 [random_robot_move-3] Starting Collision avoidance
+1753364409.5452585 [random_robot_move-3] Move back
+1753364409.5453811 [random_robot_move-3] Turn
+1753364409.5455039 [random_robot_move-3] consecutive hits:  601
+1753364409.5456247 [random_robot_move-3] Prox 0: 1407, Prox 1: 1237,  Prox 2: 0, Prox 3: 0
+1753364409.5457473 [random_robot_move-3] collision avoidance
+1753364409.5458696 [random_robot_move-3] Starting Collision avoidance
+1753364409.5459919 [random_robot_move-3] Move back
+1753364409.5461402 [random_robot_move-3] Turn
+1753364409.5462711 [random_robot_move-3] consecutive hits:  601
+1753364409.5463960 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5465195 [random_robot_move-3] collision avoidance
+1753364409.5466411 [random_robot_move-3] Starting Collision avoidance
+1753364409.5467625 [random_robot_move-3] Move back
+1753364409.5468833 [random_robot_move-3] Turn
+1753364409.5470042 [random_robot_move-3] consecutive hits:  601
+1753364409.5471275 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5472486 [random_robot_move-3] collision avoidance
+1753364409.5473695 [random_robot_move-3] Starting Collision avoidance
+1753364409.5474908 [random_robot_move-3] Move back
+1753364409.5476122 [random_robot_move-3] Turn
+1753364409.5477340 [random_robot_move-3] consecutive hits:  601
+1753364409.5478549 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1736
+1753364409.5479755 [random_robot_move-3] collision avoidance
+1753364409.5480971 [random_robot_move-3] Starting Collision avoidance
+1753364409.5482192 [random_robot_move-3] Move back
+1753364409.5483410 [random_robot_move-3] Turn
+1753364409.5484605 [random_robot_move-3] consecutive hits:  601
+1753364409.5485826 [random_robot_move-3] Prox 0: 2088, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5487051 [random_robot_move-3] collision avoidance
+1753364409.5488274 [random_robot_move-3] Starting Collision avoidance
+1753364409.5489478 [random_robot_move-3] Move back
+1753364409.5490680 [random_robot_move-3] Turn
+1753364409.5491908 [random_robot_move-3] consecutive hits:  601
+1753364409.5493114 [random_robot_move-3] consecutive hits:  212
+1753364409.5494339 [random_robot_move-3] Prox 0: 1280, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5495825 [random_robot_move-3] collision avoidance
+1753364409.5497127 [random_robot_move-3] Starting Collision avoidance
+1753364409.5498376 [random_robot_move-3] Move back
+1753364409.5499606 [random_robot_move-3] Turn
+1753364409.5501180 [random_robot_move-3] consecutive hits:  601
+1753364409.5502543 [random_robot_move-3] consecutive hits:  349
+1753364409.5503836 [random_robot_move-3] consecutive hits:  348
+1753364409.5505106 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1599
+1753364409.5506330 [random_robot_move-3] collision avoidance
+1753364409.5507569 [random_robot_move-3] Starting Collision avoidance
+1753364409.5508821 [random_robot_move-3] Move back
+1753364409.5510013 [random_robot_move-3] Turn
+1753364409.5511236 [random_robot_move-3] consecutive hits:  601
+1753364409.5512447 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1470
+1753364409.5513659 [random_robot_move-3] collision avoidance
+1753364409.5514870 [random_robot_move-3] Starting Collision avoidance
+1753364409.5516086 [random_robot_move-3] Move back
+1753364409.5517328 [random_robot_move-3] Turn
+1753364409.5518556 [random_robot_move-3] consecutive hits:  601
+1753364409.5519791 [random_robot_move-3] Prox 0: 2133, Prox 1: 1775,  Prox 2: 1864, Prox 3: 3313
+1753364409.5521405 [random_robot_move-3] collision avoidance
+1753364409.5522702 [random_robot_move-3] Starting Collision avoidance
+1753364409.5523939 [random_robot_move-3] Move back
+1753364409.5525136 [random_robot_move-3] Turn
+1753364409.5526347 [random_robot_move-3] consecutive hits:  601
+1753364409.5527573 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5528817 [random_robot_move-3] collision avoidance
+1753364409.5530033 [random_robot_move-3] Starting Collision avoidance
+1753364409.5531235 [random_robot_move-3] Move back
+1753364409.5532436 [random_robot_move-3] Turn
+1753364409.5533643 [random_robot_move-3] consecutive hits:  601
+1753364409.5534859 [random_robot_move-3] consecutive hits:  349
+1753364409.5536070 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1535, Prox 3: 0
+1753364409.5537267 [random_robot_move-3] collision avoidance
+1753364409.5538485 [random_robot_move-3] Starting Collision avoidance
+1753364409.5539696 [random_robot_move-3] Move back
+1753364409.5541170 [random_robot_move-3] Turn
+1753364409.5542455 [random_robot_move-3] consecutive hits:  601
+1753364409.5543692 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5544920 [random_robot_move-3] collision avoidance
+1753364409.5546155 [random_robot_move-3] Starting Collision avoidance
+1753364409.5547364 [random_robot_move-3] Move back
+1753364409.5548596 [random_robot_move-3] Turn
+1753364409.5549798 [random_robot_move-3] consecutive hits:  601
+1753364409.5550992 [random_robot_move-3] Prox 0: 1281, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5552211 [random_robot_move-3] collision avoidance
+1753364409.5553451 [random_robot_move-3] Starting Collision avoidance
+1753364409.5554657 [random_robot_move-3] Move back
+1753364409.5555880 [random_robot_move-3] Turn
+1753364409.5557089 [random_robot_move-3] consecutive hits:  601
+1753364409.5558295 [random_robot_move-3] consecutive hits:  348
+1753364409.5559511 [random_robot_move-3] Prox 0: 1304, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5560737 [random_robot_move-3] collision avoidance
+1753364409.5561938 [random_robot_move-3] Starting Collision avoidance
+1753364409.5563145 [random_robot_move-3] Move back
+1753364409.5564361 [random_robot_move-3] Turn
+1753364409.5565574 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5566800 [random_robot_move-3] collision avoidance
+1753364409.5568006 [random_robot_move-3] Starting Collision avoidance
+1753364409.5569212 [random_robot_move-3] Move back
+1753364409.5570416 [random_robot_move-3] Turn
+1753364409.5571640 [random_robot_move-3] consecutive hits:  602
+1753364409.5572853 [random_robot_move-3] consecutive hits:  348
+1753364409.5574100 [random_robot_move-3] consecutive hits:  349
+1753364409.5575323 [random_robot_move-3] Prox 0: 0, Prox 1: 1297,  Prox 2: 0, Prox 3: 0
+1753364409.5576551 [random_robot_move-3] collision avoidance
+1753364409.5577774 [random_robot_move-3] Starting Collision avoidance
+1753364409.5579000 [random_robot_move-3] Move back
+1753364409.5580223 [random_robot_move-3] Turn
+1753364409.5581720 [random_robot_move-3] consecutive hits:  601
+1753364409.5582991 [random_robot_move-3] consecutive hits:  348
+1753364409.5584252 [random_robot_move-3] Prox 0: 0, Prox 1: 1502,  Prox 2: 0, Prox 3: 0
+1753364409.5585485 [random_robot_move-3] collision avoidance
+1753364409.5586717 [random_robot_move-3] Starting Collision avoidance
+1753364409.5587926 [random_robot_move-3] Move back
+1753364409.5589147 [random_robot_move-3] Turn
+1753364409.5590351 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5591555 [random_robot_move-3] collision avoidance
+1753364409.5592773 [random_robot_move-3] Starting Collision avoidance
+1753364409.5593994 [random_robot_move-3] Move back
+1753364409.5595217 [random_robot_move-3] Turn
+1753364409.5596440 [random_robot_move-3] consecutive hits:  602
+1753364409.5597637 [random_robot_move-3] Prox 0: 1993, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5598831 [random_robot_move-3] collision avoidance
+1753364409.5600402 [random_robot_move-3] Starting Collision avoidance
+1753364409.5601714 [random_robot_move-3] Move back
+1753364409.5602953 [random_robot_move-3] Turn
+1753364409.5604167 [random_robot_move-3] consecutive hits:  601
+1753364409.5605385 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1762, Prox 3: 0
+1753364409.5606599 [random_robot_move-3] collision avoidance
+1753364409.5607817 [random_robot_move-3] Starting Collision avoidance
+1753364409.5609026 [random_robot_move-3] Move back
+1753364409.5610251 [random_robot_move-3] Turn
+1753364409.5611458 [random_robot_move-3] consecutive hits:  601
+1753364409.5612698 [random_robot_move-3] Prox 0: 3727, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5613906 [random_robot_move-3] collision avoidance
+1753364409.5615129 [random_robot_move-3] Starting Collision avoidance
+1753364409.5616338 [random_robot_move-3] Move back
+1753364409.5617554 [random_robot_move-3] Turn
+1753364409.5618770 [random_robot_move-3] consecutive hits:  601
+1753364409.5619974 [random_robot_move-3] consecutive hits:  347
+1753364409.5621419 [random_robot_move-3] Prox 0: 1274, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5622666 [random_robot_move-3] collision avoidance
+1753364409.5623901 [random_robot_move-3] Starting Collision avoidance
+1753364409.5625105 [random_robot_move-3] Move back
+1753364409.5626304 [random_robot_move-3] Turn
+1753364409.5627513 [random_robot_move-3] consecutive hits:  601
+1753364409.5628738 [random_robot_move-3] Prox 0: 1297, Prox 1: 1551,  Prox 2: 0, Prox 3: 0
+1753364409.5629923 [random_robot_move-3] collision avoidance
+1753364409.5631132 [random_robot_move-3] Starting Collision avoidance
+1753364409.5632331 [random_robot_move-3] Move back
+1753364409.5633554 [random_robot_move-3] Turn
+1753364409.5634770 [random_robot_move-3] consecutive hits:  601
+1753364409.5635989 [random_robot_move-3] consecutive hits:  349
+1753364409.5637214 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1646
+1753364409.5638423 [random_robot_move-3] collision avoidance
+1753364409.5639637 [random_robot_move-3] Starting Collision avoidance
+1753364409.5640857 [random_robot_move-3] Move back
+1753364409.5642087 [random_robot_move-3] Turn
+1753364409.5643311 [random_robot_move-3] consecutive hits:  601
+1753364409.5644522 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1635
+1753364409.5645742 [random_robot_move-3] collision avoidance
+1753364409.5646958 [random_robot_move-3] Starting Collision avoidance
+1753364409.5648170 [random_robot_move-3] Move back
+1753364409.5649383 [random_robot_move-3] Turn
+1753364409.5650592 [random_robot_move-3] consecutive hits:  601
+1753364409.5651815 [random_robot_move-3] consecutive hits:  350
+1753364409.5653017 [random_robot_move-3] consecutive hits:  349
+1753364409.5654225 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1530
+1753364409.5655422 [random_robot_move-3] collision avoidance
+1753364409.5656624 [random_robot_move-3] Starting Collision avoidance
+1753364409.5657814 [random_robot_move-3] Move back
+1753364409.5659027 [random_robot_move-3] Turn
+1753364409.5660231 [random_robot_move-3] consecutive hits:  601
+1753364409.5661726 [random_robot_move-3] consecutive hits:  338
+1753364409.5663011 [random_robot_move-3] Prox 0: 1941, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5664237 [random_robot_move-3] collision avoidance
+1753364409.5665460 [random_robot_move-3] Starting Collision avoidance
+1753364409.5666678 [random_robot_move-3] Move back
+1753364409.5667903 [random_robot_move-3] Turn
+1753364409.5669115 [random_robot_move-3] consecutive hits:  601
+1753364409.5670319 [random_robot_move-3] consecutive hits:  347
+1753364409.5671515 [random_robot_move-3] Prox 0: 0, Prox 1: 1477,  Prox 2: 0, Prox 3: 0
+1753364409.5672743 [random_robot_move-3] collision avoidance
+1753364409.5673945 [random_robot_move-3] Starting Collision avoidance
+1753364409.5675156 [random_robot_move-3] Move back
+1753364409.5676365 [random_robot_move-3] Turn
+1753364409.5677581 [random_robot_move-3] consecutive hits:  601
+1753364409.5678797 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1518
+1753364409.5680368 [random_robot_move-3] collision avoidance
+1753364409.5681655 [random_robot_move-3] Starting Collision avoidance
+1753364409.5682871 [random_robot_move-3] Move back
+1753364409.5684087 [random_robot_move-3] Turn
+1753364409.5685303 [random_robot_move-3] consecutive hits:  601
+1753364409.5686531 [random_robot_move-3] Prox 0: 1466, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5687754 [random_robot_move-3] collision avoidance
+1753364409.5688965 [random_robot_move-3] Starting Collision avoidance
+1753364409.5690174 [random_robot_move-3] Move back
+1753364409.5691378 [random_robot_move-3] Turn
+1753364409.5692606 [random_robot_move-3] consecutive hits:  601
+1753364409.5693812 [random_robot_move-3] consecutive hits:  349
+1753364409.5695028 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1695, Prox 3: 0
+1753364409.5696230 [random_robot_move-3] collision avoidance
+1753364409.5697458 [random_robot_move-3] Starting Collision avoidance
+1753364409.5698650 [random_robot_move-3] Move back
+1753364409.5699868 [random_robot_move-3] Turn
+1753364409.5701327 [random_robot_move-3] consecutive hits:  601
+1753364409.5702598 [random_robot_move-3] consecutive hits:  349
+1753364409.5703828 [random_robot_move-3] consecutive hits:  482
+1753364409.5705068 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1475
+1753364409.5706291 [random_robot_move-3] collision avoidance
+1753364409.5707512 [random_robot_move-3] Starting Collision avoidance
+1753364409.5708716 [random_robot_move-3] Move back
+1753364409.5709929 [random_robot_move-3] Turn
+1753364409.5711148 [random_robot_move-3] consecutive hits:  601
+1753364409.5712359 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5713575 [random_robot_move-3] collision avoidance
+1753364409.5714793 [random_robot_move-3] Starting Collision avoidance
+1753364409.5716019 [random_robot_move-3] Move back
+1753364409.5717213 [random_robot_move-3] Turn
+1753364409.5718462 [random_robot_move-3] consecutive hits:  601
+1753364409.5719671 [random_robot_move-3] consecutive hits:  349
+1753364409.5720911 [random_robot_move-3] Prox 0: 1368, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364409.5722132 [random_robot_move-3] collision avoidance
+1753364409.5723357 [random_robot_move-3] Starting Collision avoidance
+1753364409.5724554 [random_robot_move-3] Move back
+1753364409.5725772 [random_robot_move-3] Turn
+1753364409.5726981 [random_robot_move-3] consecutive hits:  601
+1753364916.3249917 [random_robot_move-3] [INFO] [1753364916.324315978] [random_robot_move]: robot move: excetion raised at 13:48:36
+1753364916.3278191 [random_robot_move-3] [INFO] [1753364916.327211256] [random_robot_move]: Exception, shutting down
+1753364916.3541083 [random_robot_move-3] consecutive hits:  349
+1753364916.3544559 [random_robot_move-3] consecutive hits:  349
+1753364916.3545978 [random_robot_move-3] Prox 0: 2218, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3547244 [random_robot_move-3] collision avoidance
+1753364916.3548534 [random_robot_move-3] Starting Collision avoidance
+1753364916.3549826 [random_robot_move-3] Move back
+1753364916.3551114 [random_robot_move-3] Turn
+1753364916.3552392 [random_robot_move-3] consecutive hits:  601
+1753364916.3553650 [random_robot_move-3] consecutive hits:  347
+1753364916.3554919 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1284, Prox 3: 0
+1753364916.3556216 [random_robot_move-3] collision avoidance
+1753364916.3557522 [random_robot_move-3] Starting Collision avoidance
+1753364916.3558798 [random_robot_move-3] Move back
+1753364916.3560050 [random_robot_move-3] Turn
+1753364916.3561306 [random_robot_move-3] consecutive hits:  601
+1753364916.3562555 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1322, Prox 3: 0
+1753364916.3563795 [random_robot_move-3] collision avoidance
+1753364916.3565028 [random_robot_move-3] Starting Collision avoidance
+1753364916.3566277 [random_robot_move-3] Move back
+1753364916.3567519 [random_robot_move-3] Turn
+1753364916.3568773 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3570547 [random_robot_move-3] collision avoidance
+1753364916.3571839 [random_robot_move-3] Starting Collision avoidance
+1753364916.3573091 [random_robot_move-3] Move back
+1753364916.3574333 [random_robot_move-3] Turn
+1753364916.3575580 [random_robot_move-3] consecutive hits:  602
+1753364916.3576834 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1567, Prox 3: 0
+1753364916.3578067 [random_robot_move-3] collision avoidance
+1753364916.3579299 [random_robot_move-3] Starting Collision avoidance
+1753364916.3580728 [random_robot_move-3] Move back
+1753364916.3582067 [random_robot_move-3] Turn
+1753364916.3583310 [random_robot_move-3] consecutive hits:  601
+1753364916.3584552 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1569
+1753364916.3585780 [random_robot_move-3] collision avoidance
+1753364916.3587017 [random_robot_move-3] Starting Collision avoidance
+1753364916.3588243 [random_robot_move-3] Move back
+1753364916.3589468 [random_robot_move-3] Turn
+1753364916.3590710 [random_robot_move-3] consecutive hits:  601
+1753364916.3591940 [random_robot_move-3] Prox 0: 1536, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3593159 [random_robot_move-3] collision avoidance
+1753364916.3594391 [random_robot_move-3] Starting Collision avoidance
+1753364916.3595622 [random_robot_move-3] Move back
+1753364916.3596849 [random_robot_move-3] Turn
+1753364916.3598068 [random_robot_move-3] consecutive hits:  601
+1753364916.3599279 [random_robot_move-3] consecutive hits:  350
+1753364916.3600495 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3601713 [random_robot_move-3] collision avoidance
+1753364916.3602934 [random_robot_move-3] Starting Collision avoidance
+1753364916.3604145 [random_robot_move-3] Move back
+1753364916.3605366 [random_robot_move-3] Turn
+1753364916.3606594 [random_robot_move-3] consecutive hits:  601
+1753364916.3607826 [random_robot_move-3] consecutive hits:  349
+1753364916.3609054 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3610282 [random_robot_move-3] collision avoidance
+1753364916.3611498 [random_robot_move-3] Starting Collision avoidance
+1753364916.3612721 [random_robot_move-3] Move back
+1753364916.3613954 [random_robot_move-3] Turn
+1753364916.3615184 [random_robot_move-3] consecutive hits:  601
+1753364916.3616414 [random_robot_move-3] on arena edge
+1753364916.3617635 [random_robot_move-3] Starting Collision avoidance
+1753364916.3618860 [random_robot_move-3] Move back
+1753364916.3620079 [random_robot_move-3] Turn
+1753364916.3622024 [random_robot_move-3] on arena edge
+1753364916.3623307 [random_robot_move-3] Starting Collision avoidance
+1753364916.3624558 [random_robot_move-3] Move back
+1753364916.3625793 [random_robot_move-3] Turn
+1753364916.3627033 [random_robot_move-3] on arena edge
+1753364916.3628254 [random_robot_move-3] Starting Collision avoidance
+1753364916.3629479 [random_robot_move-3] Move back
+1753364916.3630695 [random_robot_move-3] Turn
+1753364916.3631923 [random_robot_move-3] consecutive hits:  344
+1753364916.3633144 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 1258, Prox 3: 0
+1753364916.3634377 [random_robot_move-3] collision avoidance
+1753364916.3635693 [random_robot_move-3] Starting Collision avoidance
+1753364916.3637013 [random_robot_move-3] Move back
+1753364916.3638380 [random_robot_move-3] Turn
+1753364916.3639662 [random_robot_move-3] consecutive hits:  601
+1753364916.3640950 [random_robot_move-3] consecutive hits:  330
+1753364916.3642242 [random_robot_move-3] Prox 0: 0, Prox 1: 1959,  Prox 2: 0, Prox 3: 0
+1753364916.3643529 [random_robot_move-3] collision avoidance
+1753364916.3644812 [random_robot_move-3] Starting Collision avoidance
+1753364916.3646097 [random_robot_move-3] Move back
+1753364916.3647380 [random_robot_move-3] Turn
+1753364916.3648653 [random_robot_move-3] consecutive hits:  601
+1753364916.3649948 [random_robot_move-3] consecutive hits:  348
+1753364916.3651187 [random_robot_move-3] consecutive hits:  346
+1753364916.3652446 [random_robot_move-3] consecutive hits:  366
+1753364916.3653669 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3655298 [random_robot_move-3] collision avoidance
+1753364916.3656511 [random_robot_move-3] Starting Collision avoidance
+1753364916.3657687 [random_robot_move-3] Move back
+1753364916.3658841 [random_robot_move-3] Turn
+1753364916.3659992 [random_robot_move-3] consecutive hits:  601
+1753364916.3661509 [random_robot_move-3] consecutive hits:  349
+1753364916.3662715 [random_robot_move-3] consecutive hits:  349
+1753364916.3663883 [random_robot_move-3] consecutive hits:  349
+1753364916.3665040 [random_robot_move-3] Prox 0: 1483, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3666191 [random_robot_move-3] collision avoidance
+1753364916.3667336 [random_robot_move-3] Starting Collision avoidance
+1753364916.3668482 [random_robot_move-3] Move back
+1753364916.3669629 [random_robot_move-3] Turn
+1753364916.3670800 [random_robot_move-3] consecutive hits:  601
+1753364916.3671949 [random_robot_move-3] on arena edge
+1753364916.3673105 [random_robot_move-3] Starting Collision avoidance
+1753364916.3674254 [random_robot_move-3] Move back
+1753364916.3675411 [random_robot_move-3] Turn
+1753364916.3676555 [random_robot_move-3] on arena edge
+1753364916.3677711 [random_robot_move-3] Starting Collision avoidance
+1753364916.3678858 [random_robot_move-3] Move back
+1753364916.3679998 [random_robot_move-3] Turn
+1753364916.3681152 [random_robot_move-3] on arena edge
+1753364916.3682308 [random_robot_move-3] Starting Collision avoidance
+1753364916.3683462 [random_robot_move-3] Move back
+1753364916.3684609 [random_robot_move-3] Turn
+1753364916.3685765 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1659
+1753364916.3686907 [random_robot_move-3] collision avoidance
+1753364916.3688052 [random_robot_move-3] Starting Collision avoidance
+1753364916.3689203 [random_robot_move-3] Move back
+1753364916.3690391 [random_robot_move-3] Turn
+1753364916.3691611 [random_robot_move-3] consecutive hits:  601
+1753364916.3692827 [random_robot_move-3] Prox 0: 1519, Prox 1: 1565,  Prox 2: 0, Prox 3: 0
+1753364916.3694024 [random_robot_move-3] collision avoidance
+1753364916.3695195 [random_robot_move-3] Starting Collision avoidance
+1753364916.3696334 [random_robot_move-3] Move back
+1753364916.3697488 [random_robot_move-3] Turn
+1753364916.3698626 [random_robot_move-3] consecutive hits:  601
+1753364916.3699772 [random_robot_move-3] consecutive hits:  349
+1753364916.3701274 [random_robot_move-3] consecutive hits:  349
+1753364916.3702514 [random_robot_move-3] consecutive hits:  348
+1753364916.3703685 [random_robot_move-3] consecutive hits:  349
+1753364916.3704851 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1185
+1753364916.3706005 [random_robot_move-3] collision avoidance
+1753364916.3707156 [random_robot_move-3] Starting Collision avoidance
+1753364916.3708303 [random_robot_move-3] Move back
+1753364916.3709447 [random_robot_move-3] Turn
+1753364916.3710604 [random_robot_move-3] consecutive hits:  601
+1753364916.3711762 [random_robot_move-3] consecutive hits:  349
+1753364916.3712909 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1689
+1753364916.3714046 [random_robot_move-3] collision avoidance
+1753364916.3715196 [random_robot_move-3] Starting Collision avoidance
+1753364916.3716338 [random_robot_move-3] Move back
+1753364916.3717482 [random_robot_move-3] Turn
+1753364916.3718629 [random_robot_move-3] consecutive hits:  601
+1753364916.3719776 [random_robot_move-3] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1753364916.3720922 [random_robot_move-3] collision avoidance
+1753364916.3722072 [random_robot_move-3] Starting Collision avoidance
+1753364916.3723218 [random_robot_move-3] Move back
+1753364916.3724363 [random_robot_move-3] Turn
+1753364916.3725514 [random_robot_move-3] consecutive hits:  601
+1753364916.3726692 [random_robot_move-3] Prox 0: 2128, Prox 1: 2454,  Prox 2: 3892, Prox 3: 3657
+1753364916.3727846 [random_robot_move-3] collision avoidance
+1753364916.3728993 [random_robot_move-3] Starting Collision avoidance
+1753364916.3730140 [random_robot_move-3] Move back
+1753364916.3731289 [random_robot_move-3] Turn
+1753364916.3732815 [random_robot_move-3] consecutive hits:  601
+1753364934.2249875 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1753364934.2444956 [random_robot_move-3] Exception ignored in: <module 'threading' from '/usr/lib/python3.10/threading.py'>
+1753364934.2455513 [random_robot_move-3] Traceback (most recent call last):
+1753364934.2464545 [random_robot_move-3]   File "/usr/lib/python3.10/threading.py", line 1567, in _shutdown
+1753364934.2482831 [random_robot_move-3]     lock.acquire()
+1753364934.2494454 [random_robot_move-3] KeyboardInterrupt: 
+1753364934.4665353 [INFO] [random_robot_move-3]: process has finished cleanly [pid 7317]
+1753364939.2458580 [ERROR] [publish_wind_direction-4]: process[publish_wind_direction-4] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1753364939.2494142 [ERROR] [service_neighbours_opinions-2]: process[service_neighbours_opinions-2] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1753364939.2526324 [ERROR] [service_vicon_node-1]: process[service_vicon_node-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1753364939.2555251 [INFO] [publish_wind_direction-4]: sending signal 'SIGTERM' to process[publish_wind_direction-4]
+1753364939.2582717 [INFO] [service_neighbours_opinions-2]: sending signal 'SIGTERM' to process[service_neighbours_opinions-2]
+1753364939.2601304 [INFO] [service_vicon_node-1]: sending signal 'SIGTERM' to process[service_vicon_node-1]
+1753364944.2472694 [ERROR] [publish_wind_direction-4]: process[publish_wind_direction-4] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1753364944.2509499 [ERROR] [service_neighbours_opinions-2]: process[service_neighbours_opinions-2] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1753364944.2544000 [ERROR] [service_vicon_node-1]: process[service_vicon_node-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1753364944.2570207 [INFO] [publish_wind_direction-4]: sending signal 'SIGKILL' to process[publish_wind_direction-4]
+1753364944.2594285 [INFO] [service_neighbours_opinions-2]: sending signal 'SIGKILL' to process[service_neighbours_opinions-2]
+1753364944.2611508 [INFO] [service_vicon_node-1]: sending signal 'SIGKILL' to process[service_vicon_node-1]
+1753364944.9143846 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1753364948.0468168 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1753364958.7996335 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1753364958.9586589 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1753364959.1702223 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...

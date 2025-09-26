@@ -8,9 +8,14 @@ def generate_launch_description():
             executable='random_robot_move',
             name='random_robot_move'
         ),
+        # Node(
+        #     package='wind_direction_detector',
+        #     executable='publish_wind_direction',
+        #     name='publish_wind_direction'
+        # )
         Node(
             package='wind_direction_detector',
-            executable='publish_wind_direction',
-            name='publish_wind_direction'
+            executable='communication_test',
+            name='communication_test'
         )
     ])

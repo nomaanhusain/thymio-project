@@ -1,0 +1,85 @@
+1749831344.2389379 [INFO] [launch]: All log files can be found below /home/thymio/ros_logs/2025-06-13-16-15-44-235613-thymio-2406
+1749831344.2394948 [INFO] [launch]: Default logging verbosity is set to INFO
+1749831344.5633795 [INFO] [random_robot_move-1]: process started with pid [2407]
+1749831344.5644197 [INFO] [service_vicon_node-2]: process started with pid [2409]
+1749831344.5652397 [INFO] [service_neighbours_opinions-3]: process started with pid [2411]
+1749831344.5661449 [INFO] [publish_wind_direction-4]: process started with pid [2413]
+1749831346.2081535 [service_vicon_node-2] [INFO] [1749831346.207357270] [service_vicon_node]: Physical Ip=192.168.3.82, id=id82
+1749831346.2165096 [service_vicon_node-2] [INFO] [1749831346.215480270] [service_vicon_node]: Updated ID from mapping: id152
+1749831346.2298913 [service_neighbours_opinions-3] [INFO] [1749831346.229092196] [service_neighbours_opinions]: Physical Ip=192.168.3.82, id=id82
+1749831346.2316630 [service_vicon_node-2] [INFO] [1749831346.231072066] [service_vicon_node]: Subscribed to: vicon/default/data
+1749831346.2329860 [service_neighbours_opinions-3] [INFO] [1749831346.232506937] [service_neighbours_opinions]: Updated ID from mapping: id152
+1749831346.2415130 [service_neighbours_opinions-3] [INFO] [1749831346.240600029] [service_neighbours_opinions]: Subscribed to: wind_direction/id68
+1749831346.2449656 [service_neighbours_opinions-3] [INFO] [1749831346.244409455] [service_neighbours_opinions]: Subscribed to: wind_direction/id136
+1749831346.2487245 [service_neighbours_opinions-3] [INFO] [1749831346.247944011] [service_neighbours_opinions]: Subscribed to: wind_direction/id137
+1749831346.2523232 [service_neighbours_opinions-3] [INFO] [1749831346.251692678] [service_neighbours_opinions]: Subscribed to: wind_direction/id142
+1749831346.2558029 [service_neighbours_opinions-3] [INFO] [1749831346.255239863] [service_neighbours_opinions]: Subscribed to: wind_direction/id151
+1749831346.2593708 [service_neighbours_opinions-3] [INFO] [1749831346.258809381] [service_neighbours_opinions]: Subscribed to: wind_direction/id155
+1749831346.2629948 [service_neighbours_opinions-3] [INFO] [1749831346.262416474] [service_neighbours_opinions]: Subscribed to: wind_direction/id189
+1749831346.2665918 [service_neighbours_opinions-3] [INFO] [1749831346.266001474] [service_neighbours_opinions]: Subscribed to: wind_direction/id192
+1749831346.2701287 [service_neighbours_opinions-3] [INFO] [1749831346.269565066] [service_neighbours_opinions]: Subscribed to: wind_direction/id193
+1749831346.2738273 [service_neighbours_opinions-3] [INFO] [1749831346.273100752] [service_neighbours_opinions]: Subscribed to: wind_direction/id194
+1749831346.2775238 [service_neighbours_opinions-3] [INFO] [1749831346.276881937] [service_neighbours_opinions]: Subscribed to: wind_direction/id195
+1749831346.2809815 [service_neighbours_opinions-3] [INFO] [1749831346.280365326] [service_neighbours_opinions]: Subscribed to: wind_direction/id200
+1749831346.2845695 [service_neighbours_opinions-3] [INFO] [1749831346.283870622] [service_neighbours_opinions]: Subscribed to: wind_direction/id206
+1749831346.2879038 [service_neighbours_opinions-3] [INFO] [1749831346.287343437] [service_neighbours_opinions]: Subscribed to: wind_direction/id207
+1749831346.2915099 [service_neighbours_opinions-3] [INFO] [1749831346.290887011] [service_neighbours_opinions]: Subscribed to: wind_direction/id223
+1749831346.2949049 [service_neighbours_opinions-3] [INFO] [1749831346.294293233] [service_neighbours_opinions]: Subscribed to: wind_direction/id224
+1749831346.2985051 [service_neighbours_opinions-3] [INFO] [1749831346.297946215] [service_neighbours_opinions]: Subscribed to: wind_direction/id236
+1749831346.3019314 [service_neighbours_opinions-3] [INFO] [1749831346.301355641] [service_neighbours_opinions]: Subscribed to: wind_direction/id247
+1749831346.3053010 [service_neighbours_opinions-3] [INFO] [1749831346.304749289] [service_neighbours_opinions]: Subscribed to: wind_direction/id1193
+1749831347.0913918 [publish_wind_direction-4] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+1749831347.0919945 [publish_wind_direction-4]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+1749831348.0518777 [publish_wind_direction-4] [INFO] [1749831348.051275232] [publish_wind_direction]: Physical Ip=192.168.3.82, id=id82
+1749831348.0545273 [publish_wind_direction-4] [INFO] [1749831348.054018214] [publish_wind_direction]: Updated ID from mapping: id152
+1749831348.0619688 [publish_wind_direction-4] [INFO] [1749831348.061363343] [publish_wind_direction]: Publsihing on: wind_direction/id152
+1749831354.0898762 [random_robot_move-1] [INFO] [1749831354.089148747] [random_robot_move]: Robot Control Node started.
+1749831369.3616560 [publish_wind_direction-4] [INFO] [1749831369.360955719] [publish_wind_direction]: Main Pub Node: Requesting Pose Info
+1749831370.5139906 [service_vicon_node-2] [INFO] [1749831370.513142404] [service_vicon_node]: Request received. Responding with pos=array('f', [0.0, 0.0]), yaw=0.0, neigh=[]Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[0.0, 0.0], my_vicon_yaw=0.0, neighbours_by_id=[])
+1749831370.6154783 [service_vicon_node-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/service.py:76: RuntimeWarning: failed to send response (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+1749831370.6160734 [service_vicon_node-2]   self.__service.service_send_response(response, header.request_id)
+1749831373.0654905 [publish_wind_direction-4] [INFO] [1749831373.064807828] [publish_wind_direction]: Main Pub Node: Requesting Pose Info
+1749831373.2943172 [service_vicon_node-2] [INFO] [1749831373.293569810] [service_vicon_node]: Request received. Responding with pos=array('f', [0.0, 0.0]), yaw=0.0, neigh=[]Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[0.0, 0.0], my_vicon_yaw=0.0, neighbours_by_id=[])
+1749831378.0653617 [publish_wind_direction-4] [INFO] [1749831378.064636362] [publish_wind_direction]: Main Pub Node: Requesting Pose Info
+1749831378.0693994 [service_vicon_node-2] [INFO] [1749831378.068722807] [service_vicon_node]: Request received. Responding with pos=array('f', [0.0, 0.0]), yaw=0.0, neigh=[]Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[0.0, 0.0], my_vicon_yaw=0.0, neighbours_by_id=[])
+1749831383.0653598 [publish_wind_direction-4] [INFO] [1749831383.064624322] [publish_wind_direction]: Main Pub Node: Requesting Pose Info
+1749831383.0694153 [service_vicon_node-2] [INFO] [1749831383.068750896] [service_vicon_node]: Request received. Responding with pos=array('f', [0.0, 0.0]), yaw=0.0, neigh=[]Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[0.0, 0.0], my_vicon_yaw=0.0, neighbours_by_id=[])
+1749831386.9382145 [service_vicon_node-2] [INFO] [1749831386.936405246] [service_vicon_node]: Vicon Position= [181.265625, 560.4920654296875], yaw: 188.9374009658104
+1749831386.9406655 [service_vicon_node-2] [INFO] [1749831386.939700024] [service_vicon_node]: Neighbours: {'id195', 'id189', 'id193', 'id194', 'id223'}
+1749831388.0657685 [publish_wind_direction-4] [INFO] [1749831388.064909375] [publish_wind_direction]: Main Pub Node: Requesting Pose Info
+1749831388.0697401 [service_vicon_node-2] [INFO] [1749831388.069084208] [service_vicon_node]: Request received. Responding with pos=array('f', [204.58499145507812, 575.1923828125]), yaw=170.42951330302822, neigh=['id195', 'id189', 'id193', 'id194', 'id223']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[204.58499145507812, 575.1923828125], my_vicon_yaw=170.42951330302822, neighbours_by_id=['id195', 'id189', 'id193', 'id194', 'id223'])
+1749831393.0655057 [publish_wind_direction-4] [INFO] [1749831393.064750502] [publish_wind_direction]: Main Pub Node: Requesting Pose Info
+1749831393.0725899 [service_vicon_node-2] [INFO] [1749831393.071776539] [service_vicon_node]: Request received. Responding with pos=array('f', [318.01251220703125, 659.1155395507812]), yaw=142.1893083530331, neigh=['id194', 'id206', 'id223', 'id189']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[318.01251220703125, 659.1155395507812], my_vicon_yaw=142.1893083530331, neighbours_by_id=['id194', 'id206', 'id223', 'id189'])
+1749831395.8847644 [publish_wind_direction-4] [INFO] [1749831395.884146129] [publish_wind_direction]: Pose Response: pos=array('f', [318.01251220703125, 659.1155395507812]) yaw=142.18931579589844
+1749831395.8875477 [publish_wind_direction-4] [INFO] [1749831395.887012648] [publish_wind_direction]: ***Cam angle= -227.04921914815364, vico ang deg= 142.18931579589844 Ground Truth= 275.1400966477448
+1749831395.8907471 [publish_wind_direction-4] [INFO] [1749831395.889925481] [publish_wind_direction]: Neighbour info requested
+1749831395.8947735 [service_neighbours_opinions-3] [INFO] [1749831395.894121611] [service_neighbours_opinions]: Requested ['id194', 'id206', 'id223', 'id189'], responding []
+1749831395.9004905 [publish_wind_direction-4] [INFO] [1749831395.898578444] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749831395.9036312 [publish_wind_direction-4] [INFO] [1749831395.901270296] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749831395.9051075 [publish_wind_direction-4] [INFO] [1749831395.904229315] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749831395.9074109 [publish_wind_direction-4] [INFO] [1749831395.906886944] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+1749831395.9104862 [publish_wind_direction-4] [INFO] [1749831395.909924944] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749831395.9143252 [publish_wind_direction-4] [INFO] [1749831395.913776852] [publish_wind_direction]: Publishing: id152:E
+1749831395.9168336 [publish_wind_direction-4] [INFO] [1749831395.916311555] [publish_wind_direction]: TIME: Decision making completed at: 16:16:35.
+1749831395.9192393 [publish_wind_direction-4] [INFO] [1749831395.918707722] [publish_wind_direction]: -----------------------------------------------------
+1749831396.4196601 [service_neighbours_opinions-3] [INFO] [1749831396.418970981] [service_neighbours_opinions]: * Received from id200, wind direction W
+1749831396.4231586 [service_neighbours_opinions-3] [INFO] [1749831396.422515555] [service_neighbours_opinions]: All opinions = {'id200': 'W'}
+1749831396.4262667 [service_neighbours_opinions-3] [INFO] [1749831396.425482185] [service_neighbours_opinions]: All opinions size= 1
+1749831396.7045114 [service_neighbours_opinions-3] [INFO] [1749831396.703798851] [service_neighbours_opinions]: * Received from id142, wind direction E
+1749831396.7085867 [service_neighbours_opinions-3] [INFO] [1749831396.707937833] [service_neighbours_opinions]: All opinions = {'id200': 'W', 'id142': 'E'}
+1749831396.7131524 [service_neighbours_opinions-3] [INFO] [1749831396.712403962] [service_neighbours_opinions]: All opinions size= 2
+1749831397.0693045 [service_vicon_node-2] [INFO] [1749831397.068539184] [service_vicon_node]: Vicon Position= [57.2887077331543, 714.4746704101562], yaw: 317.2761776439312
+1749831397.0726135 [service_vicon_node-2] [INFO] [1749831397.071963425] [service_vicon_node]: Neighbours: {'id206', 'id189', 'id193', 'id1193', 'id192'}
+1749831397.1251080 [service_neighbours_opinions-3] [INFO] [1749831397.124376573] [service_neighbours_opinions]: * Received from id195, wind direction N
+1749831397.1300390 [service_neighbours_opinions-3] [INFO] [1749831397.129422592] [service_neighbours_opinions]: Comm. Noise, new received opinion: W
+1749831397.1338582 [service_neighbours_opinions-3] [INFO] [1749831397.133305314] [service_neighbours_opinions]: All opinions = {'id200': 'W', 'id142': 'E', 'id195': 'W'}
+1749831397.1373599 [service_neighbours_opinions-3] [INFO] [1749831397.136793944] [service_neighbours_opinions]: All opinions size= 3
+1749831397.8286328 [service_neighbours_opinions-3] [INFO] [1749831397.827965276] [service_neighbours_opinions]: * Received from id193, wind direction E
+1749831397.8319104 [service_neighbours_opinions-3] [INFO] [1749831397.831321110] [service_neighbours_opinions]: All opinions = {'id200': 'W', 'id142': 'E', 'id195': 'W', 'id193': 'E'}
+1749831397.8345792 [service_neighbours_opinions-3] [INFO] [1749831397.833935832] [service_neighbours_opinions]: All opinions size= 4
+1749831397.9003570 [service_neighbours_opinions-3] [INFO] [1749831397.899652684] [service_neighbours_opinions]: * Received from id236, wind direction N
+1749831397.9030516 [service_neighbours_opinions-3] [INFO] [1749831397.902472999] [service_neighbours_opinions]: All opinions = {'id200': 'W', 'id142': 'E', 'id195': 'W', 'id193': 'E', 'id236': 'N'}
+1749831397.9058747 [service_neighbours_opinions-3] [INFO] [1749831397.905255221] [service_neighbours_opinions]: All opinions size= 5
+1749831398.0657635 [publish_wind_direction-4] [INFO] [1749831398.064790221] [publish_wind_direction]: Main Pub Node: Requesting Pose Info
+1749831398.0710878 [service_vicon_node-2] [INFO] [1749831398.070293202] [service_vicon_node]: Request received. Responding with pos=array('f', [31.299848556518555, 727.3157348632812]), yaw=210.29100590950915, neigh=['id193', 'id1193', 'id192', 'id189']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[31.299848556518555, 727.3157348632812], my_vicon_yaw=210.29100590950915, neighbours_by_id=['id193', 'id1193', 'id192', 'id189'])
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

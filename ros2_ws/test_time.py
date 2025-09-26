@@ -7,3 +7,5 @@ while time.time() - start_time < 10:
     current_time = now.strftime("%H:%M:%S")
     print(f"datetime: {current_time}")
     time.sleep(1)
+
+

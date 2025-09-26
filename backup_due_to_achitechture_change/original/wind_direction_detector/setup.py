@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'publish_wind_direction = wind_direction_detector.publish_direction:main',
             'random_robot_move = wind_direction_detector.random_move:main',
+            'communication_test = wind_direction_detector.communication_test:main',
         ],
     },
 )

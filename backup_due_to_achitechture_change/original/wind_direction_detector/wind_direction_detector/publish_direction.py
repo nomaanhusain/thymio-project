@@ -109,7 +109,7 @@ class PublishWindDirection(Node):
         self.node_start_time = time.time()
         self.csv_file = f"log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
         self.csv_index = 0
-        self.runtime = 700
+        self.runtime = 300
         self.init_csv()
 
     def init_csv(self):

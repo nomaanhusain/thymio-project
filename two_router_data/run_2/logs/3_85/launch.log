@@ -1,0 +1,692 @@
+1749837639.2032828 [INFO] [launch]: All log files can be found below /home/thymio/ros_logs/2025-06-13-18-00-39-200068-thymio-3631
+1749837639.2038443 [INFO] [launch]: Default logging verbosity is set to INFO
+1749837639.4246073 [INFO] [random_robot_move-1]: process started with pid [3632]
+1749837639.4253936 [INFO] [service_vicon_node-2]: process started with pid [3634]
+1749837639.4260197 [INFO] [service_neighbours_opinions-3]: process started with pid [3636]
+1749837639.4265838 [INFO] [publish_wind_direction-4]: process started with pid [3638]
+1749837641.0281532 [publish_wind_direction-4] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+1749837641.0287919 [publish_wind_direction-4]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+1749837641.1704762 [service_vicon_node-2] [INFO] [1749837641.169712208] [service_vicon_node]: Physical Ip=192.168.3.85, id=id85
+1749837641.1773908 [service_vicon_node-2] [INFO] [1749837641.176699616] [service_vicon_node]: Updated ID from mapping: id189
+1749837641.2026489 [service_vicon_node-2] [INFO] [1749837641.201983764] [service_vicon_node]: Subscribed to: vicon/default/data
+1749837641.2865705 [service_neighbours_opinions-3] [INFO] [1749837641.285366245] [service_neighbours_opinions]: Physical Ip=192.168.3.85, id=id85
+1749837641.2907026 [service_neighbours_opinions-3] [INFO] [1749837641.289016616] [service_neighbours_opinions]: Updated ID from mapping: id189
+1749837641.2990589 [service_neighbours_opinions-3] [INFO] [1749837641.297822912] [service_neighbours_opinions]: Subscribed to: wind_direction/id68
+1749837641.3038385 [service_neighbours_opinions-3] [INFO] [1749837641.302168523] [service_neighbours_opinions]: Subscribed to: wind_direction/id136
+1749837641.3068407 [service_neighbours_opinions-3] [INFO] [1749837641.306078338] [service_neighbours_opinions]: Subscribed to: wind_direction/id137
+1749837641.3107412 [service_neighbours_opinions-3] [INFO] [1749837641.310036486] [service_neighbours_opinions]: Subscribed to: wind_direction/id142
+1749837641.3147535 [service_neighbours_opinions-3] [INFO] [1749837641.314030412] [service_neighbours_opinions]: Subscribed to: wind_direction/id151
+1749837641.3188233 [service_neighbours_opinions-3] [INFO] [1749837641.318091412] [service_neighbours_opinions]: Subscribed to: wind_direction/id152
+1749837641.3257604 [service_neighbours_opinions-3] [INFO] [1749837641.324610616] [service_neighbours_opinions]: Subscribed to: wind_direction/id155
+1749837641.3308187 [service_neighbours_opinions-3] [INFO] [1749837641.329141301] [service_neighbours_opinions]: Subscribed to: wind_direction/id192
+1749837641.3369122 [service_neighbours_opinions-3] [INFO] [1749837641.335507838] [service_neighbours_opinions]: Subscribed to: wind_direction/id193
+1749837641.3408735 [service_neighbours_opinions-3] [INFO] [1749837641.340153968] [service_neighbours_opinions]: Subscribed to: wind_direction/id194
+1749837641.3461535 [service_neighbours_opinions-3] [INFO] [1749837641.344434356] [service_neighbours_opinions]: Subscribed to: wind_direction/id195
+1749837641.3503282 [service_neighbours_opinions-3] [INFO] [1749837641.348868393] [service_neighbours_opinions]: Subscribed to: wind_direction/id200
+1749837641.3565958 [service_neighbours_opinions-3] [INFO] [1749837641.355059782] [service_neighbours_opinions]: Subscribed to: wind_direction/id206
+1749837641.3640399 [service_neighbours_opinions-3] [INFO] [1749837641.359636412] [service_neighbours_opinions]: Subscribed to: wind_direction/id207
+1749837641.3709764 [service_neighbours_opinions-3] [INFO] [1749837641.364761412] [service_neighbours_opinions]: Subscribed to: wind_direction/id223
+1749837641.3720584 [service_neighbours_opinions-3] [INFO] [1749837641.369375616] [service_neighbours_opinions]: Subscribed to: wind_direction/id224
+1749837641.3753262 [service_neighbours_opinions-3] [INFO] [1749837641.374523208] [service_neighbours_opinions]: Subscribed to: wind_direction/id236
+1749837641.3801348 [service_neighbours_opinions-3] [INFO] [1749837641.379359134] [service_neighbours_opinions]: Subscribed to: wind_direction/id247
+1749837641.3850503 [service_neighbours_opinions-3] [INFO] [1749837641.384281597] [service_neighbours_opinions]: Subscribed to: wind_direction/id1193
+1749837641.6744118 [publish_wind_direction-4] [INFO] [1749837641.673812541] [publish_wind_direction]: Physical Ip=192.168.3.85, id=id85
+1749837641.6772659 [publish_wind_direction-4] [INFO] [1749837641.676765430] [publish_wind_direction]: Updated ID from mapping: id189
+1749837641.6856418 [publish_wind_direction-4] [INFO] [1749837641.685002634] [publish_wind_direction]: Publsihing on: wind_direction/id189
+1749837645.9767590 [random_robot_move-1] [INFO] [1749837645.976064002] [random_robot_move]: Robot Control Node started.
+1749837646.6906776 [publish_wind_direction-4] [INFO] [1749837646.689988872] [publish_wind_direction]: Pose info requested
+1749837646.6970661 [service_vicon_node-2] [INFO] [1749837646.696330372] [service_vicon_node]: Request received. Responding with pos=array('f', [-277.0862731933594, 78.12162017822266]), yaw=326.54346804043945, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-277.0862731933594, 78.12162017822266], my_vicon_yaw=326.54346804043945, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837646.7027061 [publish_wind_direction-4] [INFO] [1749837646.701830353] [publish_wind_direction]: Pose Response: pos=array('f', [-277.0862731933594, 78.12162017822266]) yaw=326.54345703125
+1749837646.7080584 [publish_wind_direction-4] [INFO] [1749837646.707391390] [publish_wind_direction]: ***Cam angle= 330, vico ang deg= 326.54345703125 Ground Truth= 296.54345703125
+1749837646.7110713 [publish_wind_direction-4] [INFO] [1749837646.710490427] [publish_wind_direction]: Neighbour info requested
+1749837646.7153256 [service_neighbours_opinions-3] [INFO] [1749837646.714665316] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837646.7195158 [publish_wind_direction-4] [INFO] [1749837646.718934464] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837646.7222471 [publish_wind_direction-4] [INFO] [1749837646.721681890] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837646.7251236 [publish_wind_direction-4] [INFO] [1749837646.724172724] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837646.7272296 [publish_wind_direction-4] [INFO] [1749837646.726711427] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+1749837646.7297704 [publish_wind_direction-4] [INFO] [1749837646.729132742] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837646.7335572 [publish_wind_direction-4] [INFO] [1749837646.732908816] [publish_wind_direction]: Publishing: id189:N
+1749837646.7367578 [publish_wind_direction-4] [INFO] [1749837646.736055946] [publish_wind_direction]: TIME: Decision making completed at: 18:00:46.
+1749837646.7410505 [publish_wind_direction-4] [INFO] [1749837646.739001372] [publish_wind_direction]: -----------------------------------------------------
+1749837651.3034596 [service_vicon_node-2] [INFO] [1749837651.302764925] [service_vicon_node]: Vicon Position= [-389.9178466796875, 190.76409912109375], yaw: 329.19088497135976
+1749837651.3063326 [service_vicon_node-2] [INFO] [1749837651.305671443] [service_vicon_node]: Neighbours: {'id136', 'id236', 'id137', 'id194', 'id155', 'id151'}
+1749837651.6890638 [publish_wind_direction-4] [INFO] [1749837651.688347295] [publish_wind_direction]: Pose info requested
+1749837651.6937096 [service_vicon_node-2] [INFO] [1749837651.692611221] [service_vicon_node]: Request received. Responding with pos=array('f', [-390.5368347167969, 191.39865112304688]), yaw=341.9967999850786, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-390.5368347167969, 191.39865112304688], my_vicon_yaw=341.9967999850786, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837651.6976721 [publish_wind_direction-4] [INFO] [1749837651.696869017] [publish_wind_direction]: Pose Response: pos=array('f', [-390.5368347167969, 191.39865112304688]) yaw=341.9967956542969
+1749837651.7004459 [publish_wind_direction-4] [INFO] [1749837651.699665628] [publish_wind_direction]: ***Cam angle= 323, vico ang deg= 341.9967956542969 Ground Truth= 304.9967956542969
+1749837651.7033505 [publish_wind_direction-4] [INFO] [1749837651.702525313] [publish_wind_direction]: Neighbour info requested
+1749837651.7076869 [service_neighbours_opinions-3] [INFO] [1749837651.706989517] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837651.7130435 [publish_wind_direction-4] [INFO] [1749837651.712191776] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837651.7155890 [publish_wind_direction-4] [INFO] [1749837651.714816535] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837651.7187603 [publish_wind_direction-4] [INFO] [1749837651.717985480] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837651.7212703 [publish_wind_direction-4] [INFO] [1749837651.720577721] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+1749837651.7239289 [publish_wind_direction-4] [INFO] [1749837651.723123943] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837651.7278383 [publish_wind_direction-4] [INFO] [1749837651.727223795] [publish_wind_direction]: Publishing: id189:E
+1749837651.7305312 [publish_wind_direction-4] [INFO] [1749837651.729939739] [publish_wind_direction]: TIME: Decision making completed at: 18:00:51.
+1749837651.7329004 [publish_wind_direction-4] [INFO] [1749837651.732365221] [publish_wind_direction]: -----------------------------------------------------
+1749837656.6893256 [publish_wind_direction-4] [INFO] [1749837656.688579755] [publish_wind_direction]: Pose info requested
+1749837656.6947086 [service_vicon_node-2] [INFO] [1749837656.693916292] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837656.6991410 [publish_wind_direction-4] [INFO] [1749837656.698498014] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837656.7022066 [publish_wind_direction-4] [INFO] [1749837656.701486810] [publish_wind_direction]: ***Cam angle= 184, vico ang deg= -9.587515830993652 Ground Truth= 174.41248416900635
+1749837656.7051954 [publish_wind_direction-4] [INFO] [1749837656.704548477] [publish_wind_direction]: Neighbour info requested
+1749837656.7095788 [service_neighbours_opinions-3] [INFO] [1749837656.708838866] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837656.7167480 [publish_wind_direction-4] [INFO] [1749837656.716144440] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837656.7193830 [publish_wind_direction-4] [INFO] [1749837656.718769273] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837656.7218235 [publish_wind_direction-4] [INFO] [1749837656.721231107] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837656.7242358 [publish_wind_direction-4] [INFO] [1749837656.723682625] [publish_wind_direction]: Inside Decision Making, My Wind Direction: S
+1749837656.7267258 [publish_wind_direction-4] [INFO] [1749837656.726178644] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837656.7301369 [publish_wind_direction-4] [INFO] [1749837656.729581681] [publish_wind_direction]: Publishing: id189:E
+1749837656.7326777 [publish_wind_direction-4] [INFO] [1749837656.732094810] [publish_wind_direction]: TIME: Decision making completed at: 18:00:56.
+1749837656.7353122 [publish_wind_direction-4] [INFO] [1749837656.734768181] [publish_wind_direction]: -----------------------------------------------------
+1749837661.6890850 [publish_wind_direction-4] [INFO] [1749837661.688367826] [publish_wind_direction]: Pose info requested
+1749837661.6932986 [service_vicon_node-2] [INFO] [1749837661.692517622] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837661.6979463 [publish_wind_direction-4] [INFO] [1749837661.697276678] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837661.7005424 [publish_wind_direction-4] [INFO] [1749837661.699988844] [publish_wind_direction]: ***Cam angle= 359, vico ang deg= -9.587515830993652 Ground Truth= 349.41248416900635
+1749837661.7032745 [publish_wind_direction-4] [INFO] [1749837661.702443455] [publish_wind_direction]: Neighbour info requested
+1749837661.7073720 [service_neighbours_opinions-3] [INFO] [1749837661.706534585] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837661.7112315 [publish_wind_direction-4] [INFO] [1749837661.710647233] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837661.7142303 [publish_wind_direction-4] [INFO] [1749837661.713443159] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837661.7169621 [publish_wind_direction-4] [INFO] [1749837661.716272085] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837661.7196343 [publish_wind_direction-4] [INFO] [1749837661.719074418] [publish_wind_direction]: Inside Decision Making, My Wind Direction: N
+1749837661.7221639 [publish_wind_direction-4] [INFO] [1749837661.721556215] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837661.7255261 [publish_wind_direction-4] [INFO] [1749837661.724970604] [publish_wind_direction]: Publishing: id189:N
+1749837661.7280211 [publish_wind_direction-4] [INFO] [1749837661.727481548] [publish_wind_direction]: TIME: Decision making completed at: 18:01:01.
+1749837661.7307250 [publish_wind_direction-4] [INFO] [1749837661.729912363] [publish_wind_direction]: -----------------------------------------------------
+1749837666.6891513 [publish_wind_direction-4] [INFO] [1749837666.688439730] [publish_wind_direction]: Pose info requested
+1749837666.6933391 [service_vicon_node-2] [INFO] [1749837666.692517026] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837666.6977451 [publish_wind_direction-4] [INFO] [1749837666.697121767] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837666.7003303 [publish_wind_direction-4] [INFO] [1749837666.699790489] [publish_wind_direction]: ***Cam angle= 334, vico ang deg= -9.587515830993652 Ground Truth= 324.41248416900635
+1749837666.7029598 [publish_wind_direction-4] [INFO] [1749837666.702378767] [publish_wind_direction]: Neighbour info requested
+1749837666.7070882 [service_neighbours_opinions-3] [INFO] [1749837666.706415526] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837666.7122457 [publish_wind_direction-4] [INFO] [1749837666.711405193] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837666.7150812 [publish_wind_direction-4] [INFO] [1749837666.714120489] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837666.7176130 [publish_wind_direction-4] [INFO] [1749837666.716973119] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837666.7204685 [publish_wind_direction-4] [INFO] [1749837666.719885119] [publish_wind_direction]: Inside Decision Making, My Wind Direction: N
+1749837666.7234592 [publish_wind_direction-4] [INFO] [1749837666.722890730] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837666.7274950 [publish_wind_direction-4] [INFO] [1749837666.726902545] [publish_wind_direction]: Publishing: id189:W
+1749837666.7301652 [publish_wind_direction-4] [INFO] [1749837666.729385434] [publish_wind_direction]: TIME: Decision making completed at: 18:01:06.
+1749837666.7325737 [publish_wind_direction-4] [INFO] [1749837666.731858656] [publish_wind_direction]: -----------------------------------------------------
+1749837671.6889515 [publish_wind_direction-4] [INFO] [1749837671.688251635] [publish_wind_direction]: Pose info requested
+1749837671.6930370 [service_vicon_node-2] [INFO] [1749837671.692313005] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837671.6974859 [publish_wind_direction-4] [INFO] [1749837671.696811301] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837671.7003579 [publish_wind_direction-4] [INFO] [1749837671.699765153] [publish_wind_direction]: ***Cam angle= 263, vico ang deg= -9.587515830993652 Ground Truth= 253.41248416900635
+1749837671.7097499 [publish_wind_direction-4] [INFO] [1749837671.702614449] [publish_wind_direction]: Neighbour info requested
+1749837671.7111135 [service_neighbours_opinions-3] [INFO] [1749837671.706845024] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837671.7128341 [publish_wind_direction-4] [INFO] [1749837671.712316209] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837671.7163382 [publish_wind_direction-4] [INFO] [1749837671.715776783] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837671.7201743 [publish_wind_direction-4] [INFO] [1749837671.719602431] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837671.7238412 [publish_wind_direction-4] [INFO] [1749837671.723253875] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+1749837671.7288575 [publish_wind_direction-4] [INFO] [1749837671.727217301] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837671.7349839 [publish_wind_direction-4] [INFO] [1749837671.734381542] [publish_wind_direction]: Publishing: id189:W
+1749837671.7383680 [publish_wind_direction-4] [INFO] [1749837671.737816005] [publish_wind_direction]: TIME: Decision making completed at: 18:01:11.
+1749837671.7417686 [publish_wind_direction-4] [INFO] [1749837671.741136801] [publish_wind_direction]: -----------------------------------------------------
+1749837676.6890712 [publish_wind_direction-4] [INFO] [1749837676.688304243] [publish_wind_direction]: Pose info requested
+1749837676.6935441 [service_vicon_node-2] [INFO] [1749837676.692689113] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837676.6992340 [publish_wind_direction-4] [INFO] [1749837676.697424983] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837676.7013588 [publish_wind_direction-4] [INFO] [1749837676.700795409] [publish_wind_direction]: ***Cam angle= 223, vico ang deg= -9.587515830993652 Ground Truth= 213.41248416900635
+1749837676.7040882 [publish_wind_direction-4] [INFO] [1749837676.703502706] [publish_wind_direction]: Neighbour info requested
+1749837676.7082968 [service_neighbours_opinions-3] [INFO] [1749837676.707639169] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837676.7127512 [publish_wind_direction-4] [INFO] [1749837676.711907650] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837676.7156022 [publish_wind_direction-4] [INFO] [1749837676.714554798] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837676.7180107 [publish_wind_direction-4] [INFO] [1749837676.717253391] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837676.7205691 [publish_wind_direction-4] [INFO] [1749837676.719834669] [publish_wind_direction]: Inside Decision Making, My Wind Direction: S
+1749837676.7230113 [publish_wind_direction-4] [INFO] [1749837676.722393780] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837676.7264292 [publish_wind_direction-4] [INFO] [1749837676.725855909] [publish_wind_direction]: Publishing: id189:N
+1749837676.7288814 [publish_wind_direction-4] [INFO] [1749837676.728370317] [publish_wind_direction]: TIME: Decision making completed at: 18:01:16.
+1749837676.7313697 [publish_wind_direction-4] [INFO] [1749837676.730834354] [publish_wind_direction]: -----------------------------------------------------
+1749837679.7549508 [service_neighbours_opinions-3] [INFO] [1749837679.754300500] [service_neighbours_opinions]: * Received from id247, wind direction E
+1749837679.7577572 [service_neighbours_opinions-3] [INFO] [1749837679.757078000] [service_neighbours_opinions]: All opinions = {'id247': 'E'}
+1749837681.6890483 [publish_wind_direction-4] [INFO] [1749837681.688326388] [publish_wind_direction]: Pose info requested
+1749837681.6931229 [service_vicon_node-2] [INFO] [1749837681.692371943] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837681.6974976 [publish_wind_direction-4] [INFO] [1749837681.696870221] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837681.7006433 [publish_wind_direction-4] [INFO] [1749837681.699987777] [publish_wind_direction]: ***Cam angle= 30, vico ang deg= -9.587515830993652 Ground Truth= 20.412484169006348
+1749837681.7036364 [publish_wind_direction-4] [INFO] [1749837681.702996999] [publish_wind_direction]: Neighbour info requested
+1749837681.7096875 [service_neighbours_opinions-3] [INFO] [1749837681.709024166] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837681.7142010 [publish_wind_direction-4] [INFO] [1749837681.713555758] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837681.7168763 [publish_wind_direction-4] [INFO] [1749837681.716309888] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837681.7194941 [publish_wind_direction-4] [INFO] [1749837681.718928555] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837681.7220161 [publish_wind_direction-4] [INFO] [1749837681.721487740] [publish_wind_direction]: Inside Decision Making, My Wind Direction: N
+1749837681.7245448 [publish_wind_direction-4] [INFO] [1749837681.724001221] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837681.7281563 [publish_wind_direction-4] [INFO] [1749837681.727544443] [publish_wind_direction]: Publishing: id189:W
+1749837681.7306206 [publish_wind_direction-4] [INFO] [1749837681.730100629] [publish_wind_direction]: TIME: Decision making completed at: 18:01:21.
+1749837681.7329836 [publish_wind_direction-4] [INFO] [1749837681.732459518] [publish_wind_direction]: -----------------------------------------------------
+1749837686.6890457 [publish_wind_direction-4] [INFO] [1749837686.688313311] [publish_wind_direction]: Pose info requested
+1749837686.6931002 [service_vicon_node-2] [INFO] [1749837686.692372570] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837686.6975281 [publish_wind_direction-4] [INFO] [1749837686.696851144] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837686.7004342 [publish_wind_direction-4] [INFO] [1749837686.699823052] [publish_wind_direction]: ***Cam angle= 268, vico ang deg= -9.587515830993652 Ground Truth= 258.41248416900635
+1749837686.7032437 [publish_wind_direction-4] [INFO] [1749837686.702640366] [publish_wind_direction]: Neighbour info requested
+1749837686.7075841 [service_neighbours_opinions-3] [INFO] [1749837686.706902885] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837686.7117946 [publish_wind_direction-4] [INFO] [1749837686.711178144] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837686.7146561 [publish_wind_direction-4] [INFO] [1749837686.714044663] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837686.7174311 [publish_wind_direction-4] [INFO] [1749837686.716831478] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837686.7202241 [publish_wind_direction-4] [INFO] [1749837686.719646237] [publish_wind_direction]: Inside Decision Making, My Wind Direction: E
+1749837686.7228374 [publish_wind_direction-4] [INFO] [1749837686.722247940] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837686.7266011 [publish_wind_direction-4] [INFO] [1749837686.726039274] [publish_wind_direction]: Publishing: id189:S
+1749837686.7293479 [publish_wind_direction-4] [INFO] [1749837686.728788996] [publish_wind_direction]: TIME: Decision making completed at: 18:01:26.
+1749837686.7319806 [publish_wind_direction-4] [INFO] [1749837686.731434866] [publish_wind_direction]: -----------------------------------------------------
+1749837691.6890838 [publish_wind_direction-4] [INFO] [1749837691.688383734] [publish_wind_direction]: Pose info requested
+1749837691.6932480 [service_vicon_node-2] [INFO] [1749837691.692521271] [service_vicon_node]: Request received. Responding with pos=array('f', [-422.5178527832031, 223.38670349121094]), yaw=-9.587515878665695, neigh=['id136', 'id236', 'id137', 'id194', 'id155', 'id151']Response to be returned: service_messages.srv.GetPoseData_Response(my_position_xy=[-422.5178527832031, 223.38670349121094], my_vicon_yaw=-9.587515878665695, neighbours_by_id=['id136', 'id236', 'id137', 'id194', 'id155', 'id151'])
+1749837691.6977801 [publish_wind_direction-4] [INFO] [1749837691.696873067] [publish_wind_direction]: Pose Response: pos=array('f', [-422.5178527832031, 223.38670349121094]) yaw=-9.587515830993652
+1749837691.7003450 [publish_wind_direction-4] [INFO] [1749837691.699751141] [publish_wind_direction]: ***Cam angle= 202, vico ang deg= -9.587515830993652 Ground Truth= 192.41248416900635
+1749837691.7031634 [publish_wind_direction-4] [INFO] [1749837691.702500475] [publish_wind_direction]: Neighbour info requested
+1749837691.7077966 [service_neighbours_opinions-3] [INFO] [1749837691.707127400] [service_neighbours_opinions]: Requested ['id136', 'id236', 'id137', 'id194', 'id155', 'id151'], responding []
+1749837691.7118113 [publish_wind_direction-4] [INFO] [1749837691.711197826] [publish_wind_direction]: Neighbour Opinion Response: service_messages.srv.GetOpinionData_Response(neighbours_opinions=[])
+1749837691.7143734 [publish_wind_direction-4] [INFO] [1749837691.713820049] [publish_wind_direction]: Inside Decision Making, neighbours opinion: []
+1749837691.7168963 [publish_wind_direction-4] [INFO] [1749837691.716334549] [publish_wind_direction]: Inside Decision Making, computed social info: {}
+1749837691.7194138 [publish_wind_direction-4] [INFO] [1749837691.718872938] [publish_wind_direction]: Inside Decision Making, My Wind Direction: S
+1749837691.7219856 [publish_wind_direction-4] [INFO] [1749837691.721429493] [publish_wind_direction]: Inside Decision Making, Decision dict: {'N': 0.0, 'S': 0.0, 'E': 0.0, 'W': 0.0}
+1749837691.7255576 [publish_wind_direction-4] [INFO] [1749837691.724968789] [publish_wind_direction]: Publishing: id189:S
+1749837691.7281125 [publish_wind_direction-4] [INFO] [1749837691.727572512] [publish_wind_direction]: TIME: Decision making completed at: 18:01:31.
+1749837691.7305720 [publish_wind_direction-4] [INFO] [1749837691.730028271] [publish_wind_direction]: -----------------------------------------------------
+1749837696.6889777 [publish_wind_direction-4] [INFO] [1749837696.688338749] [publish_wind_direction]: Pose info requested
+1749837701.6894910 [publish_wind_direction-4] [INFO] [1749837701.688779320] [publish_wind_direction]: Pose info requested
+1749837706.6895330 [publish_wind_direction-4] [INFO] [1749837706.688532373] [publish_wind_direction]: Pose info requested
+1749837711.6889920 [publish_wind_direction-4] [INFO] [1749837711.688312037] [publish_wind_direction]: Pose info requested
+1749837716.6890106 [publish_wind_direction-4] [INFO] [1749837716.688334330] [publish_wind_direction]: Pose info requested
+1749837721.6889818 [publish_wind_direction-4] [INFO] [1749837721.688329049] [publish_wind_direction]: Pose info requested
+1749837726.6890121 [publish_wind_direction-4] [INFO] [1749837726.688363028] [publish_wind_direction]: Pose info requested
+1749837731.6890540 [publish_wind_direction-4] [INFO] [1749837731.688374858] [publish_wind_direction]: Pose info requested
+1749837736.6889586 [publish_wind_direction-4] [INFO] [1749837736.688328726] [publish_wind_direction]: Pose info requested
+1749837741.6889591 [publish_wind_direction-4] [INFO] [1749837741.688290797] [publish_wind_direction]: Pose info requested
+1749837746.6889720 [publish_wind_direction-4] [INFO] [1749837746.688307386] [publish_wind_direction]: Pose info requested
+1749837751.6889737 [publish_wind_direction-4] [INFO] [1749837751.688314439] [publish_wind_direction]: Pose info requested
+1749837756.6890500 [publish_wind_direction-4] [INFO] [1749837756.688374269] [publish_wind_direction]: Pose info requested
+1749837761.6889856 [publish_wind_direction-4] [INFO] [1749837761.688329674] [publish_wind_direction]: Pose info requested
+1749837766.6890171 [publish_wind_direction-4] [INFO] [1749837766.688335208] [publish_wind_direction]: Pose info requested
+1749837771.6890118 [publish_wind_direction-4] [INFO] [1749837771.688331668] [publish_wind_direction]: Pose info requested
+1749837776.6889665 [publish_wind_direction-4] [INFO] [1749837776.688310979] [publish_wind_direction]: Pose info requested
+1749837781.6889789 [publish_wind_direction-4] [INFO] [1749837781.688312106] [publish_wind_direction]: Pose info requested
+1749837786.6890085 [publish_wind_direction-4] [INFO] [1749837786.688349788] [publish_wind_direction]: Pose info requested
+1749837791.6890249 [publish_wind_direction-4] [INFO] [1749837791.688347341] [publish_wind_direction]: Pose info requested
+1749837796.6889784 [publish_wind_direction-4] [INFO] [1749837796.688312449] [publish_wind_direction]: Pose info requested
+1749837801.6890104 [publish_wind_direction-4] [INFO] [1749837801.688335668] [publish_wind_direction]: Pose info requested
+1749837806.6889472 [publish_wind_direction-4] [INFO] [1749837806.688302573] [publish_wind_direction]: Pose info requested
+1749837811.6889577 [publish_wind_direction-4] [INFO] [1749837811.688316588] [publish_wind_direction]: Pose info requested
+1749837816.6889772 [publish_wind_direction-4] [INFO] [1749837816.688351270] [publish_wind_direction]: Pose info requested
+1749837821.6890488 [publish_wind_direction-4] [INFO] [1749837821.688357675] [publish_wind_direction]: Pose info requested
+1749837826.6889830 [publish_wind_direction-4] [INFO] [1749837826.688323042] [publish_wind_direction]: Pose info requested
+1749837831.6890073 [publish_wind_direction-4] [INFO] [1749837831.688344576] [publish_wind_direction]: Pose info requested
+1749837836.6889868 [publish_wind_direction-4] [INFO] [1749837836.688316759] [publish_wind_direction]: Pose info requested
+1749837841.6891918 [publish_wind_direction-4] [INFO] [1749837841.688519774] [publish_wind_direction]: Pose info requested
+1749837846.6890147 [publish_wind_direction-4] [INFO] [1749837846.688355216] [publish_wind_direction]: Pose info requested
+1749837851.6889477 [publish_wind_direction-4] [INFO] [1749837851.688282935] [publish_wind_direction]: Pose info requested
+1749837856.6889620 [publish_wind_direction-4] [INFO] [1749837856.688328135] [publish_wind_direction]: Pose info requested
+1749837861.6889849 [publish_wind_direction-4] [INFO] [1749837861.688320299] [publish_wind_direction]: Pose info requested
+1749837866.6889782 [publish_wind_direction-4] [INFO] [1749837866.688316592] [publish_wind_direction]: Pose info requested
+1749837871.6889830 [publish_wind_direction-4] [INFO] [1749837871.688323997] [publish_wind_direction]: Pose info requested
+1749837876.6889920 [publish_wind_direction-4] [INFO] [1749837876.688318938] [publish_wind_direction]: Pose info requested
+1749837881.6890304 [publish_wind_direction-4] [INFO] [1749837881.688341584] [publish_wind_direction]: Pose info requested
+1749837886.6889129 [publish_wind_direction-4] [INFO] [1749837886.688260377] [publish_wind_direction]: Pose info requested
+1749837891.6889462 [publish_wind_direction-4] [INFO] [1749837891.688284318] [publish_wind_direction]: Pose info requested
+1749837896.6890249 [publish_wind_direction-4] [INFO] [1749837896.688381167] [publish_wind_direction]: Pose info requested
+1749837901.6889997 [publish_wind_direction-4] [INFO] [1749837901.688345072] [publish_wind_direction]: Pose info requested
+1749837906.6890049 [publish_wind_direction-4] [INFO] [1749837906.688316643] [publish_wind_direction]: Pose info requested
+1749837911.6890082 [publish_wind_direction-4] [INFO] [1749837911.688337806] [publish_wind_direction]: Pose info requested
+1749837916.6889923 [publish_wind_direction-4] [INFO] [1749837916.688321970] [publish_wind_direction]: Pose info requested
+1749837921.6889901 [publish_wind_direction-4] [INFO] [1749837921.688328560] [publish_wind_direction]: Pose info requested
+1749837926.6892874 [publish_wind_direction-4] [INFO] [1749837926.688635001] [publish_wind_direction]: Pose info requested
+1749837931.6890099 [publish_wind_direction-4] [INFO] [1749837931.688344443] [publish_wind_direction]: Pose info requested
+1749837936.6889918 [publish_wind_direction-4] [INFO] [1749837936.688309477] [publish_wind_direction]: Pose info requested
+1749837941.6890128 [publish_wind_direction-4] [INFO] [1749837941.688338029] [publish_wind_direction]: Pose info requested
+1749837946.6890013 [publish_wind_direction-4] [INFO] [1749837946.688332045] [publish_wind_direction]: Pose info requested
+1749837951.6890206 [publish_wind_direction-4] [INFO] [1749837951.688346468] [publish_wind_direction]: Pose info requested
+1749837956.6890132 [publish_wind_direction-4] [INFO] [1749837956.688343002] [publish_wind_direction]: Pose info requested
+1749837961.6889982 [publish_wind_direction-4] [INFO] [1749837961.688353073] [publish_wind_direction]: Pose info requested
+1749837966.6890152 [publish_wind_direction-4] [INFO] [1749837966.688356200] [publish_wind_direction]: Pose info requested
+1749837971.3886240 [service_neighbours_opinions-3] [INFO] [1749837971.387947512] [service_neighbours_opinions]: Raising exception at 18:06:11
+1749837971.5138924 [service_neighbours_opinions-3] Traceback (most recent call last):
+1749837971.5143812 [service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 111, in main
+1749837971.5156097 [service_neighbours_opinions-3]     rclpy.spin(neighbours_node)
+1749837971.5160694 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+1749837971.5164444 [service_neighbours_opinions-3]     executor.spin_once()
+1749837971.5167966 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+1749837971.5171404 [service_neighbours_opinions-3]     self._spin_once_impl(timeout_sec)
+1749837971.5175107 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+1749837971.5188148 [service_neighbours_opinions-3]     raise handler.exception()
+1749837971.5198548 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+1749837971.5211294 [service_neighbours_opinions-3]     self._handler.send(None)
+1749837971.5226061 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+1749837971.5242920 [service_neighbours_opinions-3]     await call_coroutine(entity, arg)
+1749837971.5256763 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+1749837971.5270703 [service_neighbours_opinions-3]     await await_or_execute(tmr.callback)
+1749837971.5283945 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+1749837971.5298882 [service_neighbours_opinions-3]     return callback(*args)
+1749837971.5313563 [service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 64, in stop_execution
+1749837971.5327408 [service_neighbours_opinions-3]     raise Exception
+1749837971.5342307 [service_neighbours_opinions-3] Exception
+1749837971.5357211 [service_neighbours_opinions-3] 
+1749837971.5371180 [service_neighbours_opinions-3] During handling of the above exception, another exception occurred:
+1749837971.5384357 [service_neighbours_opinions-3] 
+1749837971.5397539 [service_neighbours_opinions-3] Traceback (most recent call last):
+1749837971.5411270 [service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions", line 33, in <module>
+1749837971.5427172 [service_neighbours_opinions-3]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'service_neighbours_opinions')())
+1749837971.5441172 [service_neighbours_opinions-3]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 117, in main
+1749837971.5455425 [service_neighbours_opinions-3]     neighbours_node.get_logger().error(e)
+1749837971.5468869 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 345, in error
+1749837971.5480845 [service_neighbours_opinions-3]     return self.log(message, LoggingSeverity.ERROR, **kwargs)
+1749837971.5492246 [service_neighbours_opinions-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 318, in log
+1749837971.5519986 [service_neighbours_opinions-3]     _rclpy.rclpy_logging_rcutils_log(
+1749837971.5533161 [service_neighbours_opinions-3] TypeError: rclpy_logging_rcutils_log(): incompatible function arguments. The following argument types are supported:
+1749837971.5547497 [service_neighbours_opinions-3]     1. (arg0: int, arg1: str, arg2: str, arg3: str, arg4: str, arg5: int) -> None
+1749837971.5560482 [service_neighbours_opinions-3] 
+1749837971.5570400 [service_neighbours_opinions-3] Invoked with: <LoggingSeverity.ERROR: 40>, 'service_neighbours_opinions', Exception(), 'main', '/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py', 117
+1749837971.6891346 [publish_wind_direction-4] [INFO] [1749837971.688420474] [publish_wind_direction]: Pose info requested
+1749837972.0193989 [ERROR] [service_neighbours_opinions-3]: process has died [pid 3636, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions --ros-args -r __node:=service_neighbours_opinions'].
+1749837976.6890521 [publish_wind_direction-4] [INFO] [1749837976.688366249] [publish_wind_direction]: Pose info requested
+1749837981.6889813 [publish_wind_direction-4] [INFO] [1749837981.688320246] [publish_wind_direction]: Pose info requested
+1749837986.6892867 [publish_wind_direction-4] [INFO] [1749837986.688606410] [publish_wind_direction]: Pose info requested
+1749837991.6890187 [publish_wind_direction-4] [INFO] [1749837991.688348888] [publish_wind_direction]: Pose info requested
+1749837996.6890285 [publish_wind_direction-4] [INFO] [1749837996.688338163] [publish_wind_direction]: Pose info requested
+1749838001.6890271 [publish_wind_direction-4] [INFO] [1749838001.688337216] [publish_wind_direction]: Pose info requested
+1749838006.6889884 [publish_wind_direction-4] [INFO] [1749838006.688322231] [publish_wind_direction]: Pose info requested
+1749838011.6889935 [publish_wind_direction-4] [INFO] [1749838011.688327839] [publish_wind_direction]: Pose info requested
+1749838016.6890004 [publish_wind_direction-4] [INFO] [1749838016.688339466] [publish_wind_direction]: Pose info requested
+1749838021.6889861 [publish_wind_direction-4] [INFO] [1749838021.688329259] [publish_wind_direction]: Pose info requested
+1749838026.6889997 [publish_wind_direction-4] [INFO] [1749838026.688342830] [publish_wind_direction]: Pose info requested
+1749838031.6889989 [publish_wind_direction-4] [INFO] [1749838031.688346402] [publish_wind_direction]: Pose info requested
+1749838036.6889780 [publish_wind_direction-4] [INFO] [1749838036.688347380] [publish_wind_direction]: Pose info requested
+1749838041.6889944 [publish_wind_direction-4] [INFO] [1749838041.688316803] [publish_wind_direction]: Pose info requested
+1749838046.6890125 [publish_wind_direction-4] [INFO] [1749838046.688343189] [publish_wind_direction]: Pose info requested
+1749838051.6889982 [publish_wind_direction-4] [INFO] [1749838051.688334723] [publish_wind_direction]: Pose info requested
+1749838056.6889694 [publish_wind_direction-4] [INFO] [1749838056.688317498] [publish_wind_direction]: Pose info requested
+1749838061.6889980 [publish_wind_direction-4] [INFO] [1749838061.688338976] [publish_wind_direction]: Pose info requested
+1749838066.6889677 [publish_wind_direction-4] [INFO] [1749838066.688314992] [publish_wind_direction]: Pose info requested
+1749838071.6890109 [publish_wind_direction-4] [INFO] [1749838071.688351878] [publish_wind_direction]: Pose info requested
+1749838076.6890066 [publish_wind_direction-4] [INFO] [1749838076.688336671] [publish_wind_direction]: Pose info requested
+1749838081.6890144 [publish_wind_direction-4] [INFO] [1749838081.688334927] [publish_wind_direction]: Pose info requested
+1749838086.6889760 [publish_wind_direction-4] [INFO] [1749838086.688323591] [publish_wind_direction]: Pose info requested
+1749838091.6890111 [publish_wind_direction-4] [INFO] [1749838091.688360032] [publish_wind_direction]: Pose info requested
+1749838096.6889617 [publish_wind_direction-4] [INFO] [1749838096.688296011] [publish_wind_direction]: Pose info requested
+1749838101.6890478 [publish_wind_direction-4] [INFO] [1749838101.688389971] [publish_wind_direction]: Pose info requested
+1749838106.6889756 [publish_wind_direction-4] [INFO] [1749838106.688335523] [publish_wind_direction]: Pose info requested
+1749838111.6889830 [publish_wind_direction-4] [INFO] [1749838111.688308595] [publish_wind_direction]: Pose info requested
+1749838116.6889684 [publish_wind_direction-4] [INFO] [1749838116.688304888] [publish_wind_direction]: Pose info requested
+1749838121.6890018 [publish_wind_direction-4] [INFO] [1749838121.688322681] [publish_wind_direction]: Pose info requested
+1749838126.6889958 [publish_wind_direction-4] [INFO] [1749838126.688333363] [publish_wind_direction]: Pose info requested
+1749838131.6889722 [publish_wind_direction-4] [INFO] [1749838131.688320138] [publish_wind_direction]: Pose info requested
+1749838136.6889648 [publish_wind_direction-4] [INFO] [1749838136.688316357] [publish_wind_direction]: Pose info requested
+1749838141.6889677 [publish_wind_direction-4] [INFO] [1749838141.688291669] [publish_wind_direction]: Pose info requested
+1749838146.6890063 [publish_wind_direction-4] [INFO] [1749838146.688304852] [publish_wind_direction]: Pose info requested
+1749838151.6890006 [publish_wind_direction-4] [INFO] [1749838151.688326089] [publish_wind_direction]: Pose info requested
+1749838156.6891766 [publish_wind_direction-4] [INFO] [1749838156.688389734] [publish_wind_direction]: Pose info requested
+1749838161.6889937 [publish_wind_direction-4] [INFO] [1749838161.688332472] [publish_wind_direction]: Pose info requested
+1749838166.6889677 [publish_wind_direction-4] [INFO] [1749838166.688309117] [publish_wind_direction]: Pose info requested
+1749838171.6890826 [publish_wind_direction-4] [INFO] [1749838171.688423614] [publish_wind_direction]: Pose info requested
+1749838176.6889868 [publish_wind_direction-4] [INFO] [1749838176.688333185] [publish_wind_direction]: Pose info requested
+1749838181.6889713 [publish_wind_direction-4] [INFO] [1749838181.688294312] [publish_wind_direction]: Pose info requested
+1749838186.6889725 [publish_wind_direction-4] [INFO] [1749838186.688342680] [publish_wind_direction]: Pose info requested
+1749838191.6889989 [publish_wind_direction-4] [INFO] [1749838191.688337065] [publish_wind_direction]: Pose info requested
+1749838196.6889832 [publish_wind_direction-4] [INFO] [1749838196.688329007] [publish_wind_direction]: Pose info requested
+1749838201.6890042 [publish_wind_direction-4] [INFO] [1749838201.688334800] [publish_wind_direction]: Pose info requested
+1749838206.6889863 [publish_wind_direction-4] [INFO] [1749838206.688338223] [publish_wind_direction]: Pose info requested
+1749838211.6890216 [publish_wind_direction-4] [INFO] [1749838211.688343202] [publish_wind_direction]: Pose info requested
+1749838216.6890130 [publish_wind_direction-4] [INFO] [1749838216.688351421] [publish_wind_direction]: Pose info requested
+1749838221.6890049 [publish_wind_direction-4] [INFO] [1749838221.688328511] [publish_wind_direction]: Pose info requested
+1749838226.6889596 [publish_wind_direction-4] [INFO] [1749838226.688309452] [publish_wind_direction]: Pose info requested
+1749838231.6889815 [publish_wind_direction-4] [INFO] [1749838231.688308801] [publish_wind_direction]: Pose info requested
+1749838236.6889849 [publish_wind_direction-4] [INFO] [1749838236.688328168] [publish_wind_direction]: Pose info requested
+1749838241.6888506 [publish_wind_direction-4] [INFO] [1749838241.688159610] [publish_wind_direction]: Pose info requested
+1749838241.6921513 [publish_wind_direction-4] [INFO] [1749838241.691518832] [publish_wind_direction]: Raising exception at 18:10:41
+1749838241.6971989 [publish_wind_direction-4] CV2 Ver. =  4.11.0
+1749838241.8480463 [publish_wind_direction-4] Traceback (most recent call last):
+1749838241.8484993 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction", line 33, in <module>
+1749838241.8497548 [publish_wind_direction-4]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'publish_wind_direction')())
+1749838241.8501916 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 332, in main
+1749838241.8506362 [publish_wind_direction-4]     rclpy.spin(wind_direction_sensor)
+1749838241.8509772 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+1749838241.8513048 [publish_wind_direction-4]     executor.spin_once()
+1749838241.8520741 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+1749838241.8559985 [publish_wind_direction-4]     self._spin_once_impl(timeout_sec)
+1749838241.8580580 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+1749838241.8614633 [publish_wind_direction-4]     raise handler.exception()
+1749838241.8632061 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+1749838241.8651159 [publish_wind_direction-4]     self._handler.send(None)
+1749838241.8668153 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+1749838241.8687935 [publish_wind_direction-4]     await call_coroutine(entity, arg)
+1749838241.8705139 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+1749838241.8724494 [publish_wind_direction-4]     await await_or_execute(tmr.callback)
+1749838241.8738544 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+1749838241.8756821 [publish_wind_direction-4]     return callback(*args)
+1749838241.8774486 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 170, in make_wind_direction_opinion
+1749838241.8791463 [publish_wind_direction-4]     raise Exception
+1749838241.8809390 [publish_wind_direction-4] Exception
+1749838242.2632313 [ERROR] [publish_wind_direction-4]: process has died [pid 3638, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction --ros-args -r __node:=publish_wind_direction'].
+1749838253.5546093 [random_robot_move-1] [INFO] [1749838253.553925362] [random_robot_move]: robot move: excetion raised at 18:10:53
+1749838253.5573239 [random_robot_move-1] [INFO] [1749838253.556725769] [random_robot_move]: Exception, shutting down
+1749838253.5840533 [random_robot_move-1] Initializing Thymio Robot
+1749838253.5843694 [random_robot_move-1] Thymio 43927 is connected
+1749838253.5845118 [random_robot_move-1] ['_id', 'event.source', 'event.args', '_fwversion', '_productId', 'buttons._raw', 'button.backward', 'button.left', 'button.center', 'button.forward', 'button.right', 'buttons._mean', 'buttons._noise', 'prox.horizontal', 'prox.comm.rx._payloads', 'prox.comm.rx._intensities', 'prox.comm.rx', 'prox.comm.tx', 'prox.ground.ambiant', 'prox.ground.reflected', 'prox.ground.delta', 'motor.left.target', 'motor.right.target', '_vbat', '_imot', 'motor.left.speed', 'motor.right.speed', 'motor.left.pwm', 'motor.right.pwm', '_integrator', 'acc', 'leds.top', 'leds.bottom.left', 'leds.bottom.right', 'leds.circle', 'temperature', 'rc5.address', 'rc5.command', 'mic.intensity', 'mic.threshold', 'mic._mean', 'timer.period', 'acc._tap', 'sd.present']
+1749838253.5846999 [random_robot_move-1] Robot connected
+1749838253.5848384 [random_robot_move-1] on arena edge
+1749838253.5849676 [random_robot_move-1] Starting Collision avoidance
+1749838253.5850956 [random_robot_move-1] Move back
+1749838253.5852234 [random_robot_move-1] Turn
+1749838253.5853593 [random_robot_move-1] on arena edge
+1749838253.5855381 [random_robot_move-1] Starting Collision avoidance
+1749838253.5856678 [random_robot_move-1] Move back
+1749838253.5857935 [random_robot_move-1] Turn
+1749838253.5859189 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.5860443 [random_robot_move-1] collision avoidance
+1749838253.5861690 [random_robot_move-1] Starting Collision avoidance
+1749838253.5862937 [random_robot_move-1] Move back
+1749838253.5864177 [random_robot_move-1] Turn
+1749838253.5865419 [random_robot_move-1] consecutive hits:  601
+1749838253.5866644 [random_robot_move-1] on arena edge
+1749838253.5867879 [random_robot_move-1] Starting Collision avoidance
+1749838253.5869107 [random_robot_move-1] Move back
+1749838253.5870335 [random_robot_move-1] Turn
+1749838253.5871572 [random_robot_move-1] consecutive hits:  311
+1749838253.5872803 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1930
+1749838253.5874031 [random_robot_move-1] collision avoidance
+1749838253.5875239 [random_robot_move-1] Starting Collision avoidance
+1749838253.5876458 [random_robot_move-1] Move back
+1749838253.5877676 [random_robot_move-1] Turn
+1749838253.5878897 [random_robot_move-1] consecutive hits:  601
+1749838253.5880120 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1719
+1749838253.5881336 [random_robot_move-1] collision avoidance
+1749838253.5882556 [random_robot_move-1] Starting Collision avoidance
+1749838253.5883777 [random_robot_move-1] Move back
+1749838253.5884988 [random_robot_move-1] Turn
+1749838253.5886211 [random_robot_move-1] consecutive hits:  601
+1749838253.5887430 [random_robot_move-1] on arena edge
+1749838253.5888662 [random_robot_move-1] Starting Collision avoidance
+1749838253.5889869 [random_robot_move-1] Move back
+1749838253.5891080 [random_robot_move-1] Turn
+1749838253.5892301 [random_robot_move-1] on arena edge
+1749838253.5893512 [random_robot_move-1] Starting Collision avoidance
+1749838253.5894947 [random_robot_move-1] Move back
+1749838253.5896206 [random_robot_move-1] Turn
+1749838253.5897446 [random_robot_move-1] Prox 0: 1702, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.5898674 [random_robot_move-1] collision avoidance
+1749838253.5899892 [random_robot_move-1] Starting Collision avoidance
+1749838253.5901103 [random_robot_move-1] Move back
+1749838253.5902309 [random_robot_move-1] Turn
+1749838253.5903521 [random_robot_move-1] consecutive hits:  601
+1749838253.5904732 [random_robot_move-1] on arena edge
+1749838253.5905945 [random_robot_move-1] Starting Collision avoidance
+1749838253.5907154 [random_robot_move-1] Move back
+1749838253.5908365 [random_robot_move-1] Turn
+1749838253.5909581 [random_robot_move-1] consecutive hits:  349
+1749838253.5910797 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1926
+1749838253.5912008 [random_robot_move-1] collision avoidance
+1749838253.5913208 [random_robot_move-1] Starting Collision avoidance
+1749838253.5914419 [random_robot_move-1] Move back
+1749838253.5915639 [random_robot_move-1] Turn
+1749838253.5916865 [random_robot_move-1] consecutive hits:  601
+1749838253.5918076 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.5919635 [random_robot_move-1] collision avoidance
+1749838253.5920885 [random_robot_move-1] Starting Collision avoidance
+1749838253.5922110 [random_robot_move-1] Move back
+1749838253.5923328 [random_robot_move-1] Turn
+1749838253.5924542 [random_robot_move-1] consecutive hits:  601
+1749838253.5925753 [random_robot_move-1] Prox 0: 3878, Prox 1: 2856,  Prox 2: 3415, Prox 3: 4066
+1749838253.5926976 [random_robot_move-1] collision avoidance
+1749838253.5928192 [random_robot_move-1] Starting Collision avoidance
+1749838253.5929410 [random_robot_move-1] Move back
+1749838253.5930631 [random_robot_move-1] Turn
+1749838253.5931847 [random_robot_move-1] consecutive hits:  601
+1749838253.5933070 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.5934637 [random_robot_move-1] collision avoidance
+1749838253.5936015 [random_robot_move-1] Starting Collision avoidance
+1749838253.5937250 [random_robot_move-1] Move back
+1749838253.5938482 [random_robot_move-1] Turn
+1749838253.5939713 [random_robot_move-1] consecutive hits:  601
+1749838253.5940933 [random_robot_move-1] Prox 0: 1854, Prox 1: 1114,  Prox 2: 0, Prox 3: 0
+1749838253.5942166 [random_robot_move-1] collision avoidance
+1749838253.5943389 [random_robot_move-1] Starting Collision avoidance
+1749838253.5944600 [random_robot_move-1] Move back
+1749838253.5945823 [random_robot_move-1] Turn
+1749838253.5947044 [random_robot_move-1] consecutive hits:  601
+1749838253.5948253 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1696, Prox 3: 0
+1749838253.5949469 [random_robot_move-1] collision avoidance
+1749838253.5950675 [random_robot_move-1] Starting Collision avoidance
+1749838253.5951879 [random_robot_move-1] Move back
+1749838253.5953085 [random_robot_move-1] Turn
+1749838253.5954287 [random_robot_move-1] consecutive hits:  601
+1749838253.5955489 [random_robot_move-1] consecutive hits:  349
+1749838253.5956626 [random_robot_move-1] on arena edge
+1749838253.5957787 [random_robot_move-1] Starting Collision avoidance
+1749838253.5958920 [random_robot_move-1] Move back
+1749838253.5960062 [random_robot_move-1] Turn
+1749838253.5961201 [random_robot_move-1] consecutive hits:  339
+1749838253.5962329 [random_robot_move-1] on arena edge
+1749838253.5963466 [random_robot_move-1] Starting Collision avoidance
+1749838253.5964606 [random_robot_move-1] Move back
+1749838253.5965743 [random_robot_move-1] Turn
+1749838253.5966878 [random_robot_move-1] consecutive hits:  349
+1749838253.5968022 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1031, Prox 3: 1935
+1749838253.5969164 [random_robot_move-1] collision avoidance
+1749838253.5970304 [random_robot_move-1] Starting Collision avoidance
+1749838253.5971446 [random_robot_move-1] Move back
+1749838253.5972588 [random_robot_move-1] Turn
+1749838253.5973742 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1212, Prox 3: 0
+1749838253.5975411 [random_robot_move-1] collision avoidance
+1749838253.5976589 [random_robot_move-1] Starting Collision avoidance
+1749838253.5977738 [random_robot_move-1] Move back
+1749838253.5978882 [random_robot_move-1] Turn
+1749838253.5980031 [random_robot_move-1] consecutive hits:  602
+1749838253.5981176 [random_robot_move-1] on arena edge
+1749838253.5982308 [random_robot_move-1] Starting Collision avoidance
+1749838253.5983448 [random_robot_move-1] Move back
+1749838253.5984583 [random_robot_move-1] Turn
+1749838253.5985732 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 2097
+1749838253.5986867 [random_robot_move-1] collision avoidance
+1749838253.5988007 [random_robot_move-1] Starting Collision avoidance
+1749838253.5989144 [random_robot_move-1] Move back
+1749838253.5990288 [random_robot_move-1] Turn
+1749838253.5991423 [random_robot_move-1] consecutive hits:  601
+1749838253.5992560 [random_robot_move-1] on arena edge
+1749838253.5993700 [random_robot_move-1] Starting Collision avoidance
+1749838253.5994837 [random_robot_move-1] Move back
+1749838253.5995975 [random_robot_move-1] Turn
+1749838253.5997114 [random_robot_move-1] on arena edge
+1749838253.5998578 [random_robot_move-1] Starting Collision avoidance
+1749838253.5999753 [random_robot_move-1] Move back
+1749838253.6000900 [random_robot_move-1] Turn
+1749838253.6002045 [random_robot_move-1] Prox 0: 1712, Prox 1: 1522,  Prox 2: 0, Prox 3: 0
+1749838253.6003184 [random_robot_move-1] collision avoidance
+1749838253.6004329 [random_robot_move-1] Starting Collision avoidance
+1749838253.6005473 [random_robot_move-1] Move back
+1749838253.6006622 [random_robot_move-1] Turn
+1749838253.6007767 [random_robot_move-1] consecutive hits:  601
+1749838253.6008911 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.6010051 [random_robot_move-1] collision avoidance
+1749838253.6011198 [random_robot_move-1] Starting Collision avoidance
+1749838253.6012330 [random_robot_move-1] Move back
+1749838253.6013463 [random_robot_move-1] Turn
+1749838253.6014876 [random_robot_move-1] consecutive hits:  601
+1749838253.6016064 [random_robot_move-1] on arena edge
+1749838253.6017210 [random_robot_move-1] Starting Collision avoidance
+1749838253.6018348 [random_robot_move-1] Move back
+1749838253.6019497 [random_robot_move-1] Turn
+1749838253.6020656 [random_robot_move-1] on arena edge
+1749838253.6021793 [random_robot_move-1] Starting Collision avoidance
+1749838253.6022937 [random_robot_move-1] Move back
+1749838253.6024082 [random_robot_move-1] Turn
+1749838253.6025224 [random_robot_move-1] on arena edge
+1749838253.6026356 [random_robot_move-1] Starting Collision avoidance
+1749838253.6027489 [random_robot_move-1] Move back
+1749838253.6028621 [random_robot_move-1] Turn
+1749838253.6029756 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1463, Prox 3: 0
+1749838253.6030886 [random_robot_move-1] collision avoidance
+1749838253.6032026 [random_robot_move-1] Starting Collision avoidance
+1749838253.6033154 [random_robot_move-1] Move back
+1749838253.6034296 [random_robot_move-1] Turn
+1749838253.6035433 [random_robot_move-1] consecutive hits:  601
+1749838253.6036577 [random_robot_move-1] on arena edge
+1749838253.6037717 [random_robot_move-1] Starting Collision avoidance
+1749838253.6038859 [random_robot_move-1] Move back
+1749838253.6039994 [random_robot_move-1] Turn
+1749838253.6041136 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1680, Prox 3: 0
+1749838253.6042271 [random_robot_move-1] collision avoidance
+1749838253.6043415 [random_robot_move-1] Starting Collision avoidance
+1749838253.6044548 [random_robot_move-1] Move back
+1749838253.6045685 [random_robot_move-1] Turn
+1749838253.6046827 [random_robot_move-1] consecutive hits:  601
+1749838253.6047964 [random_robot_move-1] consecutive hits:  342
+1749838253.6049094 [random_robot_move-1] consecutive hits:  184
+1749838253.6050234 [random_robot_move-1] consecutive hits:  347
+1749838253.6051378 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1727, Prox 3: 0
+1749838253.6052520 [random_robot_move-1] collision avoidance
+1749838253.6053660 [random_robot_move-1] Starting Collision avoidance
+1749838253.6055019 [random_robot_move-1] Move back
+1749838253.6056201 [random_robot_move-1] Turn
+1749838253.6057358 [random_robot_move-1] consecutive hits:  601
+1749838253.6058507 [random_robot_move-1] consecutive hits:  347
+1749838253.6059654 [random_robot_move-1] consecutive hits:  348
+1749838253.6060798 [random_robot_move-1] consecutive hits:  346
+1749838253.6061954 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1649
+1749838253.6063094 [random_robot_move-1] collision avoidance
+1749838253.6064236 [random_robot_move-1] Starting Collision avoidance
+1749838253.6065376 [random_robot_move-1] Move back
+1749838253.6066515 [random_robot_move-1] Turn
+1749838253.6067653 [random_robot_move-1] consecutive hits:  601
+1749838253.6068804 [random_robot_move-1] Prox 0: 1359, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.6069951 [random_robot_move-1] collision avoidance
+1749838253.6071091 [random_robot_move-1] Starting Collision avoidance
+1749838253.6072221 [random_robot_move-1] Move back
+1749838253.6073353 [random_robot_move-1] Turn
+1749838253.6074491 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.6075902 [random_robot_move-1] collision avoidance
+1749838253.6077065 [random_robot_move-1] Starting Collision avoidance
+1749838253.6078219 [random_robot_move-1] Move back
+1749838253.6079366 [random_robot_move-1] Turn
+1749838253.6080511 [random_robot_move-1] consecutive hits:  602
+1749838253.6081650 [random_robot_move-1] consecutive hits:  237
+1749838253.6082785 [random_robot_move-1] consecutive hits:  150
+1749838253.6083920 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1998
+1749838253.6085055 [random_robot_move-1] collision avoidance
+1749838253.6086192 [random_robot_move-1] Starting Collision avoidance
+1749838253.6087325 [random_robot_move-1] Move back
+1749838253.6088469 [random_robot_move-1] Turn
+1749838253.6089618 [random_robot_move-1] consecutive hits:  601
+1749838253.6090760 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 2152
+1749838253.6091917 [random_robot_move-1] collision avoidance
+1749838253.6093066 [random_robot_move-1] Starting Collision avoidance
+1749838253.6094489 [random_robot_move-1] Move back
+1749838253.6095762 [random_robot_move-1] Turn
+1749838253.6096919 [random_robot_move-1] consecutive hits:  601
+1749838253.6098070 [random_robot_move-1] on arena edge
+1749838253.6099212 [random_robot_move-1] Starting Collision avoidance
+1749838253.6100359 [random_robot_move-1] Move back
+1749838253.6101506 [random_robot_move-1] Turn
+1749838253.6102653 [random_robot_move-1] on arena edge
+1749838253.6103797 [random_robot_move-1] Starting Collision avoidance
+1749838253.6104946 [random_robot_move-1] Move back
+1749838253.6106083 [random_robot_move-1] Turn
+1749838253.6107233 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1961
+1749838253.6108384 [random_robot_move-1] collision avoidance
+1749838253.6109524 [random_robot_move-1] Starting Collision avoidance
+1749838253.6110656 [random_robot_move-1] Move back
+1749838253.6111803 [random_robot_move-1] Turn
+1749838253.6112947 [random_robot_move-1] consecutive hits:  601
+1749838253.6114089 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 2191
+1749838253.6115229 [random_robot_move-1] collision avoidance
+1749838253.6116376 [random_robot_move-1] Starting Collision avoidance
+1749838253.6117520 [random_robot_move-1] Move back
+1749838253.6118677 [random_robot_move-1] Turn
+1749838253.6119833 [random_robot_move-1] consecutive hits:  601
+1749838253.6120992 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1809, Prox 3: 0
+1749838253.6122141 [random_robot_move-1] collision avoidance
+1749838253.6123292 [random_robot_move-1] Starting Collision avoidance
+1749838253.6124437 [random_robot_move-1] Move back
+1749838253.6125591 [random_robot_move-1] Turn
+1749838253.6126735 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1293, Prox 3: 0
+1749838253.6127877 [random_robot_move-1] collision avoidance
+1749838253.6129022 [random_robot_move-1] Starting Collision avoidance
+1749838253.6130168 [random_robot_move-1] Move back
+1749838253.6131308 [random_robot_move-1] Turn
+1749838253.6132457 [random_robot_move-1] consecutive hits:  602
+1749838253.6133595 [random_robot_move-1] on arena edge
+1749838253.6134932 [random_robot_move-1] Starting Collision avoidance
+1749838253.6136091 [random_robot_move-1] Move back
+1749838253.6137242 [random_robot_move-1] Turn
+1749838253.6138391 [random_robot_move-1] on arena edge
+1749838253.6139534 [random_robot_move-1] Starting Collision avoidance
+1749838253.6140683 [random_robot_move-1] Move back
+1749838253.6141829 [random_robot_move-1] Turn
+1749838253.6143088 [random_robot_move-1] consecutive hits:  348
+1749838253.6144481 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 1763
+1749838253.6145892 [random_robot_move-1] collision avoidance
+1749838253.6147289 [random_robot_move-1] Starting Collision avoidance
+1749838253.6148543 [random_robot_move-1] Move back
+1749838253.6149709 [random_robot_move-1] Turn
+1749838253.6150858 [random_robot_move-1] consecutive hits:  601
+1749838253.6152008 [random_robot_move-1] consecutive hits:  526
+1749838253.6153157 [random_robot_move-1] on arena edge
+1749838253.6154706 [random_robot_move-1] Starting Collision avoidance
+1749838253.6155887 [random_robot_move-1] Move back
+1749838253.6157036 [random_robot_move-1] Turn
+1749838253.6158187 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1745, Prox 3: 0
+1749838253.6159346 [random_robot_move-1] collision avoidance
+1749838253.6160519 [random_robot_move-1] Starting Collision avoidance
+1749838253.6161866 [random_robot_move-1] Move back
+1749838253.6163130 [random_robot_move-1] Turn
+1749838253.6164434 [random_robot_move-1] consecutive hits:  601
+1749838253.6165786 [random_robot_move-1] consecutive hits:  348
+1749838253.6167023 [random_robot_move-1] consecutive hits:  348
+1749838253.6168268 [random_robot_move-1] consecutive hits:  340
+1749838253.6169474 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 2074
+1749838253.6170731 [random_robot_move-1] collision avoidance
+1749838253.6171904 [random_robot_move-1] Starting Collision avoidance
+1749838253.6173055 [random_robot_move-1] Move back
+1749838253.6174462 [random_robot_move-1] Turn
+1749838253.6175752 [random_robot_move-1] consecutive hits:  601
+1749838253.6176920 [random_robot_move-1] Prox 0: 0, Prox 1: 1741,  Prox 2: 0, Prox 3: 0
+1749838253.6178074 [random_robot_move-1] collision avoidance
+1749838253.6179221 [random_robot_move-1] Starting Collision avoidance
+1749838253.6180367 [random_robot_move-1] Move back
+1749838253.6181512 [random_robot_move-1] Turn
+1749838253.6182659 [random_robot_move-1] consecutive hits:  601
+1749838253.6183813 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 1523, Prox 3: 0
+1749838253.6184957 [random_robot_move-1] collision avoidance
+1749838253.6186104 [random_robot_move-1] Starting Collision avoidance
+1749838253.6187241 [random_robot_move-1] Move back
+1749838253.6188390 [random_robot_move-1] Turn
+1749838253.6189544 [random_robot_move-1] consecutive hits:  601
+1749838253.6190693 [random_robot_move-1] Prox 0: 1626, Prox 1: 1147,  Prox 2: 0, Prox 3: 0
+1749838253.6191840 [random_robot_move-1] collision avoidance
+1749838253.6192989 [random_robot_move-1] Starting Collision avoidance
+1749838253.6194129 [random_robot_move-1] Move back
+1749838253.6195269 [random_robot_move-1] Turn
+1749838253.6196427 [random_robot_move-1] Prox 0: 0, Prox 1: 0,  Prox 2: 0, Prox 3: 3064
+1749838253.6197565 [random_robot_move-1] collision avoidance
+1749838253.6198709 [random_robot_move-1] Starting Collision avoidance
+1749838253.6199851 [random_robot_move-1] Move back
+1749838253.6200993 [random_robot_move-1] Turn
+1749838253.6202137 [random_robot_move-1] consecutive hits:  602
+1749838253.6203282 [random_robot_move-1] Prox 0: 1287, Prox 1: 1568,  Prox 2: 0, Prox 3: 0
+1749838253.6204424 [random_robot_move-1] collision avoidance
+1749838253.6205575 [random_robot_move-1] Starting Collision avoidance
+1749838253.6206722 [random_robot_move-1] Move back
+1749838253.6207862 [random_robot_move-1] Turn
+1749838253.6209013 [random_robot_move-1] consecutive hits:  601
+1749838253.6210155 [random_robot_move-1] Prox 0: 1740, Prox 1: 0,  Prox 2: 0, Prox 3: 0
+1749838253.6211302 [random_robot_move-1] collision avoidance
+1749838253.6212437 [random_robot_move-1] Starting Collision avoidance
+1749838253.6213579 [random_robot_move-1] Move back
+1749838253.6215055 [random_robot_move-1] Turn
+1749838253.6216269 [random_robot_move-1] consecutive hits:  601
+1749838253.6217442 [random_robot_move-1] consecutive hits:  347
+1749838821.1284201 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1749838821.1454713 [random_robot_move-1] Exception ignored in: <module 'threading' from '/usr/lib/python3.10/threading.py'>
+1749838821.1467083 [random_robot_move-1] Traceback (most recent call last):
+1749838821.1480112 [random_robot_move-1]   File "/usr/lib/python3.10/threading.py", line 1567, in _shutdown
+1749838821.1498516 [random_robot_move-1]     lock.acquire()
+1749838821.1519794 [random_robot_move-1] KeyboardInterrupt: 
+1749838821.1549711 [service_vicon_node-2] [INFO] [1749838821.135221227] [service_vicon_node]: Stopping, Keyboard Interrupt
+1749838821.1568470 [service_vicon_node-2] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:389
+1749838821.3151324 [service_vicon_node-2] Traceback (most recent call last):
+1749838821.3155928 [service_vicon_node-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_vicon_node", line 33, in <module>
+1749838821.3173559 [service_vicon_node-2]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'service_vicon_node')())
+1749838821.3182502 [service_vicon_node-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/vicon_node.py", line 161, in main
+1749838821.3189354 [service_vicon_node-2]     rclpy.shutdown()
+1749838821.3198910 [service_vicon_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+1749838821.3206196 [service_vicon_node-2]     _shutdown(context=context)
+1749838821.3214860 [service_vicon_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+1749838821.3223026 [service_vicon_node-2]     return context.shutdown()
+1749838821.3230262 [service_vicon_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+1749838821.3237164 [service_vicon_node-2]     self.__context.shutdown()
+1749838821.3253980 [service_vicon_node-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+1749838821.3865721 [INFO] [random_robot_move-1]: process has finished cleanly [pid 3632]
+1749838821.6008201 [ERROR] [service_vicon_node-2]: process has died [pid 3634, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_vicon_node --ros-args -r __node:=service_vicon_node'].
