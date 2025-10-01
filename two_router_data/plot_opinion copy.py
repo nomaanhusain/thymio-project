@@ -7,7 +7,8 @@ from collections import defaultdict
 # root_dir = 'run_experiment_data/ir0.7/run_1/'
 # root_dir = 'run_experiment_data/ir1.0/run_23/'
 # root_dir = 'run_experiment_data/ir_4_uninf/run_6/'
-root_dir = 'run_11/data/'
+# root_dir = 'run_13/data/'
+root_dir = "truly_successful_runs/run13/data"
 
 # Nested dict: counts[index][message] = count
 counts = defaultdict(lambda: defaultdict(int))
@@ -37,7 +38,7 @@ for folder in os.listdir(root_dir):
             df = pd.read_csv(file_path)
             print(f"file size: {len(df)}")
             tot_files += 1
-            if len(df) < 200:
+            if len(df) < 180:
                 files_skipped += 1
                 continue
             env_switch = False
