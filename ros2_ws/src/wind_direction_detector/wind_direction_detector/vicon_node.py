@@ -81,7 +81,7 @@ class ViconNode(Node):
 
     def vicon_callback(self, msg):
 
-        if time.time() - self.start_time_ > 3: #vicon message every X secs
+        if time.time() - self.start_time_ > 1: #vicon message every X secs, changed form 3 secs to 1 sec
 
             self.start_time_ = time.time()
             for i in range(msg.n):
