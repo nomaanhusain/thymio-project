@@ -4,9 +4,9 @@ from pathlib import Path
 from collections import defaultdict
 
 # --- Configuration ---
-runs = ["run18", "run19", "run20", "run21"]        # specify your runs here
-base_dir = Path("data")                   # root folder if needed
-filename = "results_"                     # prefix before run name
+runs = ["run18", "run19", "run20", "run21", "run23"]
+base_dir = Path("data")                   
+filename = "results_" # prefix before run name
 dirs = ["N", "E", "S", "W"]
 treat_missing_as_zero = False
 
@@ -15,7 +15,7 @@ dfs = []
 for run in runs:
     # construct path like: run15/data/results_run15.csv
     path = "truly_successful_runs" / Path(run) / "data" / f"1500_results_{run}.csv"
-    if not path.exists():
+    if not path.exists():  
         print(f"Warning: {path} not found, skipping.")
         continue
     

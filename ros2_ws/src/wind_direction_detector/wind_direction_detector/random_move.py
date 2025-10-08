@@ -32,11 +32,11 @@ class RandomRobotMove(Node):
 
     def random_move(self):
         if self.stop_bool:
-            print("Stoping Robot")
+            # print("Stoping Robot")
             self.stop()
         self.move_forward()
         if self.stop_bool:
-                print("Stopping Robot")
+                # print("Stopping Robot")
                 self.stop()
         if bool(random.getrandbits(1)):
             self.rotate_right()
@@ -64,17 +64,17 @@ class RandomRobotMove(Node):
             # counter = 25000
             while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
-                    print("stop all motion: move forward")
+                    # print("stop all motion: move forward")
                     self.stop_bool = True
                     break
                 self.robot['motor.left.target'] = 100
                 self.robot['motor.right.target'] = 100
                 if self.on_arena_edge():
-                    print('on arena edge')
+                    # print('on arena edge')
                     self.collision_avoidance()
                     continue
                 if self.obstacle_ahead():
-                    print('collision avoidance')
+                    # print('collision avoidance')
                     self.collision_avoidance()
                     continue
                 # counter -= 1
@@ -90,17 +90,17 @@ class RandomRobotMove(Node):
             # counter = 3000
             while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
-                    print("stop all motion: rotate right")
+                    # print("stop all motion: rotate right")
                     self.stop_bool = True
                     break
                 self.robot['motor.left.target'] = 200
                 self.robot['motor.right.target'] = -200
                 if self.on_arena_edge():
-                    print('on arena edge')
+                    # print('on arena edge')
                     self.collision_avoidance()
                     continue
                 if self.obstacle_ahead():
-                    print('collision avoidance')
+                    # print('collision avoidance')
                     self.collision_avoidance()
                     continue
                 # counter -= 1
@@ -115,17 +115,17 @@ class RandomRobotMove(Node):
             # counter = 3000
             while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
-                    print("stop all motion: rotate left")
+                    # print("stop all motion: rotate left")
                     self.stop_bool = True
                     break
                 self.robot['motor.left.target'] = -200
                 self.robot['motor.right.target'] = 200
                 if self.on_arena_edge():
-                    print('on arena edge')
+                    # print('on arena edge')
                     self.collision_avoidance()
                     continue
                 if self.obstacle_ahead():
-                    print('collision avoidance')
+                    # print('collision avoidance')
                     self.collision_avoidance()
                     continue
                 # counter -= 1
@@ -141,7 +141,7 @@ class RandomRobotMove(Node):
             # counter = 20000
             while (time.time() - start_time) < move_time:
                 if self.check_stop_all_motion():
-                    print("stop all motion: move back")
+                    # print("stop all motion: move back")
                     self.stop_bool = True
                     break
                 if self.robot['prox.horizontal'][5] > 600 or self.robot['prox.horizontal'][6] > 600:
@@ -159,7 +159,7 @@ class RandomRobotMove(Node):
         if self.robot is not None:
             # print(f"Prox 0: {self.robot['prox.ground.delta'][0]}, Prox 1: {self.robot['prox.ground.delta'][1]}")
             if self.robot['prox.ground.delta'][0] < 10 or self.robot['prox.ground.delta'][1] < 10:
-                print("Robot lifted")
+                # print("Robot lifted")
                 return True
         return False
 
@@ -170,10 +170,10 @@ class RandomRobotMove(Node):
     
     def collision_avoidance(self):
         if self.robot is not None:
-            print("Starting Collision avoidance")
+            # print("Starting Collision avoidance")
             self.robot['leds.top'] = [32, 0, 0]
             counter = 3000
-            print("Move back")
+            # print("Move back")
             while counter > 0:
                 if self.robot['prox.horizontal'][5] > 600 or self.robot['prox.horizontal'][6] > 600:
                     self.stop()
@@ -182,7 +182,7 @@ class RandomRobotMove(Node):
                 self.robot['motor.right.target'] = -200
                 counter -= 1
             counter = 3000
-            print("Turn")
+            # print("Turn")
             while counter > 0:
                 self.robot['motor.left.target'] = -350
                 self.robot['motor.right.target'] = 350
@@ -199,11 +199,12 @@ class RandomRobotMove(Node):
                 # Temporal filtering as IR strobes from Vicon system trigger collision avoidance
                 if self.consecutive_ir_hits > 600:
                     # print("consecutive hits: ", self.consecutive_ir_hits)
-                    print(f"Prox 0: {self.robot['prox.horizontal'][0]}, Prox 1: {self.robot['prox.horizontal'][1]},  Prox 2: {self.robot['prox.horizontal'][2]}, Prox 3: {self.robot['prox.horizontal'][3]}")
+                    # print(f"Prox 0: {self.robot['prox.horizontal'][0]}, Prox 1: {self.robot['prox.horizontal'][1]},  Prox 2: {self.robot['prox.horizontal'][2]}, Prox 3: {self.robot['prox.horizontal'][3]}")
                     return True
             else:
                 if self.consecutive_ir_hits > 0:
-                    print("consecutive hits: ", self.consecutive_ir_hits)
+                    pass
+                    # print("consecutive hits: ", self.consecutive_ir_hits)
                 self.consecutive_ir_hits = 0
         return False
     

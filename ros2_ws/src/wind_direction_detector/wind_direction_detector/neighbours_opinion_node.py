@@ -70,9 +70,10 @@ class NeighboursOpinionNode(Node):
             for id_ in request.neighbours_by_id 
             if id_ in self.all_opinions
         ]
-        self.get_logger().info(
-            f"Requested {request.neighbours_by_id}, responding {response.neighbours_opinions}"
-        )
+        # TODO
+        # self.get_logger().info(
+        #     f"Requested {request.neighbours_by_id}, responding {response.neighbours_opinions}"
+        # )
         return response
 
 
@@ -82,16 +83,16 @@ class NeighboursOpinionNode(Node):
         id = msg.data.split(':')[0]
         wind_direction = msg.data.split(':')[1]
         if id == self.id: return # Return incase it is your own message
-
-        self.get_logger().info(f'* Received from {id}, wind direction {wind_direction}')
+        # TODO
+        # self.get_logger().info(f'* Received from {id}, wind direction {wind_direction}')
         if id != self.id:
             # Simulate communication noise
             if np.random.random() < self.commnunication_noise:
                 other_opinions = [opinion for opinion in ['N','S','E','W'] if opinion!=wind_direction]
                 wind_direction = np.random.choice(other_opinions)
-                self.get_logger().info(f"Comm. Noise, new received opinion: {wind_direction}")
+                # self.get_logger().info(f"Comm. Noise, new received opinion: {wind_direction}")
             self.all_opinions[id] = wind_direction
-        self.get_logger().info(f"All opinions = {self.all_opinions}")
+        # self.get_logger().info(f"All opinions = {self.all_opinions}")
         self.get_logger().info(f"All opinions size= {len(self.all_opinions)}")
     
     def get_physical_ip(self):

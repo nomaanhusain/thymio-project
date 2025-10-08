@@ -8,7 +8,7 @@ from collections import defaultdict, Counter
 # root_dir = 'run_experiment_data/ir1.0/run_23/'
 # root_dir = 'run_experiment_data/ir_4_uninf/run_6/'
 # root_dir = 'run_13/data/'
-run = "run21"
+run = "run23"
 root_dir = f"truly_successful_runs/{run}/data"
 
 right_option = 'W'
@@ -54,7 +54,7 @@ for folder in os.listdir(root_dir):
                     smallest_global_frame = int(row['global_frame_number'])
 
 print(f"Smallest frame no: {smallest_global_frame}")
-frame_increments = 1500 # 5 decisions respresented in one entry in the final ds, decision node executes every 5 secs, hence 5 decisions * 5 seconds =25 secs, as vicon outputs at 30 Hz, 25 * 30 = 750 frames.
+frame_increments = 750 # 5 decisions respresented in one entry in the final ds, decision node executes every 5 secs, hence 5 decisions * 5 seconds =25 secs, as vicon outputs at 30 Hz, 25 * 30 = 750 frames.
 data = defaultdict(Counter)
 for folder in os.listdir(root_dir):
     folder_path = os.path.join(root_dir, folder)
@@ -101,4 +101,4 @@ print("----------------")
 print(data)
 df = pd.DataFrame.from_dict({k: dict(v) for k, v in data.items()}, orient="index").fillna(0).astype(int)
 df.index.name = "counter"
-df.to_csv(f"truly_successful_runs/{run}/data/1500_results_{run}.csv")
+df.to_csv(f"truly_successful_runs/{run}/data/results_{run}.csv")

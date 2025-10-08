@@ -71,12 +71,12 @@ class ViconNode(Node):
         response.my_vicon_yaw   = self.my_vicon_yaw
         response.neighbours_by_id = list(self.neighbours_by_id)
         response.global_frame_number = self.global_frame_number
-
-        self.get_logger().info(
-            f"Request received. Responding with pos={response.my_position_xy}, "
-            f"yaw={response.my_vicon_yaw}, neigh={response.neighbours_by_id}"
-            f"Response to be returned: {response}"
-        )
+        # TODO
+        # self.get_logger().info(
+        #     f"Request received. Responding with pos={response.my_position_xy}, "
+        #     f"yaw={response.my_vicon_yaw}, neigh={response.neighbours_by_id}"
+        #     f"Response to be returned: {response}"
+        # )
         return response
 
     def vicon_callback(self, msg):
@@ -93,8 +93,8 @@ class ViconNode(Node):
                     self.global_frame_number = msg.positions[i].frame_number
 
                     self.my_vicon_yaw = vicon_yaw_radians * (180/np.pi) # rads to degrees
-
-                    self.get_logger().info(f'New Vicon Message= {self.my_position_xy}, yaw: {self.my_vicon_yaw}, frame_no: {self.global_frame_number}')
+                    # TODO
+                    # self.get_logger().info(f'New Vicon Message= {self.my_position_xy}, yaw: {self.my_vicon_yaw}, frame_no: {self.global_frame_number}')
 
                 else:
                     self.all_robots_position_by_id_vicon[msg.positions[i].subject_name] = [msg.positions[i].x_trans, msg.positions[i].y_trans]
@@ -104,9 +104,10 @@ class ViconNode(Node):
                 if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
                     self.neighbours_by_id.add(id_vicon)
             if time.time() - self.debug_timer > 10:
-                self.get_logger().info(f'Vicon Position= {self.my_position_xy}, yaw: {self.my_vicon_yaw}')
+                self.get_logger().info(f'Vicon Position= {self.my_position_xy}, yaw: {self.my_vicon_yaw} frame_no: {self.global_frame_number}')
                 # self.get_logger().info(f"Neighbourhood size: {len(self.neighbours_by_id)}")
-                self.get_logger().info(f"Neighbours: {self.neighbours_by_id}")
+                # TODO
+                # self.get_logger().info(f"Neighbours: {self.neighbours_by_id}")
                 self.debug_timer = time.time()
 
             # now = datetime.datetime.now()

@@ -50,7 +50,9 @@ class PublishWindDirection(Node):
         with open("uninformed_mapping.json", "r") as f:
             uniformed_mapping = json.load(f)
         
-        if(uniformed_mapping.get(self.id)==0): self.personal_info_weight=0.0
+        if(uniformed_mapping.get(self.id)==0):
+            self.personal_info_weight=0.0
+            self.informed = False
 
 
         self.my_wind_direction = np.random.choice(['N','S','E','W'])
@@ -85,17 +87,22 @@ class PublishWindDirection(Node):
     def on_pose_response(self, fut):
         try:
             #get cam angle
-            self.cam_angle = self.process_image_get_direction()
+            if self.informed:
+                self.cam_angle = self.process_image_get_direction()
+            else:
+                self.cam_angle = 0.0
             resp = fut.result()
-            self.get_logger().info(
-                f"Pose Response: pos={resp.my_position_xy} yaw={resp.my_vicon_yaw} frame_number = {resp.global_frame_number}")
+            # TODO
+            # self.get_logger().info(f"Pose Response: pos={resp.my_position_xy} yaw={resp.my_vicon_yaw} frame_number = {resp.global_frame_number}")
+            self.get_logger().info(f"frame_number = {resp.global_frame_number}")
             self.robot_yaw = resp.my_vicon_yaw
             self.neighbours_by_id = resp.neighbours_by_id
             self.global_frm_number = resp.global_frame_number
             #after you have the pose info, find true wind direction
             self.get_true_wind_direction(self.cam_angle)
             # Neighbour Opionions request
-            self.get_logger().info("Neighbour info requested")
+            #TODO
+            # self.get_logger().info("Neighbour info requested")
             n_op_req = GetOpinionData.Request()
             n_op_req.neighbours_by_id = self.neighbours_by_id
             n_op_future = self.opinions_cli.call_async(n_op_req)
@@ -107,15 +114,17 @@ class PublishWindDirection(Node):
         
     def get_opinion_make_decision(self, op_fut):
         try:
+            # TODO
             op_resp = op_fut.result()
-            self.get_logger().info(f"Neighbour Opinion Response: {op_resp}")
+            # self.get_logger().info(f"Neighbour Opinion Response: {op_resp}")
             neighbours_opinions = op_resp.neighbours_opinions
             self.majority_vote(neighbours_opinions)
             m = len(neighbours_opinions)
-            self.get_logger().info(f"Inside Decision Making, neighbours opinion: {neighbours_opinions}")
-            self.get_logger().info(f"Inside Decision Making, computed social info: {self.social_info_counts}")
+            # self.get_logger().info(f"Inside Decision Making, neighbours opinion: {neighbours_opinions}")
+            # self.get_logger().info(f"Inside Decision Making, computed social info: {self.social_info_counts}")
+            self.get_logger().info(f"Social Info: {self.social_info_counts}")
             decision_dict = dict()
-            self.get_logger().info(f"Inside Decision Making, My Wind Direction: {self.my_wind_direction}")
+            # self.get_logger().info(f"Inside Decision Making, My Wind Direction: {self.my_wind_direction}")
             for direction in ['N','S','E','W']:
                 if self.informed:
                     mi = self.social_info_counts.get(direction,0)
@@ -124,12 +133,14 @@ class PublishWindDirection(Node):
                                                 * m * 
                                                 (1 if direction == self.my_wind_direction else 0))
 
-            
+            # TODO
             if self.informed:
-                self.get_logger().info(f"Inside Decision Making, Decision dict: {decision_dict}")
+                # self.get_logger().info(f"Inside Decision Making, Decision dict: {decision_dict}")
+                self.get_logger().info("### Informed ###")
                 self.my_wind_direction_opinion = self.get_highest_in_dict(decision_dict)
             else:
-                self.get_logger().info(f"Uninformed decision making: {self.social_info_counts}")
+                # self.get_logger().info(f"Uninformed decision making: {self.social_info_counts}")
+                self.get_logger().info("*** Uninformed ***")
                 self.my_wind_direction_opinion = self.get_highest_in_dict(self.social_info_counts)
             
             timestamp = datetime.datetime.now().isoformat()
@@ -149,7 +160,8 @@ class PublishWindDirection(Node):
             self.get_logger().info(f'Publishing: {msg.data}')
             now = datetime.datetime.now()
             current_time = now.strftime("%H:%M:%S")
-            self.get_logger().info(f"TIME: Decision making completed at: {current_time}.")
+            # TODO
+            # self.get_logger().info(f"TIME: Decision making completed at: {current_time}.")
             self.get_logger().info(f"-----------------------------------------------------")
 
         except Exception as e:
@@ -161,7 +173,8 @@ class PublishWindDirection(Node):
 
     def make_wind_direction_opinion(self):
         # Pose Request
-        self.get_logger().info("Main Pub Node: Requesting Pose Info")
+        # TODO
+        # self.get_logger().info("Main Pub Node: Requesting Pose Info")
         pose_req = GetPoseData.Request()
         pose_future = self.pose_cli.call_async(pose_req)
         pose_future.add_done_callback(self.on_pose_response)
@@ -185,7 +198,10 @@ class PublishWindDirection(Node):
     
     def get_true_wind_direction(self, cam_angle):
         ground_truth_wind_direction = (cam_angle + self.robot_yaw) % 360
-        self.get_logger().info(f"***Cam angle= {cam_angle}, vico ang deg= {self.robot_yaw} Ground Truth= {ground_truth_wind_direction}")
+        #TODO
+        # self.get_logger().info(f"***Cam angle= {cam_angle}, vico ang deg= {self.robot_yaw} Ground Truth= {ground_truth_wind_direction}")
+        if self.informed:
+            self.get_logger().info(f"***Cam angle= {cam_angle}")
         self.my_wind_direction = '1'
         if (ground_truth_wind_direction < 45 and ground_truth_wind_direction >= 0) or (ground_truth_wind_direction < 360 and ground_truth_wind_direction >= 315):
             self.my_wind_direction = 'N'
