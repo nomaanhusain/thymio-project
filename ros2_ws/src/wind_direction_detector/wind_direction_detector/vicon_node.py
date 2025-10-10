@@ -104,7 +104,9 @@ class ViconNode(Node):
                 if self.check_distance(self.my_position_xy, self.all_robots_position_by_id_vicon[id_vicon]):
                     self.neighbours_by_id.add(id_vicon)
             if time.time() - self.debug_timer > 10:
-                self.get_logger().info(f'Vicon Position= {self.my_position_xy}, yaw: {self.my_vicon_yaw} frame_no: {self.global_frame_number}')
+                # TODO
+                # self.get_logger().info(f'Vicon Position= {self.my_position_xy}, yaw: {self.my_vicon_yaw} frame_no: {self.global_frame_number}')
+                self.get_logger().info(f'Frame_no: {self.global_frame_number}')
                 # self.get_logger().info(f"Neighbourhood size: {len(self.neighbours_by_id)}")
                 # TODO
                 # self.get_logger().info(f"Neighbours: {self.neighbours_by_id}")

@@ -1,0 +1,863 @@
+1753357665.8389409 [INFO] [launch]: All log files can be found below /home/thymio/ros_logs/2025-07-24-11-47-45-835648-thymio-2119
+1753357665.8395610 [INFO] [launch]: Default logging verbosity is set to INFO
+1753357666.1570396 [INFO] [service_vicon_node-1]: process started with pid [2120]
+1753357666.1583612 [INFO] [service_neighbours_opinions-2]: process started with pid [2122]
+1753357666.1596897 [INFO] [random_robot_move-3]: process started with pid [2124]
+1753357666.1611040 [INFO] [publish_wind_direction-4]: process started with pid [2126]
+1753357668.1166017 [service_neighbours_opinions-2] [INFO] [1753357668.115900891] [service_neighbours_opinions]: Physical Ip=192.168.3.78, id=id78
+1753357668.1220267 [service_vicon_node-1] [INFO] [1753357668.121247187] [service_vicon_node]: Physical Ip=192.168.3.78, id=id78
+1753357668.1237810 [service_neighbours_opinions-2] [INFO] [1753357668.122447539] [service_neighbours_opinions]: Updated ID from mapping: id194
+1753357668.1253731 [service_vicon_node-1] [INFO] [1753357668.124346965] [service_vicon_node]: Updated ID from mapping: id194
+1753357668.1540549 [service_neighbours_opinions-2] [INFO] [1753357668.153229354] [service_neighbours_opinions]: Subscribed to: wind_direction/id68
+1753357668.1562300 [service_vicon_node-1] [INFO] [1753357668.154003891] [service_vicon_node]: Subscribed to: vicon/default/data
+1753357668.1596661 [service_neighbours_opinions-2] [INFO] [1753357668.158784187] [service_neighbours_opinions]: Subscribed to: wind_direction/id136
+1753357668.1657677 [service_neighbours_opinions-2] [INFO] [1753357668.165044298] [service_neighbours_opinions]: Subscribed to: wind_direction/id137
+1753357668.1697309 [service_neighbours_opinions-2] [INFO] [1753357668.169034206] [service_neighbours_opinions]: Subscribed to: wind_direction/id142
+1753357668.1730878 [service_neighbours_opinions-2] [INFO] [1753357668.172515002] [service_neighbours_opinions]: Subscribed to: wind_direction/id151
+1753357668.1765559 [service_neighbours_opinions-2] [INFO] [1753357668.175976928] [service_neighbours_opinions]: Subscribed to: wind_direction/id152
+1753357668.1801481 [service_neighbours_opinions-2] [INFO] [1753357668.179532150] [service_neighbours_opinions]: Subscribed to: wind_direction/id155
+1753357668.1836174 [service_neighbours_opinions-2] [INFO] [1753357668.182906113] [service_neighbours_opinions]: Subscribed to: wind_direction/id189
+1753357668.1873639 [service_neighbours_opinions-2] [INFO] [1753357668.186701576] [service_neighbours_opinions]: Subscribed to: wind_direction/id192
+1753357668.1907260 [service_neighbours_opinions-2] [INFO] [1753357668.190113057] [service_neighbours_opinions]: Subscribed to: wind_direction/id193
+1753357668.1940842 [service_neighbours_opinions-2] [INFO] [1753357668.193458835] [service_neighbours_opinions]: Subscribed to: wind_direction/id195
+1753357668.1974616 [service_neighbours_opinions-2] [INFO] [1753357668.196805983] [service_neighbours_opinions]: Subscribed to: wind_direction/id200
+1753357668.2009838 [service_neighbours_opinions-2] [INFO] [1753357668.200269113] [service_neighbours_opinions]: Subscribed to: wind_direction/id206
+1753357668.2047782 [service_neighbours_opinions-2] [INFO] [1753357668.203934743] [service_neighbours_opinions]: Subscribed to: wind_direction/id207
+1753357668.2090757 [service_neighbours_opinions-2] [INFO] [1753357668.208285631] [service_neighbours_opinions]: Subscribed to: wind_direction/id223
+1753357668.2133796 [service_neighbours_opinions-2] [INFO] [1753357668.212510335] [service_neighbours_opinions]: Subscribed to: wind_direction/id224
+1753357668.2169745 [service_neighbours_opinions-2] [INFO] [1753357668.216378594] [service_neighbours_opinions]: Subscribed to: wind_direction/id236
+1753357668.2206736 [service_neighbours_opinions-2] [INFO] [1753357668.220032298] [service_neighbours_opinions]: Subscribed to: wind_direction/id247
+1753357668.2241657 [service_neighbours_opinions-2] [INFO] [1753357668.223562391] [service_neighbours_opinions]: Subscribed to: wind_direction/id1193
+1753357669.0092669 [publish_wind_direction-4] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+1753357669.0098557 [publish_wind_direction-4]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+1753357669.9637072 [publish_wind_direction-4] [INFO] [1753357669.963084038] [publish_wind_direction]: Physical Ip=192.168.3.78, id=id78
+1753357669.9664102 [publish_wind_direction-4] [INFO] [1753357669.965834816] [publish_wind_direction]: Updated ID from mapping: id194
+1753357669.9742806 [publish_wind_direction-4] [INFO] [1753357669.973523482] [publish_wind_direction]: Publsihing on: wind_direction/id194
+1753357675.7370849 [random_robot_move-3] [INFO] [1753357675.736394645] [random_robot_move]: Robot Control Node started.
+1753357687.1700759 [service_vicon_node-1] [INFO] [1753357687.169024472] [service_vicon_node]: Vicon Position= [-822.5328369140625, 598.4011840820312], yaw: -68.68069157304949 frame_no: 14596
+1753357697.9636688 [service_vicon_node-1] [INFO] [1753357697.962331132] [service_vicon_node]: Vicon Position= [-962.6677856445312, 869.1508178710938], yaw: 20.58454336271191 frame_no: 14920
+1753357699.9573574 [service_vicon_node-1] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/service.py:76: RuntimeWarning: failed to send response (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+1753357699.9579990 [service_vicon_node-1]   self.__service.service_send_response(response, header.request_id)
+1753357709.1269734 [service_vicon_node-1] [INFO] [1753357709.126113477] [service_vicon_node]: Vicon Position= [-710.8157958984375, 999.2715454101562], yaw: 129.26588214053373 frame_no: 15243
+1753357712.9308190 [service_neighbours_opinions-2] [INFO] [1753357712.930040716] [service_neighbours_opinions]: All opinions size= 1
+1753357713.1426864 [service_neighbours_opinions-2] [INFO] [1753357713.141911697] [service_neighbours_opinions]: All opinions size= 2
+1753357719.1968331 [service_neighbours_opinions-2] [INFO] [1753357719.196049157] [service_neighbours_opinions]: All opinions size= 2
+1753357719.2561035 [service_neighbours_opinions-2] [INFO] [1753357719.255235564] [service_neighbours_opinions]: All opinions size= 3
+1753357719.6953061 [service_neighbours_opinions-2] [INFO] [1753357719.694609323] [service_neighbours_opinions]: All opinions size= 4
+1753357720.2072368 [service_vicon_node-1] [INFO] [1753357720.206398526] [service_vicon_node]: Vicon Position= [-525.141845703125, 1088.4248046875], yaw: 128.99996963919958 frame_no: 15427
+1753357722.5489357 [publish_wind_direction-4] [INFO] [1753357722.548292229] [publish_wind_direction]: frame_number = 15427
+1753357722.5516117 [publish_wind_direction-4] [INFO] [1753357722.551034043] [publish_wind_direction]: ***Cam angle= 43.32756219316843
+1753357722.5574245 [publish_wind_direction-4] [INFO] [1753357722.556582414] [publish_wind_direction]: Social Info: {'E': 1, 'S': 1}
+1753357722.5599864 [publish_wind_direction-4] [INFO] [1753357722.559230432] [publish_wind_direction]: ### Informed ###
+1753357722.5638406 [publish_wind_direction-4] [INFO] [1753357722.563013136] [publish_wind_direction]: Publishing: id194:S
+1753357722.5684361 [publish_wind_direction-4] [INFO] [1753357722.565709062] [publish_wind_direction]: -----------------------------------------------------
+1753357723.7610335 [service_neighbours_opinions-2] [INFO] [1753357723.759335432] [service_neighbours_opinions]: All opinions size= 4
+1753357725.5914526 [service_neighbours_opinions-2] [INFO] [1753357725.590563301] [service_neighbours_opinions]: All opinions size= 5
+1753357726.1421416 [service_neighbours_opinions-2] [INFO] [1753357726.141302115] [service_neighbours_opinions]: All opinions size= 6
+1753357727.1309118 [publish_wind_direction-4] [INFO] [1753357727.130248985] [publish_wind_direction]: frame_number = 15694
+1753357727.1333697 [publish_wind_direction-4] [INFO] [1753357727.132803670] [publish_wind_direction]: ***Cam angle= -999.0
+1753357727.1389413 [publish_wind_direction-4] [INFO] [1753357727.138079670] [publish_wind_direction]: Social Info: {'S': 1}
+1753357727.1414027 [publish_wind_direction-4] [INFO] [1753357727.140645356] [publish_wind_direction]: ### Informed ###
+1753357727.1449552 [publish_wind_direction-4] [INFO] [1753357727.144203504] [publish_wind_direction]: Publishing: id194:S
+1753357727.1476085 [publish_wind_direction-4] [INFO] [1753357727.146812856] [publish_wind_direction]: -----------------------------------------------------
+1753357728.9801252 [service_neighbours_opinions-2] [INFO] [1753357728.979205873] [service_neighbours_opinions]: All opinions size= 7
+1753357729.8781579 [service_neighbours_opinions-2] [INFO] [1753357729.875861798] [service_neighbours_opinions]: All opinions size= 8
+1753357730.6563604 [service_vicon_node-1] [INFO] [1753357730.655018168] [service_vicon_node]: Vicon Position= [-384.8062744140625, 992.3936767578125], yaw: 23.746296709311064 frame_no: 15884
+1753357732.1756315 [publish_wind_direction-4] [INFO] [1753357732.174731390] [publish_wind_direction]: frame_number = 15847
+1753357732.1844616 [publish_wind_direction-4] [INFO] [1753357732.177451130] [publish_wind_direction]: ***Cam angle= 41.142278187247086
+1753357732.1928022 [publish_wind_direction-4] [INFO] [1753357732.191967167] [publish_wind_direction]: Social Info: {'S': 1, 'E': 1}
+1753357732.1965525 [publish_wind_direction-4] [INFO] [1753357732.195721204] [publish_wind_direction]: ### Informed ###
+1753357732.2000005 [publish_wind_direction-4] [INFO] [1753357732.199452723] [publish_wind_direction]: Publishing: id194:W
+1753357732.2042711 [publish_wind_direction-4] [INFO] [1753357732.203394575] [publish_wind_direction]: -----------------------------------------------------
+1753357733.2088122 [service_neighbours_opinions-2] [INFO] [1753357733.208060593] [service_neighbours_opinions]: All opinions size= 9
+1753357737.1980131 [publish_wind_direction-4] [INFO] [1753357737.197330683] [publish_wind_direction]: frame_number = 16012
+1753357737.2015557 [publish_wind_direction-4] [INFO] [1753357737.201015072] [publish_wind_direction]: ***Cam angle= -999.0
+1753357737.2085819 [publish_wind_direction-4] [INFO] [1753357737.207843942] [publish_wind_direction]: Social Info: {'S': 1, 'E': 1}
+1753357737.2147963 [publish_wind_direction-4] [INFO] [1753357737.213071313] [publish_wind_direction]: ### Informed ###
+1753357737.2175438 [publish_wind_direction-4] [INFO] [1753357737.216786442] [publish_wind_direction]: Publishing: id194:S
+1753357737.2201951 [publish_wind_direction-4] [INFO] [1753357737.219403498] [publish_wind_direction]: -----------------------------------------------------
+1753357738.3809254 [service_neighbours_opinions-2] [INFO] [1753357738.380175256] [service_neighbours_opinions]: All opinions size= 9
+1753357740.3029983 [service_neighbours_opinions-2] [INFO] [1753357740.302085292] [service_neighbours_opinions]: All opinions size= 9
+1753357740.7679124 [service_vicon_node-1] [INFO] [1753357740.767138403] [service_vicon_node]: Vicon Position= [-199.27188110351562, 1145.2972412109375], yaw: 156.6136662958153 frame_no: 16207
+1753357742.1332941 [publish_wind_direction-4] [INFO] [1753357742.132680754] [publish_wind_direction]: frame_number = 16165
+1753357742.1359112 [publish_wind_direction-4] [INFO] [1753357742.135305050] [publish_wind_direction]: ***Cam angle= -112.13954467284601
+1753357742.1413031 [publish_wind_direction-4] [INFO] [1753357742.140727606] [publish_wind_direction]: Social Info: {'W': 1, 'E': 1}
+1753357742.1438138 [publish_wind_direction-4] [INFO] [1753357742.143276921] [publish_wind_direction]: ### Informed ###
+1753357742.1475585 [publish_wind_direction-4] [INFO] [1753357742.146893661] [publish_wind_direction]: Publishing: id194:W
+1753357742.1544504 [publish_wind_direction-4] [INFO] [1753357742.151453235] [publish_wind_direction]: -----------------------------------------------------
+1753357742.3982346 [service_neighbours_opinions-2] [INFO] [1753357742.397213106] [service_neighbours_opinions]: All opinions size= 10
+1753357742.5846343 [service_neighbours_opinions-2] [INFO] [1753357742.583268569] [service_neighbours_opinions]: All opinions size= 11
+1753357743.3281875 [service_neighbours_opinions-2] [INFO] [1753357743.327302513] [service_neighbours_opinions]: All opinions size= 11
+1753357745.6696928 [service_neighbours_opinions-2] [INFO] [1753357745.668580678] [service_neighbours_opinions]: All opinions size= 11
+1753357747.1531286 [publish_wind_direction-4] [INFO] [1753357747.152512362] [publish_wind_direction]: frame_number = 16319
+1753357747.1557479 [publish_wind_direction-4] [INFO] [1753357747.155170344] [publish_wind_direction]: ***Cam angle= 24.42117448186515
+1753357747.1611753 [publish_wind_direction-4] [INFO] [1753357747.160579918] [publish_wind_direction]: Social Info: {'N': 2, 'W': 1}
+1753357747.1637936 [publish_wind_direction-4] [INFO] [1753357747.163173121] [publish_wind_direction]: ### Informed ###
+1753357747.1675384 [publish_wind_direction-4] [INFO] [1753357747.166979177] [publish_wind_direction]: Publishing: id194:N
+1753357747.1710832 [publish_wind_direction-4] [INFO] [1753357747.169738788] [publish_wind_direction]: -----------------------------------------------------
+1753357747.7476556 [service_neighbours_opinions-2] [INFO] [1753357747.746865195] [service_neighbours_opinions]: All opinions size= 11
+1753357747.7543526 [service_neighbours_opinions-2] [INFO] [1753357747.753612510] [service_neighbours_opinions]: All opinions size= 11
+1753357747.7577362 [service_neighbours_opinions-2] [INFO] [1753357747.757073880] [service_neighbours_opinions]: All opinions size= 11
+1753357748.2625506 [service_neighbours_opinions-2] [INFO] [1753357748.261637343] [service_neighbours_opinions]: All opinions size= 11
+1753357749.1452925 [service_neighbours_opinions-2] [INFO] [1753357749.144556342] [service_neighbours_opinions]: All opinions size= 11
+1753357750.7064893 [service_neighbours_opinions-2] [INFO] [1753357750.705547638] [service_neighbours_opinions]: All opinions size= 11
+1753357751.4862442 [service_vicon_node-1] [INFO] [1753357751.484629730] [service_vicon_node]: Vicon Position= [-247.61094665527344, 857.60595703125], yaw: 24.071636582743917 frame_no: 16528
+1753357752.1557183 [publish_wind_direction-4] [INFO] [1753357752.155084211] [publish_wind_direction]: frame_number = 16462
+1753357752.1587319 [publish_wind_direction-4] [INFO] [1753357752.157742396] [publish_wind_direction]: ***Cam angle= 43.52738031342915
+1753357752.6540604 [publish_wind_direction-4] [INFO] [1753357752.653246988] [publish_wind_direction]: Social Info: {'N': 2, 'S': 1, 'W': 1}
+1753357752.6611865 [publish_wind_direction-4] [INFO] [1753357752.660347748] [publish_wind_direction]: ### Informed ###
+1753357752.6671238 [publish_wind_direction-4] [INFO] [1753357752.666425174] [publish_wind_direction]: Publishing: id194:W
+1753357752.6697481 [service_neighbours_opinions-2] [INFO] [1753357752.668942192] [service_neighbours_opinions]: All opinions size= 11
+1753357752.6725309 [publish_wind_direction-4] [INFO] [1753357752.669239951] [publish_wind_direction]: -----------------------------------------------------
+1753357752.6744373 [service_neighbours_opinions-2] [INFO] [1753357752.672281433] [service_neighbours_opinions]: All opinions size= 12
+1753357752.7177858 [service_neighbours_opinions-2] [INFO] [1753357752.713577211] [service_neighbours_opinions]: All opinions size= 12
+1753357752.9609261 [service_neighbours_opinions-2] [INFO] [1753357752.959243451] [service_neighbours_opinions]: All opinions size= 13
+1753357754.5202050 [service_neighbours_opinions-2] [INFO] [1753357754.518785580] [service_neighbours_opinions]: All opinions size= 13
+1753357755.4812534 [service_neighbours_opinions-2] [INFO] [1753357755.479225913] [service_neighbours_opinions]: All opinions size= 13
+1753357757.1558909 [publish_wind_direction-4] [INFO] [1753357757.155276264] [publish_wind_direction]: frame_number = 16628
+1753357757.1588719 [publish_wind_direction-4] [INFO] [1753357757.158055171] [publish_wind_direction]: ***Cam angle= 37.7959482118718
+1753357757.1688852 [publish_wind_direction-4] [INFO] [1753357757.168281949] [publish_wind_direction]: Social Info: {'N': 3, 'W': 3, 'E': 1}
+1753357757.1715546 [publish_wind_direction-4] [INFO] [1753357757.170991189] [publish_wind_direction]: ### Informed ###
+1753357757.1751831 [publish_wind_direction-4] [INFO] [1753357757.174617449] [publish_wind_direction]: Publishing: id194:N
+1753357757.1776745 [publish_wind_direction-4] [INFO] [1753357757.177138615] [publish_wind_direction]: -----------------------------------------------------
+1753357757.5964932 [service_neighbours_opinions-2] [INFO] [1753357757.595686782] [service_neighbours_opinions]: All opinions size= 13
+1753357757.7473874 [service_neighbours_opinions-2] [INFO] [1753357757.746583597] [service_neighbours_opinions]: All opinions size= 13
+1753357757.7537720 [service_neighbours_opinions-2] [INFO] [1753357757.752965263] [service_neighbours_opinions]: All opinions size= 13
+1753357761.2058692 [service_neighbours_opinions-2] [INFO] [1753357761.205196946] [service_neighbours_opinions]: All opinions size= 13
+1753357762.0692816 [publish_wind_direction-4] [INFO] [1753357762.068648668] [publish_wind_direction]: frame_number = 16759
+1753357762.0721350 [publish_wind_direction-4] [INFO] [1753357762.071561575] [publish_wind_direction]: ***Cam angle= 20.76241461493032
+1753357762.0965846 [publish_wind_direction-4] [INFO] [1753357762.077040001] [publish_wind_direction]: Social Info: {'N': 3, 'W': 3, 'E': 1}
+1753357762.0972171 [publish_wind_direction-4] [INFO] [1753357762.079212390] [publish_wind_direction]: ### Informed ###
+1753357762.1028154 [publish_wind_direction-4] [INFO] [1753357762.102097131] [publish_wind_direction]: Publishing: id194:W
+1753357762.1061280 [publish_wind_direction-4] [INFO] [1753357762.105370131] [publish_wind_direction]: -----------------------------------------------------
+1753357762.2950861 [service_vicon_node-1] [INFO] [1753357762.294345668] [service_vicon_node]: Vicon Position= [-404.3626708984375, 707.1650390625], yaw: 96.6936609496084 frame_no: 16851
+1753357762.7881720 [service_neighbours_opinions-2] [INFO] [1753357762.787418890] [service_neighbours_opinions]: All opinions size= 13
+1753357762.7921817 [service_neighbours_opinions-2] [INFO] [1753357762.790973186] [service_neighbours_opinions]: All opinions size= 13
+1753357762.8857243 [service_neighbours_opinions-2] [INFO] [1753357762.884337019] [service_neighbours_opinions]: All opinions size= 13
+1753357765.6123250 [service_neighbours_opinions-2] [INFO] [1753357765.611498722] [service_neighbours_opinions]: All opinions size= 13
+1753357767.1254442 [publish_wind_direction-4] [INFO] [1753357767.124819591] [publish_wind_direction]: frame_number = 16922
+1753357767.1281254 [publish_wind_direction-4] [INFO] [1753357767.127531147] [publish_wind_direction]: ***Cam angle= -173.442249621967
+1753357767.1338091 [publish_wind_direction-4] [INFO] [1753357767.133098276] [publish_wind_direction]: Social Info: {'N': 4, 'W': 2, 'E': 1}
+1753357767.1382260 [publish_wind_direction-4] [INFO] [1753357767.137532165] [publish_wind_direction]: ### Informed ###
+1753357767.1416771 [publish_wind_direction-4] [INFO] [1753357767.141122017] [publish_wind_direction]: Publishing: id194:N
+1753357767.1442857 [publish_wind_direction-4] [INFO] [1753357767.143746572] [publish_wind_direction]: -----------------------------------------------------
+1753357767.4795253 [service_neighbours_opinions-2] [INFO] [1753357767.478753628] [service_neighbours_opinions]: All opinions size= 13
+1753357767.4865351 [service_neighbours_opinions-2] [INFO] [1753357767.485762313] [service_neighbours_opinions]: All opinions size= 13
+1753357767.9935734 [service_neighbours_opinions-2] [INFO] [1753357767.992863757] [service_neighbours_opinions]: All opinions size= 14
+1753357768.4177308 [service_neighbours_opinions-2] [INFO] [1753357768.416961590] [service_neighbours_opinions]: All opinions size= 15
+1753357770.8084760 [service_neighbours_opinions-2] [INFO] [1753357770.807656478] [service_neighbours_opinions]: All opinions size= 15
+1753357772.1652086 [publish_wind_direction-4] [INFO] [1753357772.164595810] [publish_wind_direction]: frame_number = 17081
+1753357772.1678236 [publish_wind_direction-4] [INFO] [1753357772.167254310] [publish_wind_direction]: ***Cam angle= 35.2605127559016
+1753357772.1733634 [publish_wind_direction-4] [INFO] [1753357772.172750569] [publish_wind_direction]: Social Info: {'N': 5, 'E': 1, 'W': 2}
+1753357772.1758502 [publish_wind_direction-4] [INFO] [1753357772.175305681] [publish_wind_direction]: ### Informed ###
+1753357772.1796153 [publish_wind_direction-4] [INFO] [1753357772.179039866] [publish_wind_direction]: Publishing: id194:N
+1753357772.1823523 [publish_wind_direction-4] [INFO] [1753357772.181763977] [publish_wind_direction]: -----------------------------------------------------
+1753357772.5517633 [service_neighbours_opinions-2] [INFO] [1753357772.550928847] [service_neighbours_opinions]: All opinions size= 15
+1753357772.5591352 [service_neighbours_opinions-2] [INFO] [1753357772.558113180] [service_neighbours_opinions]: All opinions size= 15
+1753357772.5856612 [service_neighbours_opinions-2] [INFO] [1753357772.584942458] [service_neighbours_opinions]: All opinions size= 15
+1753357772.5891323 [service_neighbours_opinions-2] [INFO] [1753357772.588493421] [service_neighbours_opinions]: All opinions size= 15
+1753357772.6787684 [service_neighbours_opinions-2] [INFO] [1753357772.676089736] [service_neighbours_opinions]: All opinions size= 15
+1753357773.1253526 [service_vicon_node-1] [INFO] [1753357773.124055773] [service_vicon_node]: Vicon Position= [-330.54217529296875, 617.7420043945312], yaw: 10.226911527353241 frame_no: 17177
+1753357773.2309887 [service_neighbours_opinions-2] [INFO] [1753357773.229873773] [service_neighbours_opinions]: All opinions size= 15
+1753357775.7642558 [service_neighbours_opinions-2] [INFO] [1753357775.763454012] [service_neighbours_opinions]: All opinions size= 15
+1753357777.1214633 [publish_wind_direction-4] [INFO] [1753357777.120593289] [publish_wind_direction]: frame_number = 17206
+1753357777.1240222 [publish_wind_direction-4] [INFO] [1753357777.123289141] [publish_wind_direction]: ***Cam angle= -80.47827812066691
+1753357777.1319990 [publish_wind_direction-4] [INFO] [1753357777.131164437] [publish_wind_direction]: Social Info: {'N': 1, 'W': 4, 'E': 1}
+1753357777.1348596 [publish_wind_direction-4] [INFO] [1753357777.133980215] [publish_wind_direction]: ### Informed ###
+1753357777.1387150 [publish_wind_direction-4] [INFO] [1753357777.137865863] [publish_wind_direction]: Publishing: id194:N
+1753357777.1413822 [publish_wind_direction-4] [INFO] [1753357777.140600474] [publish_wind_direction]: -----------------------------------------------------
+1753357777.4821980 [service_neighbours_opinions-2] [INFO] [1753357777.481443770] [service_neighbours_opinions]: All opinions size= 15
+1753357777.4877906 [service_neighbours_opinions-2] [INFO] [1753357777.487096974] [service_neighbours_opinions]: All opinions size= 15
+1753357777.7425935 [service_neighbours_opinions-2] [INFO] [1753357777.741777344] [service_neighbours_opinions]: All opinions size= 15
+1753357777.7458339 [service_neighbours_opinions-2] [INFO] [1753357777.745179251] [service_neighbours_opinions]: All opinions size= 15
+1753357777.7515893 [service_neighbours_opinions-2] [INFO] [1753357777.750927825] [service_neighbours_opinions]: All opinions size= 15
+1753357777.7547836 [service_neighbours_opinions-2] [INFO] [1753357777.754187548] [service_neighbours_opinions]: All opinions size= 15
+1753357779.9045501 [service_neighbours_opinions-2] [INFO] [1753357779.903584028] [service_neighbours_opinions]: All opinions size= 16
+1753357782.1478055 [publish_wind_direction-4] [INFO] [1753357782.146764193] [publish_wind_direction]: frame_number = 17368
+1753357782.1511979 [publish_wind_direction-4] [INFO] [1753357782.149869897] [publish_wind_direction]: ***Cam angle= -82.78030585036181
+1753357782.1575618 [publish_wind_direction-4] [INFO] [1753357782.156284434] [publish_wind_direction]: Social Info: {'N': 2, 'W': 5, 'E': 1}
+1753357782.1624770 [publish_wind_direction-4] [INFO] [1753357782.159186101] [publish_wind_direction]: ### Informed ###
+1753357782.1637981 [publish_wind_direction-4] [INFO] [1753357782.162977175] [publish_wind_direction]: Publishing: id194:N
+1753357782.1672089 [publish_wind_direction-4] [INFO] [1753357782.165605341] [publish_wind_direction]: -----------------------------------------------------
+1753357782.4828064 [service_neighbours_opinions-2] [INFO] [1753357782.479098434] [service_neighbours_opinions]: All opinions size= 16
+1753357782.5264218 [service_neighbours_opinions-2] [INFO] [1753357782.522776378] [service_neighbours_opinions]: All opinions size= 16
+1753357782.5585525 [service_neighbours_opinions-2] [INFO] [1753357782.557752730] [service_neighbours_opinions]: All opinions size= 16
+1753357783.8663898 [service_vicon_node-1] [INFO] [1753357783.865536081] [service_vicon_node]: Vicon Position= [-23.27301597595215, 584.6146850585938], yaw: 40.558880967850364 frame_no: 17499
+1753357784.5981474 [service_neighbours_opinions-2] [INFO] [1753357784.597350618] [service_neighbours_opinions]: All opinions size= 16
+1753357785.1840076 [service_neighbours_opinions-2] [INFO] [1753357785.183009710] [service_neighbours_opinions]: All opinions size= 16
+1753357785.2220101 [service_neighbours_opinions-2] [INFO] [1753357785.221062821] [service_neighbours_opinions]: All opinions size= 16
+1753357787.2674346 [publish_wind_direction-4] [INFO] [1753357787.266815616] [publish_wind_direction]: frame_number = 17530
+1753357787.2700593 [publish_wind_direction-4] [INFO] [1753357787.269400764] [publish_wind_direction]: ***Cam angle= -91.8407025835173
+1753357787.2754633 [publish_wind_direction-4] [INFO] [1753357787.274874449] [publish_wind_direction]: Social Info: {'N': 2, 'W': 5, 'S': 1}
+1753357787.2779016 [publish_wind_direction-4] [INFO] [1753357787.277364172] [publish_wind_direction]: ### Informed ###
+1753357787.2815356 [publish_wind_direction-4] [INFO] [1753357787.280980283] [publish_wind_direction]: Publishing: id194:W
+1753357787.2841067 [publish_wind_direction-4] [INFO] [1753357787.283568264] [publish_wind_direction]: -----------------------------------------------------
+1753357787.3810790 [service_neighbours_opinions-2] [INFO] [1753357787.380215023] [service_neighbours_opinions]: All opinions size= 16
+1753357787.3871021 [service_neighbours_opinions-2] [INFO] [1753357787.386333875] [service_neighbours_opinions]: All opinions size= 16
+1753357787.6653719 [service_neighbours_opinions-2] [INFO] [1753357787.664651208] [service_neighbours_opinions]: All opinions size= 16
+1753357788.0605094 [service_neighbours_opinions-2] [INFO] [1753357788.059725004] [service_neighbours_opinions]: All opinions size= 16
+1753357790.2534487 [service_neighbours_opinions-2] [INFO] [1753357790.252527429] [service_neighbours_opinions]: All opinions size= 16
+1753357791.5192800 [service_neighbours_opinions-2] [INFO] [1753357791.518420817] [service_neighbours_opinions]: All opinions size= 16
+1753357792.1450500 [publish_wind_direction-4] [INFO] [1753357792.144432761] [publish_wind_direction]: frame_number = 17657
+1753357792.1476741 [publish_wind_direction-4] [INFO] [1753357792.147088187] [publish_wind_direction]: ***Cam angle= -72.30740331273367
+1753357792.1533408 [publish_wind_direction-4] [INFO] [1753357792.152754372] [publish_wind_direction]: Social Info: {'N': 2, 'E': 2, 'W': 3, 'S': 2}
+1753357792.1559286 [publish_wind_direction-4] [INFO] [1753357792.155380743] [publish_wind_direction]: ### Informed ###
+1753357792.1595774 [publish_wind_direction-4] [INFO] [1753357792.159013946] [publish_wind_direction]: Publishing: id194:E
+1753357792.1621218 [publish_wind_direction-4] [INFO] [1753357792.161507187] [publish_wind_direction]: -----------------------------------------------------
+1753357792.5530069 [service_neighbours_opinions-2] [INFO] [1753357792.552215168] [service_neighbours_opinions]: All opinions size= 16
+1753357793.8678503 [service_neighbours_opinions-2] [INFO] [1753357793.867149779] [service_neighbours_opinions]: All opinions size= 16
+1753357794.2518063 [service_vicon_node-1] [INFO] [1753357794.251075075] [service_vicon_node]: Vicon Position= [262.59857177734375, 578.2447509765625], yaw: 123.57230456102417 frame_no: 17812
+1753357795.1000667 [service_neighbours_opinions-2] [INFO] [1753357795.099075000] [service_neighbours_opinions]: All opinions size= 16
+1753357795.1287284 [service_neighbours_opinions-2] [INFO] [1753357795.128018111] [service_neighbours_opinions]: All opinions size= 16
+1753357795.2519500 [service_neighbours_opinions-2] [INFO] [1753357795.251153963] [service_neighbours_opinions]: All opinions size= 16
+1753357796.4222641 [service_neighbours_opinions-2] [INFO] [1753357796.421418314] [service_neighbours_opinions]: All opinions size= 16
+1753357797.2143033 [publish_wind_direction-4] [INFO] [1753357797.213616129] [publish_wind_direction]: frame_number = 17812
+1753357797.2170808 [publish_wind_direction-4] [INFO] [1753357797.216532388] [publish_wind_direction]: ***Cam angle= -75.42136694084282
+1753357797.2246354 [publish_wind_direction-4] [INFO] [1753357797.223977425] [publish_wind_direction]: Social Info: {'N': 3, 'E': 1, 'S': 2, 'W': 2}
+1753357797.2283254 [publish_wind_direction-4] [INFO] [1753357797.227750351] [publish_wind_direction]: ### Informed ###
+1753357797.2337644 [publish_wind_direction-4] [INFO] [1753357797.233205295] [publish_wind_direction]: Publishing: id194:W
+1753357797.2381101 [publish_wind_direction-4] [INFO] [1753357797.237428925] [publish_wind_direction]: -----------------------------------------------------
+1753357797.6275690 [service_neighbours_opinions-2] [INFO] [1753357797.626654536] [service_neighbours_opinions]: All opinions size= 16
+1753357797.9106233 [service_neighbours_opinions-2] [INFO] [1753357797.909827554] [service_neighbours_opinions]: All opinions size= 16
+1753357798.7749560 [service_neighbours_opinions-2] [INFO] [1753357798.773864665] [service_neighbours_opinions]: All opinions size= 16
+1753357800.1785741 [service_neighbours_opinions-2] [INFO] [1753357800.177667275] [service_neighbours_opinions]: All opinions size= 16
+1753357800.4370070 [service_neighbours_opinions-2] [INFO] [1753357800.434726904] [service_neighbours_opinions]: All opinions size= 17
+1753357802.1901886 [publish_wind_direction-4] [INFO] [1753357802.189536755] [publish_wind_direction]: frame_number = 17974
+1753357802.1927347 [publish_wind_direction-4] [INFO] [1753357802.192181422] [publish_wind_direction]: ***Cam angle= -76.5614322983884
+1753357802.1983016 [publish_wind_direction-4] [INFO] [1753357802.197669607] [publish_wind_direction]: Social Info: {'N': 1, 'W': 3, 'S': 2}
+1753357802.2008641 [publish_wind_direction-4] [INFO] [1753357802.200304255] [publish_wind_direction]: ### Informed ###
+1753357802.2044475 [publish_wind_direction-4] [INFO] [1753357802.203887940] [publish_wind_direction]: Publishing: id194:N
+1753357802.2069635 [publish_wind_direction-4] [INFO] [1753357802.206423200] [publish_wind_direction]: -----------------------------------------------------
+1753357802.3818233 [service_neighbours_opinions-2] [INFO] [1753357802.381108533] [service_neighbours_opinions]: All opinions size= 17
+1753357802.5219193 [service_neighbours_opinions-2] [INFO] [1753357802.521068014] [service_neighbours_opinions]: All opinions size= 17
+1753357802.6803448 [service_neighbours_opinions-2] [INFO] [1753357802.679664329] [service_neighbours_opinions]: All opinions size= 17
+1753357804.8881958 [service_vicon_node-1] [INFO] [1753357804.887249809] [service_vicon_node]: Vicon Position= [611.2467041015625, 470.5419921875], yaw: 88.16404872675686 frame_no: 18131
+1753357807.1827240 [publish_wind_direction-4] [INFO] [1753357807.180960623] [publish_wind_direction]: frame_number = 18131
+1753357807.1857140 [publish_wind_direction-4] [INFO] [1753357807.183801197] [publish_wind_direction]: ***Cam angle= -42.396097347164634
+1753357807.1915448 [publish_wind_direction-4] [INFO] [1753357807.190497752] [publish_wind_direction]: Social Info: {'W': 3, 'S': 2}
+1753357807.1946120 [publish_wind_direction-4] [INFO] [1753357807.193631400] [publish_wind_direction]: ### Informed ###
+1753357807.1980240 [publish_wind_direction-4] [INFO] [1753357807.197415734] [publish_wind_direction]: Publishing: id194:W
+1753357807.2004845 [publish_wind_direction-4] [INFO] [1753357807.199956623] [publish_wind_direction]: -----------------------------------------------------
+1753357810.0577273 [service_neighbours_opinions-2] [INFO] [1753357810.057054121] [service_neighbours_opinions]: All opinions size= 17
+1753357810.1967390 [service_neighbours_opinions-2] [INFO] [1753357810.195592695] [service_neighbours_opinions]: All opinions size= 17
+1753357812.1658063 [publish_wind_direction-4] [INFO] [1753357812.165200879] [publish_wind_direction]: frame_number = 18257
+1753357812.1703253 [publish_wind_direction-4] [INFO] [1753357812.169314157] [publish_wind_direction]: ***Cam angle= -102.4632406054029
+1753357812.1758657 [publish_wind_direction-4] [INFO] [1753357812.175033972] [publish_wind_direction]: Social Info: {'W': 3, 'S': 2}
+1753357812.1785674 [publish_wind_direction-4] [INFO] [1753357812.177734546] [publish_wind_direction]: ### Informed ###
+1753357812.1823282 [publish_wind_direction-4] [INFO] [1753357812.181534657] [publish_wind_direction]: Publishing: id194:W
+1753357812.1848619 [publish_wind_direction-4] [INFO] [1753357812.184109509] [publish_wind_direction]: -----------------------------------------------------
+1753357812.3560295 [service_neighbours_opinions-2] [INFO] [1753357812.355167805] [service_neighbours_opinions]: All opinions size= 17
+1753357812.3634434 [service_neighbours_opinions-2] [INFO] [1753357812.362415490] [service_neighbours_opinions]: All opinions size= 17
+1753357812.4292235 [service_neighbours_opinions-2] [INFO] [1753357812.428405027] [service_neighbours_opinions]: All opinions size= 17
+1753357812.4363079 [service_neighbours_opinions-2] [INFO] [1753357812.435521101] [service_neighbours_opinions]: All opinions size= 17
+1753357812.4396751 [service_neighbours_opinions-2] [INFO] [1753357812.438977101] [service_neighbours_opinions]: All opinions size= 17
+1753357812.4427688 [service_neighbours_opinions-2] [INFO] [1753357812.442175934] [service_neighbours_opinions]: All opinions size= 17
+1753357812.5591788 [service_neighbours_opinions-2] [INFO] [1753357812.558312638] [service_neighbours_opinions]: All opinions size= 17
+1753357814.9515715 [service_neighbours_opinions-2] [INFO] [1753357814.950852322] [service_neighbours_opinions]: All opinions size= 17
+1753357815.1028061 [service_neighbours_opinions-2] [INFO] [1753357815.102186599] [service_neighbours_opinions]: All opinions size= 17
+1753357815.2901900 [service_vicon_node-1] [INFO] [1753357815.289210784] [service_vicon_node]: Vicon Position= [757.609375, 378.9747314453125], yaw: -108.39102044169637 frame_no: 18440
+1753357815.2917252 [service_neighbours_opinions-2] [INFO] [1753357815.289330803] [service_neighbours_opinions]: All opinions size= 17
+1753357815.3312867 [service_neighbours_opinions-2] [INFO] [1753357815.330549340] [service_neighbours_opinions]: All opinions size= 17
+1753357817.1937864 [publish_wind_direction-4] [INFO] [1753357817.193140969] [publish_wind_direction]: frame_number = 18411
+1753357817.1963763 [publish_wind_direction-4] [INFO] [1753357817.195811117] [publish_wind_direction]: ***Cam angle= -179.42927690093802
+1753357817.2019920 [publish_wind_direction-4] [INFO] [1753357817.201341820] [publish_wind_direction]: Social Info: {'W': 4, 'S': 1}
+1753357817.2045841 [publish_wind_direction-4] [INFO] [1753357817.204032006] [publish_wind_direction]: ### Informed ###
+1753357817.2084510 [publish_wind_direction-4] [INFO] [1753357817.207771117] [publish_wind_direction]: Publishing: id194:W
+1753357817.2115335 [publish_wind_direction-4] [INFO] [1753357817.210836339] [publish_wind_direction]: -----------------------------------------------------
+1753357817.2417352 [service_neighbours_opinions-2] [INFO] [1753357817.240766506] [service_neighbours_opinions]: All opinions size= 18
+1753357817.2753971 [service_neighbours_opinions-2] [INFO] [1753357817.274687376] [service_neighbours_opinions]: All opinions size= 18
+1753357817.3083608 [service_neighbours_opinions-2] [INFO] [1753357817.307660617] [service_neighbours_opinions]: All opinions size= 18
+1753357817.3131738 [service_neighbours_opinions-2] [INFO] [1753357817.312526580] [service_neighbours_opinions]: All opinions size= 18
+1753357817.3547657 [service_neighbours_opinions-2] [INFO] [1753357817.353853505] [service_neighbours_opinions]: All opinions size= 18
+1753357817.3599079 [service_neighbours_opinions-2] [INFO] [1753357817.359259468] [service_neighbours_opinions]: All opinions size= 18
+1753357817.3997235 [service_neighbours_opinions-2] [INFO] [1753357817.398765617] [service_neighbours_opinions]: All opinions size= 18
+1753357817.4065232 [service_neighbours_opinions-2] [INFO] [1753357817.405839357] [service_neighbours_opinions]: All opinions size= 18
+1753357817.5558553 [service_neighbours_opinions-2] [INFO] [1753357817.554930154] [service_neighbours_opinions]: All opinions size= 18
+1753357817.6032085 [service_neighbours_opinions-2] [INFO] [1753357817.602488172] [service_neighbours_opinions]: All opinions size= 18
+1753357817.6556664 [service_neighbours_opinions-2] [INFO] [1753357817.654971042] [service_neighbours_opinions]: All opinions size= 18
+1753357819.9536560 [service_neighbours_opinions-2] [INFO] [1753357819.952946948] [service_neighbours_opinions]: All opinions size= 18
+1753357820.0574641 [service_neighbours_opinions-2] [INFO] [1753357820.056719893] [service_neighbours_opinions]: All opinions size= 18
+1753357820.0894485 [service_neighbours_opinions-2] [INFO] [1753357820.088750096] [service_neighbours_opinions]: All opinions size= 18
+1753357820.1850982 [service_neighbours_opinions-2] [INFO] [1753357820.184305282] [service_neighbours_opinions]: All opinions size= 18
+1753357822.1276307 [service_neighbours_opinions-2] [INFO] [1753357822.126646132] [service_neighbours_opinions]: All opinions size= 18
+1753357822.2128282 [service_neighbours_opinions-2] [INFO] [1753357822.212107947] [service_neighbours_opinions]: All opinions size= 18
+1753357822.2403276 [service_neighbours_opinions-2] [INFO] [1753357822.239592169] [service_neighbours_opinions]: All opinions size= 18
+1753357822.2723765 [publish_wind_direction-4] [INFO] [1753357822.271694558] [publish_wind_direction]: frame_number = 18567
+1753357822.2763286 [publish_wind_direction-4] [INFO] [1753357822.275776040] [publish_wind_direction]: ***Cam angle= -210.38283830881193
+1753357822.2836695 [publish_wind_direction-4] [INFO] [1753357822.283061743] [publish_wind_direction]: Social Info: {'S': 1, 'N': 1, 'E': 2}
+1753357822.2876725 [publish_wind_direction-4] [INFO] [1753357822.287091965] [publish_wind_direction]: ### Informed ###
+1753357822.2930574 [publish_wind_direction-4] [INFO] [1753357822.292470743] [publish_wind_direction]: Publishing: id194:N
+1753357822.2964690 [publish_wind_direction-4] [INFO] [1753357822.295936651] [publish_wind_direction]: -----------------------------------------------------
+1753357822.3445289 [service_neighbours_opinions-2] [INFO] [1753357822.343546391] [service_neighbours_opinions]: All opinions size= 18
+1753357822.3493118 [service_neighbours_opinions-2] [INFO] [1753357822.348407002] [service_neighbours_opinions]: All opinions size= 18
+1753357822.4434652 [service_neighbours_opinions-2] [INFO] [1753357822.442544039] [service_neighbours_opinions]: All opinions size= 18
+1753357822.5995736 [service_neighbours_opinions-2] [INFO] [1753357822.598889984] [service_neighbours_opinions]: All opinions size= 18
+1753357822.6753356 [service_neighbours_opinions-2] [INFO] [1753357822.674654021] [service_neighbours_opinions]: All opinions size= 18
+1753357822.7156153 [service_neighbours_opinions-2] [INFO] [1753357822.714707873] [service_neighbours_opinions]: All opinions size= 18
+1753357824.9503331 [service_neighbours_opinions-2] [INFO] [1753357824.949589519] [service_neighbours_opinions]: All opinions size= 18
+1753357825.0334978 [service_neighbours_opinions-2] [INFO] [1753357825.032801056] [service_neighbours_opinions]: All opinions size= 18
+1753357825.0814030 [service_neighbours_opinions-2] [INFO] [1753357825.080382316] [service_neighbours_opinions]: All opinions size= 18
+1753357825.1790676 [service_neighbours_opinions-2] [INFO] [1753357825.178374019] [service_neighbours_opinions]: All opinions size= 18
+1753357825.5740509 [service_vicon_node-1] [INFO] [1753357825.573217519] [service_vicon_node]: Vicon Position= [594.6134033203125, 685.3084716796875], yaw: -111.2743325185088 frame_no: 18752
+1753357827.1148658 [publish_wind_direction-4] [INFO] [1753357827.114253703] [publish_wind_direction]: frame_number = 18721
+1753357827.1176548 [publish_wind_direction-4] [INFO] [1753357827.116837870] [publish_wind_direction]: ***Cam angle= -225.2669471479175
+1753357827.1249666 [publish_wind_direction-4] [INFO] [1753357827.124333333] [publish_wind_direction]: Social Info: {'S': 1, 'E': 1, 'W': 1, 'N': 1}
+1753357827.1292005 [publish_wind_direction-4] [INFO] [1753357827.128577296] [publish_wind_direction]: ### Informed ###
+1753357827.1349514 [publish_wind_direction-4] [INFO] [1753357827.134358092] [publish_wind_direction]: Publishing: id194:N
+1753357827.1386034 [publish_wind_direction-4] [INFO] [1753357827.138076129] [publish_wind_direction]: -----------------------------------------------------
+1753357827.1880276 [service_neighbours_opinions-2] [INFO] [1753357827.187323074] [service_neighbours_opinions]: All opinions size= 18
+1753357827.2509294 [service_neighbours_opinions-2] [INFO] [1753357827.249721463] [service_neighbours_opinions]: All opinions size= 18
+1753357827.2561779 [service_neighbours_opinions-2] [INFO] [1753357827.255244259] [service_neighbours_opinions]: All opinions size= 18
+1753357827.2947447 [service_neighbours_opinions-2] [INFO] [1753357827.293640870] [service_neighbours_opinions]: All opinions size= 18
+1753357827.3147559 [service_neighbours_opinions-2] [INFO] [1753357827.313764870] [service_neighbours_opinions]: All opinions size= 18
+1753357827.4101129 [service_neighbours_opinions-2] [INFO] [1753357827.409303277] [service_neighbours_opinions]: All opinions size= 18
+1753357827.4946458 [service_neighbours_opinions-2] [INFO] [1753357827.493811351] [service_neighbours_opinions]: All opinions size= 18
+1753357827.4993660 [service_neighbours_opinions-2] [INFO] [1753357827.498682185] [service_neighbours_opinions]: All opinions size= 18
+1753357827.5221024 [service_neighbours_opinions-2] [INFO] [1753357827.521271333] [service_neighbours_opinions]: All opinions size= 18
+1753357829.9534783 [service_neighbours_opinions-2] [INFO] [1753357829.952728979] [service_neighbours_opinions]: All opinions size= 18
+1753357830.0355830 [service_neighbours_opinions-2] [INFO] [1753357830.034738683] [service_neighbours_opinions]: All opinions size= 18
+1753357830.0834751 [service_neighbours_opinions-2] [INFO] [1753357830.082369109] [service_neighbours_opinions]: All opinions size= 18
+1753357830.1823428 [service_neighbours_opinions-2] [INFO] [1753357830.181277294] [service_neighbours_opinions]: All opinions size= 18
+1753357832.0937073 [publish_wind_direction-4] [INFO] [1753357832.092881534] [publish_wind_direction]: frame_number = 18874
+1753357832.0966699 [publish_wind_direction-4] [INFO] [1753357832.095597608] [publish_wind_direction]: ***Cam angle= 15.247237732777535
+1753357832.1021934 [publish_wind_direction-4] [INFO] [1753357832.101493293] [publish_wind_direction]: Social Info: {'S': 1, 'W': 1, 'N': 2}
+1753357832.1051188 [publish_wind_direction-4] [INFO] [1753357832.104263682] [publish_wind_direction]: ### Informed ###
+1753357832.1091754 [publish_wind_direction-4] [INFO] [1753357832.108360349] [publish_wind_direction]: Publishing: id194:N
+1753357832.1118841 [publish_wind_direction-4] [INFO] [1753357832.111101274] [publish_wind_direction]: -----------------------------------------------------
+1753357832.1804137 [service_neighbours_opinions-2] [INFO] [1753357832.179488460] [service_neighbours_opinions]: All opinions size= 18
+1753357832.1960375 [service_neighbours_opinions-2] [INFO] [1753357832.195080071] [service_neighbours_opinions]: All opinions size= 18
+1753357832.2205627 [service_neighbours_opinions-2] [INFO] [1753357832.219463274] [service_neighbours_opinions]: All opinions size= 18
+1753357832.2500534 [service_neighbours_opinions-2] [INFO] [1753357832.249084293] [service_neighbours_opinions]: All opinions size= 18
+1753357832.2707186 [service_neighbours_opinions-2] [INFO] [1753357832.270014515] [service_neighbours_opinions]: All opinions size= 18
+1753357832.3525548 [service_neighbours_opinions-2] [INFO] [1753357832.351831997] [service_neighbours_opinions]: All opinions size= 18
+1753357832.4703467 [service_neighbours_opinions-2] [INFO] [1753357832.469532311] [service_neighbours_opinions]: All opinions size= 18
+1753357832.4894271 [service_neighbours_opinions-2] [INFO] [1753357832.488755256] [service_neighbours_opinions]: All opinions size= 18
+1753357832.5995550 [service_neighbours_opinions-2] [INFO] [1753357832.598869756] [service_neighbours_opinions]: All opinions size= 18
+1753357834.9608784 [service_neighbours_opinions-2] [INFO] [1753357834.960201902] [service_neighbours_opinions]: All opinions size= 18
+1753357835.0293624 [service_neighbours_opinions-2] [INFO] [1753357835.028676699] [service_neighbours_opinions]: All opinions size= 18
+1753357835.0875962 [service_neighbours_opinions-2] [INFO] [1753357835.086811736] [service_neighbours_opinions]: All opinions size= 18
+1753357835.1856744 [service_neighbours_opinions-2] [INFO] [1753357835.184973828] [service_neighbours_opinions]: All opinions size= 18
+1753357835.7399268 [service_vicon_node-1] [INFO] [1753357835.739102569] [service_vicon_node]: Vicon Position= [496.9639587402344, 466.1615905761719], yaw: -92.00678848943156 frame_no: 19057
+1753357837.1288929 [service_neighbours_opinions-2] [INFO] [1753357837.128194975] [service_neighbours_opinions]: All opinions size= 18
+1753357837.1569195 [publish_wind_direction-4] [INFO] [1753357837.155966383] [publish_wind_direction]: frame_number = 19027
+1753357837.1599095 [publish_wind_direction-4] [INFO] [1753357837.158789531] [publish_wind_direction]: ***Cam angle= -189.26280547990345
+1753357837.1652710 [publish_wind_direction-4] [INFO] [1753357837.164488086] [publish_wind_direction]: Social Info: {'W': 2, 'E': 1, 'S': 1}
+1753357837.1679943 [publish_wind_direction-4] [INFO] [1753357837.167216346] [publish_wind_direction]: ### Informed ###
+1753357837.1717227 [publish_wind_direction-4] [INFO] [1753357837.170835420] [publish_wind_direction]: Publishing: id194:W
+1753357837.1742871 [publish_wind_direction-4] [INFO] [1753357837.173565086] [publish_wind_direction]: -----------------------------------------------------
+1753357837.2078013 [service_neighbours_opinions-2] [INFO] [1753357837.206823327] [service_neighbours_opinions]: All opinions size= 18
+1753357837.2571940 [service_neighbours_opinions-2] [INFO] [1753357837.256451401] [service_neighbours_opinions]: All opinions size= 18
+1753357837.2811971 [service_neighbours_opinions-2] [INFO] [1753357837.280512957] [service_neighbours_opinions]: All opinions size= 18
+1753357837.3423424 [service_neighbours_opinions-2] [INFO] [1753357837.341566290] [service_neighbours_opinions]: All opinions size= 18
+1753357837.3471401 [service_neighbours_opinions-2] [INFO] [1753357837.346495068] [service_neighbours_opinions]: All opinions size= 18
+1753357837.4836860 [service_neighbours_opinions-2] [INFO] [1753357837.482986919] [service_neighbours_opinions]: All opinions size= 18
+1753357837.5270424 [service_neighbours_opinions-2] [INFO] [1753357837.526346864] [service_neighbours_opinions]: All opinions size= 18
+1753357837.5951064 [service_neighbours_opinions-2] [INFO] [1753357837.594410864] [service_neighbours_opinions]: All opinions size= 18
+1753357839.9518800 [service_neighbours_opinions-2] [INFO] [1753357839.951178566] [service_neighbours_opinions]: All opinions size= 18
+1753357840.0284042 [service_neighbours_opinions-2] [INFO] [1753357840.027698473] [service_neighbours_opinions]: All opinions size= 18
+1753357840.0844643 [service_neighbours_opinions-2] [INFO] [1753357840.083700288] [service_neighbours_opinions]: All opinions size= 18
+1753357840.1824472 [service_neighbours_opinions-2] [INFO] [1753357840.181383455] [service_neighbours_opinions]: All opinions size= 18
+1753357842.1755261 [service_neighbours_opinions-2] [INFO] [1753357842.174782805] [service_neighbours_opinions]: All opinions size= 18
+1753357842.1825588 [publish_wind_direction-4] [INFO] [1753357842.181957602] [publish_wind_direction]: frame_number = 19179
+1753357842.1851175 [publish_wind_direction-4] [INFO] [1753357842.184563491] [publish_wind_direction]: ***Cam angle= -122.68593023754386
+1753357842.1919506 [publish_wind_direction-4] [INFO] [1753357842.191312972] [publish_wind_direction]: Social Info: {'W': 2, 'E': 1, 'S': 1}
+1753357842.1945786 [publish_wind_direction-4] [INFO] [1753357842.193975509] [publish_wind_direction]: ### Informed ###
+1753357842.1972268 [service_neighbours_opinions-2] [INFO] [1753357842.195625583] [service_neighbours_opinions]: All opinions size= 18
+1753357842.1987629 [publish_wind_direction-4] [INFO] [1753357842.198208435] [publish_wind_direction]: Publishing: id194:E
+1753357842.2016733 [publish_wind_direction-4] [INFO] [1753357842.201028065] [publish_wind_direction]: -----------------------------------------------------
+1753357842.2414596 [service_neighbours_opinions-2] [INFO] [1753357842.240742602] [service_neighbours_opinions]: All opinions size= 18
+1753357842.2633154 [service_neighbours_opinions-2] [INFO] [1753357842.262577435] [service_neighbours_opinions]: All opinions size= 18
+1753357842.2748184 [service_neighbours_opinions-2] [INFO] [1753357842.274135509] [service_neighbours_opinions]: All opinions size= 18
+1753357842.2794757 [service_neighbours_opinions-2] [INFO] [1753357842.278830750] [service_neighbours_opinions]: All opinions size= 18
+1753357842.3119326 [service_neighbours_opinions-2] [INFO] [1753357842.311244491] [service_neighbours_opinions]: All opinions size= 18
+1753357842.5127225 [service_neighbours_opinions-2] [INFO] [1753357842.512032602] [service_neighbours_opinions]: All opinions size= 18
+1753357842.5174875 [service_neighbours_opinions-2] [INFO] [1753357842.516836083] [service_neighbours_opinions]: All opinions size= 18
+1753357844.9558742 [service_neighbours_opinions-2] [INFO] [1753357844.955174674] [service_neighbours_opinions]: All opinions size= 18
+1753357845.0306089 [service_neighbours_opinions-2] [INFO] [1753357845.029926211] [service_neighbours_opinions]: All opinions size= 18
+1753357845.0808759 [service_neighbours_opinions-2] [INFO] [1753357845.080140748] [service_neighbours_opinions]: All opinions size= 18
+1753357845.1784623 [service_neighbours_opinions-2] [INFO] [1753357845.177718267] [service_neighbours_opinions]: All opinions size= 18
+1753357845.9720054 [service_vicon_node-1] [INFO] [1753357845.971078988] [service_vicon_node]: Vicon Position= [837.5231323242188, 545.1005859375], yaw: 91.76732420006738 frame_no: 19364
+1753357847.1161489 [publish_wind_direction-4] [INFO] [1753357847.115539506] [publish_wind_direction]: frame_number = 19333
+1753357847.1187422 [publish_wind_direction-4] [INFO] [1753357847.118144136] [publish_wind_direction]: ***Cam angle= -999.0
+1753357847.1242001 [publish_wind_direction-4] [INFO] [1753357847.123591247] [publish_wind_direction]: Social Info: {'S': 1, 'W': 3}
+1753357847.1267354 [publish_wind_direction-4] [INFO] [1753357847.126156673] [publish_wind_direction]: ### Informed ###
+1753357847.1302338 [publish_wind_direction-4] [INFO] [1753357847.129640303] [publish_wind_direction]: Publishing: id194:S
+1753357847.1328943 [publish_wind_direction-4] [INFO] [1753357847.132351358] [publish_wind_direction]: -----------------------------------------------------
+1753357847.1892171 [service_neighbours_opinions-2] [INFO] [1753357847.188466099] [service_neighbours_opinions]: All opinions size= 18
+1753357847.2588086 [service_neighbours_opinions-2] [INFO] [1753357847.258122154] [service_neighbours_opinions]: All opinions size= 18
+1753357847.2635336 [service_neighbours_opinions-2] [INFO] [1753357847.262856765] [service_neighbours_opinions]: All opinions size= 18
+1753357847.2701077 [service_neighbours_opinions-2] [INFO] [1753357847.269441636] [service_neighbours_opinions]: All opinions size= 18
+1753357847.3130538 [service_neighbours_opinions-2] [INFO] [1753357847.312269710] [service_neighbours_opinions]: All opinions size= 18
+1753357847.3199959 [service_neighbours_opinions-2] [INFO] [1753357847.319346673] [service_neighbours_opinions]: All opinions size= 18
+1753357847.3615289 [service_neighbours_opinions-2] [INFO] [1753357847.360857432] [service_neighbours_opinions]: All opinions size= 18
+1753357847.4540820 [service_neighbours_opinions-2] [INFO] [1753357847.453246969] [service_neighbours_opinions]: All opinions size= 18
+1753357847.4574718 [service_neighbours_opinions-2] [INFO] [1753357847.456843432] [service_neighbours_opinions]: All opinions size= 18
+1753357849.9554327 [service_neighbours_opinions-2] [INFO] [1753357849.954736412] [service_neighbours_opinions]: All opinions size= 18
+1753357850.0309863 [service_neighbours_opinions-2] [INFO] [1753357850.029821764] [service_neighbours_opinions]: All opinions size= 18
+1753357850.0841660 [service_neighbours_opinions-2] [INFO] [1753357850.083268060] [service_neighbours_opinions]: All opinions size= 18
+1753357850.1805449 [service_neighbours_opinions-2] [INFO] [1753357850.179553282] [service_neighbours_opinions]: All opinions size= 18
+1753357852.1932483 [publish_wind_direction-4] [INFO] [1753357852.192634448] [publish_wind_direction]: frame_number = 19455
+1753357852.1958363 [publish_wind_direction-4] [INFO] [1753357852.195312670] [publish_wind_direction]: ***Cam angle= -122.1228711601443
+1753357852.2030275 [publish_wind_direction-4] [INFO] [1753357852.202363392] [publish_wind_direction]: Social Info: {'S': 1, 'W': 2}
+1753357852.2055044 [publish_wind_direction-4] [INFO] [1753357852.204972392] [publish_wind_direction]: ### Informed ###
+1753357852.2091110 [publish_wind_direction-4] [INFO] [1753357852.208547707] [publish_wind_direction]: Publishing: id194:W
+1753357852.2117484 [publish_wind_direction-4] [INFO] [1753357852.211207466] [publish_wind_direction]: -----------------------------------------------------
+1753357852.2247653 [service_neighbours_opinions-2] [INFO] [1753357852.224093762] [service_neighbours_opinions]: All opinions size= 18
+1753357852.2472394 [service_neighbours_opinions-2] [INFO] [1753357852.246516299] [service_neighbours_opinions]: All opinions size= 18
+1753357852.2518175 [service_neighbours_opinions-2] [INFO] [1753357852.251175614] [service_neighbours_opinions]: All opinions size= 18
+1753357852.2548804 [service_neighbours_opinions-2] [INFO] [1753357852.254273355] [service_neighbours_opinions]: All opinions size= 18
+1753357852.2961316 [service_neighbours_opinions-2] [INFO] [1753357852.295363818] [service_neighbours_opinions]: All opinions size= 18
+1753357852.3206961 [service_neighbours_opinions-2] [INFO] [1753357852.320007244] [service_neighbours_opinions]: All opinions size= 18
+1753357852.3288276 [service_neighbours_opinions-2] [INFO] [1753357852.327826799] [service_neighbours_opinions]: All opinions size= 18
+1753357852.4540088 [service_neighbours_opinions-2] [INFO] [1753357852.452979077] [service_neighbours_opinions]: All opinions size= 18
+1753357852.5750899 [service_neighbours_opinions-2] [INFO] [1753357852.574073003] [service_neighbours_opinions]: All opinions size= 18
+1753357854.9494514 [service_neighbours_opinions-2] [INFO] [1753357854.948761076] [service_neighbours_opinions]: All opinions size= 18
+1753357855.0317996 [service_neighbours_opinions-2] [INFO] [1753357855.031088816] [service_neighbours_opinions]: All opinions size= 18
+1753357855.0809836 [service_neighbours_opinions-2] [INFO] [1753357855.080231316] [service_neighbours_opinions]: All opinions size= 18
+1753357855.1777918 [service_neighbours_opinions-2] [INFO] [1753357855.176701946] [service_neighbours_opinions]: All opinions size= 18
+1753357856.1373224 [service_vicon_node-1] [INFO] [1753357856.136520019] [service_vicon_node]: Vicon Position= [1039.733642578125, 426.52301025390625], yaw: -64.8353733084156 frame_no: 19669
+1753357857.1046035 [publish_wind_direction-4] [INFO] [1753357857.104025223] [publish_wind_direction]: frame_number = 19608
+1753357857.1076610 [publish_wind_direction-4] [INFO] [1753357857.106553000] [publish_wind_direction]: ***Cam angle= 81.10274529013324
+1753357857.1133349 [publish_wind_direction-4] [INFO] [1753357857.112531815] [publish_wind_direction]: Social Info: {'S': 1, 'W': 2}
+1753357857.1340172 [publish_wind_direction-4] [INFO] [1753357857.115196111] [publish_wind_direction]: ### Informed ###
+1753357857.1374068 [publish_wind_direction-4] [INFO] [1753357857.136581074] [publish_wind_direction]: Publishing: id194:W
+1753357857.1407778 [publish_wind_direction-4] [INFO] [1753357857.139989574] [publish_wind_direction]: -----------------------------------------------------
+1753357857.1793103 [service_neighbours_opinions-2] [INFO] [1753357857.178571445] [service_neighbours_opinions]: All opinions size= 18
+1753357857.3006194 [service_neighbours_opinions-2] [INFO] [1753357857.299927871] [service_neighbours_opinions]: All opinions size= 18
+1753357857.3079400 [service_neighbours_opinions-2] [INFO] [1753357857.307257278] [service_neighbours_opinions]: All opinions size= 18
+1753357857.3122134 [service_neighbours_opinions-2] [INFO] [1753357857.311566019] [service_neighbours_opinions]: All opinions size= 18
+1753357857.3330460 [service_neighbours_opinions-2] [INFO] [1753357857.332333093] [service_neighbours_opinions]: All opinions size= 18
+1753357857.3557310 [service_neighbours_opinions-2] [INFO] [1753357857.355072389] [service_neighbours_opinions]: All opinions size= 18
+1753357857.3811755 [service_neighbours_opinions-2] [INFO] [1753357857.380440611] [service_neighbours_opinions]: All opinions size= 18
+1753357857.5087562 [service_neighbours_opinions-2] [INFO] [1753357857.508059370] [service_neighbours_opinions]: All opinions size= 18
+1753357857.5806191 [service_neighbours_opinions-2] [INFO] [1753357857.579927444] [service_neighbours_opinions]: All opinions size= 18
+1753357859.9476314 [service_neighbours_opinions-2] [INFO] [1753357859.946867832] [service_neighbours_opinions]: All opinions size= 18
+1753357860.0302193 [service_neighbours_opinions-2] [INFO] [1753357860.029352813] [service_neighbours_opinions]: All opinions size= 18
+1753357860.0980265 [service_neighbours_opinions-2] [INFO] [1753357860.097215517] [service_neighbours_opinions]: All opinions size= 18
+1753357860.1764464 [service_neighbours_opinions-2] [INFO] [1753357860.175756795] [service_neighbours_opinions]: All opinions size= 18
+1753357862.1597118 [publish_wind_direction-4] [INFO] [1753357862.159099571] [publish_wind_direction]: frame_number = 19760
+1753357862.1622863 [publish_wind_direction-4] [INFO] [1753357862.161691516] [publish_wind_direction]: ***Cam angle= 88.79795978229257
+1753357862.1678238 [publish_wind_direction-4] [INFO] [1753357862.167259812] [publish_wind_direction]: Social Info: {'S': 1, 'W': 2}
+1753357862.1704957 [publish_wind_direction-4] [INFO] [1753357862.169852127] [publish_wind_direction]: ### Informed ###
+1753357862.1744564 [publish_wind_direction-4] [INFO] [1753357862.173848071] [publish_wind_direction]: Publishing: id194:W
+1753357862.1769967 [publish_wind_direction-4] [INFO] [1753357862.176458608] [publish_wind_direction]: -----------------------------------------------------
+1753357862.2185836 [service_neighbours_opinions-2] [INFO] [1753357862.217773997] [service_neighbours_opinions]: All opinions size= 18
+1753357862.2232778 [service_neighbours_opinions-2] [INFO] [1753357862.222636071] [service_neighbours_opinions]: All opinions size= 18
+1753357862.2265837 [service_neighbours_opinions-2] [INFO] [1753357862.225974590] [service_neighbours_opinions]: All opinions size= 18
+1753357862.2352233 [service_neighbours_opinions-2] [INFO] [1753357862.234419682] [service_neighbours_opinions]: All opinions size= 18
+1753357862.2905374 [service_neighbours_opinions-2] [INFO] [1753357862.289838090] [service_neighbours_opinions]: All opinions size= 18
+1753357862.3141778 [service_neighbours_opinions-2] [INFO] [1753357862.313431627] [service_neighbours_opinions]: All opinions size= 18
+1753357862.3427491 [service_neighbours_opinions-2] [INFO] [1753357862.342050312] [service_neighbours_opinions]: All opinions size= 18
+1753357862.4864087 [service_neighbours_opinions-2] [INFO] [1753357862.485642738] [service_neighbours_opinions]: All opinions size= 18
+1753357862.5249043 [service_neighbours_opinions-2] [INFO] [1753357862.524195442] [service_neighbours_opinions]: All opinions size= 18
+1753357864.9488974 [service_neighbours_opinions-2] [INFO] [1753357864.948227551] [service_neighbours_opinions]: All opinions size= 18
+1753357865.0346968 [service_neighbours_opinions-2] [INFO] [1753357865.033921996] [service_neighbours_opinions]: All opinions size= 18
+1753357865.0827086 [service_neighbours_opinions-2] [INFO] [1753357865.081983681] [service_neighbours_opinions]: All opinions size= 18
+1753357865.1829455 [service_neighbours_opinions-2] [INFO] [1753357865.182118533] [service_neighbours_opinions]: All opinions size= 18
+1753357866.2436981 [service_vicon_node-1] [INFO] [1753357866.242874236] [service_vicon_node]: Vicon Position= [883.7000732421875, 297.1109313964844], yaw: -14.307521962247444 frame_no: 19972
+1753357867.1437912 [publish_wind_direction-4] [INFO] [1753357867.142954457] [publish_wind_direction]: frame_number = 19912
+1753357867.1465352 [publish_wind_direction-4] [INFO] [1753357867.145644254] [publish_wind_direction]: ***Cam angle= 75.94590982166105
+1753357867.1540122 [publish_wind_direction-4] [INFO] [1753357867.153363568] [publish_wind_direction]: Social Info: {'W': 3, 'S': 2}
+1753357867.1577914 [publish_wind_direction-4] [INFO] [1753357867.157170698] [publish_wind_direction]: ### Informed ###
+1753357867.1629245 [publish_wind_direction-4] [INFO] [1753357867.162348791] [publish_wind_direction]: Publishing: id194:W
+1753357867.1665390 [publish_wind_direction-4] [INFO] [1753357867.165986420] [publish_wind_direction]: -----------------------------------------------------
+1753357867.2121012 [service_neighbours_opinions-2] [INFO] [1753357867.211399642] [service_neighbours_opinions]: All opinions size= 18
+1753357867.2477789 [service_neighbours_opinions-2] [INFO] [1753357867.247095420] [service_neighbours_opinions]: All opinions size= 18
+1753357867.3043220 [service_neighbours_opinions-2] [INFO] [1753357867.303601902] [service_neighbours_opinions]: All opinions size= 18
+1753357867.3089080 [service_neighbours_opinions-2] [INFO] [1753357867.308271328] [service_neighbours_opinions]: All opinions size= 18
+1753357867.3122344 [service_neighbours_opinions-2] [INFO] [1753357867.311606679] [service_neighbours_opinions]: All opinions size= 18
+1753357867.3894579 [service_neighbours_opinions-2] [INFO] [1753357867.388756087] [service_neighbours_opinions]: All opinions size= 18
+1753357867.4676628 [service_neighbours_opinions-2] [INFO] [1753357867.466964327] [service_neighbours_opinions]: All opinions size= 18
+1753357867.5949321 [service_neighbours_opinions-2] [INFO] [1753357867.594182642] [service_neighbours_opinions]: All opinions size= 18
+1753357867.6492248 [service_neighbours_opinions-2] [INFO] [1753357867.648565142] [service_neighbours_opinions]: All opinions size= 18
+1753357869.9519942 [service_neighbours_opinions-2] [INFO] [1753357869.951325511] [service_neighbours_opinions]: All opinions size= 18
+1753357870.0300705 [service_neighbours_opinions-2] [INFO] [1753357870.029367567] [service_neighbours_opinions]: All opinions size= 18
+1753357870.0870116 [service_neighbours_opinions-2] [INFO] [1753357870.085861770] [service_neighbours_opinions]: All opinions size= 18
+1753357870.1801765 [service_neighbours_opinions-2] [INFO] [1753357870.179088881] [service_neighbours_opinions]: All opinions size= 18
+1753357872.1465189 [service_neighbours_opinions-2] [INFO] [1753357872.145477473] [service_neighbours_opinions]: All opinions size= 18
+1753357872.1608763 [publish_wind_direction-4] [INFO] [1753357872.160004732] [publish_wind_direction]: frame_number = 20063
+1753357872.1632631 [publish_wind_direction-4] [INFO] [1753357872.162692362] [publish_wind_direction]: ***Cam angle= 40.09975975026211
+1753357872.1694138 [publish_wind_direction-4] [INFO] [1753357872.168732454] [publish_wind_direction]: Social Info: {'W': 4, 'S': 2}
+1753357872.1742308 [publish_wind_direction-4] [INFO] [1753357872.172720547] [publish_wind_direction]: ### Informed ###
+1753357872.1787436 [publish_wind_direction-4] [INFO] [1753357872.178137214] [publish_wind_direction]: Publishing: id194:W
+1753357872.1812315 [publish_wind_direction-4] [INFO] [1753357872.180696547] [publish_wind_direction]: -----------------------------------------------------
+1753357872.2226205 [service_neighbours_opinions-2] [INFO] [1753357872.221905769] [service_neighbours_opinions]: All opinions size= 18
+1753357872.2557228 [service_neighbours_opinions-2] [INFO] [1753357872.255042380] [service_neighbours_opinions]: All opinions size= 18
+1753357872.3584847 [service_neighbours_opinions-2] [INFO] [1753357872.357723843] [service_neighbours_opinions]: All opinions size= 18
+1753357872.4650676 [service_neighbours_opinions-2] [INFO] [1753357872.464360750] [service_neighbours_opinions]: All opinions size= 18
+1753357872.4977338 [service_neighbours_opinions-2] [INFO] [1753357872.497021936] [service_neighbours_opinions]: All opinions size= 18
+1753357872.5572927 [service_neighbours_opinions-2] [INFO] [1753357872.556586565] [service_neighbours_opinions]: All opinions size= 18
+1753357874.9494629 [service_neighbours_opinions-2] [INFO] [1753357874.948687082] [service_neighbours_opinions]: All opinions size= 18
+1753357875.0375974 [service_neighbours_opinions-2] [INFO] [1753357875.036882767] [service_neighbours_opinions]: All opinions size= 18
+1753357875.0823460 [service_neighbours_opinions-2] [INFO] [1753357875.081055249] [service_neighbours_opinions]: All opinions size= 18
+1753357875.1797378 [service_neighbours_opinions-2] [INFO] [1753357875.178988564] [service_neighbours_opinions]: All opinions size= 18
+1753357876.3806438 [service_vicon_node-1] [INFO] [1753357876.379819452] [service_vicon_node]: Vicon Position= [599.3988037109375, 105.3760757446289], yaw: -9.876005385468572 frame_no: 20276
+1753357877.1762123 [publish_wind_direction-4] [INFO] [1753357877.175266599] [publish_wind_direction]: frame_number = 20216
+1753357877.1789002 [publish_wind_direction-4] [INFO] [1753357877.178008211] [publish_wind_direction]: ***Cam angle= -265.68290290489074
+1753357877.1845527 [publish_wind_direction-4] [INFO] [1753357877.183712414] [publish_wind_direction]: Social Info: {'W': 8, 'N': 1, 'S': 1}
+1753357877.1873643 [publish_wind_direction-4] [INFO] [1753357877.186450674] [publish_wind_direction]: ### Informed ###
+1753357877.1908991 [publish_wind_direction-4] [INFO] [1753357877.190117896] [publish_wind_direction]: Publishing: id194:W
+1753357877.1934593 [publish_wind_direction-4] [INFO] [1753357877.192668118] [publish_wind_direction]: -----------------------------------------------------
+1753357877.2536564 [service_neighbours_opinions-2] [INFO] [1753357877.252679655] [service_neighbours_opinions]: All opinions size= 18
+1753357877.2890153 [service_neighbours_opinions-2] [INFO] [1753357877.288078322] [service_neighbours_opinions]: All opinions size= 18
+1753357877.4221251 [service_neighbours_opinions-2] [INFO] [1753357877.421075433] [service_neighbours_opinions]: All opinions size= 18
+1753357877.4272072 [service_neighbours_opinions-2] [INFO] [1753357877.426313173] [service_neighbours_opinions]: All opinions size= 18
+1753357877.5248404 [service_neighbours_opinions-2] [INFO] [1753357877.523873081] [service_neighbours_opinions]: All opinions size= 18
+1753357877.7918973 [service_neighbours_opinions-2] [INFO] [1753357877.791146840] [service_neighbours_opinions]: All opinions size= 18
+1753357877.7972670 [service_neighbours_opinions-2] [INFO] [1753357877.796567432] [service_neighbours_opinions]: All opinions size= 18
+1753357879.9472828 [service_neighbours_opinions-2] [INFO] [1753357879.946549098] [service_neighbours_opinions]: All opinions size= 18
+1753357880.0288293 [service_neighbours_opinions-2] [INFO] [1753357880.028114579] [service_neighbours_opinions]: All opinions size= 18
+1753357880.0870566 [service_neighbours_opinions-2] [INFO] [1753357880.085967135] [service_neighbours_opinions]: All opinions size= 18
+1753357880.1854260 [service_neighbours_opinions-2] [INFO] [1753357880.184690857] [service_neighbours_opinions]: All opinions size= 18
+1753357882.1302643 [service_neighbours_opinions-2] [INFO] [1753357882.129405985] [service_neighbours_opinions]: All opinions size= 18
+1753357882.1426046 [publish_wind_direction-4] [INFO] [1753357882.141728615] [publish_wind_direction]: frame_number = 20369
+1753357882.1451125 [publish_wind_direction-4] [INFO] [1753357882.144391282] [publish_wind_direction]: ***Cam angle= -235.21880231151462
+1753357882.1534979 [publish_wind_direction-4] [INFO] [1753357882.152825819] [publish_wind_direction]: Social Info: {'W': 8, 'E': 1, 'N': 1, 'S': 1}
+1753357882.1562800 [publish_wind_direction-4] [INFO] [1753357882.155710004] [publish_wind_direction]: ### Informed ###
+1753357882.1601553 [publish_wind_direction-4] [INFO] [1753357882.159579337] [publish_wind_direction]: Publishing: id194:W
+1753357882.1648276 [publish_wind_direction-4] [INFO] [1753357882.164229930] [publish_wind_direction]: -----------------------------------------------------
+1753357882.2442701 [service_neighbours_opinions-2] [INFO] [1753357882.243599782] [service_neighbours_opinions]: All opinions size= 18
+1753357882.3094544 [service_neighbours_opinions-2] [INFO] [1753357882.308761374] [service_neighbours_opinions]: All opinions size= 18
+1753357882.3431327 [service_neighbours_opinions-2] [INFO] [1753357882.342432893] [service_neighbours_opinions]: All opinions size= 18
+1753357882.3546176 [service_neighbours_opinions-2] [INFO] [1753357882.353856522] [service_neighbours_opinions]: All opinions size= 18
+1753357882.4430501 [service_neighbours_opinions-2] [INFO] [1753357882.442339004] [service_neighbours_opinions]: All opinions size= 18
+1753357882.6248226 [service_neighbours_opinions-2] [INFO] [1753357882.624136226] [service_neighbours_opinions]: All opinions size= 18
+1753357884.9463549 [service_neighbours_opinions-2] [INFO] [1753357884.945589910] [service_neighbours_opinions]: All opinions size= 18
+1753357885.0372479 [service_neighbours_opinions-2] [INFO] [1753357885.036537798] [service_neighbours_opinions]: All opinions size= 18
+1753357885.0835066 [service_neighbours_opinions-2] [INFO] [1753357885.082799576] [service_neighbours_opinions]: All opinions size= 18
+1753357885.1792943 [service_neighbours_opinions-2] [INFO] [1753357885.178342595] [service_neighbours_opinions]: All opinions size= 18
+1753357886.5824146 [service_vicon_node-1] [INFO] [1753357886.581626761] [service_vicon_node]: Vicon Position= [594.0961303710938, 75.48323822021484], yaw: 57.20782918149724 frame_no: 20582
+1753357887.0953200 [publish_wind_direction-4] [INFO] [1753357887.094474408] [publish_wind_direction]: frame_number = 20520
+1753357887.0978820 [publish_wind_direction-4] [INFO] [1753357887.097119168] [publish_wind_direction]: ***Cam angle= -89.45547616317654
+1753357887.1035600 [publish_wind_direction-4] [INFO] [1753357887.102757890] [publish_wind_direction]: Social Info: {'W': 7, 'E': 2, 'N': 1, 'S': 1}
+1753357887.1060436 [publish_wind_direction-4] [INFO] [1753357887.105280853] [publish_wind_direction]: ### Informed ###
+1753357887.1103997 [publish_wind_direction-4] [INFO] [1753357887.109170834] [publish_wind_direction]: Publishing: id194:N
+1753357887.1126046 [publish_wind_direction-4] [INFO] [1753357887.112061445] [publish_wind_direction]: -----------------------------------------------------
+1753357887.1649792 [service_neighbours_opinions-2] [INFO] [1753357887.164235149] [service_neighbours_opinions]: All opinions size= 18
+1753357887.2134418 [service_neighbours_opinions-2] [INFO] [1753357887.212720556] [service_neighbours_opinions]: All opinions size= 18
+1753357887.2166781 [service_neighbours_opinions-2] [INFO] [1753357887.216051445] [service_neighbours_opinions]: All opinions size= 18
+1753357887.2498131 [service_neighbours_opinions-2] [INFO] [1753357887.249098575] [service_neighbours_opinions]: All opinions size= 18
+1753357887.2752047 [service_neighbours_opinions-2] [INFO] [1753357887.274530538] [service_neighbours_opinions]: All opinions size= 18
+1753357887.4186380 [service_neighbours_opinions-2] [INFO] [1753357887.417907408] [service_neighbours_opinions]: All opinions size= 18
+1753357887.5055075 [service_neighbours_opinions-2] [INFO] [1753357887.504824649] [service_neighbours_opinions]: All opinions size= 18
+1753357889.9594147 [service_neighbours_opinions-2] [INFO] [1753357889.958711610] [service_neighbours_opinions]: All opinions size= 18
+1753357890.0314968 [service_neighbours_opinions-2] [INFO] [1753357890.030774573] [service_neighbours_opinions]: All opinions size= 18
+1753357890.0815148 [service_neighbours_opinions-2] [INFO] [1753357890.080799110] [service_neighbours_opinions]: All opinions size= 18
+1753357890.1874750 [service_neighbours_opinions-2] [INFO] [1753357890.186684221] [service_neighbours_opinions]: All opinions size= 18
+1753357892.1708703 [publish_wind_direction-4] [INFO] [1753357892.170262942] [publish_wind_direction]: frame_number = 20674
+1753357892.1733985 [publish_wind_direction-4] [INFO] [1753357892.172841146] [publish_wind_direction]: ***Cam angle= -96.10122284140995
+1753357892.1817737 [publish_wind_direction-4] [INFO] [1753357892.181189739] [publish_wind_direction]: Social Info: {'W': 5, 'E': 3, 'S': 1}
+1753357892.1842844 [publish_wind_direction-4] [INFO] [1753357892.183760757] [publish_wind_direction]: ### Informed ###
+1753357892.1909316 [service_neighbours_opinions-2] [INFO] [1753357892.190301831] [service_neighbours_opinions]: All opinions size= 18
+1753357892.2081950 [service_neighbours_opinions-2] [INFO] [1753357892.207511535] [service_neighbours_opinions]: All opinions size= 18
+1753357892.2164285 [publish_wind_direction-4] [INFO] [1753357892.215808887] [publish_wind_direction]: Publishing: id194:N
+1753357892.2195289 [publish_wind_direction-4] [INFO] [1753357892.218967387] [publish_wind_direction]: -----------------------------------------------------
+1753357892.2592661 [service_neighbours_opinions-2] [INFO] [1753357892.258566461] [service_neighbours_opinions]: All opinions size= 18
+1753357892.3160260 [service_neighbours_opinions-2] [INFO] [1753357892.315316609] [service_neighbours_opinions]: All opinions size= 18
+1753357892.4554124 [service_neighbours_opinions-2] [INFO] [1753357892.454697257] [service_neighbours_opinions]: All opinions size= 18
+1753357892.5143147 [service_neighbours_opinions-2] [INFO] [1753357892.513584053] [service_neighbours_opinions]: All opinions size= 18
+1753357892.5611875 [service_neighbours_opinions-2] [INFO] [1753357892.560360461] [service_neighbours_opinions]: All opinions size= 18
+1753357894.9496305 [service_neighbours_opinions-2] [INFO] [1753357894.948967015] [service_neighbours_opinions]: All opinions size= 18
+1753357895.0416794 [service_neighbours_opinions-2] [INFO] [1753357895.040942959] [service_neighbours_opinions]: All opinions size= 18
+1753357895.0858812 [service_neighbours_opinions-2] [INFO] [1753357895.084986089] [service_neighbours_opinions]: All opinions size= 18
+1753357895.1947043 [service_neighbours_opinions-2] [INFO] [1753357895.193686644] [service_neighbours_opinions]: All opinions size= 18
+1753357896.7777011 [service_vicon_node-1] [INFO] [1753357896.776888347] [service_vicon_node]: Vicon Position= [882.6434936523438, 34.10128402709961], yaw: 42.95210557172072 frame_no: 20888
+1753357897.0890417 [publish_wind_direction-4] [INFO] [1753357897.088467865] [publish_wind_direction]: frame_number = 20826
+1753357897.0915666 [publish_wind_direction-4] [INFO] [1753357897.090969717] [publish_wind_direction]: ***Cam angle= -107.26621035645759
+1753357897.0981693 [publish_wind_direction-4] [INFO] [1753357897.097484125] [publish_wind_direction]: Social Info: {'W': 4, 'E': 3, 'S': 1}
+1753357897.1007941 [publish_wind_direction-4] [INFO] [1753357897.100252217] [publish_wind_direction]: ### Informed ###
+1753357897.1044905 [publish_wind_direction-4] [INFO] [1753357897.103923736] [publish_wind_direction]: Publishing: id194:E
+1753357897.1078038 [publish_wind_direction-4] [INFO] [1753357897.106683106] [publish_wind_direction]: -----------------------------------------------------
+1753357897.1899934 [service_neighbours_opinions-2] [INFO] [1753357897.189258773] [service_neighbours_opinions]: All opinions size= 18
+1753357897.2150877 [service_neighbours_opinions-2] [INFO] [1753357897.214381588] [service_neighbours_opinions]: All opinions size= 18
+1753357897.2226963 [service_neighbours_opinions-2] [INFO] [1753357897.222068236] [service_neighbours_opinions]: All opinions size= 18
+1753357897.2397113 [service_neighbours_opinions-2] [INFO] [1753357897.238950569] [service_neighbours_opinions]: All opinions size= 18
+1753357897.2478795 [service_neighbours_opinions-2] [INFO] [1753357897.247193587] [service_neighbours_opinions]: All opinions size= 18
+1753357897.4864955 [service_neighbours_opinions-2] [INFO] [1753357897.485721402] [service_neighbours_opinions]: All opinions size= 18
+1753357897.7747614 [service_neighbours_opinions-2] [INFO] [1753357897.774092087] [service_neighbours_opinions]: All opinions size= 18
+1753357899.9631829 [service_neighbours_opinions-2] [INFO] [1753357899.962530567] [service_neighbours_opinions]: All opinions size= 18
+1753357900.0290117 [service_neighbours_opinions-2] [INFO] [1753357900.028349271] [service_neighbours_opinions]: All opinions size= 18
+1753357900.0970225 [service_neighbours_opinions-2] [INFO] [1753357900.096265086] [service_neighbours_opinions]: All opinions size= 18
+1753357900.1924064 [service_neighbours_opinions-2] [INFO] [1753357900.191667252] [service_neighbours_opinions]: All opinions size= 18
+1753357902.1711857 [publish_wind_direction-4] [INFO] [1753357902.170577529] [publish_wind_direction]: frame_number = 20981
+1753357902.1737490 [publish_wind_direction-4] [INFO] [1753357902.173138122] [publish_wind_direction]: ***Cam angle= -176.54422542333484
+1753357902.1810188 [publish_wind_direction-4] [INFO] [1753357902.180351436] [publish_wind_direction]: Social Info: {'W': 4, 'E': 2, 'N': 1, 'S': 1}
+1753357902.1836064 [publish_wind_direction-4] [INFO] [1753357902.183026418] [publish_wind_direction]: ### Informed ###
+1753357902.1873217 [publish_wind_direction-4] [INFO] [1753357902.186748992] [publish_wind_direction]: Publishing: id194:N
+1753357902.1898859 [publish_wind_direction-4] [INFO] [1753357902.189353381] [publish_wind_direction]: -----------------------------------------------------
+1753357902.2553885 [service_neighbours_opinions-2] [INFO] [1753357902.254689122] [service_neighbours_opinions]: All opinions size= 18
+1753357902.2625318 [service_neighbours_opinions-2] [INFO] [1753357902.261778084] [service_neighbours_opinions]: All opinions size= 18
+1753357902.2680402 [service_neighbours_opinions-2] [INFO] [1753357902.267275084] [service_neighbours_opinions]: All opinions size= 18
+1753357902.2726490 [service_neighbours_opinions-2] [INFO] [1753357902.272044047] [service_neighbours_opinions]: All opinions size= 18
+1753357902.3410707 [service_neighbours_opinions-2] [INFO] [1753357902.340316233] [service_neighbours_opinions]: All opinions size= 18
+1753357902.4912977 [service_neighbours_opinions-2] [INFO] [1753357902.490596381] [service_neighbours_opinions]: All opinions size= 18
+1753357902.4960880 [service_neighbours_opinions-2] [INFO] [1753357902.495359251] [service_neighbours_opinions]: All opinions size= 18
+1753357904.9492235 [service_neighbours_opinions-2] [INFO] [1753357904.948546175] [service_neighbours_opinions]: All opinions size= 18
+1753357905.0318038 [service_neighbours_opinions-2] [INFO] [1753357905.031081398] [service_neighbours_opinions]: All opinions size= 18
+1753357905.0818002 [service_neighbours_opinions-2] [INFO] [1753357905.081124990] [service_neighbours_opinions]: All opinions size= 18
+1753357905.1800330 [service_neighbours_opinions-2] [INFO] [1753357905.179327138] [service_neighbours_opinions]: All opinions size= 18
+1753357907.0459876 [service_vicon_node-1] [INFO] [1753357907.044905748] [service_vicon_node]: Vicon Position= [775.6869506835938, 103.79582977294922], yaw: 179.3906440185873 frame_no: 21196
+1753357907.1487598 [publish_wind_direction-4] [INFO] [1753357907.147881137] [publish_wind_direction]: frame_number = 21104
+1753357907.1515598 [publish_wind_direction-4] [INFO] [1753357907.150538193] [publish_wind_direction]: ***Cam angle= -117.81860344353099
+1753357907.1568642 [publish_wind_direction-4] [INFO] [1753357907.156254952] [publish_wind_direction]: Social Info: {'W': 3, 'E': 4, 'N': 1, 'S': 1}
+1753357907.1593881 [publish_wind_direction-4] [INFO] [1753357907.158815470] [publish_wind_direction]: ### Informed ###
+1753357907.1629622 [publish_wind_direction-4] [INFO] [1753357907.162417285] [publish_wind_direction]: Publishing: id194:S
+1753357907.1654413 [publish_wind_direction-4] [INFO] [1753357907.164911378] [publish_wind_direction]: -----------------------------------------------------
+1753357907.2647583 [service_neighbours_opinions-2] [INFO] [1753357907.264062211] [service_neighbours_opinions]: All opinions size= 18
+1753357907.2696371 [service_neighbours_opinions-2] [INFO] [1753357907.268981156] [service_neighbours_opinions]: All opinions size= 18
+1753357907.2729356 [service_neighbours_opinions-2] [INFO] [1753357907.272314285] [service_neighbours_opinions]: All opinions size= 18
+1753357907.4978538 [service_neighbours_opinions-2] [INFO] [1753357907.497159433] [service_neighbours_opinions]: All opinions size= 18
+1753357907.5381935 [service_neighbours_opinions-2] [INFO] [1753357907.537450767] [service_neighbours_opinions]: All opinions size= 18
+1753357907.5427115 [service_neighbours_opinions-2] [INFO] [1753357907.542098600] [service_neighbours_opinions]: All opinions size= 18
+1753357909.9507833 [service_neighbours_opinions-2] [INFO] [1753357909.950072265] [service_neighbours_opinions]: All opinions size= 18
+1753357910.0313697 [service_neighbours_opinions-2] [INFO] [1753357910.030526247] [service_neighbours_opinions]: All opinions size= 18
+1753357910.0849245 [service_neighbours_opinions-2] [INFO] [1753357910.084196932] [service_neighbours_opinions]: All opinions size= 18
+1753357910.1761618 [service_neighbours_opinions-2] [INFO] [1753357910.175455450] [service_neighbours_opinions]: All opinions size= 18
+1753357912.0567813 [publish_wind_direction-4] [INFO] [1753357912.056166616] [publish_wind_direction]: frame_number = 21257
+1753357912.0593417 [publish_wind_direction-4] [INFO] [1753357912.058771375] [publish_wind_direction]: ***Cam angle= -184.43186283044085
+1753357912.0654318 [publish_wind_direction-4] [INFO] [1753357912.064581097] [publish_wind_direction]: Social Info: {'W': 5, 'E': 1, 'S': 1}
+1753357912.0679517 [publish_wind_direction-4] [INFO] [1753357912.067167690] [publish_wind_direction]: ### Informed ###
+1753357912.0714698 [publish_wind_direction-4] [INFO] [1753357912.070730708] [publish_wind_direction]: Publishing: id194:W
+1753357912.0741019 [publish_wind_direction-4] [INFO] [1753357912.073274764] [publish_wind_direction]: -----------------------------------------------------
+1753357912.2531328 [service_neighbours_opinions-2] [INFO] [1753357912.252142801] [service_neighbours_opinions]: All opinions size= 18
+1753357912.2928300 [service_neighbours_opinions-2] [INFO] [1753357912.291903245] [service_neighbours_opinions]: All opinions size= 18
+1753357912.3304689 [service_neighbours_opinions-2] [INFO] [1753357912.329429875] [service_neighbours_opinions]: All opinions size= 18
+1753357912.3994172 [service_neighbours_opinions-2] [INFO] [1753357912.398439560] [service_neighbours_opinions]: All opinions size= 18
+1753357912.4646802 [service_neighbours_opinions-2] [INFO] [1753357912.463692467] [service_neighbours_opinions]: All opinions size= 18
+1753357912.4692981 [service_neighbours_opinions-2] [INFO] [1753357912.468517227] [service_neighbours_opinions]: All opinions size= 18
+1753357914.9532175 [service_neighbours_opinions-2] [INFO] [1753357914.952465744] [service_neighbours_opinions]: All opinions size= 18
+1753357915.0285013 [service_neighbours_opinions-2] [INFO] [1753357915.027811040] [service_neighbours_opinions]: All opinions size= 18
+1753357915.0834174 [service_neighbours_opinions-2] [INFO] [1753357915.082655799] [service_neighbours_opinions]: All opinions size= 18
+1753357915.1815138 [service_neighbours_opinions-2] [INFO] [1753357915.180802595] [service_neighbours_opinions]: All opinions size= 18
+1753357917.1558421 [publish_wind_direction-4] [INFO] [1753357917.154973779] [publish_wind_direction]: frame_number = 21411
+1753357917.1582551 [publish_wind_direction-4] [INFO] [1753357917.157583650] [publish_wind_direction]: ***Cam angle= -190.9282165477947
+1753357917.1645744 [publish_wind_direction-4] [INFO] [1753357917.163725594] [publish_wind_direction]: Social Info: {'W': 6, 'E': 1, 'N': 1, 'S': 1}
+1753357917.1671555 [publish_wind_direction-4] [INFO] [1753357917.166390890] [publish_wind_direction]: ### Informed ###
+1753357917.1707654 [publish_wind_direction-4] [INFO] [1753357917.169988613] [publish_wind_direction]: Publishing: id194:N
+1753357917.1736047 [publish_wind_direction-4] [INFO] [1753357917.172551187] [publish_wind_direction]: -----------------------------------------------------
+1753357917.1782260 [service_neighbours_opinions-2] [INFO] [1753357917.177163946] [service_neighbours_opinions]: All opinions size= 18
+1753357917.2336035 [service_vicon_node-1] [INFO] [1753357917.232853464] [service_vicon_node]: Vicon Position= [613.541015625, 316.1552734375], yaw: -77.38947809788715 frame_no: 21502
+1753357917.2600355 [service_neighbours_opinions-2] [INFO] [1753357917.259065927] [service_neighbours_opinions]: All opinions size= 18
+1753357917.3191948 [service_neighbours_opinions-2] [INFO] [1753357917.318216779] [service_neighbours_opinions]: All opinions size= 18
+1753357917.5137465 [service_neighbours_opinions-2] [INFO] [1753357917.512957187] [service_neighbours_opinions]: All opinions size= 18
+1753357917.5192344 [service_neighbours_opinions-2] [INFO] [1753357917.518468149] [service_neighbours_opinions]: All opinions size= 18
+1753357917.5292668 [service_neighbours_opinions-2] [INFO] [1753357917.528651446] [service_neighbours_opinions]: All opinions size= 18
+1753357919.9485383 [service_neighbours_opinions-2] [INFO] [1753357919.947859259] [service_neighbours_opinions]: All opinions size= 18
+1753357920.0368161 [service_neighbours_opinions-2] [INFO] [1753357920.036177333] [service_neighbours_opinions]: All opinions size= 18
+1753357920.0840263 [service_neighbours_opinions-2] [INFO] [1753357920.083025222] [service_neighbours_opinions]: All opinions size= 18
+1753357920.1827390 [service_neighbours_opinions-2] [INFO] [1753357920.181682778] [service_neighbours_opinions]: All opinions size= 18
+1753357922.1641691 [publish_wind_direction-4] [INFO] [1753357922.163550554] [publish_wind_direction]: frame_number = 21563
+1753357922.1667616 [publish_wind_direction-4] [INFO] [1753357922.166178406] [publish_wind_direction]: ***Cam angle= 46.66887559892905
+1753357922.1722519 [publish_wind_direction-4] [INFO] [1753357922.171664499] [publish_wind_direction]: Social Info: {'W': 6, 'E': 1, 'N': 1, 'S': 1}
+1753357922.1747682 [publish_wind_direction-4] [INFO] [1753357922.174223536] [publish_wind_direction]: ### Informed ###
+1753357922.1787603 [publish_wind_direction-4] [INFO] [1753357922.178114406] [publish_wind_direction]: Publishing: id194:E
+1753357922.1805723 [service_neighbours_opinions-2] [INFO] [1753357922.179672795] [service_neighbours_opinions]: All opinions size= 18
+1753357922.1825123 [publish_wind_direction-4] [INFO] [1753357922.180939480] [publish_wind_direction]: -----------------------------------------------------
+1753357922.2144706 [service_neighbours_opinions-2] [INFO] [1753357922.213738573] [service_neighbours_opinions]: All opinions size= 18
+1753357922.3979003 [service_neighbours_opinions-2] [INFO] [1753357922.397182054] [service_neighbours_opinions]: All opinions size= 18
+1753357922.4508171 [service_neighbours_opinions-2] [INFO] [1753357922.450157443] [service_neighbours_opinions]: All opinions size= 18
+1753357922.5181942 [service_neighbours_opinions-2] [INFO] [1753357922.517443628] [service_neighbours_opinions]: All opinions size= 18
+1753357922.5231917 [service_neighbours_opinions-2] [INFO] [1753357922.522325313] [service_neighbours_opinions]: All opinions size= 18
+1753357924.9506698 [service_neighbours_opinions-2] [INFO] [1753357924.949969738] [service_neighbours_opinions]: All opinions size= 18
+1753357925.0309694 [service_neighbours_opinions-2] [INFO] [1753357925.030325404] [service_neighbours_opinions]: All opinions size= 18
+1753357925.0847657 [service_neighbours_opinions-2] [INFO] [1753357925.084031404] [service_neighbours_opinions]: All opinions size= 18
+1753357925.1764660 [service_neighbours_opinions-2] [INFO] [1753357925.175719997] [service_neighbours_opinions]: All opinions size= 18
+1753357927.1066465 [publish_wind_direction-4] [INFO] [1753357927.106023607] [publish_wind_direction]: frame_number = 21715
+1753357927.1091697 [publish_wind_direction-4] [INFO] [1753357927.108619385] [publish_wind_direction]: ***Cam angle= 38.14460472245918
+1753357927.1172812 [publish_wind_direction-4] [INFO] [1753357927.116663051] [publish_wind_direction]: Social Info: {'S': 2, 'W': 4, 'E': 3, 'N': 1}
+1753357927.1215162 [publish_wind_direction-4] [INFO] [1753357927.120872070] [publish_wind_direction]: ### Informed ###
+1753357927.1269648 [publish_wind_direction-4] [INFO] [1753357927.126407366] [publish_wind_direction]: Publishing: id194:W
+1753357927.1311066 [publish_wind_direction-4] [INFO] [1753357927.130443533] [publish_wind_direction]: -----------------------------------------------------
+1753357927.2483137 [service_neighbours_opinions-2] [INFO] [1753357927.247611755] [service_neighbours_opinions]: All opinions size= 18
+1753357927.2873120 [service_neighbours_opinions-2] [INFO] [1753357927.286553773] [service_neighbours_opinions]: All opinions size= 18
+1753357927.3054907 [service_neighbours_opinions-2] [INFO] [1753357927.304797033] [service_neighbours_opinions]: All opinions size= 18
+1753357927.3337598 [service_neighbours_opinions-2] [INFO] [1753357927.333088051] [service_neighbours_opinions]: All opinions size= 18
+1753357927.3727226 [service_vicon_node-1] [INFO] [1753357927.371974218] [service_vicon_node]: Vicon Position= [526.9356079101562, 156.5264434814453], yaw: 34.08718629957268 frame_no: 21806
+1753357927.4450390 [service_neighbours_opinions-2] [INFO] [1753357927.444326681] [service_neighbours_opinions]: All opinions size= 18
+1753357927.4908392 [service_neighbours_opinions-2] [INFO] [1753357927.490166847] [service_neighbours_opinions]: All opinions size= 18
+1753357929.9455385 [service_neighbours_opinions-2] [INFO] [1753357929.944855179] [service_neighbours_opinions]: All opinions size= 18
+1753357930.0307665 [service_neighbours_opinions-2] [INFO] [1753357930.029483809] [service_neighbours_opinions]: All opinions size= 18
+1753357930.0821776 [service_neighbours_opinions-2] [INFO] [1753357930.081382105] [service_neighbours_opinions]: All opinions size= 18
+1753357930.1747663 [service_neighbours_opinions-2] [INFO] [1753357930.173783864] [service_neighbours_opinions]: All opinions size= 18
+1753357932.0890257 [publish_wind_direction-4] [INFO] [1753357932.088176863] [publish_wind_direction]: frame_number = 21868
+1753357932.0915596 [publish_wind_direction-4] [INFO] [1753357932.090853048] [publish_wind_direction]: ***Cam angle= -189.0843113277609
+1753357932.0970404 [publish_wind_direction-4] [INFO] [1753357932.096458826] [publish_wind_direction]: Social Info: {'W': 5, 'E': 2, 'S': 1, 'N': 1}
+1753357932.0995438 [publish_wind_direction-4] [INFO] [1753357932.099006178] [publish_wind_direction]: ### Informed ###
+1753357932.1029804 [publish_wind_direction-4] [INFO] [1753357932.102437437] [publish_wind_direction]: Publishing: id194:E
+1753357932.1056285 [publish_wind_direction-4] [INFO] [1753357932.105083863] [publish_wind_direction]: -----------------------------------------------------
+1753357932.2205570 [service_neighbours_opinions-2] [INFO] [1753357932.219881493] [service_neighbours_opinions]: All opinions size= 18
+1753357932.2534971 [service_neighbours_opinions-2] [INFO] [1753357932.252808752] [service_neighbours_opinions]: All opinions size= 18
+1753357932.2644372 [service_neighbours_opinions-2] [INFO] [1753357932.263696493] [service_neighbours_opinions]: All opinions size= 18
+1753357932.3001666 [service_neighbours_opinions-2] [INFO] [1753357932.299453381] [service_neighbours_opinions]: All opinions size= 18
+1753357932.4887578 [service_neighbours_opinions-2] [INFO] [1753357932.488082585] [service_neighbours_opinions]: All opinions size= 18
+1753357932.5542512 [service_neighbours_opinions-2] [INFO] [1753357932.553515381] [service_neighbours_opinions]: All opinions size= 18
+1753357934.9552042 [service_neighbours_opinions-2] [INFO] [1753357934.954540232] [service_neighbours_opinions]: All opinions size= 18
+1753357935.0323133 [service_neighbours_opinions-2] [INFO] [1753357935.031603806] [service_neighbours_opinions]: All opinions size= 18
+1753357935.0975509 [service_neighbours_opinions-2] [INFO] [1753357935.096850454] [service_neighbours_opinions]: All opinions size= 18
+1753357935.1832788 [service_neighbours_opinions-2] [INFO] [1753357935.182566676] [service_neighbours_opinions]: All opinions size= 18
+1753357937.1600220 [publish_wind_direction-4] [INFO] [1753357937.159415156] [publish_wind_direction]: frame_number = 22020
+1753357937.1636634 [publish_wind_direction-4] [INFO] [1753357937.163128767] [publish_wind_direction]: ***Cam angle= -202.19936601802897
+1753357937.1696935 [publish_wind_direction-4] [INFO] [1753357937.168861304] [publish_wind_direction]: Social Info: {'E': 2, 'W': 5, 'S': 3}
+1753357937.1729250 [publish_wind_direction-4] [INFO] [1753357937.172075379] [publish_wind_direction]: ### Informed ###
+1753357937.1765316 [publish_wind_direction-4] [INFO] [1753357937.175758045] [publish_wind_direction]: Publishing: id194:N
+1753357937.1794133 [publish_wind_direction-4] [INFO] [1753357937.178612971] [publish_wind_direction]: -----------------------------------------------------
+1753357937.2141199 [service_neighbours_opinions-2] [INFO] [1753357937.213170101] [service_neighbours_opinions]: All opinions size= 18
+1753357937.2566373 [service_neighbours_opinions-2] [INFO] [1753357937.255952082] [service_neighbours_opinions]: All opinions size= 18
+1753357937.3066206 [service_neighbours_opinions-2] [INFO] [1753357937.305886064] [service_neighbours_opinions]: All opinions size= 18
+1753357937.4592361 [service_neighbours_opinions-2] [INFO] [1753357937.458547712] [service_neighbours_opinions]: All opinions size= 18
+1753357937.5183547 [service_neighbours_opinions-2] [INFO] [1753357937.517607101] [service_neighbours_opinions]: All opinions size= 18
+1753357937.5217428 [service_neighbours_opinions-2] [INFO] [1753357937.520943915] [service_neighbours_opinions]: All opinions size= 18
+1753357937.5497775 [service_vicon_node-1] [INFO] [1753357937.549081100] [service_vicon_node]: Vicon Position= [387.28643798828125, 372.3342590332031], yaw: 142.79057772758784 frame_no: 22111
+1753357939.9503613 [service_neighbours_opinions-2] [INFO] [1753357939.949625377] [service_neighbours_opinions]: All opinions size= 18
+1753357940.0343475 [service_neighbours_opinions-2] [INFO] [1753357940.033606229] [service_neighbours_opinions]: All opinions size= 18
+1753357940.0837154 [service_neighbours_opinions-2] [INFO] [1753357940.082963729] [service_neighbours_opinions]: All opinions size= 18
+1753357940.1767356 [service_neighbours_opinions-2] [INFO] [1753357940.175994117] [service_neighbours_opinions]: All opinions size= 18
+1753357942.1057246 [publish_wind_direction-4] [INFO] [1753357942.105103153] [publish_wind_direction]: frame_number = 22172
+1753357942.1083691 [publish_wind_direction-4] [INFO] [1753357942.107802672] [publish_wind_direction]: ***Cam angle= -193.4556414881049
+1753357942.1143153 [publish_wind_direction-4] [INFO] [1753357942.113627005] [publish_wind_direction]: Social Info: {'W': 6, 'N': 2, 'E': 1, 'S': 2}
+1753357942.1170137 [publish_wind_direction-4] [INFO] [1753357942.116400376] [publish_wind_direction]: ### Informed ###
+1753357942.1207039 [publish_wind_direction-4] [INFO] [1753357942.120126635] [publish_wind_direction]: Publishing: id194:W
+1753357942.1233168 [publish_wind_direction-4] [INFO] [1753357942.122766005] [publish_wind_direction]: -----------------------------------------------------
+1753357942.2267520 [service_neighbours_opinions-2] [INFO] [1753357942.226031227] [service_neighbours_opinions]: All opinions size= 18
+1753357942.2340939 [service_neighbours_opinions-2] [INFO] [1753357942.233440931] [service_neighbours_opinions]: All opinions size= 18
+1753357942.3034873 [service_neighbours_opinions-2] [INFO] [1753357942.302783764] [service_neighbours_opinions]: All opinions size= 18
+1753357942.4520428 [service_neighbours_opinions-2] [INFO] [1753357942.451355172] [service_neighbours_opinions]: All opinions size= 18
+1753357942.5107543 [service_neighbours_opinions-2] [INFO] [1753357942.510006894] [service_neighbours_opinions]: All opinions size= 18
+1753357942.5871797 [service_neighbours_opinions-2] [INFO] [1753357942.586496023] [service_neighbours_opinions]: All opinions size= 18
+1753357944.9505150 [service_neighbours_opinions-2] [INFO] [1753357944.949764763] [service_neighbours_opinions]: All opinions size= 18
+1753357945.0320654 [service_neighbours_opinions-2] [INFO] [1753357945.031316837] [service_neighbours_opinions]: All opinions size= 18
+1753357945.0826766 [service_neighbours_opinions-2] [INFO] [1753357945.081505040] [service_neighbours_opinions]: All opinions size= 18
+1753357945.1781609 [service_neighbours_opinions-2] [INFO] [1753357945.177296929] [service_neighbours_opinions]: All opinions size= 18
+1753357947.1087110 [publish_wind_direction-4] [INFO] [1753357947.108097873] [publish_wind_direction]: frame_number = 22326
+1753357947.1113696 [publish_wind_direction-4] [INFO] [1753357947.110761076] [publish_wind_direction]: ***Cam angle= 42.47289951585799
+1753357947.1175346 [publish_wind_direction-4] [INFO] [1753357947.116963965] [publish_wind_direction]: Social Info: {'W': 6, 'E': 3, 'S': 1}
+1753357947.1200888 [publish_wind_direction-4] [INFO] [1753357947.119504891] [publish_wind_direction]: ### Informed ###
+1753357947.1239476 [publish_wind_direction-4] [INFO] [1753357947.123363169] [publish_wind_direction]: Publishing: id194:W
+1753357947.1267116 [publish_wind_direction-4] [INFO] [1753357947.126137336] [publish_wind_direction]: -----------------------------------------------------
+1753357947.2503674 [service_neighbours_opinions-2] [INFO] [1753357947.249583798] [service_neighbours_opinions]: All opinions size= 18
+1753357947.2795665 [service_neighbours_opinions-2] [INFO] [1753357947.278787021] [service_neighbours_opinions]: All opinions size= 18
+1753357947.3259933 [service_neighbours_opinions-2] [INFO] [1753357947.325121780] [service_neighbours_opinions]: All opinions size= 18
+1753357947.3455637 [service_neighbours_opinions-2] [INFO] [1753357947.344860650] [service_neighbours_opinions]: All opinions size= 18
+1753357947.4198301 [service_neighbours_opinions-2] [INFO] [1753357947.419124521] [service_neighbours_opinions]: All opinions size= 18
+1753357947.5026383 [service_neighbours_opinions-2] [INFO] [1753357947.501803817] [service_neighbours_opinions]: All opinions size= 18
+1753357947.7456925 [service_vicon_node-1] [INFO] [1753357947.744961039] [service_vicon_node]: Vicon Position= [356.3350524902344, 296.6234130859375], yaw: 1.3406943520812649 frame_no: 22417
+1753357949.9597888 [service_neighbours_opinions-2] [INFO] [1753357949.959123704] [service_neighbours_opinions]: All opinions size= 18
+1753357950.0496688 [service_neighbours_opinions-2] [INFO] [1753357950.049001167] [service_neighbours_opinions]: All opinions size= 18
+1753357950.0856578 [service_neighbours_opinions-2] [INFO] [1753357950.084650149] [service_neighbours_opinions]: All opinions size= 18
+1753357950.1794047 [service_neighbours_opinions-2] [INFO] [1753357950.178691334] [service_neighbours_opinions]: All opinions size= 18
+1753357952.0560699 [publish_wind_direction-4] [INFO] [1753357952.055182407] [publish_wind_direction]: frame_number = 22478
+1753357952.0588439 [publish_wind_direction-4] [INFO] [1753357952.057754370] [publish_wind_direction]: ***Cam angle= -60.28434194139115
+1753357952.0642238 [publish_wind_direction-4] [INFO] [1753357952.063616073] [publish_wind_direction]: Social Info: {'W': 6, 'N': 2, 'E': 2, 'S': 1}
+1753357952.0667207 [publish_wind_direction-4] [INFO] [1753357952.066174129] [publish_wind_direction]: ### Informed ###
+1753357952.0701730 [publish_wind_direction-4] [INFO] [1753357952.069584444] [publish_wind_direction]: Publishing: id194:N
+1753357952.0726604 [publish_wind_direction-4] [INFO] [1753357952.072121370] [publish_wind_direction]: -----------------------------------------------------
+1753357952.2214584 [service_neighbours_opinions-2] [INFO] [1753357952.220422129] [service_neighbours_opinions]: All opinions size= 18
+1753357952.2410002 [service_neighbours_opinions-2] [INFO] [1753357952.240310332] [service_neighbours_opinions]: All opinions size= 18
+1753357952.2608340 [service_neighbours_opinions-2] [INFO] [1753357952.259753981] [service_neighbours_opinions]: All opinions size= 18
+1753357952.2641087 [service_neighbours_opinions-2] [INFO] [1753357952.263177573] [service_neighbours_opinions]: All opinions size= 18
+1753357952.4348831 [service_neighbours_opinions-2] [INFO] [1753357952.434151518] [service_neighbours_opinions]: All opinions size= 18
+1753357952.4924016 [service_neighbours_opinions-2] [INFO] [1753357952.491699629] [service_neighbours_opinions]: All opinions size= 18
+1753357954.9478047 [service_neighbours_opinions-2] [INFO] [1753357954.947110331] [service_neighbours_opinions]: All opinions size= 18
+1753357955.0368063 [service_neighbours_opinions-2] [INFO] [1753357955.036146794] [service_neighbours_opinions]: All opinions size= 18
+1753357955.0827477 [service_neighbours_opinions-2] [INFO] [1753357955.081656905] [service_neighbours_opinions]: All opinions size= 18
+1753357955.1769009 [service_neighbours_opinions-2] [INFO] [1753357955.175812960] [service_neighbours_opinions]: All opinions size= 18
+1753357957.1150887 [publish_wind_direction-4] [INFO] [1753357957.114477052] [publish_wind_direction]: frame_number = 22631
+1753357957.1176536 [publish_wind_direction-4] [INFO] [1753357957.117031885] [publish_wind_direction]: ***Cam angle= -999.0
+1753357957.1235449 [publish_wind_direction-4] [INFO] [1753357957.122648774] [publish_wind_direction]: Social Info: {'W': 5, 'S': 4, 'E': 1, 'N': 1}
+1753357957.1258271 [publish_wind_direction-4] [INFO] [1753357957.125233941] [publish_wind_direction]: ### Informed ###
+1753357957.1294415 [publish_wind_direction-4] [INFO] [1753357957.128856330] [publish_wind_direction]: Publishing: id194:W
+1753357957.1326196 [publish_wind_direction-4] [INFO] [1753357957.131601774] [publish_wind_direction]: -----------------------------------------------------
+1753357957.1918800 [service_neighbours_opinions-2] [INFO] [1753357957.190875126] [service_neighbours_opinions]: All opinions size= 18
+1753357957.2952113 [service_neighbours_opinions-2] [INFO] [1753357957.294524996] [service_neighbours_opinions]: All opinions size= 18
+1753357957.3330691 [service_neighbours_opinions-2] [INFO] [1753357957.332348737] [service_neighbours_opinions]: All opinions size= 18
+1753357957.3364363 [service_neighbours_opinions-2] [INFO] [1753357957.335803515] [service_neighbours_opinions]: All opinions size= 18
+1753357957.4947119 [service_neighbours_opinions-2] [INFO] [1753357957.494010089] [service_neighbours_opinions]: All opinions size= 18
+1753357957.5322924 [service_neighbours_opinions-2] [INFO] [1753357957.531606144] [service_neighbours_opinions]: All opinions size= 18
+1753357957.9365923 [service_vicon_node-1] [INFO] [1753357957.935856866] [service_vicon_node]: Vicon Position= [360.1598815917969, 274.749755859375], yaw: -9.548206312633194 frame_no: 22723
+1753357959.9480779 [service_neighbours_opinions-2] [INFO] [1753357959.947368365] [service_neighbours_opinions]: All opinions size= 18
+1753357960.0282893 [service_neighbours_opinions-2] [INFO] [1753357960.027625587] [service_neighbours_opinions]: All opinions size= 18
+1753357960.0833457 [service_neighbours_opinions-2] [INFO] [1753357960.082283680] [service_neighbours_opinions]: All opinions size= 18
+1753357960.1772356 [service_neighbours_opinions-2] [INFO] [1753357960.176265328] [service_neighbours_opinions]: All opinions size= 18
+1753357962.0494177 [publish_wind_direction-4] [INFO] [1753357962.048553567] [publish_wind_direction]: frame_number = 22784
+1753357962.0518169 [publish_wind_direction-4] [INFO] [1753357962.051192438] [publish_wind_direction]: ***Cam angle= -4.086110191871612
+1753357962.0577106 [publish_wind_direction-4] [INFO] [1753357962.056832382] [publish_wind_direction]: Social Info: {'E': 2, 'W': 7, 'S': 1, 'N': 1}
+1753357962.0606685 [publish_wind_direction-4] [INFO] [1753357962.059438771] [publish_wind_direction]: ### Informed ###
+1753357962.0638759 [publish_wind_direction-4] [INFO] [1753357962.063121753] [publish_wind_direction]: Publishing: id194:W
+1753357962.0665112 [publish_wind_direction-4] [INFO] [1753357962.065678975] [publish_wind_direction]: -----------------------------------------------------
+1753357962.1940238 [service_neighbours_opinions-2] [INFO] [1753357962.193277660] [service_neighbours_opinions]: All opinions size= 18
+1753357962.3753417 [service_neighbours_opinions-2] [INFO] [1753357962.374657845] [service_neighbours_opinions]: All opinions size= 18
+1753357962.4570463 [service_neighbours_opinions-2] [INFO] [1753357962.456368400] [service_neighbours_opinions]: All opinions size= 18
+1753357962.5243430 [service_neighbours_opinions-2] [INFO] [1753357962.523662160] [service_neighbours_opinions]: All opinions size= 18
+1753357962.5289793 [service_neighbours_opinions-2] [INFO] [1753357962.528338271] [service_neighbours_opinions]: All opinions size= 18
+1753357962.7182548 [service_neighbours_opinions-2] [INFO] [1753357962.717499789] [service_neighbours_opinions]: All opinions size= 18
+1753357964.9555461 [service_neighbours_opinions-2] [INFO] [1753357964.954865566] [service_neighbours_opinions]: All opinions size= 18
+1753357965.0632381 [service_neighbours_opinions-2] [INFO] [1753357965.062489140] [service_neighbours_opinions]: All opinions size= 18
+1753357965.0869067 [service_neighbours_opinions-2] [INFO] [1753357965.086192010] [service_neighbours_opinions]: All opinions size= 18
+1753357965.1901662 [service_neighbours_opinions-2] [INFO] [1753357965.189373251] [service_neighbours_opinions]: All opinions size= 18
+1753357967.1071036 [publish_wind_direction-4] [INFO] [1753357967.106485435] [publish_wind_direction]: frame_number = 22906
+1753357967.1095967 [publish_wind_direction-4] [INFO] [1753357967.109038546] [publish_wind_direction]: ***Cam angle= -4.852598043024244
+1753357967.1158164 [publish_wind_direction-4] [INFO] [1753357967.114947731] [publish_wind_direction]: Social Info: {'E': 2, 'W': 6, 'N': 1, 'S': 1}
+1753357967.1188228 [publish_wind_direction-4] [INFO] [1753357967.117580601] [publish_wind_direction]: ### Informed ###
+1753357967.1219137 [publish_wind_direction-4] [INFO] [1753357967.121141787] [publish_wind_direction]: Publishing: id194:W
+1753357967.1245122 [publish_wind_direction-4] [INFO] [1753357967.123742898] [publish_wind_direction]: -----------------------------------------------------
+1753357967.1929791 [service_neighbours_opinions-2] [INFO] [1753357967.191999731] [service_neighbours_opinions]: All opinions size= 18
+1753357967.2470260 [service_neighbours_opinions-2] [INFO] [1753357967.246347509] [service_neighbours_opinions]: All opinions size= 18
+1753357967.2627547 [service_neighbours_opinions-2] [INFO] [1753357967.262077990] [service_neighbours_opinions]: All opinions size= 18
+1753357967.4589150 [service_neighbours_opinions-2] [INFO] [1753357967.458226860] [service_neighbours_opinions]: All opinions size= 18
+1753357967.4977386 [service_neighbours_opinions-2] [INFO] [1753357967.497039527] [service_neighbours_opinions]: All opinions size= 18
+1753357967.5907943 [service_neighbours_opinions-2] [INFO] [1753357967.590084083] [service_neighbours_opinions]: All opinions size= 18
+1753357968.1033487 [service_vicon_node-1] [INFO] [1753357968.102609156] [service_vicon_node]: Vicon Position= [373.4447326660156, -33.22726058959961], yaw: 18.538296887933008 frame_no: 23028
+1753357969.9470453 [service_neighbours_opinions-2] [INFO] [1753357969.946288118] [service_neighbours_opinions]: All opinions size= 18
+1753357970.0290771 [service_neighbours_opinions-2] [INFO] [1753357970.028394377] [service_neighbours_opinions]: All opinions size= 18
+1753357970.0828688 [service_neighbours_opinions-2] [INFO] [1753357970.082065489] [service_neighbours_opinions]: All opinions size= 18
+1753357970.1743217 [service_neighbours_opinions-2] [INFO] [1753357970.173579100] [service_neighbours_opinions]: All opinions size= 18
+1753357972.1475577 [publish_wind_direction-4] [INFO] [1753357972.146941172] [publish_wind_direction]: frame_number = 23059
+1753357972.1501391 [publish_wind_direction-4] [INFO] [1753357972.149531302] [publish_wind_direction]: ***Cam angle= -9.198561976004058
+1753357972.1559744 [publish_wind_direction-4] [INFO] [1753357972.155362987] [publish_wind_direction]: Social Info: {'W': 6, 'N': 1, 'E': 2, 'S': 1}
+1753357972.1584885 [publish_wind_direction-4] [INFO] [1753357972.157886228] [publish_wind_direction]: ### Informed ###
+1753357972.1620700 [publish_wind_direction-4] [INFO] [1753357972.161398450] [publish_wind_direction]: Publishing: id194:W
+1753357972.1669528 [publish_wind_direction-4] [INFO] [1753357972.166375432] [publish_wind_direction]: -----------------------------------------------------
+1753357972.2918427 [service_neighbours_opinions-2] [INFO] [1753357972.291163691] [service_neighbours_opinions]: All opinions size= 18
+1753357972.3165236 [service_neighbours_opinions-2] [INFO] [1753357972.315821228] [service_neighbours_opinions]: All opinions size= 18
+1753357972.3234434 [service_neighbours_opinions-2] [INFO] [1753357972.322809987] [service_neighbours_opinions]: All opinions size= 18
+1753357972.4892969 [service_neighbours_opinions-2] [INFO] [1753357972.488567950] [service_neighbours_opinions]: All opinions size= 18
+1753357972.4961689 [service_neighbours_opinions-2] [INFO] [1753357972.495452672] [service_neighbours_opinions]: All opinions size= 18
+1753357972.5036945 [service_neighbours_opinions-2] [INFO] [1753357972.502978765] [service_neighbours_opinions]: All opinions size= 18
+1753357974.9485748 [service_neighbours_opinions-2] [INFO] [1753357974.947902208] [service_neighbours_opinions]: All opinions size= 18
+1753357975.0285962 [service_neighbours_opinions-2] [INFO] [1753357975.027803486] [service_neighbours_opinions]: All opinions size= 18
+1753357975.0794909 [service_neighbours_opinions-2] [INFO] [1753357975.078762837] [service_neighbours_opinions]: All opinions size= 18
+1753357975.1773975 [service_neighbours_opinions-2] [INFO] [1753357975.176683874] [service_neighbours_opinions]: All opinions size= 18
+1753357977.0792410 [publish_wind_direction-4] [INFO] [1753357977.078626632] [publish_wind_direction]: frame_number = 23210
+1753357977.0818315 [publish_wind_direction-4] [INFO] [1753357977.081231040] [publish_wind_direction]: ***Cam angle= -265.9036499139106
+1753357977.0874147 [publish_wind_direction-4] [INFO] [1753357977.086807910] [publish_wind_direction]: Social Info: {'W': 4, 'E': 3, 'N': 1}
+1753357977.0899003 [publish_wind_direction-4] [INFO] [1753357977.089323836] [publish_wind_direction]: ### Informed ###
+1753357977.0935423 [publish_wind_direction-4] [INFO] [1753357977.092984929] [publish_wind_direction]: Publishing: id194:W
+1753357977.0961976 [publish_wind_direction-4] [INFO] [1753357977.095651355] [publish_wind_direction]: -----------------------------------------------------
+1753357977.2097991 [service_neighbours_opinions-2] [INFO] [1753357977.209090910] [service_neighbours_opinions]: All opinions size= 18
+1753357977.2344701 [service_neighbours_opinions-2] [INFO] [1753357977.233750762] [service_neighbours_opinions]: All opinions size= 18
+1753357977.2781606 [service_neighbours_opinions-2] [INFO] [1753357977.277390669] [service_neighbours_opinions]: All opinions size= 18
+1753357977.4808846 [service_neighbours_opinions-2] [INFO] [1753357977.480195206] [service_neighbours_opinions]: All opinions size= 18
+1753357977.5204999 [service_neighbours_opinions-2] [INFO] [1753357977.519825743] [service_neighbours_opinions]: All opinions size= 18
+1753357977.5433569 [service_neighbours_opinions-2] [INFO] [1753357977.542648521] [service_neighbours_opinions]: All opinions size= 18
+1753357978.2087309 [service_vicon_node-1] [INFO] [1753357978.207988354] [service_vicon_node]: Vicon Position= [446.4725341796875, -290.7623596191406], yaw: 40.31128615145987 frame_no: 23331
+1753357979.9481623 [service_neighbours_opinions-2] [INFO] [1753357979.947465297] [service_neighbours_opinions]: All opinions size= 18
+1753357980.0294015 [service_neighbours_opinions-2] [INFO] [1753357980.028589001] [service_neighbours_opinions]: All opinions size= 18
+1753357980.0848050 [service_neighbours_opinions-2] [INFO] [1753357980.084079427] [service_neighbours_opinions]: All opinions size= 18
+1753357980.1906166 [service_neighbours_opinions-2] [INFO] [1753357980.189905353] [service_neighbours_opinions]: All opinions size= 18
+1753357982.2104511 [service_neighbours_opinions-2] [INFO] [1753357982.209278092] [service_neighbours_opinions]: All opinions size= 18
+1753357982.2139931 [service_neighbours_opinions-2] [INFO] [1753357982.212967722] [service_neighbours_opinions]: All opinions size= 18
+1753357982.2170961 [publish_wind_direction-4] [INFO] [1753357982.216228389] [publish_wind_direction]: frame_number = 23361
+1753357982.2200398 [publish_wind_direction-4] [INFO] [1753357982.219028815] [publish_wind_direction]: ***Cam angle= -17.571265194097336
+1753357982.2223902 [service_neighbours_opinions-2] [INFO] [1753357982.221734000] [service_neighbours_opinions]: All opinions size= 18
+1753357982.2286084 [publish_wind_direction-4] [INFO] [1753357982.227713185] [publish_wind_direction]: Social Info: {'N': 3, 'E': 2, 'W': 3}
+1753357982.2310610 [publish_wind_direction-4] [INFO] [1753357982.230283537] [publish_wind_direction]: ### Informed ###
+1753357982.2347376 [publish_wind_direction-4] [INFO] [1753357982.233856166] [publish_wind_direction]: Publishing: id194:N
+1753357982.2374578 [publish_wind_direction-4] [INFO] [1753357982.236678500] [publish_wind_direction]: -----------------------------------------------------
+1753357982.2500088 [service_neighbours_opinions-2] [INFO] [1753357982.248994815] [service_neighbours_opinions]: All opinions size= 18
+1753357982.4894197 [service_neighbours_opinions-2] [INFO] [1753357982.488751963] [service_neighbours_opinions]: All opinions size= 18
+1753357982.5359771 [service_neighbours_opinions-2] [INFO] [1753357982.535271407] [service_neighbours_opinions]: All opinions size= 18
+1753357984.9530997 [service_neighbours_opinions-2] [INFO] [1753357984.952420239] [service_neighbours_opinions]: All opinions size= 18
+1753357985.0277040 [service_neighbours_opinions-2] [INFO] [1753357985.027011220] [service_neighbours_opinions]: All opinions size= 18
+1753357985.0849423 [service_neighbours_opinions-2] [INFO] [1753357985.083697091] [service_neighbours_opinions]: All opinions size= 18
+1753357985.1921194 [service_neighbours_opinions-2] [INFO] [1753357985.190955128] [service_neighbours_opinions]: All opinions size= 18
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

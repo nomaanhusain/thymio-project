@@ -8,7 +8,7 @@ from collections import defaultdict
 # root_dir = 'run_experiment_data/ir1.0/run_23/'
 # root_dir = 'run_experiment_data/ir_4_uninf/run_6/'
 # root_dir = 'run_13/data/'
-root_dir = "truly_successful_runs/ir0.8/run1/data"
+root_dir = "truly_successful_runs/ir0.8/run11/data"
 
 # Nested dict: counts[index][message] = count
 counts = defaultdict(lambda: defaultdict(int))

@@ -74,6 +74,7 @@ class NeighboursOpinionNode(Node):
         # self.get_logger().info(
         #     f"Requested {request.neighbours_by_id}, responding {response.neighbours_opinions}"
         # )
+        self.get_logger().info(f"All opinions size= {len(self.all_opinions)}")
         return response
 
 
@@ -93,7 +94,7 @@ class NeighboursOpinionNode(Node):
                 # self.get_logger().info(f"Comm. Noise, new received opinion: {wind_direction}")
             self.all_opinions[id] = wind_direction
         # self.get_logger().info(f"All opinions = {self.all_opinions}")
-        self.get_logger().info(f"All opinions size= {len(self.all_opinions)}")
+        
     
     def get_physical_ip(self):
         try:
@@ -108,7 +109,6 @@ class NeighboursOpinionNode(Node):
 
 def main():
     try:
-
         rclpy.init()
         neighbours_node = NeighboursOpinionNode()
         rclpy.spin(neighbours_node)

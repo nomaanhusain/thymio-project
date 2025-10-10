@@ -1,0 +1,1343 @@
+1749829758.1462831 [INFO] [launch]: All log files can be found below /home/thymio/ros_logs/2025-06-13-15-49-18-143083-thymio-1254
+1749829758.1468482 [INFO] [launch]: Default logging verbosity is set to INFO
+1749829758.3643799 [INFO] [service_vicon_node-1]: process started with pid [1255]
+1749829758.3653979 [INFO] [service_neighbours_opinions-2]: process started with pid [1257]
+1749829758.3661540 [INFO] [random_robot_move-3]: process started with pid [1259]
+1749829758.3667660 [INFO] [publish_wind_direction-4]: process started with pid [1261]
+1749829759.9784203 [publish_wind_direction-4] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+1749829759.9792392 [publish_wind_direction-4]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+1749829760.0898862 [service_neighbours_opinions-2] [INFO] [1749829760.089098677] [service_neighbours_opinions]: Physical Ip=192.168.3.81, id=id81
+1749829760.0931227 [service_neighbours_opinions-2] [INFO] [1749829760.092328084] [service_neighbours_opinions]: Updated ID from mapping: id1193
+1749829760.1016641 [service_neighbours_opinions-2] [INFO] [1749829760.100876695] [service_neighbours_opinions]: Subscribed to: wind_direction/id68
+1749829760.1058121 [service_neighbours_opinions-2] [INFO] [1749829760.105098621] [service_neighbours_opinions]: Subscribed to: wind_direction/id136
+1749829760.1111310 [service_neighbours_opinions-2] [INFO] [1749829760.110041733] [service_neighbours_opinions]: Subscribed to: wind_direction/id137
+1749829760.1150892 [service_neighbours_opinions-2] [INFO] [1749829760.114397566] [service_neighbours_opinions]: Subscribed to: wind_direction/id142
+1749829760.1194990 [service_neighbours_opinions-2] [INFO] [1749829760.118725695] [service_neighbours_opinions]: Subscribed to: wind_direction/id151
+1749829760.1237543 [service_neighbours_opinions-2] [INFO] [1749829760.122997695] [service_neighbours_opinions]: Subscribed to: wind_direction/id152
+1749829760.1280751 [service_neighbours_opinions-2] [INFO] [1749829760.127358140] [service_neighbours_opinions]: Subscribed to: wind_direction/id155
+1749829760.1309330 [service_vicon_node-1] [INFO] [1749829760.129976121] [service_vicon_node]: Physical Ip=192.168.3.81, id=id81
+1749829760.1370971 [service_neighbours_opinions-2] [INFO] [1749829760.131678658] [service_neighbours_opinions]: Subscribed to: wind_direction/id189
+1749829760.1378498 [service_neighbours_opinions-2] [INFO] [1749829760.135656677] [service_neighbours_opinions]: Subscribed to: wind_direction/id192
+1749829760.1391692 [service_vicon_node-1] [INFO] [1749829760.134600918] [service_vicon_node]: Updated ID from mapping: id1193
+1749829760.1417696 [service_neighbours_opinions-2] [INFO] [1749829760.140581714] [service_neighbours_opinions]: Subscribed to: wind_direction/id193
+1749829760.1461964 [service_neighbours_opinions-2] [INFO] [1749829760.145280381] [service_neighbours_opinions]: Subscribed to: wind_direction/id194
+1749829760.1561058 [service_vicon_node-1] [INFO] [1749829760.149703844] [service_vicon_node]: Subscribed to: vicon/default/data
+1749829760.1576707 [service_neighbours_opinions-2] [INFO] [1749829760.149712195] [service_neighbours_opinions]: Subscribed to: wind_direction/id195
+1749829760.1584237 [service_neighbours_opinions-2] [INFO] [1749829760.155071732] [service_neighbours_opinions]: Subscribed to: wind_direction/id200
+1749829760.1603024 [service_neighbours_opinions-2] [INFO] [1749829760.159670232] [service_neighbours_opinions]: Subscribed to: wind_direction/id206
+1749829760.1643076 [service_neighbours_opinions-2] [INFO] [1749829760.163598584] [service_neighbours_opinions]: Subscribed to: wind_direction/id207
+1749829760.1688700 [service_neighbours_opinions-2] [INFO] [1749829760.168103344] [service_neighbours_opinions]: Subscribed to: wind_direction/id223
+1749829760.1727316 [service_neighbours_opinions-2] [INFO] [1749829760.171980121] [service_neighbours_opinions]: Subscribed to: wind_direction/id224
+1749829760.1766081 [service_neighbours_opinions-2] [INFO] [1749829760.175928695] [service_neighbours_opinions]: Subscribed to: wind_direction/id236
+1749829760.1805716 [service_neighbours_opinions-2] [INFO] [1749829760.179849418] [service_neighbours_opinions]: Subscribed to: wind_direction/id247
+1749829760.4573457 [publish_wind_direction-4] [INFO] [1749829760.456646455] [publish_wind_direction]: Physical Ip=192.168.3.81, id=id81
+1749829760.4601533 [publish_wind_direction-4] [INFO] [1749829760.459516825] [publish_wind_direction]: Updated ID from mapping: id1193
+1749829760.4673600 [publish_wind_direction-4] [INFO] [1749829760.466801603] [publish_wind_direction]: Publsihing on: wind_direction/id1193
+1749829768.0241702 [random_robot_move-3] [INFO] [1749829768.023509543] [random_robot_move]: Robot Control Node started.
+1749829785.5203886 [publish_wind_direction-4] [ERROR] [1749829785.519583069] [publish_wind_direction]: get_pose_data service not available!
+1749829810.5715787 [publish_wind_direction-4] [ERROR] [1749829810.570911943] [publish_wind_direction]: get_opinions service not available!
+1749829810.6897695 [service_vicon_node-1] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/service.py:76: RuntimeWarning: failed to send response (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+1749829810.6904578 [service_vicon_node-1]   self.__service.service_send_response(response, header.request_id)
+1749829832.4738164 [service_neighbours_opinions-2] [INFO] [1749829832.473042763] [service_neighbours_opinions]: All opinions size= 3
+1749829835.4747362 [service_neighbours_opinions-2] [INFO] [1749829835.473995058] [service_neighbours_opinions]: All opinions size= 4
+1749829840.4744048 [service_neighbours_opinions-2] [INFO] [1749829840.473670518] [service_neighbours_opinions]: All opinions size= 4
+1749829845.4747312 [service_neighbours_opinions-2] [INFO] [1749829845.473910496] [service_neighbours_opinions]: All opinions size= 4
+1749829846.0237198 [publish_wind_direction-4] [INFO] [1749829846.023037941] [publish_wind_direction]: Social Info: {}
+1749829846.0276551 [publish_wind_direction-4] [INFO] [1749829846.027057422] [publish_wind_direction]: Publishing: id1193:N
+1749829846.0305645 [publish_wind_direction-4] [INFO] [1749829846.029971348] [publish_wind_direction]: ------------------
+1749829846.0349607 [publish_wind_direction-4] [INFO] [1749829846.034343181] [publish_wind_direction]: Social Info: {}
+1749829846.0382836 [publish_wind_direction-4] [INFO] [1749829846.037733163] [publish_wind_direction]: Publishing: id1193:N
+1749829846.0407090 [publish_wind_direction-4] [INFO] [1749829846.040182589] [publish_wind_direction]: ------------------
+1749829846.0444055 [publish_wind_direction-4] [INFO] [1749829846.043853755] [publish_wind_direction]: Social Info: {}
+1749829846.0477045 [publish_wind_direction-4] [INFO] [1749829846.047158311] [publish_wind_direction]: Publishing: id1193:N
+1749829846.0502393 [publish_wind_direction-4] [INFO] [1749829846.049689718] [publish_wind_direction]: ------------------
+1749829846.0539382 [publish_wind_direction-4] [INFO] [1749829846.053363533] [publish_wind_direction]: Social Info: {}
+1749829846.0571613 [publish_wind_direction-4] [INFO] [1749829846.056560329] [publish_wind_direction]: Publishing: id1193:N
+1749829846.0595932 [publish_wind_direction-4] [INFO] [1749829846.059055885] [publish_wind_direction]: ------------------
+1749829850.4746130 [service_neighbours_opinions-2] [INFO] [1749829850.473804919] [service_neighbours_opinions]: All opinions size= 4
+1749829850.4796131 [publish_wind_direction-4] [INFO] [1749829850.478231734] [publish_wind_direction]: Social Info: {}
+1749829850.4827404 [publish_wind_direction-4] [INFO] [1749829850.481944290] [publish_wind_direction]: Publishing: id1193:N
+1749829850.4853787 [publish_wind_direction-4] [INFO] [1749829850.484510901] [publish_wind_direction]: ------------------
+1749829855.4745090 [service_neighbours_opinions-2] [INFO] [1749829855.473697972] [service_neighbours_opinions]: All opinions size= 4
+1749829855.4787390 [publish_wind_direction-4] [INFO] [1749829855.478146176] [publish_wind_direction]: Social Info: {}
+1749829855.4823856 [publish_wind_direction-4] [INFO] [1749829855.481815028] [publish_wind_direction]: Publishing: id1193:N
+1749829855.4850752 [publish_wind_direction-4] [INFO] [1749829855.484470657] [publish_wind_direction]: ------------------
+1749829860.4747539 [service_neighbours_opinions-2] [INFO] [1749829860.473988932] [service_neighbours_opinions]: All opinions size= 4
+1749829860.4806323 [publish_wind_direction-4] [INFO] [1749829860.478373302] [publish_wind_direction]: Social Info: {}
+1749829860.4861758 [publish_wind_direction-4] [INFO] [1749829860.485337858] [publish_wind_direction]: Publishing: id1193:N
+1749829860.4914482 [publish_wind_direction-4] [INFO] [1749829860.490810932] [publish_wind_direction]: ------------------
+1749829863.8339295 [service_vicon_node-1] [INFO] [1749829863.832981541] [service_vicon_node]: Frame_no: 217518
+1749829865.4750946 [service_neighbours_opinions-2] [INFO] [1749829865.474349503] [service_neighbours_opinions]: All opinions size= 5
+1749829865.4796879 [publish_wind_direction-4] [INFO] [1749829865.478840318] [publish_wind_direction]: Social Info: {'S': 2, 'N': 2}
+1749829865.4823916 [publish_wind_direction-4] [INFO] [1749829865.481788836] [publish_wind_direction]: *** Uninformed ***
+1749829865.4861352 [publish_wind_direction-4] [INFO] [1749829865.485565188] [publish_wind_direction]: Publishing: id1193:S
+1749829865.4887214 [publish_wind_direction-4] [INFO] [1749829865.488183114] [publish_wind_direction]: ------------------
+1749829870.4747279 [service_neighbours_opinions-2] [INFO] [1749829870.473913852] [service_neighbours_opinions]: All opinions size= 9
+1749829870.4811018 [publish_wind_direction-4] [INFO] [1749829870.478431482] [publish_wind_direction]: Social Info: {'N': 2, 'S': 1, 'W': 1, 'E': 1}
+1749829870.4830313 [publish_wind_direction-4] [INFO] [1749829870.481431611] [publish_wind_direction]: *** Uninformed ***
+1749829870.4859600 [publish_wind_direction-4] [INFO] [1749829870.485385982] [publish_wind_direction]: Publishing: id1193:N
+1749829870.4886315 [publish_wind_direction-4] [INFO] [1749829870.488064796] [publish_wind_direction]: ------------------
+1749829874.2330978 [service_vicon_node-1] [INFO] [1749829874.232175924] [service_vicon_node]: Frame_no: 217841
+1749829875.4766316 [service_neighbours_opinions-2] [INFO] [1749829875.475803145] [service_neighbours_opinions]: All opinions size= 9
+1749829875.4822614 [publish_wind_direction-4] [INFO] [1749829875.481552738] [publish_wind_direction]: Social Info: {'N': 3, 'W': 2, 'E': 1}
+1749829875.4877954 [publish_wind_direction-4] [INFO] [1749829875.486836942] [publish_wind_direction]: *** Uninformed ***
+1749829875.4912472 [publish_wind_direction-4] [INFO] [1749829875.490505423] [publish_wind_direction]: Publishing: id1193:N
+1749829875.4939220 [publish_wind_direction-4] [INFO] [1749829875.493142849] [publish_wind_direction]: ------------------
+1749829880.4762380 [service_neighbours_opinions-2] [INFO] [1749829880.474652920] [service_neighbours_opinions]: All opinions size= 9
+1749829880.4856107 [publish_wind_direction-4] [INFO] [1749829880.484997290] [publish_wind_direction]: Social Info: {'N': 2, 'W': 2, 'E': 1}
+1749829880.4893167 [publish_wind_direction-4] [INFO] [1749829880.488565346] [publish_wind_direction]: *** Uninformed ***
+1749829880.4963679 [publish_wind_direction-4] [INFO] [1749829880.495708327] [publish_wind_direction]: Publishing: id1193:W
+1749829880.4999857 [publish_wind_direction-4] [INFO] [1749829880.499429753] [publish_wind_direction]: ------------------
+1749829885.1667047 [service_vicon_node-1] [INFO] [1749829885.165971232] [service_vicon_node]: Frame_no: 218177
+1749829885.4746153 [service_neighbours_opinions-2] [INFO] [1749829885.473833473] [service_neighbours_opinions]: All opinions size= 11
+1749829885.4830384 [publish_wind_direction-4] [INFO] [1749829885.482269658] [publish_wind_direction]: Social Info: {'N': 1, 'S': 1, 'W': 2, 'E': 1}
+1749829885.4915316 [publish_wind_direction-4] [INFO] [1749829885.490728973] [publish_wind_direction]: *** Uninformed ***
+1749829885.4981103 [publish_wind_direction-4] [INFO] [1749829885.497490787] [publish_wind_direction]: Publishing: id1193:W
+1749829885.5018406 [publish_wind_direction-4] [INFO] [1749829885.501287824] [publish_wind_direction]: ------------------
+1749829890.4764442 [service_neighbours_opinions-2] [INFO] [1749829890.475437192] [service_neighbours_opinions]: All opinions size= 11
+1749829890.4829645 [publish_wind_direction-4] [INFO] [1749829890.482319433] [publish_wind_direction]: Social Info: {'N': 1, 'W': 4, 'E': 1}
+1749829890.4897730 [publish_wind_direction-4] [INFO] [1749829890.486165877] [publish_wind_direction]: *** Uninformed ***
+1749829890.4927368 [publish_wind_direction-4] [INFO] [1749829890.492166025] [publish_wind_direction]: Publishing: id1193:W
+1749829890.4954658 [publish_wind_direction-4] [INFO] [1749829890.494888118] [publish_wind_direction]: ------------------
+1749829895.4764614 [service_neighbours_opinions-2] [INFO] [1749829895.475704504] [service_neighbours_opinions]: All opinions size= 12
+1749829895.4812753 [publish_wind_direction-4] [INFO] [1749829895.480572337] [publish_wind_direction]: Social Info: {'W': 4, 'N': 2, 'E': 1}
+1749829895.4842796 [publish_wind_direction-4] [INFO] [1749829895.483610819] [publish_wind_direction]: *** Uninformed ***
+1749829895.4884305 [publish_wind_direction-4] [INFO] [1749829895.487769633] [publish_wind_direction]: Publishing: id1193:W
+1749829895.4911072 [publish_wind_direction-4] [INFO] [1749829895.490571207] [publish_wind_direction]: ------------------
+1749829895.8634970 [service_vicon_node-1] [INFO] [1749829895.862422615] [service_vicon_node]: Frame_no: 218497
+1749829900.4759197 [service_neighbours_opinions-2] [INFO] [1749829900.475024741] [service_neighbours_opinions]: All opinions size= 14
+1749829900.4855893 [publish_wind_direction-4] [INFO] [1749829900.484934982] [publish_wind_direction]: Social Info: {'W': 4, 'N': 2, 'E': 1, 'S': 1}
+1749829900.4886975 [publish_wind_direction-4] [INFO] [1749829900.488035112] [publish_wind_direction]: *** Uninformed ***
+1749829900.4923337 [publish_wind_direction-4] [INFO] [1749829900.491726853] [publish_wind_direction]: Publishing: id1193:W
+1749829900.4949272 [publish_wind_direction-4] [INFO] [1749829900.494359982] [publish_wind_direction]: ------------------
+1749829905.4764647 [service_neighbours_opinions-2] [INFO] [1749829905.475663905] [service_neighbours_opinions]: All opinions size= 16
+1749829905.4811311 [publish_wind_direction-4] [INFO] [1749829905.480459887] [publish_wind_direction]: Social Info: {'W': 4, 'N': 2, 'E': 2, 'S': 1}
+1749829905.4837742 [publish_wind_direction-4] [INFO] [1749829905.483212368] [publish_wind_direction]: *** Uninformed ***
+1749829905.4875257 [publish_wind_direction-4] [INFO] [1749829905.486947535] [publish_wind_direction]: Publishing: id1193:W
+1749829905.4937603 [publish_wind_direction-4] [INFO] [1749829905.489537979] [publish_wind_direction]: ------------------
+1749829906.1325018 [service_vicon_node-1] [INFO] [1749829906.131720442] [service_vicon_node]: Frame_no: 218810
+1749829910.4748611 [service_neighbours_opinions-2] [INFO] [1749829910.474103532] [service_neighbours_opinions]: All opinions size= 16
+1749829910.4801629 [publish_wind_direction-4] [INFO] [1749829910.479526624] [publish_wind_direction]: Social Info: {'W': 4, 'N': 2, 'E': 2, 'S': 1}
+1749829910.4827514 [publish_wind_direction-4] [INFO] [1749829910.482203439] [publish_wind_direction]: *** Uninformed ***
+1749829910.4863195 [publish_wind_direction-4] [INFO] [1749829910.485764865] [publish_wind_direction]: Publishing: id1193:W
+1749829910.4894180 [publish_wind_direction-4] [INFO] [1749829910.488381939] [publish_wind_direction]: ------------------
+1749829915.4747269 [service_neighbours_opinions-2] [INFO] [1749829915.473923973] [service_neighbours_opinions]: All opinions size= 16
+1749829915.4810705 [publish_wind_direction-4] [INFO] [1749829915.480389195] [publish_wind_direction]: Social Info: {'W': 4, 'N': 1, 'E': 1, 'S': 1}
+1749829915.4853103 [publish_wind_direction-4] [INFO] [1749829915.484727751] [publish_wind_direction]: *** Uninformed ***
+1749829915.4919889 [publish_wind_direction-4] [INFO] [1749829915.491387029] [publish_wind_direction]: Publishing: id1193:W
+1749829915.4957483 [publish_wind_direction-4] [INFO] [1749829915.495199955] [publish_wind_direction]: ------------------
+1749829916.8451784 [service_vicon_node-1] [INFO] [1749829916.844270528] [service_vicon_node]: Frame_no: 219127
+1749829920.4747434 [service_neighbours_opinions-2] [INFO] [1749829920.473946063] [service_neighbours_opinions]: All opinions size= 16
+1749829920.4792054 [publish_wind_direction-4] [INFO] [1749829920.478517470] [publish_wind_direction]: Social Info: {'W': 3, 'N': 1, 'E': 1, 'S': 1}
+1749829920.4823864 [publish_wind_direction-4] [INFO] [1749829920.481498674] [publish_wind_direction]: *** Uninformed ***
+1749829920.4862242 [publish_wind_direction-4] [INFO] [1749829920.485389563] [publish_wind_direction]: Publishing: id1193:W
+1749829920.4890096 [publish_wind_direction-4] [INFO] [1749829920.488189415] [publish_wind_direction]: ------------------
+1749829925.4760122 [service_neighbours_opinions-2] [INFO] [1749829925.474930375] [service_neighbours_opinions]: All opinions size= 16
+1749829925.4806397 [publish_wind_direction-4] [INFO] [1749829925.479829227] [publish_wind_direction]: Social Info: {'W': 3, 'E': 2, 'N': 2}
+1749829925.4833231 [publish_wind_direction-4] [INFO] [1749829925.482622893] [publish_wind_direction]: *** Uninformed ***
+1749829925.4873934 [publish_wind_direction-4] [INFO] [1749829925.486617912] [publish_wind_direction]: Publishing: id1193:W
+1749829925.4913464 [publish_wind_direction-4] [INFO] [1749829925.489351393] [publish_wind_direction]: ------------------
+1749829927.7367752 [service_vicon_node-1] [INFO] [1749829927.735952281] [service_vicon_node]: Frame_no: 219449
+1749829930.4760437 [service_neighbours_opinions-2] [INFO] [1749829930.475273890] [service_neighbours_opinions]: All opinions size= 16
+1749829930.4823267 [publish_wind_direction-4] [INFO] [1749829930.481705520] [publish_wind_direction]: Social Info: {'S': 1, 'W': 3, 'E': 1, 'N': 1}
+1749829930.4864166 [publish_wind_direction-4] [INFO] [1749829930.485800687] [publish_wind_direction]: *** Uninformed ***
+1749829930.4928558 [publish_wind_direction-4] [INFO] [1749829930.492244298] [publish_wind_direction]: Publishing: id1193:W
+1749829930.4964402 [publish_wind_direction-4] [INFO] [1749829930.495864316] [publish_wind_direction]: ------------------
+1749829935.4748790 [service_neighbours_opinions-2] [INFO] [1749829935.474047684] [service_neighbours_opinions]: All opinions size= 16
+1749829935.4796040 [publish_wind_direction-4] [INFO] [1749829935.478907480] [publish_wind_direction]: Social Info: {'S': 2, 'W': 4, 'E': 1, 'N': 1}
+1749829935.4827378 [publish_wind_direction-4] [INFO] [1749829935.482068369] [publish_wind_direction]: *** Uninformed ***
+1749829935.4870234 [publish_wind_direction-4] [INFO] [1749829935.486144480] [publish_wind_direction]: Publishing: id1193:W
+1749829935.4901819 [publish_wind_direction-4] [INFO] [1749829935.489142702] [publish_wind_direction]: ------------------
+1749829938.5588877 [service_vicon_node-1] [INFO] [1749829938.558066959] [service_vicon_node]: Frame_no: 219780
+1749829940.4746654 [service_neighbours_opinions-2] [INFO] [1749829940.473885514] [service_neighbours_opinions]: All opinions size= 16
+1749829940.4818606 [publish_wind_direction-4] [INFO] [1749829940.481114199] [publish_wind_direction]: Social Info: {'S': 2, 'W': 4, 'N': 2, 'E': 1}
+1749829940.4868593 [publish_wind_direction-4] [INFO] [1749829940.486124736] [publish_wind_direction]: *** Uninformed ***
+1749829940.4928782 [publish_wind_direction-4] [INFO] [1749829940.492277699] [publish_wind_direction]: Publishing: id1193:W
+1749829940.4964151 [publish_wind_direction-4] [INFO] [1749829940.495864736] [publish_wind_direction]: ------------------
+1749829945.4751959 [service_neighbours_opinions-2] [INFO] [1749829945.474441566] [service_neighbours_opinions]: All opinions size= 17
+1749829945.4807100 [publish_wind_direction-4] [INFO] [1749829945.480063289] [publish_wind_direction]: Social Info: {'W': 2, 'E': 1, 'N': 5, 'S': 2}
+1749829945.4835334 [publish_wind_direction-4] [INFO] [1749829945.482919955] [publish_wind_direction]: *** Uninformed ***
+1749829945.4872985 [publish_wind_direction-4] [INFO] [1749829945.486709881] [publish_wind_direction]: Publishing: id1193:N
+1749829945.4905317 [publish_wind_direction-4] [INFO] [1749829945.489549011] [publish_wind_direction]: ------------------
+1749829949.7580040 [service_vicon_node-1] [INFO] [1749829949.757270286] [service_vicon_node]: Frame_no: 220104
+1749829950.4747131 [service_neighbours_opinions-2] [INFO] [1749829950.473961341] [service_neighbours_opinions]: All opinions size= 17
+1749829950.4787502 [publish_wind_direction-4] [INFO] [1749829950.478169915] [publish_wind_direction]: Social Info: {'W': 2, 'N': 5, 'S': 2}
+1749829950.4813049 [publish_wind_direction-4] [INFO] [1749829950.480718008] [publish_wind_direction]: *** Uninformed ***
+1749829950.4848630 [publish_wind_direction-4] [INFO] [1749829950.484290471] [publish_wind_direction]: Publishing: id1193:N
+1749829950.4875829 [publish_wind_direction-4] [INFO] [1749829950.486951452] [publish_wind_direction]: ------------------
+1749829955.4749949 [service_neighbours_opinions-2] [INFO] [1749829955.474266431] [service_neighbours_opinions]: All opinions size= 17
+1749829955.4792726 [publish_wind_direction-4] [INFO] [1749829955.478688894] [publish_wind_direction]: Social Info: {'W': 2, 'N': 5, 'S': 2}
+1749829955.4820838 [publish_wind_direction-4] [INFO] [1749829955.481524227] [publish_wind_direction]: *** Uninformed ***
+1749829955.4856269 [publish_wind_direction-4] [INFO] [1749829955.485075931] [publish_wind_direction]: Publishing: id1193:N
+1749829955.4897091 [publish_wind_direction-4] [INFO] [1749829955.487552542] [publish_wind_direction]: ------------------
+1749829960.4743602 [service_neighbours_opinions-2] [INFO] [1749829960.473636687] [service_neighbours_opinions]: All opinions size= 17
+1749829960.4792089 [publish_wind_direction-4] [INFO] [1749829960.478496706] [publish_wind_direction]: Social Info: {'W': 1, 'N': 5, 'S': 2}
+1749829960.4825568 [publish_wind_direction-4] [INFO] [1749829960.481903669] [publish_wind_direction]: *** Uninformed ***
+1749829960.4873517 [publish_wind_direction-4] [INFO] [1749829960.486728965] [publish_wind_direction]: Publishing: id1193:N
+1749829960.4902091 [publish_wind_direction-4] [INFO] [1749829960.489412020] [publish_wind_direction]: ------------------
+1749829960.5582247 [service_vicon_node-1] [INFO] [1749829960.557400595] [service_vicon_node]: Frame_no: 220441
+1749829965.4742410 [service_neighbours_opinions-2] [INFO] [1749829965.473491240] [service_neighbours_opinions]: All opinions size= 17
+1749829965.4786432 [publish_wind_direction-4] [INFO] [1749829965.478021073] [publish_wind_direction]: Social Info: {'E': 1, 'N': 5, 'S': 1}
+1749829965.4812391 [publish_wind_direction-4] [INFO] [1749829965.480640480] [publish_wind_direction]: *** Uninformed ***
+1749829965.4847374 [publish_wind_direction-4] [INFO] [1749829965.484193906] [publish_wind_direction]: Publishing: id1193:N
+1749829965.4883888 [publish_wind_direction-4] [INFO] [1749829965.486713647] [publish_wind_direction]: ------------------
+1749829970.4749241 [service_neighbours_opinions-2] [INFO] [1749829970.474167200] [service_neighbours_opinions]: All opinions size= 17
+1749829970.4789383 [publish_wind_direction-4] [INFO] [1749829970.478330829] [publish_wind_direction]: Social Info: {'S': 1, 'N': 3}
+1749829970.4815536 [publish_wind_direction-4] [INFO] [1749829970.480934589] [publish_wind_direction]: *** Uninformed ***
+1749829970.4852161 [publish_wind_direction-4] [INFO] [1749829970.484412126] [publish_wind_direction]: Publishing: id1193:N
+1749829970.4881783 [publish_wind_direction-4] [INFO] [1749829970.487167774] [publish_wind_direction]: ------------------
+1749829971.4613004 [service_vicon_node-1] [INFO] [1749829971.460579199] [service_vicon_node]: Frame_no: 220767
+1749829975.4755287 [service_neighbours_opinions-2] [INFO] [1749829975.474410937] [service_neighbours_opinions]: All opinions size= 17
+1749829975.4808412 [publish_wind_direction-4] [INFO] [1749829975.479810530] [publish_wind_direction]: Social Info: {'W': 2, 'N': 3, 'E': 1, 'S': 1}
+1749829975.4838536 [publish_wind_direction-4] [INFO] [1749829975.483292012] [publish_wind_direction]: *** Uninformed ***
+1749829975.4878089 [publish_wind_direction-4] [INFO] [1749829975.486966104] [publish_wind_direction]: Publishing: id1193:N
+1749829975.4906917 [publish_wind_direction-4] [INFO] [1749829975.489794530] [publish_wind_direction]: ------------------
+1749829980.4748435 [service_neighbours_opinions-2] [INFO] [1749829980.474093157] [service_neighbours_opinions]: All opinions size= 17
+1749829980.4789071 [publish_wind_direction-4] [INFO] [1749829980.478302323] [publish_wind_direction]: Social Info: {'W': 5, 'S': 1, 'N': 1}
+1749829980.4815071 [publish_wind_direction-4] [INFO] [1749829980.480916694] [publish_wind_direction]: *** Uninformed ***
+1749829980.4851859 [publish_wind_direction-4] [INFO] [1749829980.484503453] [publish_wind_direction]: Publishing: id1193:W
+1749829980.4880493 [publish_wind_direction-4] [INFO] [1749829980.487256823] [publish_wind_direction]: ------------------
+1749829981.7104077 [service_vicon_node-1] [INFO] [1749829981.709368360] [service_vicon_node]: Frame_no: 221076
+1749829985.4744692 [service_neighbours_opinions-2] [INFO] [1749829985.473695987] [service_neighbours_opinions]: All opinions size= 18
+1749829985.4798670 [publish_wind_direction-4] [INFO] [1749829985.479217987] [publish_wind_direction]: Social Info: {'S': 2, 'E': 1, 'W': 2, 'N': 2}
+1749829985.4826946 [publish_wind_direction-4] [INFO] [1749829985.481917283] [publish_wind_direction]: *** Uninformed ***
+1749829985.4866087 [publish_wind_direction-4] [INFO] [1749829985.485827524] [publish_wind_direction]: Publishing: id1193:S
+1749829985.4892023 [publish_wind_direction-4] [INFO] [1749829985.488463672] [publish_wind_direction]: ------------------
+1749829990.4749131 [service_neighbours_opinions-2] [INFO] [1749829990.474132910] [service_neighbours_opinions]: All opinions size= 18
+1749829990.4814124 [publish_wind_direction-4] [INFO] [1749829990.478570466] [publish_wind_direction]: Social Info: {'N': 3, 'W': 3, 'S': 1, 'E': 1}
+1749829990.4828992 [publish_wind_direction-4] [INFO] [1749829990.481233373] [publish_wind_direction]: *** Uninformed ***
+1749829990.4858456 [publish_wind_direction-4] [INFO] [1749829990.485250669] [publish_wind_direction]: Publishing: id1193:N
+1749829990.4884572 [publish_wind_direction-4] [INFO] [1749829990.487879577] [publish_wind_direction]: ------------------
+1749829992.2182794 [service_vicon_node-1] [INFO] [1749829992.217562076] [service_vicon_node]: Frame_no: 221393
+1749829995.4746029 [service_neighbours_opinions-2] [INFO] [1749829995.473862407] [service_neighbours_opinions]: All opinions size= 18
+1749829995.4796693 [publish_wind_direction-4] [INFO] [1749829995.479048000] [publish_wind_direction]: Social Info: {'W': 3, 'N': 3, 'E': 2}
+1749829995.4825158 [publish_wind_direction-4] [INFO] [1749829995.481948685] [publish_wind_direction]: *** Uninformed ***
+1749829995.4883051 [publish_wind_direction-4] [INFO] [1749829995.487650074] [publish_wind_direction]: Publishing: id1193:N
+1749829995.4910529 [publish_wind_direction-4] [INFO] [1749829995.490443629] [publish_wind_direction]: ------------------
+1749830000.4747701 [service_neighbours_opinions-2] [INFO] [1749830000.473980793] [service_neighbours_opinions]: All opinions size= 19
+1749830000.4796782 [publish_wind_direction-4] [INFO] [1749830000.479028589] [publish_wind_direction]: Social Info: {'S': 1, 'N': 5, 'E': 2, 'W': 1}
+1749830000.4822984 [publish_wind_direction-4] [INFO] [1749830000.481771330] [publish_wind_direction]: *** Uninformed ***
+1749830000.4869523 [publish_wind_direction-4] [INFO] [1749830000.486199386] [publish_wind_direction]: Publishing: id1193:N
+1749830000.4910512 [publish_wind_direction-4] [INFO] [1749830000.490447941] [publish_wind_direction]: ------------------
+1749830002.4804530 [service_vicon_node-1] [INFO] [1749830002.479714570] [service_vicon_node]: Frame_no: 221701
+1749830005.4744809 [service_neighbours_opinions-2] [INFO] [1749830005.473729216] [service_neighbours_opinions]: All opinions size= 19
+1749830005.4794586 [publish_wind_direction-4] [INFO] [1749830005.478718383] [publish_wind_direction]: Social Info: {'W': 3, 'E': 2, 'N': 3, 'S': 1}
+1749830005.4828355 [publish_wind_direction-4] [INFO] [1749830005.482085827] [publish_wind_direction]: *** Uninformed ***
+1749830005.4872062 [publish_wind_direction-4] [INFO] [1749830005.486619290] [publish_wind_direction]: Publishing: id1193:N
+1749830005.4897177 [publish_wind_direction-4] [INFO] [1749830005.489178346] [publish_wind_direction]: ------------------
+1749830010.4746273 [service_neighbours_opinions-2] [INFO] [1749830010.473860694] [service_neighbours_opinions]: All opinions size= 19
+1749830010.4794676 [publish_wind_direction-4] [INFO] [1749830010.478718268] [publish_wind_direction]: Social Info: {'W': 6, 'N': 1, 'S': 3, 'E': 1}
+1749830010.4826047 [publish_wind_direction-4] [INFO] [1749830010.481985991] [publish_wind_direction]: *** Uninformed ***
+1749830010.4868052 [publish_wind_direction-4] [INFO] [1749830010.486093639] [publish_wind_direction]: Publishing: id1193:W
+1749830010.4892242 [publish_wind_direction-4] [INFO] [1749830010.488649120] [publish_wind_direction]: ------------------
+1749830012.6179922 [service_vicon_node-1] [INFO] [1749830012.617269026] [service_vicon_node]: Frame_no: 222005
+1749830015.4746823 [service_neighbours_opinions-2] [INFO] [1749830015.473908728] [service_neighbours_opinions]: All opinions size= 19
+1749830015.4793775 [publish_wind_direction-4] [INFO] [1749830015.478673988] [publish_wind_direction]: Social Info: {'W': 6, 'E': 2, 'S': 1, 'N': 1}
+1749830015.4823556 [publish_wind_direction-4] [INFO] [1749830015.481731377] [publish_wind_direction]: *** Uninformed ***
+1749830015.4863873 [publish_wind_direction-4] [INFO] [1749830015.485763969] [publish_wind_direction]: Publishing: id1193:W
+1749830015.4892950 [publish_wind_direction-4] [INFO] [1749830015.488649691] [publish_wind_direction]: ------------------
+1749830020.4745524 [service_neighbours_opinions-2] [INFO] [1749830020.473815411] [service_neighbours_opinions]: All opinions size= 19
+1749830020.4814041 [publish_wind_direction-4] [INFO] [1749830020.480673133] [publish_wind_direction]: Social Info: {'W': 3, 'E': 2, 'N': 1, 'S': 2}
+1749830020.4846787 [publish_wind_direction-4] [INFO] [1749830020.484004300] [publish_wind_direction]: *** Uninformed ***
+1749830020.4888608 [publish_wind_direction-4] [INFO] [1749830020.487962855] [publish_wind_direction]: Publishing: id1193:W
+1749830020.4919612 [publish_wind_direction-4] [INFO] [1749830020.490838985] [publish_wind_direction]: ------------------
+1749830022.8485870 [service_vicon_node-1] [INFO] [1749830022.847509002] [service_vicon_node]: Frame_no: 222312
+1749830025.4746215 [service_neighbours_opinions-2] [INFO] [1749830025.473831500] [service_neighbours_opinions]: All opinions size= 19
+1749830025.4792421 [publish_wind_direction-4] [INFO] [1749830025.478423000] [publish_wind_direction]: Social Info: {'W': 4, 'S': 4, 'E': 2}
+1749830025.4824574 [publish_wind_direction-4] [INFO] [1749830025.481741982] [publish_wind_direction]: *** Uninformed ***
+1749830025.4886715 [publish_wind_direction-4] [INFO] [1749830025.487833667] [publish_wind_direction]: Publishing: id1193:S
+1749830025.4912250 [publish_wind_direction-4] [INFO] [1749830025.490439519] [publish_wind_direction]: ------------------
+1749830030.4750216 [service_neighbours_opinions-2] [INFO] [1749830030.474213257] [service_neighbours_opinions]: All opinions size= 19
+1749830030.4792647 [publish_wind_direction-4] [INFO] [1749830030.478671849] [publish_wind_direction]: Social Info: {'E': 2, 'S': 2, 'W': 3, 'N': 1}
+1749830030.4822166 [publish_wind_direction-4] [INFO] [1749830030.481175831] [publish_wind_direction]: *** Uninformed ***
+1749830030.4877727 [publish_wind_direction-4] [INFO] [1749830030.486933145] [publish_wind_direction]: Publishing: id1193:W
+1749830030.4904413 [publish_wind_direction-4] [INFO] [1749830030.489643979] [publish_wind_direction]: ------------------
+1749830033.0801408 [service_vicon_node-1] [INFO] [1749830033.079119107] [service_vicon_node]: Frame_no: 222619
+1749830035.4751387 [service_neighbours_opinions-2] [INFO] [1749830035.474011494] [service_neighbours_opinions]: All opinions size= 19
+1749830035.4797292 [publish_wind_direction-4] [INFO] [1749830035.479101902] [publish_wind_direction]: Social Info: {'W': 5, 'E': 1, 'N': 1}
+1749830035.4828355 [publish_wind_direction-4] [INFO] [1749830035.482155828] [publish_wind_direction]: *** Uninformed ***
+1749830035.4872549 [publish_wind_direction-4] [INFO] [1749830035.486465031] [publish_wind_direction]: Publishing: id1193:W
+1749830035.4898090 [publish_wind_direction-4] [INFO] [1749830035.489071994] [publish_wind_direction]: ------------------
+1749830040.4747939 [service_neighbours_opinions-2] [INFO] [1749830040.474001010] [service_neighbours_opinions]: All opinions size= 19
+1749830040.4792058 [publish_wind_direction-4] [INFO] [1749830040.478504621] [publish_wind_direction]: Social Info: {'W': 5, 'E': 1, 'S': 1, 'N': 1}
+1749830040.4819818 [publish_wind_direction-4] [INFO] [1749830040.481403306] [publish_wind_direction]: *** Uninformed ***
+1749830040.4856796 [publish_wind_direction-4] [INFO] [1749830040.485110139] [publish_wind_direction]: Publishing: id1193:W
+1749830040.4884439 [publish_wind_direction-4] [INFO] [1749830040.487850528] [publish_wind_direction]: ------------------
+1749830043.2471161 [service_vicon_node-1] [INFO] [1749830043.246387119] [service_vicon_node]: Frame_no: 222924
+1749830045.4745314 [service_neighbours_opinions-2] [INFO] [1749830045.473768674] [service_neighbours_opinions]: All opinions size= 19
+1749830045.4793470 [publish_wind_direction-4] [INFO] [1749830045.478410137] [publish_wind_direction]: Social Info: {'W': 7, 'N': 1}
+1749830045.4826934 [publish_wind_direction-4] [INFO] [1749830045.481704599] [publish_wind_direction]: *** Uninformed ***
+1749830045.4868000 [publish_wind_direction-4] [INFO] [1749830045.485948211] [publish_wind_direction]: Publishing: id1193:W
+1749830045.4894738 [publish_wind_direction-4] [INFO] [1749830045.488624322] [publish_wind_direction]: ------------------
+1749830050.4747083 [service_neighbours_opinions-2] [INFO] [1749830050.473964096] [service_neighbours_opinions]: All opinions size= 19
+1749830050.4799139 [publish_wind_direction-4] [INFO] [1749830050.479196059] [publish_wind_direction]: Social Info: {'W': 7, 'N': 2}
+1749830050.4844389 [publish_wind_direction-4] [INFO] [1749830050.483830245] [publish_wind_direction]: *** Uninformed ***
+1749830050.4880004 [publish_wind_direction-4] [INFO] [1749830050.487436115] [publish_wind_direction]: Publishing: id1193:W
+1749830050.4906497 [publish_wind_direction-4] [INFO] [1749830050.490095652] [publish_wind_direction]: ------------------
+1749830053.4472528 [service_vicon_node-1] [INFO] [1749830053.446522539] [service_vicon_node]: Frame_no: 223230
+1749830055.4748650 [service_neighbours_opinions-2] [INFO] [1749830055.474116556] [service_neighbours_opinions]: All opinions size= 19
+1749830055.4791107 [publish_wind_direction-4] [INFO] [1749830055.478401668] [publish_wind_direction]: Social Info: {'E': 1, 'W': 4, 'S': 3, 'N': 1}
+1749830055.4830933 [publish_wind_direction-4] [INFO] [1749830055.481255408] [publish_wind_direction]: *** Uninformed ***
+1749830055.4863925 [publish_wind_direction-4] [INFO] [1749830055.485799816] [publish_wind_direction]: Publishing: id1193:W
+1749830055.4891355 [publish_wind_direction-4] [INFO] [1749830055.488532538] [publish_wind_direction]: ------------------
+1749830060.4747033 [service_neighbours_opinions-2] [INFO] [1749830060.473908350] [service_neighbours_opinions]: All opinions size= 19
+1749830060.4791875 [publish_wind_direction-4] [INFO] [1749830060.478391109] [publish_wind_direction]: Social Info: {'N': 3, 'W': 6}
+1749830060.4835625 [publish_wind_direction-4] [INFO] [1749830060.481502850] [publish_wind_direction]: *** Uninformed ***
+1749830060.4866323 [publish_wind_direction-4] [INFO] [1749830060.486055591] [publish_wind_direction]: Publishing: id1193:W
+1749830060.4892704 [publish_wind_direction-4] [INFO] [1749830060.488688868] [publish_wind_direction]: ------------------
+1749830063.6790328 [service_vicon_node-1] [INFO] [1749830063.678298459] [service_vicon_node]: Frame_no: 223537
+1749830065.4746928 [service_neighbours_opinions-2] [INFO] [1749830065.473912532] [service_neighbours_opinions]: All opinions size= 19
+1749830065.4789958 [publish_wind_direction-4] [INFO] [1749830065.478371013] [publish_wind_direction]: Social Info: {'W': 5, 'E': 2, 'N': 3, 'S': 2}
+1749830065.4819667 [publish_wind_direction-4] [INFO] [1749830065.481313662] [publish_wind_direction]: *** Uninformed ***
+1749830065.4875016 [publish_wind_direction-4] [INFO] [1749830065.486870958] [publish_wind_direction]: Publishing: id1193:W
+1749830065.4905519 [publish_wind_direction-4] [INFO] [1749830065.489715736] [publish_wind_direction]: ------------------
+1749830070.4746249 [service_neighbours_opinions-2] [INFO] [1749830070.473842492] [service_neighbours_opinions]: All opinions size= 19
+1749830070.4791493 [publish_wind_direction-4] [INFO] [1749830070.478454214] [publish_wind_direction]: Social Info: {'W': 9, 'E': 2, 'N': 1}
+1749830070.4822347 [publish_wind_direction-4] [INFO] [1749830070.481449399] [publish_wind_direction]: *** Uninformed ***
+1749830070.4861472 [publish_wind_direction-4] [INFO] [1749830070.485439510] [publish_wind_direction]: Publishing: id1193:W
+1749830070.4887862 [publish_wind_direction-4] [INFO] [1749830070.488234344] [publish_wind_direction]: ------------------
+1749830073.8498507 [service_vicon_node-1] [INFO] [1749830073.849117842] [service_vicon_node]: Frame_no: 223842
+1749830075.4750905 [service_neighbours_opinions-2] [INFO] [1749830075.474327952] [service_neighbours_opinions]: All opinions size= 19
+1749830075.4797363 [publish_wind_direction-4] [INFO] [1749830075.479051878] [publish_wind_direction]: Social Info: {'W': 8, 'N': 2, 'E': 1}
+1749830075.4863129 [publish_wind_direction-4] [INFO] [1749830075.482212878] [publish_wind_direction]: *** Uninformed ***
+1749830075.4890604 [publish_wind_direction-4] [INFO] [1749830075.488455285] [publish_wind_direction]: Publishing: id1193:W
+1749830075.4918103 [publish_wind_direction-4] [INFO] [1749830075.491037489] [publish_wind_direction]: ------------------
+1749830080.4758544 [service_neighbours_opinions-2] [INFO] [1749830080.475055171] [service_neighbours_opinions]: All opinions size= 19
+1749830080.4806163 [publish_wind_direction-4] [INFO] [1749830080.479921208] [publish_wind_direction]: Social Info: {'W': 8, 'E': 2}
+1749830080.4850545 [publish_wind_direction-4] [INFO] [1749830080.483589430] [publish_wind_direction]: *** Uninformed ***
+1749830080.4882393 [publish_wind_direction-4] [INFO] [1749830080.487520190] [publish_wind_direction]: Publishing: id1193:W
+1749830080.4909163 [publish_wind_direction-4] [INFO] [1749830080.490195486] [publish_wind_direction]: ------------------
+1749830084.0163069 [service_vicon_node-1] [INFO] [1749830084.015594854] [service_vicon_node]: Frame_no: 224147
+1749830085.4744854 [service_neighbours_opinions-2] [INFO] [1749830085.473711909] [service_neighbours_opinions]: All opinions size= 19
+1749830085.4796472 [publish_wind_direction-4] [INFO] [1749830085.478217224] [publish_wind_direction]: Social Info: {'W': 7, 'E': 1, 'S': 1}
+1749830085.4822280 [publish_wind_direction-4] [INFO] [1749830085.481436298] [publish_wind_direction]: *** Uninformed ***
+1749830085.4874022 [publish_wind_direction-4] [INFO] [1749830085.486578131] [publish_wind_direction]: Publishing: id1193:W
+1749830085.4900811 [publish_wind_direction-4] [INFO] [1749830085.489278465] [publish_wind_direction]: ------------------
+1749830090.4747715 [service_neighbours_opinions-2] [INFO] [1749830090.473946462] [service_neighbours_opinions]: All opinions size= 19
+1749830090.4795492 [publish_wind_direction-4] [INFO] [1749830090.478928776] [publish_wind_direction]: Social Info: {'W': 4, 'E': 1, 'N': 1}
+1749830090.4834108 [publish_wind_direction-4] [INFO] [1749830090.482723591] [publish_wind_direction]: *** Uninformed ***
+1749830090.4899430 [publish_wind_direction-4] [INFO] [1749830090.489294980] [publish_wind_direction]: Publishing: id1193:W
+1749830090.4932165 [publish_wind_direction-4] [INFO] [1749830090.492645869] [publish_wind_direction]: ------------------
+1749830094.1821196 [service_vicon_node-1] [INFO] [1749830094.181379015] [service_vicon_node]: Frame_no: 224452
+1749830095.4745913 [service_neighbours_opinions-2] [INFO] [1749830095.473822551] [service_neighbours_opinions]: All opinions size= 19
+1749830095.4790845 [publish_wind_direction-4] [INFO] [1749830095.478497625] [publish_wind_direction]: Social Info: {'W': 6, 'E': 2, 'N': 2}
+1749830095.4821916 [publish_wind_direction-4] [INFO] [1749830095.481520273] [publish_wind_direction]: *** Uninformed ***
+1749830095.4884660 [publish_wind_direction-4] [INFO] [1749830095.487875755] [publish_wind_direction]: Publishing: id1193:W
+1749830095.4915066 [publish_wind_direction-4] [INFO] [1749830095.490948199] [publish_wind_direction]: ------------------
+1749830100.4749885 [service_neighbours_opinions-2] [INFO] [1749830100.474217363] [service_neighbours_opinions]: All opinions size= 19
+1749830100.4796984 [publish_wind_direction-4] [INFO] [1749830100.478999252] [publish_wind_direction]: Social Info: {'W': 3, 'N': 3, 'E': 3, 'S': 1}
+1749830100.4836123 [publish_wind_direction-4] [INFO] [1749830100.482977826] [publish_wind_direction]: *** Uninformed ***
+1749830100.4876003 [publish_wind_direction-4] [INFO] [1749830100.487064974] [publish_wind_direction]: Publishing: id1193:W
+1749830100.4901917 [publish_wind_direction-4] [INFO] [1749830100.489627937] [publish_wind_direction]: ------------------
+1749830104.3469820 [service_vicon_node-1] [INFO] [1749830104.346257213] [service_vicon_node]: Frame_no: 224757
+1749830105.4745638 [service_neighbours_opinions-2] [INFO] [1749830105.473817397] [service_neighbours_opinions]: All opinions size= 19
+1749830105.4788942 [publish_wind_direction-4] [INFO] [1749830105.478173897] [publish_wind_direction]: Social Info: {'W': 3, 'N': 5, 'E': 1}
+1749830105.4836459 [publish_wind_direction-4] [INFO] [1749830105.482950360] [publish_wind_direction]: *** Uninformed ***
+1749830105.4874418 [publish_wind_direction-4] [INFO] [1749830105.486862490] [publish_wind_direction]: Publishing: id1193:N
+1749830105.4899607 [publish_wind_direction-4] [INFO] [1749830105.489421267] [publish_wind_direction]: ------------------
+1749830110.4746199 [service_neighbours_opinions-2] [INFO] [1749830110.473853690] [service_neighbours_opinions]: All opinions size= 19
+1749830110.4788096 [publish_wind_direction-4] [INFO] [1749830110.478173894] [publish_wind_direction]: Social Info: {'E': 2, 'W': 3, 'S': 1, 'N': 2}
+1749830110.4833844 [publish_wind_direction-4] [INFO] [1749830110.481236542] [publish_wind_direction]: *** Uninformed ***
+1749830110.4862339 [publish_wind_direction-4] [INFO] [1749830110.485647913] [publish_wind_direction]: Publishing: id1193:W
+1749830110.4891846 [publish_wind_direction-4] [INFO] [1749830110.488541061] [publish_wind_direction]: ------------------
+1749830114.4482377 [service_vicon_node-1] [INFO] [1749830114.447496892] [service_vicon_node]: Frame_no: 225060
+1749830115.4754233 [service_neighbours_opinions-2] [INFO] [1749830115.474585206] [service_neighbours_opinions]: All opinions size= 19
+1749830115.4813809 [publish_wind_direction-4] [INFO] [1749830115.480731336] [publish_wind_direction]: Social Info: {'E': 1, 'N': 2, 'W': 4}
+1749830115.4851418 [publish_wind_direction-4] [INFO] [1749830115.483646076] [publish_wind_direction]: *** Uninformed ***
+1749830115.4882147 [publish_wind_direction-4] [INFO] [1749830115.487613928] [publish_wind_direction]: Publishing: id1193:W
+1749830115.4911420 [publish_wind_direction-4] [INFO] [1749830115.490528984] [publish_wind_direction]: ------------------
+1749830120.4747858 [service_neighbours_opinions-2] [INFO] [1749830120.473992036] [service_neighbours_opinions]: All opinions size= 19
+1749830120.4813583 [publish_wind_direction-4] [INFO] [1749830120.480656240] [publish_wind_direction]: Social Info: {'N': 4, 'E': 2, 'W': 4}
+1749830120.4848604 [publish_wind_direction-4] [INFO] [1749830120.484083944] [publish_wind_direction]: *** Uninformed ***
+1749830120.4889534 [publish_wind_direction-4] [INFO] [1749830120.488298610] [publish_wind_direction]: Publishing: id1193:W
+1749830120.4919088 [publish_wind_direction-4] [INFO] [1749830120.491348555] [publish_wind_direction]: ------------------
+1749830124.6152427 [service_vicon_node-1] [INFO] [1749830124.614512904] [service_vicon_node]: Frame_no: 225365
+1749830125.4748650 [service_neighbours_opinions-2] [INFO] [1749830125.474087996] [service_neighbours_opinions]: All opinions size= 19
+1749830125.4797468 [publish_wind_direction-4] [INFO] [1749830125.478943589] [publish_wind_direction]: Social Info: {'W': 4, 'S': 3, 'E': 1, 'N': 1}
+1749830125.4835260 [publish_wind_direction-4] [INFO] [1749830125.482607885] [publish_wind_direction]: *** Uninformed ***
+1749830125.4885900 [publish_wind_direction-4] [INFO] [1749830125.487995737] [publish_wind_direction]: Publishing: id1193:W
+1749830125.4912224 [publish_wind_direction-4] [INFO] [1749830125.490668774] [publish_wind_direction]: ------------------
+1749830130.4745071 [service_neighbours_opinions-2] [INFO] [1749830130.473745975] [service_neighbours_opinions]: All opinions size= 19
+1749830130.4790008 [publish_wind_direction-4] [INFO] [1749830130.478297475] [publish_wind_direction]: Social Info: {'W': 4, 'E': 1, 'N': 2}
+1749830130.4818444 [publish_wind_direction-4] [INFO] [1749830130.481228993] [publish_wind_direction]: *** Uninformed ***
+1749830130.4861255 [publish_wind_direction-4] [INFO] [1749830130.485171864] [publish_wind_direction]: Publishing: id1193:W
+1749830130.4887116 [publish_wind_direction-4] [INFO] [1749830130.487944919] [publish_wind_direction]: ------------------
+1749830134.7523317 [service_vicon_node-1] [INFO] [1749830134.751611824] [service_vicon_node]: Frame_no: 225669
+1749830135.4745080 [service_neighbours_opinions-2] [INFO] [1749830135.473758953] [service_neighbours_opinions]: All opinions size= 19
+1749830135.4787982 [publish_wind_direction-4] [INFO] [1749830135.478174935] [publish_wind_direction]: Social Info: {'W': 5, 'E': 2}
+1749830135.4814332 [publish_wind_direction-4] [INFO] [1749830135.480836250] [publish_wind_direction]: *** Uninformed ***
+1749830135.4858401 [publish_wind_direction-4] [INFO] [1749830135.484960305] [publish_wind_direction]: Publishing: id1193:W
+1749830135.4886270 [publish_wind_direction-4] [INFO] [1749830135.487689601] [publish_wind_direction]: ------------------
+1749830140.4747488 [service_neighbours_opinions-2] [INFO] [1749830140.473986135] [service_neighbours_opinions]: All opinions size= 19
+1749830140.4789517 [publish_wind_direction-4] [INFO] [1749830140.478315802] [publish_wind_direction]: Social Info: {'E': 2, 'W': 3, 'N': 1}
+1749830140.4815805 [publish_wind_direction-4] [INFO] [1749830140.480933469] [publish_wind_direction]: *** Uninformed ***
+1749830140.4870017 [publish_wind_direction-4] [INFO] [1749830140.486407469] [publish_wind_direction]: Publishing: id1193:W
+1749830140.4897211 [publish_wind_direction-4] [INFO] [1749830140.489138821] [publish_wind_direction]: ------------------
+1749830144.9824977 [service_vicon_node-1] [INFO] [1749830144.981778336] [service_vicon_node]: Frame_no: 225976
+1749830145.4744565 [service_neighbours_opinions-2] [INFO] [1749830145.473722725] [service_neighbours_opinions]: All opinions size= 19
+1749830145.4789548 [publish_wind_direction-4] [INFO] [1749830145.478263966] [publish_wind_direction]: Social Info: {'W': 4, 'N': 5, 'S': 1}
+1749830145.4822147 [publish_wind_direction-4] [INFO] [1749830145.481526003] [publish_wind_direction]: *** Uninformed ***
+1749830145.4884925 [publish_wind_direction-4] [INFO] [1749830145.487886836] [publish_wind_direction]: Publishing: id1193:N
+1749830145.4911516 [publish_wind_direction-4] [INFO] [1749830145.490588244] [publish_wind_direction]: ------------------
+1749830150.4763842 [service_neighbours_opinions-2] [INFO] [1749830150.475545352] [service_neighbours_opinions]: All opinions size= 19
+1749830150.4822216 [publish_wind_direction-4] [INFO] [1749830150.481359981] [publish_wind_direction]: Social Info: {'W': 3, 'N': 2, 'S': 2}
+1749830150.4867060 [publish_wind_direction-4] [INFO] [1749830150.486104629] [publish_wind_direction]: *** Uninformed ***
+1749830150.4901364 [publish_wind_direction-4] [INFO] [1749830150.489573778] [publish_wind_direction]: Publishing: id1193:W
+1749830150.4925475 [publish_wind_direction-4] [INFO] [1749830150.492020370] [publish_wind_direction]: ------------------
+1749830155.1503234 [service_vicon_node-1] [INFO] [1749830155.149599256] [service_vicon_node]: Frame_no: 226281
+1749830155.4744289 [service_neighbours_opinions-2] [INFO] [1749830155.473642960] [service_neighbours_opinions]: All opinions size= 19
+1749830155.4791059 [publish_wind_direction-4] [INFO] [1749830155.478398145] [publish_wind_direction]: Social Info: {'N': 2, 'W': 3}
+1749830155.4825833 [publish_wind_direction-4] [INFO] [1749830155.481814182] [publish_wind_direction]: *** Uninformed ***
+1749830155.4881077 [publish_wind_direction-4] [INFO] [1749830155.487487441] [publish_wind_direction]: Publishing: id1193:W
+1749830155.4908350 [publish_wind_direction-4] [INFO] [1749830155.490250775] [publish_wind_direction]: ------------------
+1749830160.4745951 [service_neighbours_opinions-2] [INFO] [1749830160.473769049] [service_neighbours_opinions]: All opinions size= 19
+1749830160.4796381 [publish_wind_direction-4] [INFO] [1749830160.478596753] [publish_wind_direction]: Social Info: {'W': 2, 'N': 1, 'S': 1}
+1749830160.4828796 [publish_wind_direction-4] [INFO] [1749830160.481971568] [publish_wind_direction]: *** Uninformed ***
+1749830160.4871774 [publish_wind_direction-4] [INFO] [1749830160.486415105] [publish_wind_direction]: Publishing: id1193:W
+1749830160.4898741 [publish_wind_direction-4] [INFO] [1749830160.489075809] [publish_wind_direction]: ------------------
+1749830165.2867479 [service_vicon_node-1] [INFO] [1749830165.286018287] [service_vicon_node]: Frame_no: 226585
+1749830165.4744959 [service_neighbours_opinions-2] [INFO] [1749830165.473425824] [service_neighbours_opinions]: All opinions size= 19
+1749830165.4789200 [publish_wind_direction-4] [INFO] [1749830165.477974676] [publish_wind_direction]: Social Info: {'S': 2, 'N': 1, 'W': 1}
+1749830165.4821103 [publish_wind_direction-4] [INFO] [1749830165.481407639] [publish_wind_direction]: *** Uninformed ***
+1749830165.4877775 [publish_wind_direction-4] [INFO] [1749830165.486939009] [publish_wind_direction]: Publishing: id1193:S
+1749830165.4907174 [publish_wind_direction-4] [INFO] [1749830165.489909009] [publish_wind_direction]: ------------------
+1749830170.4746757 [service_neighbours_opinions-2] [INFO] [1749830170.473941192] [service_neighbours_opinions]: All opinions size= 19
+1749830170.4790766 [publish_wind_direction-4] [INFO] [1749830170.478387340] [publish_wind_direction]: Social Info: {'N': 1, 'S': 1, 'W': 1}
+1749830170.4823234 [publish_wind_direction-4] [INFO] [1749830170.481653340] [publish_wind_direction]: *** Uninformed ***
+1749830170.4865482 [publish_wind_direction-4] [INFO] [1749830170.485846340] [publish_wind_direction]: Publishing: id1193:N
+1749830170.4892683 [publish_wind_direction-4] [INFO] [1749830170.488417784] [publish_wind_direction]: ------------------
+1749830175.4514806 [service_vicon_node-1] [INFO] [1749830175.450788763] [service_vicon_node]: Frame_no: 226890
+1749830175.4753287 [service_neighbours_opinions-2] [INFO] [1749830175.474541374] [service_neighbours_opinions]: All opinions size= 19
+1749830175.4801371 [publish_wind_direction-4] [INFO] [1749830175.479159781] [publish_wind_direction]: Social Info: {'W': 3}
+1749830175.4848719 [publish_wind_direction-4] [INFO] [1749830175.482574281] [publish_wind_direction]: *** Uninformed ***
+1749830175.4875548 [publish_wind_direction-4] [INFO] [1749830175.486826244] [publish_wind_direction]: Publishing: id1193:W
+1749830175.4900014 [publish_wind_direction-4] [INFO] [1749830175.489413707] [publish_wind_direction]: ------------------
+1749830180.4757016 [service_neighbours_opinions-2] [INFO] [1749830180.474594204] [service_neighbours_opinions]: All opinions size= 19
+1749830180.4804893 [publish_wind_direction-4] [INFO] [1749830180.479864204] [publish_wind_direction]: Social Info: {'W': 1, 'E': 2}
+1749830180.4865100 [publish_wind_direction-4] [INFO] [1749830180.484385871] [publish_wind_direction]: *** Uninformed ***
+1749830180.4914429 [publish_wind_direction-4] [INFO] [1749830180.490587130] [publish_wind_direction]: Publishing: id1193:E
+1749830180.4939177 [publish_wind_direction-4] [INFO] [1749830180.493287519] [publish_wind_direction]: ------------------
+1749830185.4746404 [service_neighbours_opinions-2] [INFO] [1749830185.473861238] [service_neighbours_opinions]: All opinions size= 19
+1749830185.4791727 [publish_wind_direction-4] [INFO] [1749830185.478488127] [publish_wind_direction]: Social Info: {'W': 1, 'N': 1, 'E': 1}
+1749830185.4825025 [publish_wind_direction-4] [INFO] [1749830185.481719905] [publish_wind_direction]: *** Uninformed ***
+1749830185.4882083 [publish_wind_direction-4] [INFO] [1749830185.486898275] [publish_wind_direction]: Publishing: id1193:W
+1749830185.4906094 [publish_wind_direction-4] [INFO] [1749830185.489620349] [publish_wind_direction]: ------------------
+1749830185.5838320 [service_vicon_node-1] [INFO] [1749830185.582820572] [service_vicon_node]: Frame_no: 227194
+1749830190.4747305 [service_neighbours_opinions-2] [INFO] [1749830190.473965680] [service_neighbours_opinions]: All opinions size= 19
+1749830190.4793205 [publish_wind_direction-4] [INFO] [1749830190.478437643] [publish_wind_direction]: Social Info: {'S': 2, 'W': 1}
+1749830190.4829698 [publish_wind_direction-4] [INFO] [1749830190.481716143] [publish_wind_direction]: *** Uninformed ***
+1749830190.4883473 [publish_wind_direction-4] [INFO] [1749830190.487508420] [publish_wind_direction]: Publishing: id1193:S
+1749830190.4910223 [publish_wind_direction-4] [INFO] [1749830190.490194532] [publish_wind_direction]: ------------------
+1749830195.4747822 [service_neighbours_opinions-2] [INFO] [1749830195.473956732] [service_neighbours_opinions]: All opinions size= 19
+1749830195.4798188 [publish_wind_direction-4] [INFO] [1749830195.479069269] [publish_wind_direction]: Social Info: {'E': 1, 'W': 2, 'N': 2}
+1749830195.4838619 [publish_wind_direction-4] [INFO] [1749830195.482670936] [publish_wind_direction]: *** Uninformed ***
+1749830195.4877932 [publish_wind_direction-4] [INFO] [1749830195.486409547] [publish_wind_direction]: Publishing: id1193:W
+1749830195.4896455 [publish_wind_direction-4] [INFO] [1749830195.489086529] [publish_wind_direction]: ------------------
+1749830195.7543447 [service_vicon_node-1] [INFO] [1749830195.753575399] [service_vicon_node]: Frame_no: 227499
+1749830200.4748876 [service_neighbours_opinions-2] [INFO] [1749830200.474106692] [service_neighbours_opinions]: All opinions size= 19
+1749830200.4793139 [publish_wind_direction-4] [INFO] [1749830200.478731970] [publish_wind_direction]: Social Info: {'W': 3, 'S': 2}
+1749830200.4829650 [publish_wind_direction-4] [INFO] [1749830200.482209563] [publish_wind_direction]: *** Uninformed ***
+1749830200.4897716 [publish_wind_direction-4] [INFO] [1749830200.489183155] [publish_wind_direction]: Publishing: id1193:W
+1749830200.4936111 [publish_wind_direction-4] [INFO] [1749830200.493064229] [publish_wind_direction]: ------------------
+1749830205.4748156 [service_neighbours_opinions-2] [INFO] [1749830205.474026856] [service_neighbours_opinions]: All opinions size= 19
+1749830205.4792228 [publish_wind_direction-4] [INFO] [1749830205.478543282] [publish_wind_direction]: Social Info: {'W': 5}
+1749830205.4826217 [publish_wind_direction-4] [INFO] [1749830205.481696245] [publish_wind_direction]: *** Uninformed ***
+1749830205.4863126 [publish_wind_direction-4] [INFO] [1749830205.485734856] [publish_wind_direction]: Publishing: id1193:W
+1749830205.4889450 [publish_wind_direction-4] [INFO] [1749830205.488344319] [publish_wind_direction]: ------------------
+1749830205.8891587 [service_vicon_node-1] [INFO] [1749830205.888374745] [service_vicon_node]: Frame_no: 227803
+1749830210.4746699 [service_neighbours_opinions-2] [INFO] [1749830210.473901668] [service_neighbours_opinions]: All opinions size= 19
+1749830210.4794033 [publish_wind_direction-4] [INFO] [1749830210.478371464] [publish_wind_direction]: Social Info: {'N': 1, 'E': 2, 'S': 1}
+1749830210.4820871 [publish_wind_direction-4] [INFO] [1749830210.481474001] [publish_wind_direction]: *** Uninformed ***
+1749830210.4860306 [publish_wind_direction-4] [INFO] [1749830210.485224760] [publish_wind_direction]: Publishing: id1193:E
+1749830210.4886177 [publish_wind_direction-4] [INFO] [1749830210.488022723] [publish_wind_direction]: ------------------
+1749830215.4747040 [service_neighbours_opinions-2] [INFO] [1749830215.473945331] [service_neighbours_opinions]: All opinions size= 19
+1749830215.4818993 [publish_wind_direction-4] [INFO] [1749830215.481150091] [publish_wind_direction]: Social Info: {'S': 1, 'N': 3}
+1749830215.4868820 [publish_wind_direction-4] [INFO] [1749830215.486255091] [publish_wind_direction]: *** Uninformed ***
+1749830215.4926379 [publish_wind_direction-4] [INFO] [1749830215.492078350] [publish_wind_direction]: Publishing: id1193:N
+1749830215.4960430 [publish_wind_direction-4] [INFO] [1749830215.495491350] [publish_wind_direction]: ------------------
+1749830216.0536547 [service_vicon_node-1] [INFO] [1749830216.052920646] [service_vicon_node]: Frame_no: 228108
+1749830220.4746001 [service_neighbours_opinions-2] [INFO] [1749830220.473857977] [service_neighbours_opinions]: All opinions size= 19
+1749830220.4788532 [publish_wind_direction-4] [INFO] [1749830220.478132643] [publish_wind_direction]: Social Info: {'S': 2, 'N': 3}
+1749830220.4820662 [publish_wind_direction-4] [INFO] [1749830220.481380143] [publish_wind_direction]: *** Uninformed ***
+1749830220.4861526 [publish_wind_direction-4] [INFO] [1749830220.485571051] [publish_wind_direction]: Publishing: id1193:N
+1749830220.4887180 [publish_wind_direction-4] [INFO] [1749830220.488140051] [publish_wind_direction]: ------------------
+1749830225.4761314 [service_neighbours_opinions-2] [INFO] [1749830225.475380696] [service_neighbours_opinions]: All opinions size= 19
+1749830225.4810343 [publish_wind_direction-4] [INFO] [1749830225.479840807] [publish_wind_direction]: Social Info: {'N': 4, 'W': 1}
+1749830225.4839950 [publish_wind_direction-4] [INFO] [1749830225.483079807] [publish_wind_direction]: *** Uninformed ***
+1749830225.4876063 [publish_wind_direction-4] [INFO] [1749830225.486928437] [publish_wind_direction]: Publishing: id1193:N
+1749830225.4901962 [publish_wind_direction-4] [INFO] [1749830225.489645048] [publish_wind_direction]: ------------------
+1749830226.2836180 [service_vicon_node-1] [INFO] [1749830226.282908269] [service_vicon_node]: Frame_no: 228415
+1749830230.4748194 [service_neighbours_opinions-2] [INFO] [1749830230.474025008] [service_neighbours_opinions]: All opinions size= 19
+1749830230.4791207 [publish_wind_direction-4] [INFO] [1749830230.478429860] [publish_wind_direction]: Social Info: {'W': 3, 'E': 2}
+1749830230.4825897 [publish_wind_direction-4] [INFO] [1749830230.481570415] [publish_wind_direction]: *** Uninformed ***
+1749830230.4861901 [publish_wind_direction-4] [INFO] [1749830230.485387526] [publish_wind_direction]: Publishing: id1193:W
+1749830230.4900815 [publish_wind_direction-4] [INFO] [1749830230.487957674] [publish_wind_direction]: ------------------
+1749830235.4746392 [service_neighbours_opinions-2] [INFO] [1749830235.473870857] [service_neighbours_opinions]: All opinions size= 19
+1749830235.4795036 [publish_wind_direction-4] [INFO] [1749830235.478787708] [publish_wind_direction]: Social Info: {'W': 4, 'E': 1}
+1749830235.4831686 [publish_wind_direction-4] [INFO] [1749830235.482451190] [publish_wind_direction]: *** Uninformed ***
+1749830235.4881895 [publish_wind_direction-4] [INFO] [1749830235.487274264] [publish_wind_direction]: Publishing: id1193:W
+1749830235.4913688 [publish_wind_direction-4] [INFO] [1749830235.490583542] [publish_wind_direction]: ------------------
+1749830236.4533641 [service_vicon_node-1] [INFO] [1749830236.452581819] [service_vicon_node]: Frame_no: 228720
+1749830240.4748054 [service_neighbours_opinions-2] [INFO] [1749830240.473827224] [service_neighbours_opinions]: All opinions size= 19
+1749830240.4790828 [publish_wind_direction-4] [INFO] [1749830240.478478761] [publish_wind_direction]: Social Info: {'N': 2, 'W': 1, 'E': 1}
+1749830240.4820347 [publish_wind_direction-4] [INFO] [1749830240.481249242] [publish_wind_direction]: *** Uninformed ***
+1749830240.4864016 [publish_wind_direction-4] [INFO] [1749830240.485441057] [publish_wind_direction]: Publishing: id1193:N
+1749830240.4890499 [publish_wind_direction-4] [INFO] [1749830240.488276909] [publish_wind_direction]: ------------------
+1749830245.4747303 [service_neighbours_opinions-2] [INFO] [1749830245.473919499] [service_neighbours_opinions]: All opinions size= 19
+1749830245.4792502 [publish_wind_direction-4] [INFO] [1749830245.478495758] [publish_wind_direction]: Social Info: {'W': 3}
+1749830245.4823229 [publish_wind_direction-4] [INFO] [1749830245.481671462] [publish_wind_direction]: *** Uninformed ***
+1749830245.4863274 [publish_wind_direction-4] [INFO] [1749830245.485759684] [publish_wind_direction]: Publishing: id1193:W
+1749830245.4890954 [publish_wind_direction-4] [INFO] [1749830245.488478610] [publish_wind_direction]: ------------------
+1749830246.6195536 [service_vicon_node-1] [INFO] [1749830246.618845498] [service_vicon_node]: Frame_no: 229025
+1749830250.4754665 [service_neighbours_opinions-2] [INFO] [1749830250.474736866] [service_neighbours_opinions]: All opinions size= 19
+1749830250.4794948 [publish_wind_direction-4] [INFO] [1749830250.478837588] [publish_wind_direction]: Social Info: {'W': 3}
+1749830250.4838896 [publish_wind_direction-4] [INFO] [1749830250.483239588] [publish_wind_direction]: *** Uninformed ***
+1749830250.4873378 [publish_wind_direction-4] [INFO] [1749830250.486788662] [publish_wind_direction]: Publishing: id1193:W
+1749830250.4899459 [publish_wind_direction-4] [INFO] [1749830250.489399848] [publish_wind_direction]: ------------------
+1749830255.4744003 [service_neighbours_opinions-2] [INFO] [1749830255.473652419] [service_neighbours_opinions]: All opinions size= 19
+1749830255.4787884 [publish_wind_direction-4] [INFO] [1749830255.478080826] [publish_wind_direction]: Social Info: {'W': 2}
+1749830255.4819057 [publish_wind_direction-4] [INFO] [1749830255.481215178] [publish_wind_direction]: *** Uninformed ***
+1749830255.4855602 [publish_wind_direction-4] [INFO] [1749830255.484984604] [publish_wind_direction]: Publishing: id1193:W
+1749830255.4881353 [publish_wind_direction-4] [INFO] [1749830255.487598974] [publish_wind_direction]: ------------------
+1749830256.8517115 [service_vicon_node-1] [INFO] [1749830256.850979973] [service_vicon_node]: Frame_no: 229332
+1749830260.4752560 [service_neighbours_opinions-2] [INFO] [1749830260.474446564] [service_neighbours_opinions]: All opinions size= 19
+1749830260.4802945 [publish_wind_direction-4] [INFO] [1749830260.479583397] [publish_wind_direction]: Social Info: {'W': 2, 'N': 1}
+1749830260.4830196 [publish_wind_direction-4] [INFO] [1749830260.482411397] [publish_wind_direction]: *** Uninformed ***
+1749830260.4869308 [publish_wind_direction-4] [INFO] [1749830260.486123657] [publish_wind_direction]: Publishing: id1193:W
+1749830260.4899073 [publish_wind_direction-4] [INFO] [1749830260.488904934] [publish_wind_direction]: ------------------
+1749830265.4750004 [service_neighbours_opinions-2] [INFO] [1749830265.474227857] [service_neighbours_opinions]: All opinions size= 19
+1749830265.4798515 [publish_wind_direction-4] [INFO] [1749830265.479197209] [publish_wind_direction]: Social Info: {'W': 1, 'N': 2}
+1749830265.4827607 [publish_wind_direction-4] [INFO] [1749830265.482128765] [publish_wind_direction]: *** Uninformed ***
+1749830265.4865139 [publish_wind_direction-4] [INFO] [1749830265.485893561] [publish_wind_direction]: Publishing: id1193:N
+1749830265.4893482 [publish_wind_direction-4] [INFO] [1749830265.488552357] [publish_wind_direction]: ------------------
+1749830267.0250764 [service_vicon_node-1] [INFO] [1749830267.024308430] [service_vicon_node]: Frame_no: 229637
+1749830270.4747882 [service_neighbours_opinions-2] [INFO] [1749830270.474008743] [service_neighbours_opinions]: All opinions size= 19
+1749830270.4792640 [publish_wind_direction-4] [INFO] [1749830270.478391817] [publish_wind_direction]: Social Info: {'N': 1, 'S': 1, 'W': 2}
+1749830270.4820111 [publish_wind_direction-4] [INFO] [1749830270.481287817] [publish_wind_direction]: *** Uninformed ***
+1749830270.4860878 [publish_wind_direction-4] [INFO] [1749830270.485396521] [publish_wind_direction]: Publishing: id1193:W
+1749830270.4885569 [publish_wind_direction-4] [INFO] [1749830270.488016984] [publish_wind_direction]: ------------------
+1749830275.4746253 [service_neighbours_opinions-2] [INFO] [1749830275.473841648] [service_neighbours_opinions]: All opinions size= 19
+1749830275.4787638 [publish_wind_direction-4] [INFO] [1749830275.478149888] [publish_wind_direction]: Social Info: {'S': 2, 'W': 1, 'N': 1}
+1749830275.4821894 [publish_wind_direction-4] [INFO] [1749830275.481340833] [publish_wind_direction]: *** Uninformed ***
+1749830275.4888847 [publish_wind_direction-4] [INFO] [1749830275.488214981] [publish_wind_direction]: Publishing: id1193:S
+1749830275.4927733 [publish_wind_direction-4] [INFO] [1749830275.492236314] [publish_wind_direction]: ------------------
+1749830277.1582086 [service_vicon_node-1] [INFO] [1749830277.157469054] [service_vicon_node]: Frame_no: 229941
+1749830280.4746213 [service_neighbours_opinions-2] [INFO] [1749830280.473794237] [service_neighbours_opinions]: All opinions size= 19
+1749830280.4796708 [publish_wind_direction-4] [INFO] [1749830280.478930496] [publish_wind_direction]: Social Info: {'N': 2, 'S': 1, 'E': 1, 'W': 1}
+1749830280.4858639 [publish_wind_direction-4] [INFO] [1749830280.484597700] [publish_wind_direction]: *** Uninformed ***
+1749830280.4896598 [publish_wind_direction-4] [INFO] [1749830280.488991830] [publish_wind_direction]: Publishing: id1193:N
+1749830280.4930267 [publish_wind_direction-4] [INFO] [1749830280.492296496] [publish_wind_direction]: ------------------
+1749830285.4746039 [service_neighbours_opinions-2] [INFO] [1749830285.473838864] [service_neighbours_opinions]: All opinions size= 19
+1749830285.4789705 [publish_wind_direction-4] [INFO] [1749830285.478305456] [publish_wind_direction]: Social Info: {'N': 3, 'S': 1, 'W': 1}
+1749830285.4828548 [publish_wind_direction-4] [INFO] [1749830285.481412660] [publish_wind_direction]: *** Uninformed ***
+1749830285.4865623 [publish_wind_direction-4] [INFO] [1749830285.485880216] [publish_wind_direction]: Publishing: id1193:N
+1749830285.4893582 [publish_wind_direction-4] [INFO] [1749830285.488745105] [publish_wind_direction]: ------------------
+1749830287.3144822 [service_vicon_node-1] [INFO] [1749830287.313752492] [service_vicon_node]: Frame_no: 230245
+1749830290.4747732 [service_neighbours_opinions-2] [INFO] [1749830290.474014472] [service_neighbours_opinions]: All opinions size= 19
+1749830290.4789951 [publish_wind_direction-4] [INFO] [1749830290.478362157] [publish_wind_direction]: Social Info: {'W': 3, 'N': 1}
+1749830290.4826589 [publish_wind_direction-4] [INFO] [1749830290.482063694] [publish_wind_direction]: *** Uninformed ***
+1749830290.4902079 [publish_wind_direction-4] [INFO] [1749830290.489612768] [publish_wind_direction]: Publishing: id1193:W
+1749830290.4937828 [publish_wind_direction-4] [INFO] [1749830290.493185361] [publish_wind_direction]: ------------------
+1749830295.4744089 [service_neighbours_opinions-2] [INFO] [1749830295.473638080] [service_neighbours_opinions]: All opinions size= 19
+1749830295.4788702 [publish_wind_direction-4] [INFO] [1749830295.478108932] [publish_wind_direction]: Social Info: {'S': 1, 'W': 2}
+1749830295.4829316 [publish_wind_direction-4] [INFO] [1749830295.481021284] [publish_wind_direction]: *** Uninformed ***
+1749830295.4854853 [publish_wind_direction-4] [INFO] [1749830295.484742987] [publish_wind_direction]: Publishing: id1193:W
+1749830295.4881215 [publish_wind_direction-4] [INFO] [1749830295.487402969] [publish_wind_direction]: ------------------
+1749830297.4552536 [service_vicon_node-1] [INFO] [1749830297.454547042] [service_vicon_node]: Frame_no: 230550
+1749830300.4750621 [service_neighbours_opinions-2] [INFO] [1749830300.474249133] [service_neighbours_opinions]: All opinions size= 19
+1749830300.4797900 [publish_wind_direction-4] [INFO] [1749830300.478981744] [publish_wind_direction]: Social Info: {'E': 2}
+1749830300.4831972 [publish_wind_direction-4] [INFO] [1749830300.482311151] [publish_wind_direction]: *** Uninformed ***
+1749830300.4872866 [publish_wind_direction-4] [INFO] [1749830300.486703207] [publish_wind_direction]: Publishing: id1193:E
+1749830300.4900017 [publish_wind_direction-4] [INFO] [1749830300.489370744] [publish_wind_direction]: ------------------
+1749830305.4748011 [service_neighbours_opinions-2] [INFO] [1749830305.474040630] [service_neighbours_opinions]: All opinions size= 19
+1749830305.4789457 [publish_wind_direction-4] [INFO] [1749830305.478358130] [publish_wind_direction]: Social Info: {'N': 1, 'W': 1}
+1749830305.4817920 [publish_wind_direction-4] [INFO] [1749830305.481121815] [publish_wind_direction]: *** Uninformed ***
+1749830305.4895151 [publish_wind_direction-4] [INFO] [1749830305.488887241] [publish_wind_direction]: Publishing: id1193:W
+1749830305.4936676 [publish_wind_direction-4] [INFO] [1749830305.493121667] [publish_wind_direction]: ------------------
+1749830307.7215958 [service_vicon_node-1] [INFO] [1749830307.720844758] [service_vicon_node]: Frame_no: 230858
+1749830310.4746742 [service_neighbours_opinions-2] [INFO] [1749830310.473836571] [service_neighbours_opinions]: All opinions size= 19
+1749830310.4795463 [publish_wind_direction-4] [INFO] [1749830310.478833090] [publish_wind_direction]: Social Info: {'S': 1, 'W': 1}
+1749830310.4831562 [publish_wind_direction-4] [INFO] [1749830310.482181516] [publish_wind_direction]: *** Uninformed ***
+1749830310.4873316 [publish_wind_direction-4] [INFO] [1749830310.486674312] [publish_wind_direction]: Publishing: id1193:S
+1749830310.4899457 [publish_wind_direction-4] [INFO] [1749830310.489384942] [publish_wind_direction]: ------------------
+1749830315.4749942 [service_neighbours_opinions-2] [INFO] [1749830315.474238124] [service_neighbours_opinions]: All opinions size= 19
+1749830315.4824727 [publish_wind_direction-4] [INFO] [1749830315.481849568] [publish_wind_direction]: Social Info: {'W': 1, 'S': 1}
+1749830315.4877517 [publish_wind_direction-4] [INFO] [1749830315.487131068] [publish_wind_direction]: *** Uninformed ***
+1749830315.4939892 [publish_wind_direction-4] [INFO] [1749830315.493388124] [publish_wind_direction]: Publishing: id1193:W
+1749830315.4975395 [publish_wind_direction-4] [INFO] [1749830315.497006661] [publish_wind_direction]: ------------------
+1749830317.8877497 [service_vicon_node-1] [INFO] [1749830317.886904882] [service_vicon_node]: Frame_no: 231163
+1749830320.4758129 [service_neighbours_opinions-2] [INFO] [1749830320.474724139] [service_neighbours_opinions]: All opinions size= 19
+1749830320.4800739 [publish_wind_direction-4] [INFO] [1749830320.479442010] [publish_wind_direction]: Social Info: {'W': 2}
+1749830320.4828269 [publish_wind_direction-4] [INFO] [1749830320.482223658] [publish_wind_direction]: *** Uninformed ***
+1749830320.4868009 [publish_wind_direction-4] [INFO] [1749830320.486204658] [publish_wind_direction]: Publishing: id1193:W
+1749830320.4913731 [publish_wind_direction-4] [INFO] [1749830320.490409954] [publish_wind_direction]: ------------------
+1749830325.4744260 [service_neighbours_opinions-2] [INFO] [1749830325.473587581] [service_neighbours_opinions]: All opinions size= 19
+1749830325.4788299 [publish_wind_direction-4] [INFO] [1749830325.478154284] [publish_wind_direction]: Social Info: {'W': 1, 'E': 1, 'S': 1}
+1749830325.4827495 [publish_wind_direction-4] [INFO] [1749830325.481593099] [publish_wind_direction]: *** Uninformed ***
+1749830325.4872100 [publish_wind_direction-4] [INFO] [1749830325.486585747] [publish_wind_direction]: Publishing: id1193:W
+1749830325.4900303 [publish_wind_direction-4] [INFO] [1749830325.489234396] [publish_wind_direction]: ------------------
+1749830328.0594366 [service_vicon_node-1] [INFO] [1749830328.058722135] [service_vicon_node]: Frame_no: 231468
+1749830330.4745688 [service_neighbours_opinions-2] [INFO] [1749830330.473835689] [service_neighbours_opinions]: All opinions size= 19
+1749830330.4786456 [publish_wind_direction-4] [INFO] [1749830330.478035689] [publish_wind_direction]: Social Info: {'S': 1, 'N': 1, 'W': 1}
+1749830330.4812317 [publish_wind_direction-4] [INFO] [1749830330.480610411] [publish_wind_direction]: *** Uninformed ***
+1749830330.4876559 [publish_wind_direction-4] [INFO] [1749830330.484531448] [publish_wind_direction]: Publishing: id1193:W
+1749830330.4892261 [publish_wind_direction-4] [INFO] [1749830330.487170078] [publish_wind_direction]: ------------------
+1749830335.4747646 [service_neighbours_opinions-2] [INFO] [1749830335.474011390] [service_neighbours_opinions]: All opinions size= 19
+1749830335.4791985 [publish_wind_direction-4] [INFO] [1749830335.478613593] [publish_wind_direction]: Social Info: {'W': 3}
+1749830335.4816594 [publish_wind_direction-4] [INFO] [1749830335.481140797] [publish_wind_direction]: *** Uninformed ***
+1749830335.4868054 [publish_wind_direction-4] [INFO] [1749830335.486239186] [publish_wind_direction]: Publishing: id1193:W
+1749830335.4905581 [publish_wind_direction-4] [INFO] [1749830335.489998334] [publish_wind_direction]: ------------------
+1749830338.2878428 [service_vicon_node-1] [INFO] [1749830338.287114999] [service_vicon_node]: Frame_no: 231775
+1749830340.4743831 [service_neighbours_opinions-2] [INFO] [1749830340.473625720] [service_neighbours_opinions]: All opinions size= 19
+1749830340.4787307 [publish_wind_direction-4] [INFO] [1749830340.478095627] [publish_wind_direction]: Social Info: {'W': 3}
+1749830340.4814680 [publish_wind_direction-4] [INFO] [1749830340.480893424] [publish_wind_direction]: *** Uninformed ***
+1749830340.4851837 [publish_wind_direction-4] [INFO] [1749830340.484568868] [publish_wind_direction]: Publishing: id1193:W
+1749830340.4879129 [publish_wind_direction-4] [INFO] [1749830340.487337664] [publish_wind_direction]: ------------------
+1749830345.4746881 [service_neighbours_opinions-2] [INFO] [1749830345.473883958] [service_neighbours_opinions]: All opinions size= 19
+1749830345.4810987 [publish_wind_direction-4] [INFO] [1749830345.478594976] [publish_wind_direction]: Social Info: {'W': 3}
+1749830345.4843619 [publish_wind_direction-4] [INFO] [1749830345.483639143] [publish_wind_direction]: *** Uninformed ***
+1749830345.4884627 [publish_wind_direction-4] [INFO] [1749830345.487861069] [publish_wind_direction]: Publishing: id1193:W
+1749830345.4911900 [publish_wind_direction-4] [INFO] [1749830345.490611161] [publish_wind_direction]: ------------------
+1749830348.4238813 [service_vicon_node-1] [INFO] [1749830348.423176808] [service_vicon_node]: Frame_no: 232079
+1749830350.4745345 [service_neighbours_opinions-2] [INFO] [1749830350.473784140] [service_neighbours_opinions]: All opinions size= 19
+1749830350.4808581 [publish_wind_direction-4] [INFO] [1749830350.478175677] [publish_wind_direction]: Social Info: {'W': 2, 'N': 1}
+1749830350.4823897 [publish_wind_direction-4] [INFO] [1749830350.480924307] [publish_wind_direction]: *** Uninformed ***
+1749830350.4856505 [publish_wind_direction-4] [INFO] [1749830350.485025881] [publish_wind_direction]: Publishing: id1193:W
+1749830350.4885433 [publish_wind_direction-4] [INFO] [1749830350.487936807] [publish_wind_direction]: ------------------
+1749830355.4745677 [service_neighbours_opinions-2] [INFO] [1749830355.473811489] [service_neighbours_opinions]: All opinions size= 19
+1749830355.4788363 [publish_wind_direction-4] [INFO] [1749830355.478160878] [publish_wind_direction]: Social Info: {'W': 1, 'S': 1}
+1749830355.4817133 [publish_wind_direction-4] [INFO] [1749830355.481119192] [publish_wind_direction]: *** Uninformed ***
+1749830355.4859705 [publish_wind_direction-4] [INFO] [1749830355.485345470] [publish_wind_direction]: Publishing: id1193:W
+1749830355.4889269 [publish_wind_direction-4] [INFO] [1749830355.488251267] [publish_wind_direction]: ------------------
+1749830358.6511800 [service_vicon_node-1] [INFO] [1749830358.650436524] [service_vicon_node]: Frame_no: 232386
+1749830360.4743137 [service_neighbours_opinions-2] [INFO] [1749830360.473584264] [service_neighbours_opinions]: All opinions size= 19
+1749830360.4784837 [publish_wind_direction-4] [INFO] [1749830360.477866430] [publish_wind_direction]: Social Info: {'N': 1, 'W': 1}
+1749830360.4812038 [publish_wind_direction-4] [INFO] [1749830360.480585727] [publish_wind_direction]: *** Uninformed ***
+1749830360.4858422 [publish_wind_direction-4] [INFO] [1749830360.484831930] [publish_wind_direction]: Publishing: id1193:N
+1749830360.4885948 [publish_wind_direction-4] [INFO] [1749830360.487774560] [publish_wind_direction]: ------------------
+1749830365.4747007 [service_neighbours_opinions-2] [INFO] [1749830365.473950964] [service_neighbours_opinions]: All opinions size= 19
+1749830365.4795043 [publish_wind_direction-4] [INFO] [1749830365.478854872] [publish_wind_direction]: Social Info: {'N': 2, 'W': 1}
+1749830365.4828718 [publish_wind_direction-4] [INFO] [1749830365.482218298] [publish_wind_direction]: *** Uninformed ***
+1749830365.4872291 [publish_wind_direction-4] [INFO] [1749830365.486631335] [publish_wind_direction]: Publishing: id1193:N
+1749830365.4897420 [publish_wind_direction-4] [INFO] [1749830365.489196946] [publish_wind_direction]: ------------------
+1749830368.7888701 [service_vicon_node-1] [INFO] [1749830368.788091925] [service_vicon_node]: Frame_no: 232690
+1749830370.4744918 [service_neighbours_opinions-2] [INFO] [1749830370.473715480] [service_neighbours_opinions]: All opinions size= 19
+1749830370.4791110 [publish_wind_direction-4] [INFO] [1749830370.478161739] [publish_wind_direction]: Social Info: {'N': 2}
+1749830370.4816792 [publish_wind_direction-4] [INFO] [1749830370.481022202] [publish_wind_direction]: *** Uninformed ***
+1749830370.4854562 [publish_wind_direction-4] [INFO] [1749830370.484857258] [publish_wind_direction]: Publishing: id1193:N
+1749830370.4882069 [publish_wind_direction-4] [INFO] [1749830370.487595665] [publish_wind_direction]: ------------------
+1749830375.4747517 [service_neighbours_opinions-2] [INFO] [1749830375.473980032] [service_neighbours_opinions]: All opinions size= 19
+1749830375.4791715 [publish_wind_direction-4] [INFO] [1749830375.478495458] [publish_wind_direction]: Social Info: {'W': 4}
+1749830375.4818099 [publish_wind_direction-4] [INFO] [1749830375.481245347] [publish_wind_direction]: *** Uninformed ***
+1749830375.4855244 [publish_wind_direction-4] [INFO] [1749830375.484948310] [publish_wind_direction]: Publishing: id1193:W
+1749830375.4882307 [publish_wind_direction-4] [INFO] [1749830375.487646236] [publish_wind_direction]: ------------------
+1749830378.9872737 [service_vicon_node-1] [INFO] [1749830378.986514901] [service_vicon_node]: Frame_no: 232996
+1749830380.4745610 [service_neighbours_opinions-2] [INFO] [1749830380.473789141] [service_neighbours_opinions]: All opinions size= 19
+1749830380.4791200 [publish_wind_direction-4] [INFO] [1749830380.478511029] [publish_wind_direction]: Social Info: {'W': 3, 'E': 1, 'S': 1}
+1749830380.4819310 [publish_wind_direction-4] [INFO] [1749830380.481316622] [publish_wind_direction]: *** Uninformed ***
+1749830380.4859791 [publish_wind_direction-4] [INFO] [1749830380.485318603] [publish_wind_direction]: Publishing: id1193:W
+1749830380.4888794 [publish_wind_direction-4] [INFO] [1749830380.488247159] [publish_wind_direction]: ------------------
+1749830385.4746687 [service_neighbours_opinions-2] [INFO] [1749830385.473894526] [service_neighbours_opinions]: All opinions size= 19
+1749830385.4789636 [publish_wind_direction-4] [INFO] [1749830385.478289971] [publish_wind_direction]: Social Info: {'N': 2, 'W': 1, 'S': 1}
+1749830385.4823728 [publish_wind_direction-4] [INFO] [1749830385.481251471] [publish_wind_direction]: *** Uninformed ***
+1749830385.4858642 [publish_wind_direction-4] [INFO] [1749830385.485078156] [publish_wind_direction]: Publishing: id1193:N
+1749830385.4885418 [publish_wind_direction-4] [INFO] [1749830385.487771526] [publish_wind_direction]: ------------------
+1749830389.1881979 [service_vicon_node-1] [INFO] [1749830389.187483098] [service_vicon_node]: Frame_no: 233302
+1749830390.4747543 [service_neighbours_opinions-2] [INFO] [1749830390.473994505] [service_neighbours_opinions]: All opinions size= 19
+1749830390.4790313 [publish_wind_direction-4] [INFO] [1749830390.478404635] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1, 'W': 1}
+1749830390.4854338 [publish_wind_direction-4] [INFO] [1749830390.481204709] [publish_wind_direction]: *** Uninformed ***
+1749830390.4871633 [publish_wind_direction-4] [INFO] [1749830390.485548394] [publish_wind_direction]: Publishing: id1193:W
+1749830390.4891369 [publish_wind_direction-4] [INFO] [1749830390.488528949] [publish_wind_direction]: ------------------
+1749830395.4746685 [service_neighbours_opinions-2] [INFO] [1749830395.473921909] [service_neighbours_opinions]: All opinions size= 19
+1749830395.4789412 [publish_wind_direction-4] [INFO] [1749830395.478268132] [publish_wind_direction]: Social Info: {'E': 1, 'W': 1, 'N': 1}
+1749830395.4817219 [publish_wind_direction-4] [INFO] [1749830395.481076835] [publish_wind_direction]: *** Uninformed ***
+1749830395.4864740 [publish_wind_direction-4] [INFO] [1749830395.485865428] [publish_wind_direction]: Publishing: id1193:W
+1749830395.4892030 [publish_wind_direction-4] [INFO] [1749830395.488586502] [publish_wind_direction]: ------------------
+1749830399.4209902 [service_vicon_node-1] [INFO] [1749830399.420213463] [service_vicon_node]: Frame_no: 233609
+1749830400.4745893 [service_neighbours_opinions-2] [INFO] [1749830400.473818388] [service_neighbours_opinions]: All opinions size= 19
+1749830400.4787514 [publish_wind_direction-4] [INFO] [1749830400.478152906] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1}
+1749830400.4813924 [publish_wind_direction-4] [INFO] [1749830400.480843073] [publish_wind_direction]: *** Uninformed ***
+1749830400.4874299 [publish_wind_direction-4] [INFO] [1749830400.485536017] [publish_wind_direction]: Publishing: id1193:E
+1749830400.4917514 [publish_wind_direction-4] [INFO] [1749830400.491147555] [publish_wind_direction]: ------------------
+1749830405.4752498 [service_neighbours_opinions-2] [INFO] [1749830405.474465755] [service_neighbours_opinions]: All opinions size= 19
+1749830405.4797206 [publish_wind_direction-4] [INFO] [1749830405.479068366] [publish_wind_direction]: Social Info: {'E': 3}
+1749830405.4828246 [publish_wind_direction-4] [INFO] [1749830405.482185218] [publish_wind_direction]: *** Uninformed ***
+1749830405.4869945 [publish_wind_direction-4] [INFO] [1749830405.486305774] [publish_wind_direction]: Publishing: id1193:E
+1749830405.4897790 [publish_wind_direction-4] [INFO] [1749830405.489214015] [publish_wind_direction]: ------------------
+1749830409.5888796 [service_vicon_node-1] [INFO] [1749830409.588114049] [service_vicon_node]: Frame_no: 233914
+1749830410.4746952 [service_neighbours_opinions-2] [INFO] [1749830410.473889400] [service_neighbours_opinions]: All opinions size= 19
+1749830410.4796045 [publish_wind_direction-4] [INFO] [1749830410.478912641] [publish_wind_direction]: Social Info: {'S': 1, 'W': 2, 'N': 1, 'E': 1}
+1749830410.4838929 [publish_wind_direction-4] [INFO] [1749830410.483226345] [publish_wind_direction]: *** Uninformed ***
+1749830410.4898674 [publish_wind_direction-4] [INFO] [1749830410.489140252] [publish_wind_direction]: Publishing: id1193:W
+1749830410.4934433 [publish_wind_direction-4] [INFO] [1749830410.492646160] [publish_wind_direction]: ------------------
+1749830415.4747467 [service_neighbours_opinions-2] [INFO] [1749830415.473952860] [service_neighbours_opinions]: All opinions size= 19
+1749830415.4793098 [publish_wind_direction-4] [INFO] [1749830415.478612786] [publish_wind_direction]: Social Info: {'S': 2, 'E': 3, 'N': 1}
+1749830415.4825454 [publish_wind_direction-4] [INFO] [1749830415.481885768] [publish_wind_direction]: *** Uninformed ***
+1749830415.4883490 [publish_wind_direction-4] [INFO] [1749830415.485999046] [publish_wind_direction]: Publishing: id1193:E
+1749830415.4897752 [publish_wind_direction-4] [INFO] [1749830415.488848546] [publish_wind_direction]: ------------------
+1749830419.7542620 [service_vicon_node-1] [INFO] [1749830419.753535617] [service_vicon_node]: Frame_no: 234219
+1749830420.4760172 [service_neighbours_opinions-2] [INFO] [1749830420.475255746] [service_neighbours_opinions]: All opinions size= 19
+1749830420.4808459 [publish_wind_direction-4] [INFO] [1749830420.479804098] [publish_wind_direction]: Social Info: {'E': 4, 'W': 1, 'N': 1}
+1749830420.4872537 [publish_wind_direction-4] [INFO] [1749830420.482677098] [publish_wind_direction]: *** Uninformed ***
+1749830420.4903843 [publish_wind_direction-4] [INFO] [1749830420.489711043] [publish_wind_direction]: Publishing: id1193:E
+1749830420.4932442 [publish_wind_direction-4] [INFO] [1749830420.492573506] [publish_wind_direction]: ------------------
+1749830425.4747016 [service_neighbours_opinions-2] [INFO] [1749830425.473920466] [service_neighbours_opinions]: All opinions size= 19
+1749830425.4789095 [publish_wind_direction-4] [INFO] [1749830425.478274040] [publish_wind_direction]: Social Info: {'N': 1, 'E': 2, 'W': 1}
+1749830425.4832399 [publish_wind_direction-4] [INFO] [1749830425.482471373] [publish_wind_direction]: *** Uninformed ***
+1749830425.4872286 [publish_wind_direction-4] [INFO] [1749830425.486616577] [publish_wind_direction]: Publishing: id1193:E
+1749830425.4899311 [publish_wind_direction-4] [INFO] [1749830425.489365466] [publish_wind_direction]: ------------------
+1749830429.9550354 [service_vicon_node-1] [INFO] [1749830429.954314981] [service_vicon_node]: Frame_no: 234525
+1749830430.4746325 [service_neighbours_opinions-2] [INFO] [1749830430.473868074] [service_neighbours_opinions]: All opinions size= 19
+1749830430.4792836 [publish_wind_direction-4] [INFO] [1749830430.478328259] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1}
+1749830430.4821341 [publish_wind_direction-4] [INFO] [1749830430.481380129] [publish_wind_direction]: *** Uninformed ***
+1749830430.4864202 [publish_wind_direction-4] [INFO] [1749830430.485797018] [publish_wind_direction]: Publishing: id1193:N
+1749830430.4895918 [publish_wind_direction-4] [INFO] [1749830430.488990629] [publish_wind_direction]: ------------------
+1749830435.4746251 [service_neighbours_opinions-2] [INFO] [1749830435.473883571] [service_neighbours_opinions]: All opinions size= 19
+1749830435.4789639 [publish_wind_direction-4] [INFO] [1749830435.478084478] [publish_wind_direction]: Social Info: {'N': 1, 'S': 1}
+1749830435.4818482 [publish_wind_direction-4] [INFO] [1749830435.480993904] [publish_wind_direction]: *** Uninformed ***
+1749830435.4859126 [publish_wind_direction-4] [INFO] [1749830435.485268071] [publish_wind_direction]: Publishing: id1193:N
+1749830435.4891481 [publish_wind_direction-4] [INFO] [1749830435.488167237] [publish_wind_direction]: ------------------
+1749830440.1544883 [service_vicon_node-1] [INFO] [1749830440.153762512] [service_vicon_node]: Frame_no: 234831
+1749830440.4745798 [service_neighbours_opinions-2] [INFO] [1749830440.473846846] [service_neighbours_opinions]: All opinions size= 19
+1749830440.4788253 [publish_wind_direction-4] [INFO] [1749830440.478178346] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1}
+1749830440.4816656 [publish_wind_direction-4] [INFO] [1749830440.481047290] [publish_wind_direction]: *** Uninformed ***
+1749830440.4860096 [publish_wind_direction-4] [INFO] [1749830440.485399271] [publish_wind_direction]: Publishing: id1193:N
+1749830440.4889102 [publish_wind_direction-4] [INFO] [1749830440.488286623] [publish_wind_direction]: ------------------
+1749830445.4745381 [service_neighbours_opinions-2] [INFO] [1749830445.473809805] [service_neighbours_opinions]: All opinions size= 19
+1749830445.4791970 [publish_wind_direction-4] [INFO] [1749830445.478243361] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1}
+1749830445.4820943 [publish_wind_direction-4] [INFO] [1749830445.481249343] [publish_wind_direction]: *** Uninformed ***
+1749830445.4860430 [publish_wind_direction-4] [INFO] [1749830445.485436287] [publish_wind_direction]: Publishing: id1193:N
+1749830445.4887280 [publish_wind_direction-4] [INFO] [1749830445.488150824] [publish_wind_direction]: ------------------
+1749830450.3257546 [service_vicon_node-1] [INFO] [1749830450.325026377] [service_vicon_node]: Frame_no: 235136
+1749830450.4750726 [service_neighbours_opinions-2] [INFO] [1749830450.474293951] [service_neighbours_opinions]: All opinions size= 19
+1749830450.4797621 [publish_wind_direction-4] [INFO] [1749830450.478880821] [publish_wind_direction]: Social Info: {'N': 1, 'S': 1, 'W': 1}
+1749830450.4828205 [publish_wind_direction-4] [INFO] [1749830450.481951488] [publish_wind_direction]: *** Uninformed ***
+1749830450.4867756 [publish_wind_direction-4] [INFO] [1749830450.486199136] [publish_wind_direction]: Publishing: id1193:S
+1749830450.4894226 [publish_wind_direction-4] [INFO] [1749830450.488859969] [publish_wind_direction]: ------------------
+1749830455.4748280 [service_neighbours_opinions-2] [INFO] [1749830455.474068781] [service_neighbours_opinions]: All opinions size= 19
+1749830455.4789894 [publish_wind_direction-4] [INFO] [1749830455.478413540] [publish_wind_direction]: Social Info: {'N': 1, 'S': 1, 'W': 1}
+1749830455.4819071 [publish_wind_direction-4] [INFO] [1749830455.481271614] [publish_wind_direction]: *** Uninformed ***
+1749830455.4889147 [publish_wind_direction-4] [INFO] [1749830455.488005707] [publish_wind_direction]: Publishing: id1193:W
+1749830455.4915967 [publish_wind_direction-4] [INFO] [1749830455.490819966] [publish_wind_direction]: ------------------
+1749830460.4744546 [service_neighbours_opinions-2] [INFO] [1749830460.473594797] [service_neighbours_opinions]: All opinions size= 19
+1749830460.4789374 [publish_wind_direction-4] [INFO] [1749830460.478261741] [publish_wind_direction]: Social Info: {'N': 1, 'E': 2}
+1749830460.4821305 [publish_wind_direction-4] [INFO] [1749830460.481489019] [publish_wind_direction]: *** Uninformed ***
+1749830460.4866560 [publish_wind_direction-4] [INFO] [1749830460.486066500] [publish_wind_direction]: Publishing: id1193:E
+1749830460.4891376 [publish_wind_direction-4] [INFO] [1749830460.488552389] [publish_wind_direction]: ------------------
+1749830460.4945626 [service_vicon_node-1] [INFO] [1749830460.493901926] [service_vicon_node]: Frame_no: 235441
+1749830465.4744527 [service_neighbours_opinions-2] [INFO] [1749830465.473686831] [service_neighbours_opinions]: All opinions size= 19
+1749830465.4785888 [publish_wind_direction-4] [INFO] [1749830465.477963627] [publish_wind_direction]: Social Info: {'N': 1, 'E': 2}
+1749830465.4813261 [publish_wind_direction-4] [INFO] [1749830465.480676571] [publish_wind_direction]: *** Uninformed ***
+1749830465.4864850 [publish_wind_direction-4] [INFO] [1749830465.485560923] [publish_wind_direction]: Publishing: id1193:E
+1749830465.4898174 [publish_wind_direction-4] [INFO] [1749830465.488992275] [publish_wind_direction]: ------------------
+1749830470.4747887 [service_neighbours_opinions-2] [INFO] [1749830470.474000124] [service_neighbours_opinions]: All opinions size= 19
+1749830470.4791617 [publish_wind_direction-4] [INFO] [1749830470.478561291] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1, 'S': 1}
+1749830470.4821384 [publish_wind_direction-4] [INFO] [1749830470.481430457] [publish_wind_direction]: *** Uninformed ***
+1749830470.4879663 [publish_wind_direction-4] [INFO] [1749830470.487310365] [publish_wind_direction]: Publishing: id1193:E
+1749830470.4927249 [publish_wind_direction-4] [INFO] [1749830470.492069161] [publish_wind_direction]: ------------------
+1749830470.6918099 [service_vicon_node-1] [INFO] [1749830470.691043457] [service_vicon_node]: Frame_no: 235747
+1749830475.4770324 [service_neighbours_opinions-2] [INFO] [1749830475.476181639] [service_neighbours_opinions]: All opinions size= 19
+1749830475.4812810 [publish_wind_direction-4] [INFO] [1749830475.480603454] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1}
+1749830475.4840379 [publish_wind_direction-4] [INFO] [1749830475.483473843] [publish_wind_direction]: *** Uninformed ***
+1749830475.4880121 [publish_wind_direction-4] [INFO] [1749830475.487460751] [publish_wind_direction]: Publishing: id1193:N
+1749830475.4913237 [publish_wind_direction-4] [INFO] [1749830475.490173788] [publish_wind_direction]: ------------------
+1749830480.4744785 [service_neighbours_opinions-2] [INFO] [1749830480.473710618] [service_neighbours_opinions]: All opinions size= 19
+1749830480.4790957 [publish_wind_direction-4] [INFO] [1749830480.478443359] [publish_wind_direction]: Social Info: {'N': 1, 'E': 1}
+1749830480.4819882 [publish_wind_direction-4] [INFO] [1749830480.481387803] [publish_wind_direction]: *** Uninformed ***
+1749830480.4862239 [publish_wind_direction-4] [INFO] [1749830480.485621951] [publish_wind_direction]: Publishing: id1193:E
+1749830480.4889629 [publish_wind_direction-4] [INFO] [1749830480.488383766] [publish_wind_direction]: ------------------
+1749830480.8262861 [service_vicon_node-1] [INFO] [1749830480.825567303] [service_vicon_node]: Frame_no: 236051
+1749830485.4743984 [service_neighbours_opinions-2] [INFO] [1749830485.473636411] [service_neighbours_opinions]: All opinions size= 19
+1749830485.4791288 [publish_wind_direction-4] [INFO] [1749830485.477852393] [publish_wind_direction]: Social Info: {'S': 1, 'N': 1, 'E': 2}
+1749830485.4812713 [publish_wind_direction-4] [INFO] [1749830485.480676245] [publish_wind_direction]: *** Uninformed ***
+1749830485.4847767 [publish_wind_direction-4] [INFO] [1749830485.484219300] [publish_wind_direction]: Publishing: id1193:E
+1749830485.4873977 [publish_wind_direction-4] [INFO] [1749830485.486840171] [publish_wind_direction]: ------------------
+1749830490.4747002 [service_neighbours_opinions-2] [INFO] [1749830490.473972464] [service_neighbours_opinions]: All opinions size= 19
+1749830490.4788642 [publish_wind_direction-4] [INFO] [1749830490.478265668] [publish_wind_direction]: Social Info: {'N': 1, 'W': 1, 'S': 1}
+1749830490.4816194 [publish_wind_direction-4] [INFO] [1749830490.481037056] [publish_wind_direction]: *** Uninformed ***
+1749830490.4855578 [publish_wind_direction-4] [INFO] [1749830490.484980316] [publish_wind_direction]: Publishing: id1193:S
+1749830490.4882548 [publish_wind_direction-4] [INFO] [1749830490.487681223] [publish_wind_direction]: ------------------
+1749830490.9913497 [service_vicon_node-1] [INFO] [1749830490.990625260] [service_vicon_node]: Frame_no: 236356
+1749830495.4745996 [service_neighbours_opinions-2] [INFO] [1749830495.473852072] [service_neighbours_opinions]: All opinions size= 19
+1749830495.4792564 [publish_wind_direction-4] [INFO] [1749830495.478545035] [publish_wind_direction]: Social Info: {'N': 2, 'S': 2}
+1749830495.4828286 [publish_wind_direction-4] [INFO] [1749830495.481884128] [publish_wind_direction]: *** Uninformed ***
+1749830495.4874508 [publish_wind_direction-4] [INFO] [1749830495.486600405] [publish_wind_direction]: Publishing: id1193:N
+1749830495.4899187 [publish_wind_direction-4] [INFO] [1749830495.489212942] [publish_wind_direction]: ------------------
+1749830500.4747701 [service_neighbours_opinions-2] [INFO] [1749830500.473999032] [service_neighbours_opinions]: All opinions size= 19
+1749830500.4790175 [publish_wind_direction-4] [INFO] [1749830500.478388939] [publish_wind_direction]: Social Info: {'W': 2, 'N': 1}
+1749830500.4823551 [publish_wind_direction-4] [INFO] [1749830500.481186569] [publish_wind_direction]: *** Uninformed ***
+1749830500.4856715 [publish_wind_direction-4] [INFO] [1749830500.485091828] [publish_wind_direction]: Publishing: id1193:W
+1749830500.4884953 [publish_wind_direction-4] [INFO] [1749830500.487831754] [publish_wind_direction]: ------------------
+1749830501.1347911 [service_vicon_node-1] [INFO] [1749830501.134056420] [service_vicon_node]: Frame_no: 236660
+1749830505.4749386 [service_neighbours_opinions-2] [INFO] [1749830505.474130844] [service_neighbours_opinions]: All opinions size= 19
+1749830505.4798267 [publish_wind_direction-4] [INFO] [1749830505.479202733] [publish_wind_direction]: Social Info: {'S': 1, 'N': 2}
+1749830505.4834936 [publish_wind_direction-4] [INFO] [1749830505.482861770] [publish_wind_direction]: *** Uninformed ***
+1749830505.4904487 [publish_wind_direction-4] [INFO] [1749830505.489804085] [publish_wind_direction]: Publishing: id1193:N
+1749830505.4934535 [publish_wind_direction-4] [INFO] [1749830505.492899770] [publish_wind_direction]: ------------------
+1749830510.4745896 [service_neighbours_opinions-2] [INFO] [1749830510.473820804] [service_neighbours_opinions]: All opinions size= 19
+1749830510.4799178 [publish_wind_direction-4] [INFO] [1749830510.479269007] [publish_wind_direction]: Social Info: {'E': 1, 'N': 2}
+1749830510.4825587 [publish_wind_direction-4] [INFO] [1749830510.482010600] [publish_wind_direction]: *** Uninformed ***
+1749830510.4889364 [publish_wind_direction-4] [INFO] [1749830510.488311119] [publish_wind_direction]: Publishing: id1193:N
+1749830510.4916441 [publish_wind_direction-4] [INFO] [1749830510.491028878] [publish_wind_direction]: ------------------
+1749830511.3299024 [service_vicon_node-1] [INFO] [1749830511.329188674] [service_vicon_node]: Frame_no: 236966
+1749830515.4748003 [service_neighbours_opinions-2] [INFO] [1749830515.474011319] [service_neighbours_opinions]: All opinions size= 19
+1749830515.4789696 [publish_wind_direction-4] [INFO] [1749830515.478345264] [publish_wind_direction]: Social Info: {'E': 2, 'N': 1}
+1749830515.4819603 [publish_wind_direction-4] [INFO] [1749830515.481271560] [publish_wind_direction]: *** Uninformed ***
+1749830515.4854841 [publish_wind_direction-4] [INFO] [1749830515.484924245] [publish_wind_direction]: Publishing: id1193:E
+1749830515.4880133 [publish_wind_direction-4] [INFO] [1749830515.487474227] [publish_wind_direction]: ------------------
+1749830520.4746659 [service_neighbours_opinions-2] [INFO] [1749830520.473877483] [service_neighbours_opinions]: All opinions size= 19
+1749830520.4786503 [publish_wind_direction-4] [INFO] [1749830520.478052002] [publish_wind_direction]: Social Info: {'S': 1, 'N': 2, 'W': 1}
+1749830520.4815059 [publish_wind_direction-4] [INFO] [1749830520.480716353] [publish_wind_direction]: *** Uninformed ***
+1749830520.4853256 [publish_wind_direction-4] [INFO] [1749830520.484681002] [publish_wind_direction]: Publishing: id1193:N
+1749830520.4885008 [publish_wind_direction-4] [INFO] [1749830520.487521927] [publish_wind_direction]: ------------------
+1749830521.5588784 [service_vicon_node-1] [INFO] [1749830521.558189112] [service_vicon_node]: Frame_no: 237273
+1749830525.4746931 [service_neighbours_opinions-2] [INFO] [1749830525.473918480] [service_neighbours_opinions]: All opinions size= 19
+1749830525.4789741 [publish_wind_direction-4] [INFO] [1749830525.478356628] [publish_wind_direction]: Social Info: {'E': 3, 'S': 2, 'N': 1}
+1749830525.4818013 [publish_wind_direction-4] [INFO] [1749830525.481135443] [publish_wind_direction]: *** Uninformed ***
+1749830525.4858077 [publish_wind_direction-4] [INFO] [1749830525.485163221] [publish_wind_direction]: Publishing: id1193:E
+1749830525.4886334 [publish_wind_direction-4] [INFO] [1749830525.488044202] [publish_wind_direction]: ------------------
+1749830530.4747765 [service_neighbours_opinions-2] [INFO] [1749830530.474028959] [service_neighbours_opinions]: All opinions size= 19
+1749830530.4790239 [publish_wind_direction-4] [INFO] [1749830530.478402977] [publish_wind_direction]: Social Info: {'E': 2, 'N': 3, 'S': 2}
+1749830530.4817750 [publish_wind_direction-4] [INFO] [1749830530.481153588] [publish_wind_direction]: *** Uninformed ***
+1749830530.4858341 [publish_wind_direction-4] [INFO] [1749830530.485187773] [publish_wind_direction]: Publishing: id1193:N
+1749830530.4885309 [publish_wind_direction-4] [INFO] [1749830530.487989366] [publish_wind_direction]: ------------------
+1749830531.7592468 [service_vicon_node-1] [INFO] [1749830531.758519680] [service_vicon_node]: Frame_no: 237579
+1749830535.4746814 [service_neighbours_opinions-2] [INFO] [1749830535.473933956] [service_neighbours_opinions]: All opinions size= 19
+1749830535.4787574 [publish_wind_direction-4] [INFO] [1749830535.478121678] [publish_wind_direction]: Social Info: {'E': 1, 'W': 2, 'S': 2, 'N': 2}
+1749830535.4815032 [publish_wind_direction-4] [INFO] [1749830535.480881104] [publish_wind_direction]: *** Uninformed ***
+1749830535.4858127 [publish_wind_direction-4] [INFO] [1749830535.485005770] [publish_wind_direction]: Publishing: id1193:S
+1749830535.4880819 [publish_wind_direction-4] [INFO] [1749830535.487506196] [publish_wind_direction]: ------------------
+1749830540.4744711 [service_neighbours_opinions-2] [INFO] [1749830540.473706397] [service_neighbours_opinions]: All opinions size= 19
+1749830540.4790726 [publish_wind_direction-4] [INFO] [1749830540.478057916] [publish_wind_direction]: Social Info: {'S': 3, 'W': 2, 'N': 2}
+1749830540.4818215 [publish_wind_direction-4] [INFO] [1749830540.481144767] [publish_wind_direction]: *** Uninformed ***
+1749830540.4860280 [publish_wind_direction-4] [INFO] [1749830540.485452064] [publish_wind_direction]: Publishing: id1193:S
+1749830540.4888554 [publish_wind_direction-4] [INFO] [1749830540.488004841] [publish_wind_direction]: ------------------
+1749830541.8931832 [service_vicon_node-1] [INFO] [1749830541.892407748] [service_vicon_node]: Frame_no: 237883
+1749830545.4746244 [service_neighbours_opinions-2] [INFO] [1749830545.473902098] [service_neighbours_opinions]: All opinions size= 19
+1749830545.4789419 [publish_wind_direction-4] [INFO] [1749830545.478280153] [publish_wind_direction]: Social Info: {'S': 2, 'N': 2}
+1749830545.4818299 [publish_wind_direction-4] [INFO] [1749830545.481218413] [publish_wind_direction]: *** Uninformed ***
+1749830545.4859681 [publish_wind_direction-4] [INFO] [1749830545.485042616] [publish_wind_direction]: Publishing: id1193:N
+1749830545.4883213 [publish_wind_direction-4] [INFO] [1749830545.487760505] [publish_wind_direction]: ------------------
+1749830550.4744043 [service_neighbours_opinions-2] [INFO] [1749830550.473672873] [service_neighbours_opinions]: All opinions size= 19
+1749830550.4785187 [publish_wind_direction-4] [INFO] [1749830550.477864465] [publish_wind_direction]: Social Info: {'S': 3}
+1749830550.4815645 [publish_wind_direction-4] [INFO] [1749830550.480911169] [publish_wind_direction]: *** Uninformed ***
+1749830550.4858618 [publish_wind_direction-4] [INFO] [1749830550.485297410] [publish_wind_direction]: Publishing: id1193:S
+1749830550.4883370 [publish_wind_direction-4] [INFO] [1749830550.487797613] [publish_wind_direction]: ------------------
+1749830552.0621545 [service_vicon_node-1] [INFO] [1749830552.061428316] [service_vicon_node]: Frame_no: 238188
+1749830555.4750025 [service_neighbours_opinions-2] [INFO] [1749830555.474234351] [service_neighbours_opinions]: All opinions size= 19
+1749830555.4797652 [publish_wind_direction-4] [INFO] [1749830555.479007240] [publish_wind_direction]: Social Info: {'E': 2, 'S': 2}
+1749830555.4824607 [publish_wind_direction-4] [INFO] [1749830555.481882499] [publish_wind_direction]: *** Uninformed ***
+1749830555.4863615 [publish_wind_direction-4] [INFO] [1749830555.485810129] [publish_wind_direction]: Publishing: id1193:S
+1749830555.4889915 [publish_wind_direction-4] [INFO] [1749830555.488413462] [publish_wind_direction]: ------------------
+1749830560.4746964 [service_neighbours_opinions-2] [INFO] [1749830560.473950718] [service_neighbours_opinions]: All opinions size= 19
+1749830560.4786806 [publish_wind_direction-4] [INFO] [1749830560.478076626] [publish_wind_direction]: Social Info: {'W': 2, 'S': 2, 'E': 1, 'N': 1}
+1749830560.4814069 [publish_wind_direction-4] [INFO] [1749830560.480762737] [publish_wind_direction]: *** Uninformed ***
+1749830560.4854071 [publish_wind_direction-4] [INFO] [1749830560.484779441] [publish_wind_direction]: Publishing: id1193:S
+1749830560.4880290 [publish_wind_direction-4] [INFO] [1749830560.487457830] [publish_wind_direction]: ------------------
+1749830562.2880838 [service_vicon_node-1] [INFO] [1749830562.287347310] [service_vicon_node]: Frame_no: 238495
+1749830565.4756021 [service_neighbours_opinions-2] [INFO] [1749830565.474747864] [service_neighbours_opinions]: All opinions size= 19
+1749830565.4805353 [publish_wind_direction-4] [INFO] [1749830565.479924715] [publish_wind_direction]: Social Info: {'E': 4, 'S': 1, 'N': 1}
+1749830565.4833298 [publish_wind_direction-4] [INFO] [1749830565.482566215] [publish_wind_direction]: *** Uninformed ***
+1749830565.4876425 [publish_wind_direction-4] [INFO] [1749830565.486895327] [publish_wind_direction]: Publishing: id1193:E
+1749830565.4903316 [publish_wind_direction-4] [INFO] [1749830565.489651604] [publish_wind_direction]: ------------------
+1749830570.4748321 [service_neighbours_opinions-2] [INFO] [1749830570.474052398] [service_neighbours_opinions]: All opinions size= 19
+1749830570.4793382 [publish_wind_direction-4] [INFO] [1749830570.478738972] [publish_wind_direction]: Social Info: {'S': 1, 'N': 2, 'E': 1}
+1749830570.4821644 [publish_wind_direction-4] [INFO] [1749830570.481599509] [publish_wind_direction]: *** Uninformed ***
+1749830570.4885542 [publish_wind_direction-4] [INFO] [1749830570.485826879] [publish_wind_direction]: Publishing: id1193:N
+1749830570.4899383 [publish_wind_direction-4] [INFO] [1749830570.488126787] [publish_wind_direction]: ------------------
+1749830572.4275033 [service_vicon_node-1] [INFO] [1749830572.426790137] [service_vicon_node]: Frame_no: 238799
+1749830575.4747143 [service_neighbours_opinions-2] [INFO] [1749830575.473930191] [service_neighbours_opinions]: All opinions size= 19
+1749830575.4789770 [publish_wind_direction-4] [INFO] [1749830575.478348598] [publish_wind_direction]: Social Info: {'E': 4, 'N': 2}
+1749830575.4818914 [publish_wind_direction-4] [INFO] [1749830575.481125209] [publish_wind_direction]: *** Uninformed ***
+1749830575.4856579 [publish_wind_direction-4] [INFO] [1749830575.485091395] [publish_wind_direction]: Publishing: id1193:E
+1749830575.4884105 [publish_wind_direction-4] [INFO] [1749830575.487830302] [publish_wind_direction]: ------------------
+1749830580.4747267 [service_neighbours_opinions-2] [INFO] [1749830580.473952484] [service_neighbours_opinions]: All opinions size= 19
+1749830580.4789643 [publish_wind_direction-4] [INFO] [1749830580.478327188] [publish_wind_direction]: Social Info: {'W': 1, 'E': 4, 'N': 2}
+1749830580.4816647 [publish_wind_direction-4] [INFO] [1749830580.481027169] [publish_wind_direction]: *** Uninformed ***
+1749830580.4854023 [publish_wind_direction-4] [INFO] [1749830580.484755169] [publish_wind_direction]: Publishing: id1193:E
+1749830580.4878883 [publish_wind_direction-4] [INFO] [1749830580.487332484] [publish_wind_direction]: ------------------
+1749830582.5914490 [service_vicon_node-1] [INFO] [1749830582.590732187] [service_vicon_node]: Frame_no: 239104
+1749830585.4747150 [service_neighbours_opinions-2] [INFO] [1749830585.473953778] [service_neighbours_opinions]: All opinions size= 19
+1749830585.4792249 [publish_wind_direction-4] [INFO] [1749830585.478610000] [publish_wind_direction]: Social Info: {'E': 1, 'S': 2, 'N': 1, 'W': 2}
+1749830585.4820735 [publish_wind_direction-4] [INFO] [1749830585.481387389] [publish_wind_direction]: *** Uninformed ***
+1749830585.4866650 [publish_wind_direction-4] [INFO] [1749830585.485982204] [publish_wind_direction]: Publishing: id1193:S
+1749830585.4893594 [publish_wind_direction-4] [INFO] [1749830585.488708852] [publish_wind_direction]: ------------------
+1749830590.4744236 [service_neighbours_opinions-2] [INFO] [1749830590.473675775] [service_neighbours_opinions]: All opinions size= 19
+1749830590.4787011 [publish_wind_direction-4] [INFO] [1749830590.478039830] [publish_wind_direction]: Social Info: {'E': 4, 'N': 1, 'S': 1}
+1749830590.4815638 [publish_wind_direction-4] [INFO] [1749830590.480947423] [publish_wind_direction]: *** Uninformed ***
+1749830590.4856138 [publish_wind_direction-4] [INFO] [1749830590.485009182] [publish_wind_direction]: Publishing: id1193:E
+1749830590.4884422 [publish_wind_direction-4] [INFO] [1749830590.487883256] [publish_wind_direction]: ------------------
+1749830592.7932589 [service_vicon_node-1] [INFO] [1749830592.792499866] [service_vicon_node]: Frame_no: 239410
+1749830595.4745445 [service_neighbours_opinions-2] [INFO] [1749830595.473780549] [service_neighbours_opinions]: All opinions size= 19
+1749830595.4787555 [publish_wind_direction-4] [INFO] [1749830595.478095716] [publish_wind_direction]: Social Info: {'E': 2, 'S': 2, 'N': 2}
+1749830595.4814212 [publish_wind_direction-4] [INFO] [1749830595.480775975] [publish_wind_direction]: *** Uninformed ***
+1749830595.4853318 [publish_wind_direction-4] [INFO] [1749830595.484739457] [publish_wind_direction]: Publishing: id1193:N
+1749830595.4879689 [publish_wind_direction-4] [INFO] [1749830595.487417179] [publish_wind_direction]: ------------------
+1749830600.4746919 [service_neighbours_opinions-2] [INFO] [1749830600.473936769] [service_neighbours_opinions]: All opinions size= 19
+1749830600.4788992 [publish_wind_direction-4] [INFO] [1749830600.478287861] [publish_wind_direction]: Social Info: {'N': 3, 'S': 3, 'W': 1}
+1749830600.4816806 [publish_wind_direction-4] [INFO] [1749830600.481028658] [publish_wind_direction]: *** Uninformed ***
+1749830600.4858603 [publish_wind_direction-4] [INFO] [1749830600.485242898] [publish_wind_direction]: Publishing: id1193:N
+1749830600.4884715 [publish_wind_direction-4] [INFO] [1749830600.487884083] [publish_wind_direction]: ------------------
+1749830602.9917896 [service_vicon_node-1] [INFO] [1749830602.991055952] [service_vicon_node]: Frame_no: 239716
+1749830605.4747281 [service_neighbours_opinions-2] [INFO] [1749830605.473965766] [service_neighbours_opinions]: All opinions size= 19
+1749830605.4789460 [publish_wind_direction-4] [INFO] [1749830605.478315951] [publish_wind_direction]: Social Info: {'S': 1, 'E': 4, 'N': 3}
+1749830605.4815407 [publish_wind_direction-4] [INFO] [1749830605.480900321] [publish_wind_direction]: *** Uninformed ***
+1749830605.4853311 [publish_wind_direction-4] [INFO] [1749830605.484680006] [publish_wind_direction]: Publishing: id1193:E
+1749830605.4879675 [publish_wind_direction-4] [INFO] [1749830605.487379451] [publish_wind_direction]: ------------------
+1749830610.4754257 [service_neighbours_opinions-2] [INFO] [1749830610.474686022] [service_neighbours_opinions]: All opinions size= 19
+1749830610.4796362 [publish_wind_direction-4] [INFO] [1749830610.479014522] [publish_wind_direction]: Social Info: {'W': 3, 'S': 4, 'E': 2, 'N': 1}
+1749830610.4828229 [publish_wind_direction-4] [INFO] [1749830610.481810022] [publish_wind_direction]: *** Uninformed ***
+1749830610.4891002 [publish_wind_direction-4] [INFO] [1749830610.488270133] [publish_wind_direction]: Publishing: id1193:S
+1749830610.4917083 [publish_wind_direction-4] [INFO] [1749830610.490947096] [publish_wind_direction]: ------------------
+1749830613.1897364 [service_vicon_node-1] [INFO] [1749830613.189038687] [service_vicon_node]: Frame_no: 240022
+1749830615.4746702 [service_neighbours_opinions-2] [INFO] [1749830615.473918852] [service_neighbours_opinions]: All opinions size= 19
+1749830615.4789631 [publish_wind_direction-4] [INFO] [1749830615.478316426] [publish_wind_direction]: Social Info: {'W': 3, 'E': 1, 'N': 4, 'S': 1}
+1749830615.4818428 [publish_wind_direction-4] [INFO] [1749830615.481236926] [publish_wind_direction]: *** Uninformed ***
+1749830615.4857526 [publish_wind_direction-4] [INFO] [1749830615.485147834] [publish_wind_direction]: Publishing: id1193:N
+1749830615.4883077 [publish_wind_direction-4] [INFO] [1749830615.487754963] [publish_wind_direction]: ------------------
+1749830620.4747317 [service_neighbours_opinions-2] [INFO] [1749830620.473963997] [service_neighbours_opinions]: All opinions size= 19
+1749830620.4800370 [publish_wind_direction-4] [INFO] [1749830620.479393812] [publish_wind_direction]: Social Info: {'W': 3, 'E': 2, 'N': 3, 'S': 1}
+1749830620.4827957 [publish_wind_direction-4] [INFO] [1749830620.482179886] [publish_wind_direction]: *** Uninformed ***
+1749830620.4870465 [publish_wind_direction-4] [INFO] [1749830620.486472423] [publish_wind_direction]: Publishing: id1193:N
+1749830620.4897399 [publish_wind_direction-4] [INFO] [1749830620.489135183] [publish_wind_direction]: ------------------
+1749830623.3902767 [service_vicon_node-1] [INFO] [1749830623.389560996] [service_vicon_node]: Frame_no: 240328
+1749830625.4748082 [service_neighbours_opinions-2] [INFO] [1749830625.474074643] [service_neighbours_opinions]: All opinions size= 19
+1749830625.4803843 [publish_wind_direction-4] [INFO] [1749830625.479501032] [publish_wind_direction]: Social Info: {'W': 3, 'S': 2, 'N': 3, 'E': 1}
+1749830625.4837608 [publish_wind_direction-4] [INFO] [1749830625.482207180] [publish_wind_direction]: *** Uninformed ***
+1749830625.4870729 [publish_wind_direction-4] [INFO] [1749830625.486451920] [publish_wind_direction]: Publishing: id1193:W
+1749830625.4899445 [publish_wind_direction-4] [INFO] [1749830625.489357587] [publish_wind_direction]: ------------------
+1749830630.4746161 [service_neighbours_opinions-2] [INFO] [1749830630.473847769] [service_neighbours_opinions]: All opinions size= 19
+1749830630.4789755 [publish_wind_direction-4] [INFO] [1749830630.478323399] [publish_wind_direction]: Social Info: {'S': 4, 'W': 2, 'N': 3, 'E': 2}
+1749830630.4819033 [publish_wind_direction-4] [INFO] [1749830630.481268306] [publish_wind_direction]: *** Uninformed ***
+1749830630.4861057 [publish_wind_direction-4] [INFO] [1749830630.485483232] [publish_wind_direction]: Publishing: id1193:S
+1749830630.4887726 [publish_wind_direction-4] [INFO] [1749830630.488232621] [publish_wind_direction]: ------------------
+1749830633.5580819 [service_vicon_node-1] [INFO] [1749830633.557348749] [service_vicon_node]: Frame_no: 240633
+1749830635.4747188 [service_neighbours_opinions-2] [INFO] [1749830635.473962081] [service_neighbours_opinions]: All opinions size= 19
+1749830635.4790678 [publish_wind_direction-4] [INFO] [1749830635.478443618] [publish_wind_direction]: Social Info: {'E': 2, 'N': 2, 'W': 1, 'S': 3}
+1749830635.4819717 [publish_wind_direction-4] [INFO] [1749830635.481150174] [publish_wind_direction]: *** Uninformed ***
+1749830635.4858222 [publish_wind_direction-4] [INFO] [1749830635.485003211] [publish_wind_direction]: Publishing: id1193:S
+1749830635.4885764 [publish_wind_direction-4] [INFO] [1749830635.487705026] [publish_wind_direction]: ------------------
+1749830640.4749360 [service_neighbours_opinions-2] [INFO] [1749830640.474157226] [service_neighbours_opinions]: All opinions size= 19
+1749830640.4793818 [publish_wind_direction-4] [INFO] [1749830640.478748486] [publish_wind_direction]: Social Info: {'S': 4, 'E': 1, 'N': 2}
+1749830640.4823582 [publish_wind_direction-4] [INFO] [1749830640.481694615] [publish_wind_direction]: *** Uninformed ***
+1749830640.4868155 [publish_wind_direction-4] [INFO] [1749830640.485950486] [publish_wind_direction]: Publishing: id1193:S
+1749830640.4895020 [publish_wind_direction-4] [INFO] [1749830640.488726615] [publish_wind_direction]: ------------------
+1749830643.7270458 [service_vicon_node-1] [INFO] [1749830643.726322743] [service_vicon_node]: Frame_no: 240938
+1749830645.4745960 [service_neighbours_opinions-2] [INFO] [1749830645.473846538] [service_neighbours_opinions]: All opinions size= 19
+1749830645.4789002 [publish_wind_direction-4] [INFO] [1749830645.478282112] [publish_wind_direction]: Social Info: {'E': 3, 'S': 2}
+1749830645.4816248 [publish_wind_direction-4] [INFO] [1749830645.480961371] [publish_wind_direction]: *** Uninformed ***
+1749830645.4859643 [publish_wind_direction-4] [INFO] [1749830645.485086297] [publish_wind_direction]: Publishing: id1193:E
+1749830645.4887002 [publish_wind_direction-4] [INFO] [1749830645.487853890] [publish_wind_direction]: ------------------
+1749830650.4743950 [service_neighbours_opinions-2] [INFO] [1749830650.473556313] [service_neighbours_opinions]: All opinions size= 19
+1749830650.4789367 [publish_wind_direction-4] [INFO] [1749830650.478244350] [publish_wind_direction]: Social Info: {'N': 1, 'E': 4, 'S': 2}
+1749830650.4825935 [publish_wind_direction-4] [INFO] [1749830650.481497517] [publish_wind_direction]: *** Uninformed ***
+1749830650.4866030 [publish_wind_direction-4] [INFO] [1749830650.486008091] [publish_wind_direction]: Publishing: id1193:E
+1749830650.4894137 [publish_wind_direction-4] [INFO] [1749830650.488569165] [publish_wind_direction]: ------------------
+1749830653.8917120 [service_vicon_node-1] [INFO] [1749830653.890996663] [service_vicon_node]: Frame_no: 241243
+1749830655.4746861 [service_neighbours_opinions-2] [INFO] [1749830655.473933477] [service_neighbours_opinions]: All opinions size= 19
+1749830655.4792562 [publish_wind_direction-4] [INFO] [1749830655.478367625] [publish_wind_direction]: Social Info: {'E': 6, 'S': 1, 'N': 2}
+1749830655.4819028 [publish_wind_direction-4] [INFO] [1749830655.481293995] [publish_wind_direction]: *** Uninformed ***
+1749830655.4857502 [publish_wind_direction-4] [INFO] [1749830655.485108773] [publish_wind_direction]: Publishing: id1193:E
+1749830655.4884424 [publish_wind_direction-4] [INFO] [1749830655.487838421] [publish_wind_direction]: ------------------
+1749830660.4745200 [service_neighbours_opinions-2] [INFO] [1749830660.473777122] [service_neighbours_opinions]: All opinions size= 19
+1749830660.4790373 [publish_wind_direction-4] [INFO] [1749830660.478396233] [publish_wind_direction]: Social Info: {'E': 8, 'N': 3}
+1749830660.4817681 [publish_wind_direction-4] [INFO] [1749830660.481169733] [publish_wind_direction]: *** Uninformed ***
+1749830660.4875185 [publish_wind_direction-4] [INFO] [1749830660.486833955] [publish_wind_direction]: Publishing: id1193:E
+1749830660.4908528 [publish_wind_direction-4] [INFO] [1749830660.490172437] [publish_wind_direction]: ------------------
+1749830664.0917044 [service_vicon_node-1] [INFO] [1749830664.090985360] [service_vicon_node]: Frame_no: 241549
+1749830665.4748974 [service_neighbours_opinions-2] [INFO] [1749830665.474121878] [service_neighbours_opinions]: All opinions size= 19
+1749830665.4794765 [publish_wind_direction-4] [INFO] [1749830665.478848711] [publish_wind_direction]: Social Info: {'E': 9, 'W': 3, 'S': 1, 'N': 1}
+1749830665.4820008 [publish_wind_direction-4] [INFO] [1749830665.481382600] [publish_wind_direction]: *** Uninformed ***
+1749830665.4876258 [publish_wind_direction-4] [INFO] [1749830665.486998508] [publish_wind_direction]: Publishing: id1193:E
+1749830665.4906251 [publish_wind_direction-4] [INFO] [1749830665.490022971] [publish_wind_direction]: ------------------
+1749830670.4747612 [service_neighbours_opinions-2] [INFO] [1749830670.474002394] [service_neighbours_opinions]: All opinions size= 19
+1749830670.4790037 [publish_wind_direction-4] [INFO] [1749830670.478344042] [publish_wind_direction]: Social Info: {'E': 7, 'S': 2, 'W': 1, 'N': 3}
+1749830670.4819074 [publish_wind_direction-4] [INFO] [1749830670.481267523] [publish_wind_direction]: *** Uninformed ***
+1749830670.4859424 [publish_wind_direction-4] [INFO] [1749830670.485378134] [publish_wind_direction]: Publishing: id1193:E
+1749830670.4885578 [publish_wind_direction-4] [INFO] [1749830670.487999097] [publish_wind_direction]: ------------------
+1749830674.2286935 [service_vicon_node-1] [INFO] [1749830674.227978095] [service_vicon_node]: Frame_no: 241853
+1749830675.4747372 [service_neighbours_opinions-2] [INFO] [1749830675.473969242] [service_neighbours_opinions]: All opinions size= 19
+1749830675.4791026 [publish_wind_direction-4] [INFO] [1749830675.478461280] [publish_wind_direction]: Social Info: {'S': 4, 'W': 3, 'E': 4, 'N': 2}
+1749830675.4817665 [publish_wind_direction-4] [INFO] [1749830675.481093631] [publish_wind_direction]: *** Uninformed ***
+1749830675.4872591 [publish_wind_direction-4] [INFO] [1749830675.485057780] [publish_wind_direction]: Publishing: id1193:S
+1749830675.4886279 [publish_wind_direction-4] [INFO] [1749830675.487665113] [publish_wind_direction]: ------------------
+1749830680.4746234 [service_neighbours_opinions-2] [INFO] [1749830680.473879962] [service_neighbours_opinions]: All opinions size= 19
+1749830680.4792376 [publish_wind_direction-4] [INFO] [1749830680.478164536] [publish_wind_direction]: Social Info: {'S': 2, 'E': 4, 'W': 1, 'N': 5}
+1749830680.4820709 [publish_wind_direction-4] [INFO] [1749830680.481372573] [publish_wind_direction]: *** Uninformed ***
+1749830680.4863455 [publish_wind_direction-4] [INFO] [1749830680.485729795] [publish_wind_direction]: Publishing: id1193:N
+1749830680.4888239 [publish_wind_direction-4] [INFO] [1749830680.488253665] [publish_wind_direction]: ------------------
+1749830684.4944484 [service_vicon_node-1] [INFO] [1749830684.493712256] [service_vicon_node]: Frame_no: 242161
+1749830685.4745867 [service_neighbours_opinions-2] [INFO] [1749830685.473871181] [service_neighbours_opinions]: All opinions size= 19
+1749830685.4791212 [publish_wind_direction-4] [INFO] [1749830685.477955996] [publish_wind_direction]: Social Info: {'E': 6, 'W': 3, 'S': 4, 'N': 1}
+1749830685.4813187 [publish_wind_direction-4] [INFO] [1749830685.480723644] [publish_wind_direction]: *** Uninformed ***
+1749830685.4871571 [publish_wind_direction-4] [INFO] [1749830685.486306088] [publish_wind_direction]: Publishing: id1193:E
+1749830685.4897783 [publish_wind_direction-4] [INFO] [1749830685.488979477] [publish_wind_direction]: ------------------
+1749830690.4749734 [service_neighbours_opinions-2] [INFO] [1749830690.474200104] [service_neighbours_opinions]: All opinions size= 19
+1749830690.4792624 [publish_wind_direction-4] [INFO] [1749830690.478639641] [publish_wind_direction]: Social Info: {'E': 4, 'S': 4, 'W': 2, 'N': 3}
+1749830690.4820404 [publish_wind_direction-4] [INFO] [1749830690.481410863] [publish_wind_direction]: *** Uninformed ***
+1749830690.4861479 [publish_wind_direction-4] [INFO] [1749830690.485524067] [publish_wind_direction]: Publishing: id1193:S
+1749830690.4888637 [publish_wind_direction-4] [INFO] [1749830690.488259196] [publish_wind_direction]: ------------------
+1749830694.6326120 [service_vicon_node-1] [INFO] [1749830694.631863361] [service_vicon_node]: Frame_no: 242465
+1749830695.4746485 [service_neighbours_opinions-2] [INFO] [1749830695.473904508] [service_neighbours_opinions]: All opinions size= 19
+1749830695.4789863 [publish_wind_direction-4] [INFO] [1749830695.478368990] [publish_wind_direction]: Social Info: {'S': 4, 'N': 5, 'E': 4}
+1749830695.4817483 [publish_wind_direction-4] [INFO] [1749830695.481126286] [publish_wind_direction]: *** Uninformed ***
+1749830695.4860942 [publish_wind_direction-4] [INFO] [1749830695.485180379] [publish_wind_direction]: Publishing: id1193:N
+1749830695.4887393 [publish_wind_direction-4] [INFO] [1749830695.488134712] [publish_wind_direction]: ------------------
+1749830700.4744852 [service_neighbours_opinions-2] [INFO] [1749830700.473724598] [service_neighbours_opinions]: All opinions size= 19
+1749830700.4791849 [publish_wind_direction-4] [INFO] [1749830700.478556691] [publish_wind_direction]: Social Info: {'E': 7, 'N': 3, 'W': 1}
+1749830700.4836321 [publish_wind_direction-4] [INFO] [1749830700.482974246] [publish_wind_direction]: *** Uninformed ***
+1749830700.4877925 [publish_wind_direction-4] [INFO] [1749830700.487253191] [publish_wind_direction]: Publishing: id1193:E
+1749830700.4903953 [publish_wind_direction-4] [INFO] [1749830700.489860987] [publish_wind_direction]: ------------------
+1749830704.8612306 [service_vicon_node-1] [INFO] [1749830704.860457243] [service_vicon_node]: Frame_no: 242772
+1749830705.4745672 [service_neighbours_opinions-2] [INFO] [1749830705.473836984] [service_neighbours_opinions]: All opinions size= 19
+1749830705.4790111 [publish_wind_direction-4] [INFO] [1749830705.478099021] [publish_wind_direction]: Social Info: {'E': 6, 'N': 2}
+1749830705.4816723 [publish_wind_direction-4] [INFO] [1749830705.481030854] [publish_wind_direction]: *** Uninformed ***
+1749830705.4860544 [publish_wind_direction-4] [INFO] [1749830705.485136113] [publish_wind_direction]: Publishing: id1193:E
+1749830705.4884655 [publish_wind_direction-4] [INFO] [1749830705.487718262] [publish_wind_direction]: ------------------
+1749830710.4749250 [service_neighbours_opinions-2] [INFO] [1749830710.474182333] [service_neighbours_opinions]: All opinions size= 19
+1749830710.4793653 [publish_wind_direction-4] [INFO] [1749830710.478490111] [publish_wind_direction]: Social Info: {'E': 6, 'N': 2}
+1749830710.4823678 [publish_wind_direction-4] [INFO] [1749830710.481431314] [publish_wind_direction]: *** Uninformed ***
+1749830710.4864709 [publish_wind_direction-4] [INFO] [1749830710.485549907] [publish_wind_direction]: Publishing: id1193:E
+1749830710.4890544 [publish_wind_direction-4] [INFO] [1749830710.488222092] [publish_wind_direction]: ------------------
+1749830715.0253279 [service_vicon_node-1] [INFO] [1749830715.024567274] [service_vicon_node]: Frame_no: 243077
+1749830715.4747856 [service_neighbours_opinions-2] [INFO] [1749830715.473999533] [service_neighbours_opinions]: All opinions size= 19
+1749830715.4793417 [publish_wind_direction-4] [INFO] [1749830715.478726737] [publish_wind_direction]: Social Info: {'E': 6, 'W': 1, 'N': 1}
+1749830715.4820688 [publish_wind_direction-4] [INFO] [1749830715.481468756] [publish_wind_direction]: *** Uninformed ***
+1749830715.4859970 [publish_wind_direction-4] [INFO] [1749830715.485398200] [publish_wind_direction]: Publishing: id1193:E
+1749830715.4888630 [publish_wind_direction-4] [INFO] [1749830715.488010682] [publish_wind_direction]: ------------------
+1749830720.4744902 [service_neighbours_opinions-2] [INFO] [1749830720.473725642] [service_neighbours_opinions]: All opinions size= 19
+1749830720.4793477 [publish_wind_direction-4] [INFO] [1749830720.478634956] [publish_wind_direction]: Social Info: {'S': 4, 'E': 3, 'N': 2}
+1749830720.4828649 [publish_wind_direction-4] [INFO] [1749830720.482074456] [publish_wind_direction]: *** Uninformed ***
+1749830720.4872875 [publish_wind_direction-4] [INFO] [1749830720.486706382] [publish_wind_direction]: Publishing: id1193:S
+1749830720.4901900 [publish_wind_direction-4] [INFO] [1749830720.489261919] [publish_wind_direction]: ------------------
+1749830725.1291358 [service_vicon_node-1] [INFO] [1749830725.128356361] [service_vicon_node]: Frame_no: 243380
+1749830725.4744635 [service_neighbours_opinions-2] [INFO] [1749830725.473736898] [service_neighbours_opinions]: All opinions size= 19
+1749830725.4787421 [publish_wind_direction-4] [INFO] [1749830725.478072102] [publish_wind_direction]: Social Info: {'E': 4, 'S': 3, 'N': 1}
+1749830725.4817626 [publish_wind_direction-4] [INFO] [1749830725.481069953] [publish_wind_direction]: *** Uninformed ***
+1749830725.4871643 [publish_wind_direction-4] [INFO] [1749830725.486573305] [publish_wind_direction]: Publishing: id1193:E
+1749830725.4898183 [publish_wind_direction-4] [INFO] [1749830725.489236065] [publish_wind_direction]: ------------------
+1749830730.4754505 [service_neighbours_opinions-2] [INFO] [1749830730.474647265] [service_neighbours_opinions]: All opinions size= 19
+1749830730.4797623 [publish_wind_direction-4] [INFO] [1749830730.479123062] [publish_wind_direction]: Social Info: {'E': 5, 'W': 2, 'N': 1, 'S': 1}
+1749830730.4825690 [publish_wind_direction-4] [INFO] [1749830730.481954117] [publish_wind_direction]: *** Uninformed ***
+1749830730.4867110 [publish_wind_direction-4] [INFO] [1749830730.485872950] [publish_wind_direction]: Publishing: id1193:E
+1749830730.4892542 [publish_wind_direction-4] [INFO] [1749830730.488650599] [publish_wind_direction]: ------------------
+1749830735.2966771 [service_vicon_node-1] [INFO] [1749830735.295934799] [service_vicon_node]: Frame_no: 243685
+1749830735.4746761 [service_neighbours_opinions-2] [INFO] [1749830735.473932207] [service_neighbours_opinions]: All opinions size= 19
+1749830735.4789143 [publish_wind_direction-4] [INFO] [1749830735.478340299] [publish_wind_direction]: Social Info: {'S': 2, 'E': 5, 'N': 2}
+1749830735.4817810 [publish_wind_direction-4] [INFO] [1749830735.481085133] [publish_wind_direction]: *** Uninformed ***
+1749830735.4883125 [publish_wind_direction-4] [INFO] [1749830735.487710188] [publish_wind_direction]: Publishing: id1193:E
+1749830735.4927585 [publish_wind_direction-4] [INFO] [1749830735.492183818] [publish_wind_direction]: ------------------
+1749830740.4745848 [service_neighbours_opinions-2] [INFO] [1749830740.473809982] [service_neighbours_opinions]: All opinions size= 19
+1749830740.4790249 [publish_wind_direction-4] [INFO] [1749830740.478136537] [publish_wind_direction]: Social Info: {'W': 1, 'N': 3, 'E': 5}
+1749830740.4817359 [publish_wind_direction-4] [INFO] [1749830740.481090204] [publish_wind_direction]: *** Uninformed ***
+1749830740.4855886 [publish_wind_direction-4] [INFO] [1749830740.485014982] [publish_wind_direction]: Publishing: id1193:E
+1749830740.4881494 [publish_wind_direction-4] [INFO] [1749830740.487592778] [publish_wind_direction]: ------------------
+1749830745.4747508 [service_neighbours_opinions-2] [INFO] [1749830745.474010312] [service_neighbours_opinions]: All opinions size= 19
+1749830745.4789555 [publish_wind_direction-4] [INFO] [1749830745.478295238] [publish_wind_direction]: Social Info: {'N': 5, 'E': 4, 'S': 1}
+1749830745.4818168 [publish_wind_direction-4] [INFO] [1749830745.481206867] [publish_wind_direction]: *** Uninformed ***
+1749830745.4858608 [publish_wind_direction-4] [INFO] [1749830745.485282293] [publish_wind_direction]: Publishing: id1193:N
+1749830745.4885266 [publish_wind_direction-4] [INFO] [1749830745.487985182] [publish_wind_direction]: ------------------
+1749830745.4975297 [service_vicon_node-1] [INFO] [1749830745.496885516] [service_vicon_node]: Frame_no: 243991
+1749830750.4746683 [service_neighbours_opinions-2] [INFO] [1749830750.473944513] [service_neighbours_opinions]: All opinions size= 19
+1749830750.4801288 [publish_wind_direction-4] [INFO] [1749830750.479480235] [publish_wind_direction]: Social Info: {'S': 3, 'N': 2, 'E': 2, 'W': 1}
+1749830750.4830463 [publish_wind_direction-4] [INFO] [1749830750.482453031] [publish_wind_direction]: *** Uninformed ***
+1749830750.4873452 [publish_wind_direction-4] [INFO] [1749830750.486735957] [publish_wind_direction]: Publishing: id1193:S
+1749830750.4899955 [publish_wind_direction-4] [INFO] [1749830750.489482216] [publish_wind_direction]: ------------------
+1749830755.4752047 [service_neighbours_opinions-2] [INFO] [1749830755.474451102] [service_neighbours_opinions]: All opinions size= 19
+1749830755.4798188 [publish_wind_direction-4] [INFO] [1749830755.479137861] [publish_wind_direction]: Social Info: {'S': 1, 'W': 2, 'N': 5, 'E': 1}
+1749830755.4825344 [publish_wind_direction-4] [INFO] [1749830755.481985750] [publish_wind_direction]: *** Uninformed ***
+1749830755.4862359 [publish_wind_direction-4] [INFO] [1749830755.485657639] [publish_wind_direction]: Publishing: id1193:N
+1749830755.4889789 [publish_wind_direction-4] [INFO] [1749830755.488312584] [publish_wind_direction]: ------------------
+1749830755.6601405 [service_vicon_node-1] [INFO] [1749830755.659423972] [service_vicon_node]: Frame_no: 244296
+1749830760.4743829 [service_neighbours_opinions-2] [INFO] [1749830760.473668118] [service_neighbours_opinions]: All opinions size= 19
+1749830760.4784796 [publish_wind_direction-4] [INFO] [1749830760.477886544] [publish_wind_direction]: Social Info: {'N': 3, 'S': 3, 'E': 3, 'W': 1}
+1749830760.4814839 [publish_wind_direction-4] [INFO] [1749830760.480887914] [publish_wind_direction]: *** Uninformed ***
+1749830760.4859927 [publish_wind_direction-4] [INFO] [1749830760.485457192] [publish_wind_direction]: Publishing: id1193:E
+1749830760.4884257 [publish_wind_direction-4] [INFO] [1749830760.487914210] [publish_wind_direction]: ------------------
+1749830765.4745340 [service_neighbours_opinions-2] [INFO] [1749830765.473819152] [service_neighbours_opinions]: All opinions size= 19
+1749830765.4797585 [publish_wind_direction-4] [INFO] [1749830765.479123781] [publish_wind_direction]: Social Info: {'S': 1, 'N': 4, 'E': 4}
+1749830765.4826646 [publish_wind_direction-4] [INFO] [1749830765.482068967] [publish_wind_direction]: *** Uninformed ***
+1749830765.4924321 [publish_wind_direction-4] [INFO] [1749830765.491830041] [publish_wind_direction]: Publishing: id1193:N
+1749830765.4951215 [publish_wind_direction-4] [INFO] [1749830765.494580281] [publish_wind_direction]: ------------------
+1749830765.8595600 [service_vicon_node-1] [INFO] [1749830765.858841040] [service_vicon_node]: Frame_no: 244602
+1749830770.4746728 [service_neighbours_opinions-2] [INFO] [1749830770.473943464] [service_neighbours_opinions]: All opinions size= 19
+1749830770.4789932 [publish_wind_direction-4] [INFO] [1749830770.478388297] [publish_wind_direction]: Social Info: {'N': 2, 'E': 4, 'S': 2, 'W': 2}
+1749830770.4816351 [publish_wind_direction-4] [INFO] [1749830770.481043815] [publish_wind_direction]: *** Uninformed ***
+1749830770.4854393 [publish_wind_direction-4] [INFO] [1749830770.484784482] [publish_wind_direction]: Publishing: id1193:E
+1749830770.4881330 [publish_wind_direction-4] [INFO] [1749830770.487571334] [publish_wind_direction]: ------------------
+1749830775.4748237 [service_neighbours_opinions-2] [INFO] [1749830775.474087961] [service_neighbours_opinions]: All opinions size= 19
+1749830775.4793134 [publish_wind_direction-4] [INFO] [1749830775.478477164] [publish_wind_direction]: Social Info: {'E': 6, 'S': 1, 'N': 1, 'W': 1}
+1749830775.4820762 [publish_wind_direction-4] [INFO] [1749830775.481279035] [publish_wind_direction]: *** Uninformed ***
+1749830775.4856188 [publish_wind_direction-4] [INFO] [1749830775.484916220] [publish_wind_direction]: Publishing: id1193:E
+1749830775.4882259 [publish_wind_direction-4] [INFO] [1749830775.487504905] [publish_wind_direction]: ------------------
+1749830775.9633467 [service_vicon_node-1] [INFO] [1749830775.962637479] [service_vicon_node]: Frame_no: 244905
+1749830780.4745977 [service_neighbours_opinions-2] [INFO] [1749830780.473842791] [service_neighbours_opinions]: All opinions size= 19
+1749830780.4792223 [publish_wind_direction-4] [INFO] [1749830780.478291347] [publish_wind_direction]: Social Info: {'N': 3, 'E': 4}
+1749830780.4817357 [publish_wind_direction-4] [INFO] [1749830780.481083828] [publish_wind_direction]: *** Uninformed ***
+1749830780.4861865 [publish_wind_direction-4] [INFO] [1749830780.485582624] [publish_wind_direction]: Publishing: id1193:E
+1749830780.4893665 [publish_wind_direction-4] [INFO] [1749830780.488433384] [publish_wind_direction]: ------------------
+1749830785.4747007 [service_neighbours_opinions-2] [INFO] [1749830785.473890751] [service_neighbours_opinions]: All opinions size= 19
+1749830785.4815254 [publish_wind_direction-4] [INFO] [1749830785.480837547] [publish_wind_direction]: Social Info: {'E': 3, 'W': 1, 'N': 2, 'S': 1}
+1749830785.4861515 [publish_wind_direction-4] [INFO] [1749830785.485588066] [publish_wind_direction]: *** Uninformed ***
+1749830785.4923508 [publish_wind_direction-4] [INFO] [1749830785.491439121] [publish_wind_direction]: Publishing: id1193:E
+1749830785.4977975 [publish_wind_direction-4] [INFO] [1749830785.497189269] [publish_wind_direction]: ------------------
+1749830786.1297567 [service_vicon_node-1] [INFO] [1749830786.129022139] [service_vicon_node]: Frame_no: 245210
+1749830790.4748528 [service_neighbours_opinions-2] [INFO] [1749830790.474105896] [service_neighbours_opinions]: All opinions size= 19
+1749830790.4794624 [publish_wind_direction-4] [INFO] [1749830790.478833655] [publish_wind_direction]: Social Info: {'E': 5, 'N': 2, 'S': 1}
+1749830790.4823861 [publish_wind_direction-4] [INFO] [1749830790.481802915] [publish_wind_direction]: *** Uninformed ***
+1749830790.4861138 [publish_wind_direction-4] [INFO] [1749830790.485533489] [publish_wind_direction]: Publishing: id1193:E
+1749830790.4889765 [publish_wind_direction-4] [INFO] [1749830790.488286155] [publish_wind_direction]: ------------------
+1749830795.4746139 [service_neighbours_opinions-2] [INFO] [1749830795.473850004] [service_neighbours_opinions]: All opinions size= 19
+1749830795.4791844 [publish_wind_direction-4] [INFO] [1749830795.478610189] [publish_wind_direction]: Social Info: {'N': 2, 'E': 6}
+1749830795.4822769 [publish_wind_direction-4] [INFO] [1749830795.481669041] [publish_wind_direction]: *** Uninformed ***
+1749830795.4862671 [publish_wind_direction-4] [INFO] [1749830795.485691912] [publish_wind_direction]: Publishing: id1193:E
+1749830795.4889634 [publish_wind_direction-4] [INFO] [1749830795.488381967] [publish_wind_direction]: ------------------
+1749830796.3009102 [service_vicon_node-1] [INFO] [1749830796.300089689] [service_vicon_node]: Frame_no: 245515
+1749830800.4744549 [service_neighbours_opinions-2] [INFO] [1749830800.473708649] [service_neighbours_opinions]: All opinions size= 19
+1749830800.4798207 [publish_wind_direction-4] [INFO] [1749830800.479082557] [publish_wind_direction]: Social Info: {'E': 5, 'N': 2}
+1749830800.4827766 [publish_wind_direction-4] [INFO] [1749830800.482153612] [publish_wind_direction]: *** Uninformed ***
+1749830800.4868925 [publish_wind_direction-4] [INFO] [1749830800.486278001] [publish_wind_direction]: Publishing: id1193:E
+1749830800.4893382 [publish_wind_direction-4] [INFO] [1749830800.488779668] [publish_wind_direction]: ------------------
+1749830805.4745541 [service_neighbours_opinions-2] [INFO] [1749830805.473840776] [service_neighbours_opinions]: All opinions size= 19
+1749830805.4792066 [publish_wind_direction-4] [INFO] [1749830805.478288387] [publish_wind_direction]: Social Info: {'E': 2, 'N': 2, 'W': 1}
+1749830805.4826083 [publish_wind_direction-4] [INFO] [1749830805.481523758] [publish_wind_direction]: *** Uninformed ***
+1749830805.4868240 [publish_wind_direction-4] [INFO] [1749830805.485998035] [publish_wind_direction]: Publishing: id1193:N
+1749830805.4898367 [publish_wind_direction-4] [INFO] [1749830805.489073832] [publish_wind_direction]: ------------------
+1749830806.4318309 [service_vicon_node-1] [INFO] [1749830806.431124905] [service_vicon_node]: Frame_no: 245819
+1749830810.4745321 [service_neighbours_opinions-2] [INFO] [1749830810.473770625] [service_neighbours_opinions]: All opinions size= 19
+1749830810.4790866 [publish_wind_direction-4] [INFO] [1749830810.478443977] [publish_wind_direction]: Social Info: {'E': 2, 'S': 1, 'N': 1, 'W': 1}
+1749830810.4820805 [publish_wind_direction-4] [INFO] [1749830810.481379588] [publish_wind_direction]: *** Uninformed ***
+1749830810.4860713 [publish_wind_direction-4] [INFO] [1749830810.485523366] [publish_wind_direction]: Publishing: id1193:E
+1749830810.4886158 [publish_wind_direction-4] [INFO] [1749830810.488091606] [publish_wind_direction]: ------------------
+1749830815.4757731 [service_neighbours_opinions-2] [INFO] [1749830815.474934937] [service_neighbours_opinions]: All opinions size= 19
+1749830815.4814923 [publish_wind_direction-4] [INFO] [1749830815.480019881] [publish_wind_direction]: Social Info: {'E': 2, 'W': 1, 'N': 1, 'S': 1}
+1749830815.4842904 [publish_wind_direction-4] [INFO] [1749830815.483629881] [publish_wind_direction]: *** Uninformed ***
+1749830815.4887741 [publish_wind_direction-4] [INFO] [1749830815.488025381] [publish_wind_direction]: Publishing: id1193:E
+1749830815.4913001 [publish_wind_direction-4] [INFO] [1749830815.490588955] [publish_wind_direction]: ------------------
+1749830816.5978386 [service_vicon_node-1] [INFO] [1749830816.597131418] [service_vicon_node]: Frame_no: 246124
+1749830820.4745159 [service_neighbours_opinions-2] [INFO] [1749830820.473805175] [service_neighbours_opinions]: All opinions size= 19
+1749830820.4790795 [publish_wind_direction-4] [INFO] [1749830820.478456026] [publish_wind_direction]: Social Info: {'S': 3, 'E': 2, 'N': 2}
+1749830820.4818070 [publish_wind_direction-4] [INFO] [1749830820.481201619] [publish_wind_direction]: *** Uninformed ***
+1749830820.4852691 [publish_wind_direction-4] [INFO] [1749830820.484739638] [publish_wind_direction]: Publishing: id1193:S
+1749830820.4878564 [publish_wind_direction-4] [INFO] [1749830820.487328304] [publish_wind_direction]: ------------------
+1749830825.4744673 [service_neighbours_opinions-2] [INFO] [1749830825.473731801] [service_neighbours_opinions]: All opinions size= 19
+1749830825.4787617 [publish_wind_direction-4] [INFO] [1749830825.478187283] [publish_wind_direction]: Social Info: {'S': 2, 'W': 1, 'E': 3, 'N': 1}
+1749830825.4817028 [publish_wind_direction-4] [INFO] [1749830825.481119172] [publish_wind_direction]: *** Uninformed ***
+1749830825.4856036 [publish_wind_direction-4] [INFO] [1749830825.485045320] [publish_wind_direction]: Publishing: id1193:E
+1749830825.4884319 [publish_wind_direction-4] [INFO] [1749830825.487840542] [publish_wind_direction]: ------------------
+1749830826.7306545 [service_vicon_node-1] [INFO] [1749830826.729939967] [service_vicon_node]: Frame_no: 246428
+1749830830.4750748 [service_neighbours_opinions-2] [INFO] [1749830830.474345539] [service_neighbours_opinions]: All opinions size= 19
+1749830830.4800372 [publish_wind_direction-4] [INFO] [1749830830.478602909] [publish_wind_direction]: Social Info: {'E': 4, 'N': 1}
+1749830830.4822626 [publish_wind_direction-4] [INFO] [1749830830.481634669] [publish_wind_direction]: *** Uninformed ***
+1749830830.4864259 [publish_wind_direction-4] [INFO] [1749830830.485569595] [publish_wind_direction]: Publishing: id1193:E
+1749830830.4892883 [publish_wind_direction-4] [INFO] [1749830830.488431909] [publish_wind_direction]: ------------------
+1749830835.4749670 [service_neighbours_opinions-2] [INFO] [1749830835.474251740] [service_neighbours_opinions]: All opinions size= 19
+1749830835.4790359 [publish_wind_direction-4] [INFO] [1749830835.478451536] [publish_wind_direction]: Social Info: {'N': 3, 'E': 3}
+1749830835.4869459 [publish_wind_direction-4] [INFO] [1749830835.481064943] [publish_wind_direction]: *** Uninformed ***
+1749830835.4902077 [publish_wind_direction-4] [INFO] [1749830835.489645795] [publish_wind_direction]: Publishing: id1193:N
+1749830835.4930041 [publish_wind_direction-4] [INFO] [1749830835.492401758] [publish_wind_direction]: ------------------
+1749830836.9964259 [service_vicon_node-1] [INFO] [1749830836.995704276] [service_vicon_node]: Frame_no: 246736
+1749830840.4745626 [service_neighbours_opinions-2] [INFO] [1749830840.473772792] [service_neighbours_opinions]: All opinions size= 19
+1749830840.4791837 [publish_wind_direction-4] [INFO] [1749830840.478524940] [publish_wind_direction]: Social Info: {'E': 2, 'S': 1, 'N': 1, 'W': 1}
+1749830840.4854655 [publish_wind_direction-4] [INFO] [1749830840.481708959] [publish_wind_direction]: *** Uninformed ***
+1749830840.4883041 [publish_wind_direction-4] [INFO] [1749830840.487753792] [publish_wind_direction]: Publishing: id1193:E
+1749830840.4910214 [publish_wind_direction-4] [INFO] [1749830840.490480459] [publish_wind_direction]: ------------------
+1749830845.4755676 [service_neighbours_opinions-2] [INFO] [1749830845.474864234] [service_neighbours_opinions]: All opinions size= 19
+1749830845.4818883 [publish_wind_direction-4] [INFO] [1749830845.481275437] [publish_wind_direction]: Social Info: {'S': 1, 'E': 2, 'N': 1, 'W': 1}
+1749830845.4881570 [publish_wind_direction-4] [INFO] [1749830845.485430956] [publish_wind_direction]: *** Uninformed ***
+1749830845.4921458 [publish_wind_direction-4] [INFO] [1749830845.491021049] [publish_wind_direction]: Publishing: id1193:E
+1749830845.4950204 [publish_wind_direction-4] [INFO] [1749830845.494384271] [publish_wind_direction]: ------------------
+1749830847.1648757 [service_vicon_node-1] [INFO] [1749830847.164121733] [service_vicon_node]: Frame_no: 247041
+1749830850.4746249 [service_neighbours_opinions-2] [INFO] [1749830850.473861323] [service_neighbours_opinions]: All opinions size= 19
+1749830850.4787915 [publish_wind_direction-4] [INFO] [1749830850.478201379] [publish_wind_direction]: Social Info: {'E': 4, 'N': 1}
+1749830850.4815707 [publish_wind_direction-4] [INFO] [1749830850.480971583] [publish_wind_direction]: *** Uninformed ***
+1749830850.4870183 [publish_wind_direction-4] [INFO] [1749830850.484750027] [publish_wind_direction]: Publishing: id1193:E
+1749830850.4889295 [publish_wind_direction-4] [INFO] [1749830850.487577620] [publish_wind_direction]: ------------------
+1749830855.4743569 [service_neighbours_opinions-2] [INFO] [1749830855.473633561] [service_neighbours_opinions]: All opinions size= 19
+1749830855.4786310 [publish_wind_direction-4] [INFO] [1749830855.478010302] [publish_wind_direction]: Social Info: {'W': 1, 'S': 2, 'N': 1}
+1749830855.4817250 [publish_wind_direction-4] [INFO] [1749830855.481047061] [publish_wind_direction]: *** Uninformed ***
+1749830855.4859571 [publish_wind_direction-4] [INFO] [1749830855.485406006] [publish_wind_direction]: Publishing: id1193:S
+1749830855.4883947 [publish_wind_direction-4] [INFO] [1749830855.487877339] [publish_wind_direction]: ------------------
+1749830857.3344195 [service_vicon_node-1] [INFO] [1749830857.333706690] [service_vicon_node]: Frame_no: 247346
+1749830860.4754517 [service_neighbours_opinions-2] [INFO] [1749830860.474682206] [service_neighbours_opinions]: All opinions size= 19
+1749830860.4798193 [publish_wind_direction-4] [INFO] [1749830860.479227947] [publish_wind_direction]: Social Info: {'E': 2, 'S': 3, 'N': 1}
+1749830860.4825597 [publish_wind_direction-4] [INFO] [1749830860.481978799] [publish_wind_direction]: *** Uninformed ***
+1749830860.4881721 [publish_wind_direction-4] [INFO] [1749830860.487579391] [publish_wind_direction]: Publishing: id1193:S
+1749830860.4907477 [publish_wind_direction-4] [INFO] [1749830860.490212299] [publish_wind_direction]: ------------------
+1749830865.4745932 [service_neighbours_opinions-2] [INFO] [1749830865.473862870] [service_neighbours_opinions]: All opinions size= 19
+1749830865.4790709 [publish_wind_direction-4] [INFO] [1749830865.478402759] [publish_wind_direction]: Social Info: {'E': 4, 'N': 3, 'W': 1}
+1749830865.4822185 [publish_wind_direction-4] [INFO] [1749830865.481561833] [publish_wind_direction]: *** Uninformed ***
+1749830865.4861481 [publish_wind_direction-4] [INFO] [1749830865.485607870] [publish_wind_direction]: Publishing: id1193:E
+1749830865.4887693 [publish_wind_direction-4] [INFO] [1749830865.488228370] [publish_wind_direction]: ------------------
+1749830867.5281718 [service_vicon_node-1] [INFO] [1749830867.527455832] [service_vicon_node]: Frame_no: 247652
+1749830870.4745727 [service_neighbours_opinions-2] [INFO] [1749830870.473838386] [service_neighbours_opinions]: All opinions size= 19
+1749830870.4790359 [publish_wind_direction-4] [INFO] [1749830870.478394960] [publish_wind_direction]: Social Info: {'N': 3, 'E': 4, 'W': 1}
+1749830870.4821923 [publish_wind_direction-4] [INFO] [1749830870.481342886] [publish_wind_direction]: *** Uninformed ***
+1749830870.4862137 [publish_wind_direction-4] [INFO] [1749830870.485635182] [publish_wind_direction]: Publishing: id1193:E
+1749830870.4887764 [publish_wind_direction-4] [INFO] [1749830870.488262274] [publish_wind_direction]: ------------------
+1749830875.4746821 [service_neighbours_opinions-2] [INFO] [1749830875.473924105] [service_neighbours_opinions]: All opinions size= 19
+1749830875.4788930 [publish_wind_direction-4] [INFO] [1749830875.478286179] [publish_wind_direction]: Social Info: {'W': 2, 'E': 5, 'N': 1}
+1749830875.4817097 [publish_wind_direction-4] [INFO] [1749830875.481070883] [publish_wind_direction]: *** Uninformed ***
+1749830875.4880478 [publish_wind_direction-4] [INFO] [1749830875.487422216] [publish_wind_direction]: Publishing: id1193:E
+1749830875.4911468 [publish_wind_direction-4] [INFO] [1749830875.490593901] [publish_wind_direction]: ------------------
+1749830877.6957264 [service_vicon_node-1] [INFO] [1749830877.694997974] [service_vicon_node]: Frame_no: 247957
+1749830880.4756033 [service_neighbours_opinions-2] [INFO] [1749830880.474732731] [service_neighbours_opinions]: All opinions size= 19
+1749830880.4801593 [publish_wind_direction-4] [INFO] [1749830880.479562731] [publish_wind_direction]: Social Info: {'N': 3, 'W': 2, 'S': 3, 'E': 3}
+1749830880.4827564 [publish_wind_direction-4] [INFO] [1749830880.482201231] [publish_wind_direction]: *** Uninformed ***
+1749830880.4868662 [publish_wind_direction-4] [INFO] [1749830880.486341676] [publish_wind_direction]: Publishing: id1193:S
+1749830880.4895947 [publish_wind_direction-4] [INFO] [1749830880.489064805] [publish_wind_direction]: ------------------
+1749830885.4747932 [service_neighbours_opinions-2] [INFO] [1749830885.474031451] [service_neighbours_opinions]: All opinions size= 19
+1749830885.4792607 [publish_wind_direction-4] [INFO] [1749830885.478688784] [publish_wind_direction]: Social Info: {'E': 4, 'N': 4, 'S': 1}
+1749830885.4819083 [publish_wind_direction-4] [INFO] [1749830885.481374951] [publish_wind_direction]: *** Uninformed ***
+1749830885.4880378 [publish_wind_direction-4] [INFO] [1749830885.487456932] [publish_wind_direction]: Publishing: id1193:E
+1749830885.4921253 [publish_wind_direction-4] [INFO] [1749830885.491554802] [publish_wind_direction]: ------------------
+1749830887.8405511 [service_vicon_node-1] [INFO] [1749830887.839846431] [service_vicon_node]: Frame_no: 248261
+1749830890.4746401 [service_neighbours_opinions-2] [INFO] [1749830890.473846855] [service_neighbours_opinions]: All opinions size= 19
+1749830890.4791505 [publish_wind_direction-4] [INFO] [1749830890.478534244] [publish_wind_direction]: Social Info: {'E': 4, 'N': 3, 'S': 1}
+1749830890.4818091 [publish_wind_direction-4] [INFO] [1749830890.481202670] [publish_wind_direction]: *** Uninformed ***
+1749830890.4860823 [publish_wind_direction-4] [INFO] [1749830890.484937781] [publish_wind_direction]: Publishing: id1193:E
+1749830890.4882910 [publish_wind_direction-4] [INFO] [1749830890.487751392] [publish_wind_direction]: ------------------
+1749830895.4743402 [service_neighbours_opinions-2] [INFO] [1749830895.473615074] [service_neighbours_opinions]: All opinions size= 19
+1749830895.4788835 [publish_wind_direction-4] [INFO] [1749830895.477977037] [publish_wind_direction]: Social Info: {'E': 2, 'S': 2, 'W': 2, 'N': 3}
+1749830895.4819405 [publish_wind_direction-4] [INFO] [1749830895.480875500] [publish_wind_direction]: *** Uninformed ***
+1749830895.4851897 [publish_wind_direction-4] [INFO] [1749830895.484599019] [publish_wind_direction]: Publishing: id1193:N
+1749830895.4880459 [publish_wind_direction-4] [INFO] [1749830895.487257204] [publish_wind_direction]: ------------------
+1749830898.0342023 [service_vicon_node-1] [INFO] [1749830898.033493017] [service_vicon_node]: Frame_no: 248567
+1749830900.4749951 [service_neighbours_opinions-2] [INFO] [1749830900.474232053] [service_neighbours_opinions]: All opinions size= 19
+1749830900.4809282 [publish_wind_direction-4] [INFO] [1749830900.480206071] [publish_wind_direction]: Social Info: {'E': 5, 'N': 2, 'S': 1}
+1749830900.4845657 [publish_wind_direction-4] [INFO] [1749830900.483014071] [publish_wind_direction]: *** Uninformed ***
+1749830900.4876480 [publish_wind_direction-4] [INFO] [1749830900.487065682] [publish_wind_direction]: Publishing: id1193:E
+1749830900.4905934 [publish_wind_direction-4] [INFO] [1749830900.489943275] [publish_wind_direction]: ------------------
+1749830905.4757693 [service_neighbours_opinions-2] [INFO] [1749830905.474969754] [service_neighbours_opinions]: All opinions size= 19
+1749830905.4805486 [publish_wind_direction-4] [INFO] [1749830905.479969883] [publish_wind_direction]: Social Info: {'E': 4, 'S': 1, 'N': 1}
+1749830905.4838061 [publish_wind_direction-4] [INFO] [1749830905.483216254] [publish_wind_direction]: *** Uninformed ***
+1749830905.4898889 [publish_wind_direction-4] [INFO] [1749830905.489351087] [publish_wind_direction]: Publishing: id1193:E
+1749830905.4934649 [publish_wind_direction-4] [INFO] [1749830905.492903383] [publish_wind_direction]: ------------------
+1749830908.1669831 [service_vicon_node-1] [INFO] [1749830908.166269974] [service_vicon_node]: Frame_no: 248871
+1749830910.4744627 [service_neighbours_opinions-2] [INFO] [1749830910.473725528] [service_neighbours_opinions]: All opinions size= 19
+1749830910.4786139 [publish_wind_direction-4] [INFO] [1749830910.477999639] [publish_wind_direction]: Social Info: {'W': 2, 'N': 2, 'E': 2}
+1749830910.4817626 [publish_wind_direction-4] [INFO] [1749830910.480902528] [publish_wind_direction]: *** Uninformed ***
+1749830910.4858685 [publish_wind_direction-4] [INFO] [1749830910.485287139] [publish_wind_direction]: Publishing: id1193:W
+1749830910.4890616 [publish_wind_direction-4] [INFO] [1749830910.488169991] [publish_wind_direction]: ------------------
+1749830915.4747453 [service_neighbours_opinions-2] [INFO] [1749830915.473936470] [service_neighbours_opinions]: All opinions size= 19
+1749830915.4790573 [publish_wind_direction-4] [INFO] [1749830915.478444822] [publish_wind_direction]: Social Info: {'N': 2, 'E': 3}
+1749830915.4818907 [publish_wind_direction-4] [INFO] [1749830915.481280377] [publish_wind_direction]: *** Uninformed ***
+1749830915.4862852 [publish_wind_direction-4] [INFO] [1749830915.485461488] [publish_wind_direction]: Publishing: id1193:E
+1749830915.4888747 [publish_wind_direction-4] [INFO] [1749830915.488137062] [publish_wind_direction]: ------------------
+1749830918.2988932 [service_vicon_node-1] [INFO] [1749830918.298203838] [service_vicon_node]: Frame_no: 249175
+1749830920.4746692 [service_neighbours_opinions-2] [INFO] [1749830920.473927485] [service_neighbours_opinions]: All opinions size= 19
+1749830920.4794073 [publish_wind_direction-4] [INFO] [1749830920.478494985] [publish_wind_direction]: Social Info: {'E': 1, 'N': 3}
+1749830920.4820638 [publish_wind_direction-4] [INFO] [1749830920.481503504] [publish_wind_direction]: *** Uninformed ***
+1749830920.4858227 [publish_wind_direction-4] [INFO] [1749830920.485231930] [publish_wind_direction]: Publishing: id1193:N
+1749830920.4884486 [publish_wind_direction-4] [INFO] [1749830920.487890208] [publish_wind_direction]: ------------------
+1749830925.4744918 [service_neighbours_opinions-2] [INFO] [1749830925.473754056] [service_neighbours_opinions]: All opinions size= 19
+1749830925.4792676 [publish_wind_direction-4] [INFO] [1749830925.478522575] [publish_wind_direction]: Social Info: {'N': 2, 'S': 1, 'E': 1}
+1749830925.4829054 [publish_wind_direction-4] [INFO] [1749830925.481870538] [publish_wind_direction]: *** Uninformed ***
+1749830925.4873133 [publish_wind_direction-4] [INFO] [1749830925.486641205] [publish_wind_direction]: Publishing: id1193:N
+1749830925.4897623 [publish_wind_direction-4] [INFO] [1749830925.489238593] [publish_wind_direction]: ------------------
+1749830928.4655063 [service_vicon_node-1] [INFO] [1749830928.464780277] [service_vicon_node]: Frame_no: 249480
+1749830930.4746826 [service_neighbours_opinions-2] [INFO] [1749830930.473955831] [service_neighbours_opinions]: All opinions size= 19
+1749830930.4789238 [publish_wind_direction-4] [INFO] [1749830930.478256331] [publish_wind_direction]: Social Info: {'E': 1, 'N': 1, 'S': 1}
+1749830930.4817953 [publish_wind_direction-4] [INFO] [1749830930.481173905] [publish_wind_direction]: *** Uninformed ***
+1749830930.4860940 [publish_wind_direction-4] [INFO] [1749830930.485528683] [publish_wind_direction]: Publishing: id1193:E
+1749830930.4891679 [publish_wind_direction-4] [INFO] [1749830930.488342572] [publish_wind_direction]: ------------------
+1749830935.4747241 [service_neighbours_opinions-2] [INFO] [1749830935.473965347] [service_neighbours_opinions]: All opinions size= 19
+1749830935.4798610 [publish_wind_direction-4] [INFO] [1749830935.479266643] [publish_wind_direction]: Social Info: {'N': 2}
+1749830935.4826286 [publish_wind_direction-4] [INFO] [1749830935.482100365] [publish_wind_direction]: *** Uninformed ***
+1749830935.4881864 [publish_wind_direction-4] [INFO] [1749830935.487643199] [publish_wind_direction]: Publishing: id1193:N
+1749830935.4916236 [publish_wind_direction-4] [INFO] [1749830935.491108273] [publish_wind_direction]: ------------------
+1749830938.6666100 [service_vicon_node-1] [INFO] [1749830938.665894845] [service_vicon_node]: Frame_no: 249786
+1749830940.4750698 [service_neighbours_opinions-2] [INFO] [1749830940.474338788] [service_neighbours_opinions]: All opinions size= 19
+1749830940.4809797 [publish_wind_direction-4] [INFO] [1749830940.480350918] [publish_wind_direction]: Social Info: {'S': 1, 'N': 1}
+1749830940.4851551 [publish_wind_direction-4] [INFO] [1749830940.484495696] [publish_wind_direction]: *** Uninformed ***
+1749830940.4911683 [publish_wind_direction-4] [INFO] [1749830940.490596566] [publish_wind_direction]: Publishing: id1193:S
+1749830940.4945843 [publish_wind_direction-4] [INFO] [1749830940.494068085] [publish_wind_direction]: ------------------
+1749830945.4744256 [service_neighbours_opinions-2] [INFO] [1749830945.473672396] [service_neighbours_opinions]: All opinions size= 19
+1749830945.4807124 [publish_wind_direction-4] [INFO] [1749830945.480119100] [publish_wind_direction]: Social Info: {'S': 1}
+1749830945.4852357 [publish_wind_direction-4] [INFO] [1749830945.484601767] [publish_wind_direction]: *** Uninformed ***
+1749830945.4916916 [publish_wind_direction-4] [INFO] [1749830945.491140933] [publish_wind_direction]: Publishing: id1193:S
+1749830945.4953606 [publish_wind_direction-4] [INFO] [1749830945.494830285] [publish_wind_direction]: ------------------
+1749830948.8639882 [service_vicon_node-1] [INFO] [1749830948.863268487] [service_vicon_node]: Frame_no: 250092
+1749830950.4750197 [service_neighbours_opinions-2] [INFO] [1749830950.474258782] [service_neighbours_opinions]: All opinions size= 19
+1749830950.4792368 [publish_wind_direction-4] [INFO] [1749830950.478610449] [publish_wind_direction]: Social Info: {'E': 1, 'N': 1}
+1749830950.4818704 [publish_wind_direction-4] [INFO] [1749830950.481301097] [publish_wind_direction]: *** Uninformed ***
+1749830950.4857104 [publish_wind_direction-4] [INFO] [1749830950.485153930] [publish_wind_direction]: Publishing: id1193:N
+1749830950.4885890 [publish_wind_direction-4] [INFO] [1749830950.487817597] [publish_wind_direction]: ------------------
+1749830955.4744954 [service_neighbours_opinions-2] [INFO] [1749830955.473757594] [service_neighbours_opinions]: All opinions size= 19
+1749830955.4789422 [publish_wind_direction-4] [INFO] [1749830955.478306168] [publish_wind_direction]: Social Info: {'N': 2}
+1749830955.4818981 [publish_wind_direction-4] [INFO] [1749830955.481261446] [publish_wind_direction]: *** Uninformed ***
+1749830955.4863753 [publish_wind_direction-4] [INFO] [1749830955.485548446] [publish_wind_direction]: Publishing: id1193:N
+1749830955.4890349 [publish_wind_direction-4] [INFO] [1749830955.488273427] [publish_wind_direction]: ------------------
+1749830959.0670578 [service_vicon_node-1] [INFO] [1749830959.066369555] [service_vicon_node]: Frame_no: 250398
+1749830960.1843369 [service_neighbours_opinions-2] [INFO] [1749830960.183638814] [service_neighbours_opinions]: Raising exception at 16:09:20
+1749830960.3236165 [service_neighbours_opinions-2] Traceback (most recent call last):
+1749830960.3241470 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 114, in main
+1749830960.3254905 [service_neighbours_opinions-2]     rclpy.spin(neighbours_node)
+1749830960.3259561 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+1749830960.3263144 [service_neighbours_opinions-2]     executor.spin_once()
+1749830960.3266478 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+1749830960.3269808 [service_neighbours_opinions-2]     self._spin_once_impl(timeout_sec)
+1749830960.3273053 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+1749830960.3313861 [service_neighbours_opinions-2]     raise handler.exception()
+1749830960.3340540 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+1749830960.3354809 [service_neighbours_opinions-2]     self._handler.send(None)
+1749830960.3369954 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+1749830960.3380497 [service_neighbours_opinions-2]     await call_coroutine(entity, arg)
+1749830960.3391359 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+1749830960.3401687 [service_neighbours_opinions-2]     await await_or_execute(tmr.callback)
+1749830960.3413379 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+1749830960.3423738 [service_neighbours_opinions-2]     return callback(*args)
+1749830960.3433697 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 65, in stop_execution
+1749830960.3451812 [service_neighbours_opinions-2]     raise Exception
+1749830960.3462398 [service_neighbours_opinions-2] Exception
+1749830960.3472965 [service_neighbours_opinions-2] 
+1749830960.3482473 [service_neighbours_opinions-2] During handling of the above exception, another exception occurred:
+1749830960.3492305 [service_neighbours_opinions-2] 
+1749830960.3501761 [service_neighbours_opinions-2] Traceback (most recent call last):
+1749830960.3511133 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions", line 33, in <module>
+1749830960.3520150 [service_neighbours_opinions-2]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'service_neighbours_opinions')())
+1749830960.3531463 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 120, in main
+1749830960.3542521 [service_neighbours_opinions-2]     neighbours_node.get_logger().error(e)
+1749830960.3552463 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 345, in error
+1749830960.3562264 [service_neighbours_opinions-2]     return self.log(message, LoggingSeverity.ERROR, **kwargs)
+1749830960.3572228 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 318, in log
+1749830960.3596203 [service_neighbours_opinions-2]     _rclpy.rclpy_logging_rcutils_log(
+1749830960.3605578 [service_neighbours_opinions-2] TypeError: rclpy_logging_rcutils_log(): incompatible function arguments. The following argument types are supported:
+1749830960.3617833 [service_neighbours_opinions-2]     1. (arg0: int, arg1: str, arg2: str, arg3: str, arg4: str, arg5: int) -> None
+1749830960.3626466 [service_neighbours_opinions-2] 
+1749830960.3636308 [service_neighbours_opinions-2] Invoked with: <LoggingSeverity.ERROR: 40>, 'service_neighbours_opinions', Exception(), 'main', '/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py', 120
+1749830961.9378107 [service_vicon_node-1] [INFO] [1749830961.937075461] [service_vicon_node]: Vicon node, runtime finished, raising exception
+1749830961.9432817 [service_vicon_node-1] [INFO] [1749830961.942605664] [service_vicon_node]: Vicon Node Stopping, Times up
+1749830964.7817416 [INFO] [service_vicon_node-1]: process has finished cleanly [pid 1255]
+1749830965.4714091 [publish_wind_direction-4] [INFO] [1749830965.470773588] [publish_wind_direction]: Raising exception at 16:09:25
+1749830965.4803350 [publish_wind_direction-4] CV2 Ver. =  4.11.0
+1749830965.6360466 [publish_wind_direction-4] Traceback (most recent call last):
+1749830965.6368260 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction", line 33, in <module>
+1749830965.6385701 [publish_wind_direction-4]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'publish_wind_direction')())
+1749830965.6392243 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 353, in main
+1749830965.6403761 [publish_wind_direction-4]     rclpy.spin(wind_direction_sensor)
+1749830965.6417689 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+1749830965.6433837 [publish_wind_direction-4]     executor.spin_once()
+1749830965.6449702 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+1749830965.6465483 [publish_wind_direction-4]     self._spin_once_impl(timeout_sec)
+1749830965.6479964 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+1749830965.6494014 [publish_wind_direction-4]     raise handler.exception()
+1749830965.6508062 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+1749830965.6548083 [publish_wind_direction-4]     self._handler.send(None)
+1749830965.6564639 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+1749830965.6579278 [publish_wind_direction-4]     await call_coroutine(entity, arg)
+1749830965.6592295 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+1749830965.6608417 [publish_wind_direction-4]     await await_or_execute(tmr.callback)
+1749830965.6624267 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+1749830965.6637144 [publish_wind_direction-4]     return callback(*args)
+1749830965.6651518 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 188, in make_wind_direction_opinion
+1749830965.6665688 [publish_wind_direction-4]     raise Exception
+1749830965.6680791 [publish_wind_direction-4] Exception
+1749830966.4698663 [ERROR] [service_neighbours_opinions-2]: process has died [pid 1257, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions --ros-args -r __node:=service_neighbours_opinions'].
+1749830966.9903390 [ERROR] [publish_wind_direction-4]: process has died [pid 1261, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction --ros-args -r __node:=publish_wind_direction'].
+1749830976.5013697 [random_robot_move-3] [INFO] [1749830976.500692637] [random_robot_move]: robot move: excetion raised at 16:09:36
+1749830976.5042539 [random_robot_move-3] [INFO] [1749830976.503518193] [random_robot_move]: Exception, shutting down
+1749830976.6322703 [random_robot_move-3] Initializing Thymio Robot
+1749830976.6326480 [random_robot_move-3] Thymio 1 is connected
+1749830976.6329880 [random_robot_move-3] ['_id', 'event.source', 'event.args', '_fwversion', '_productId', 'buttons._raw', 'button.backward', 'button.left', 'button.center', 'button.forward', 'button.right', 'buttons._mean', 'buttons._noise', 'prox.horizontal', 'prox.comm.rx._payloads', 'prox.comm.rx._intensities', 'prox.comm.rx', 'prox.comm.tx', 'prox.ground.ambiant', 'prox.ground.reflected', 'prox.ground.delta', 'motor.left.target', 'motor.right.target', '_vbat', '_imot', 'motor.left.speed', 'motor.right.speed', 'motor.left.pwm', 'motor.right.pwm', '_integrator', 'acc', 'leds.top', 'leds.bottom.left', 'leds.bottom.right', 'leds.circle', 'temperature', 'rc5.address', 'rc5.command', 'mic.intensity', 'mic.threshold', 'mic._mean', 'timer.period', 'acc._tap', 'sd.present']
+1749830976.6332002 [random_robot_move-3] Robot connected

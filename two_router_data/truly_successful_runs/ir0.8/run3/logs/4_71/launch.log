@@ -1,0 +1,107 @@
+1749835265.9562037 [INFO] [launch]: All log files can be found below /home/thymio/ros_logs/2025-06-13-17-21-05-952935-thymio-6403
+1749835265.9567766 [INFO] [launch]: Default logging verbosity is set to INFO
+1749835266.1769564 [INFO] [service_vicon_node-1]: process started with pid [6404]
+1749835266.1779497 [INFO] [service_neighbours_opinions-2]: process started with pid [6406]
+1749835266.1786652 [INFO] [random_robot_move-3]: process started with pid [6408]
+1749835266.1792316 [INFO] [publish_wind_direction-4]: process started with pid [6410]
+1749835267.9593256 [publish_wind_direction-4] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+1749835267.9607117 [publish_wind_direction-4]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+1749835267.9815769 [service_neighbours_opinions-2] [INFO] [1749835267.980424452] [service_neighbours_opinions]: Physical Ip=192.168.4.71, id=id71
+1749835267.9878149 [service_neighbours_opinions-2] [INFO] [1749835267.986775156] [service_neighbours_opinions]: Updated ID from mapping: id142
+1749835268.0013878 [service_neighbours_opinions-2] [INFO] [1749835268.000321804] [service_neighbours_opinions]: Subscribed to: wind_direction/id68
+1749835268.0090744 [service_neighbours_opinions-2] [INFO] [1749835268.008227582] [service_neighbours_opinions]: Subscribed to: wind_direction/id136
+1749835268.0160570 [service_neighbours_opinions-2] [INFO] [1749835268.014944193] [service_neighbours_opinions]: Subscribed to: wind_direction/id137
+1749835268.0239134 [service_neighbours_opinions-2] [INFO] [1749835268.022843415] [service_neighbours_opinions]: Subscribed to: wind_direction/id151
+1749835268.0316725 [service_neighbours_opinions-2] [INFO] [1749835268.030702563] [service_neighbours_opinions]: Subscribed to: wind_direction/id152
+1749835268.0388253 [service_neighbours_opinions-2] [INFO] [1749835268.038170915] [service_neighbours_opinions]: Subscribed to: wind_direction/id155
+1749835268.0444505 [service_neighbours_opinions-2] [INFO] [1749835268.043785045] [service_neighbours_opinions]: Subscribed to: wind_direction/id189
+1749835268.0501893 [service_neighbours_opinions-2] [INFO] [1749835268.049407878] [service_neighbours_opinions]: Subscribed to: wind_direction/id192
+1749835268.0583119 [service_neighbours_opinions-2] [INFO] [1749835268.057200026] [service_neighbours_opinions]: Subscribed to: wind_direction/id193
+1749835268.0662198 [service_neighbours_opinions-2] [INFO] [1749835268.065008156] [service_neighbours_opinions]: Subscribed to: wind_direction/id194
+1749835268.0727756 [service_neighbours_opinions-2] [INFO] [1749835268.072050286] [service_neighbours_opinions]: Subscribed to: wind_direction/id195
+1749835268.0791912 [service_neighbours_opinions-2] [INFO] [1749835268.078428508] [service_neighbours_opinions]: Subscribed to: wind_direction/id200
+1749835268.0853524 [service_neighbours_opinions-2] [INFO] [1749835268.084335119] [service_neighbours_opinions]: Subscribed to: wind_direction/id206
+1749835268.0915639 [service_neighbours_opinions-2] [INFO] [1749835268.090895174] [service_neighbours_opinions]: Subscribed to: wind_direction/id207
+1749835268.0967183 [service_neighbours_opinions-2] [INFO] [1749835268.095992249] [service_neighbours_opinions]: Subscribed to: wind_direction/id223
+1749835268.1026511 [service_neighbours_opinions-2] [INFO] [1749835268.101933823] [service_neighbours_opinions]: Subscribed to: wind_direction/id224
+1749835268.1093233 [service_neighbours_opinions-2] [INFO] [1749835268.108565137] [service_neighbours_opinions]: Subscribed to: wind_direction/id236
+1749835268.1141827 [service_neighbours_opinions-2] [INFO] [1749835268.113438915] [service_neighbours_opinions]: Subscribed to: wind_direction/id247
+1749835268.1276107 [service_neighbours_opinions-2] [INFO] [1749835268.126683211] [service_neighbours_opinions]: Subscribed to: wind_direction/id1193
+1749835268.1297987 [service_vicon_node-1] [INFO] [1749835268.128130378] [service_vicon_node]: Physical Ip=192.168.4.71, id=id71
+1749835268.1323402 [service_vicon_node-1] [INFO] [1749835268.131603693] [service_vicon_node]: Updated ID from mapping: id142
+1749835268.1487887 [service_vicon_node-1] [INFO] [1749835268.148042915] [service_vicon_node]: Subscribed to: vicon/default/data
+1749835268.5337167 [publish_wind_direction-4] [INFO] [1749835268.533059063] [publish_wind_direction]: Physical Ip=192.168.4.71, id=id71
+1749835268.5364141 [publish_wind_direction-4] [INFO] [1749835268.535851304] [publish_wind_direction]: Updated ID from mapping: id142
+1749835268.5440154 [publish_wind_direction-4] [INFO] [1749835268.543440063] [publish_wind_direction]: Publsihing on: wind_direction/id142
+1749835275.7693121 [random_robot_move-3] [INFO] [1749835275.768642337] [random_robot_move]: Robot Control Node started.
+1749835293.6070898 [publish_wind_direction-4] [ERROR] [1749835293.606355122] [publish_wind_direction]: get_pose_data service not available!
+1749835318.6670911 [publish_wind_direction-4] [ERROR] [1749835318.666358237] [publish_wind_direction]: get_opinions service not available!
+1749836468.1358407 [service_neighbours_opinions-2] [INFO] [1749836468.135022978] [service_neighbours_opinions]: Raising exception at 17:41:08
+1749836468.3081408 [service_neighbours_opinions-2] Traceback (most recent call last):
+1749836468.3087053 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 114, in main
+1749836468.3100162 [service_neighbours_opinions-2]     rclpy.spin(neighbours_node)
+1749836468.3108294 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+1749836468.3112674 [service_neighbours_opinions-2]     executor.spin_once()
+1749836468.3116024 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+1749836468.3127396 [service_neighbours_opinions-2]     self._spin_once_impl(timeout_sec)
+1749836468.3131735 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+1749836468.3134918 [service_neighbours_opinions-2]     raise handler.exception()
+1749836468.3138614 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+1749836468.3141634 [service_neighbours_opinions-2]     self._handler.send(None)
+1749836468.3144507 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+1749836468.3147383 [service_neighbours_opinions-2]     await call_coroutine(entity, arg)
+1749836468.3150339 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+1749836468.3164372 [service_neighbours_opinions-2]     await await_or_execute(tmr.callback)
+1749836468.3172455 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+1749836468.3184686 [service_neighbours_opinions-2]     return callback(*args)
+1749836468.3195674 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 65, in stop_execution
+1749836468.3207164 [service_neighbours_opinions-2]     raise Exception
+1749836468.3217766 [service_neighbours_opinions-2] Exception
+1749836468.3227859 [service_neighbours_opinions-2] 
+1749836468.3239551 [service_neighbours_opinions-2] During handling of the above exception, another exception occurred:
+1749836468.3247485 [service_neighbours_opinions-2] 
+1749836468.3251603 [service_neighbours_opinions-2] Traceback (most recent call last):
+1749836468.3255181 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions", line 33, in <module>
+1749836468.3262594 [service_neighbours_opinions-2]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'service_neighbours_opinions')())
+1749836468.3270388 [service_neighbours_opinions-2]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py", line 120, in main
+1749836468.3283715 [service_neighbours_opinions-2]     neighbours_node.get_logger().error(e)
+1749836468.3293736 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 345, in error
+1749836468.3303156 [service_neighbours_opinions-2]     return self.log(message, LoggingSeverity.ERROR, **kwargs)
+1749836468.3312147 [service_neighbours_opinions-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/impl/rcutils_logger.py", line 318, in log
+1749836468.3333373 [service_neighbours_opinions-2]     _rclpy.rclpy_logging_rcutils_log(
+1749836468.3344879 [service_neighbours_opinions-2] TypeError: rclpy_logging_rcutils_log(): incompatible function arguments. The following argument types are supported:
+1749836468.3352118 [service_neighbours_opinions-2]     1. (arg0: int, arg1: str, arg2: str, arg3: str, arg4: str, arg5: int) -> None
+1749836468.3359323 [service_neighbours_opinions-2] 
+1749836468.3368251 [service_neighbours_opinions-2] Invoked with: <LoggingSeverity.ERROR: 40>, 'service_neighbours_opinions', Exception(), 'main', '/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/neighbours_opinion_node.py', 120
+1749836468.5493300 [publish_wind_direction-4] [INFO] [1749836468.548457626] [publish_wind_direction]: Raising exception at 17:41:08
+1749836468.5565255 [publish_wind_direction-4] CV2 Ver. =  4.11.0
+1749836468.7011969 [ERROR] [service_neighbours_opinions-2]: process has died [pid 6406, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/service_neighbours_opinions --ros-args -r __node:=service_neighbours_opinions'].
+1749836468.7247353 [publish_wind_direction-4] Traceback (most recent call last):
+1749836468.7252541 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction", line 33, in <module>
+1749836468.7266495 [publish_wind_direction-4]     sys.exit(load_entry_point('wind-direction-detector==0.0.0', 'console_scripts', 'publish_wind_direction')())
+1749836468.7271278 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 353, in main
+1749836468.7275097 [publish_wind_direction-4]     rclpy.spin(wind_direction_sensor)
+1749836468.7278743 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+1749836468.7282405 [publish_wind_direction-4]     executor.spin_once()
+1749836468.7285991 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+1749836468.7312186 [publish_wind_direction-4]     self._spin_once_impl(timeout_sec)
+1749836468.7324080 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+1749836468.7345903 [publish_wind_direction-4]     raise handler.exception()
+1749836468.7358196 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+1749836468.7367375 [publish_wind_direction-4]     self._handler.send(None)
+1749836468.7376647 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+1749836468.7385266 [publish_wind_direction-4]     await call_coroutine(entity, arg)
+1749836468.7394228 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 351, in _execute_timer
+1749836468.7405224 [publish_wind_direction-4]     await await_or_execute(tmr.callback)
+1749836468.7416101 [publish_wind_direction-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+1749836468.7425685 [publish_wind_direction-4]     return callback(*args)
+1749836468.7434850 [publish_wind_direction-4]   File "/home/thymio/ros2_ws/install/wind_direction_detector/lib/python3.10/site-packages/wind_direction_detector/publish_direction.py", line 188, in make_wind_direction_opinion
+1749836468.7445865 [publish_wind_direction-4]     raise Exception
+1749836468.7455986 [publish_wind_direction-4] Exception
+1749836470.1646485 [ERROR] [publish_wind_direction-4]: process has died [pid 6410, exit code 1, cmd '/home/thymio/ros2_ws/install/wind_direction_detector/lib/wind_direction_detector/publish_wind_direction --ros-args -r __node:=publish_wind_direction'].
+1749836481.8611066 [random_robot_move-3] [INFO] [1749836481.860374007] [random_robot_move]: robot move: excetion raised at 17:41:21
+1749836481.8645198 [random_robot_move-3] [INFO] [1749836481.863768210] [random_robot_move]: Exception, shutting down
+1749836481.8908107 [random_robot_move-3] Initializing Thymio Robot
+1749836481.8911488 [random_robot_move-3] Thymio 1 is connected
+1749836481.8913260 [random_robot_move-3] ['_id', 'event.source', 'event.args', '_fwversion', '_productId', 'buttons._raw', 'button.backward', 'button.left', 'button.center', 'button.forward', 'button.right', 'buttons._mean', 'buttons._noise', 'prox.horizontal', 'prox.comm.rx._payloads', 'prox.comm.rx._intensities', 'prox.comm.rx', 'prox.comm.tx', 'prox.ground.ambiant', 'prox.ground.reflected', 'prox.ground.delta', 'motor.left.target', 'motor.right.target', '_vbat', '_imot', 'motor.left.speed', 'motor.right.speed', 'motor.left.pwm', 'motor.right.pwm', '_integrator', 'acc', 'leds.top', 'leds.bottom.left', 'leds.bottom.right', 'leds.circle', 'temperature', 'rc5.address', 'rc5.command', 'mic.intensity', 'mic.threshold', 'mic._mean', 'timer.period', 'acc._tap', 'sd.present']
+1749836481.8914850 [random_robot_move-3] Robot connected

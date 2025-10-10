@@ -94,7 +94,7 @@ class PublishWindDirection(Node):
             resp = fut.result()
             # TODO
             # self.get_logger().info(f"Pose Response: pos={resp.my_position_xy} yaw={resp.my_vicon_yaw} frame_number = {resp.global_frame_number}")
-            self.get_logger().info(f"frame_number = {resp.global_frame_number}")
+            # self.get_logger().info(f"frame_number = {resp.global_frame_number}")
             self.robot_yaw = resp.my_vicon_yaw
             self.neighbours_by_id = resp.neighbours_by_id
             self.global_frm_number = resp.global_frame_number
@@ -122,7 +122,8 @@ class PublishWindDirection(Node):
             m = len(neighbours_opinions)
             # self.get_logger().info(f"Inside Decision Making, neighbours opinion: {neighbours_opinions}")
             # self.get_logger().info(f"Inside Decision Making, computed social info: {self.social_info_counts}")
-            self.get_logger().info(f"Social Info: {self.social_info_counts}")
+            if not self.informed:
+                self.get_logger().info(f"Social Info: {self.social_info_counts}")
             decision_dict = dict()
             # self.get_logger().info(f"Inside Decision Making, My Wind Direction: {self.my_wind_direction}")
             for direction in ['N','S','E','W']:
@@ -140,8 +141,9 @@ class PublishWindDirection(Node):
                 self.my_wind_direction_opinion = self.get_highest_in_dict(decision_dict)
             else:
                 # self.get_logger().info(f"Uninformed decision making: {self.social_info_counts}")
-                self.get_logger().info("*** Uninformed ***")
-                self.my_wind_direction_opinion = self.get_highest_in_dict(self.social_info_counts)
+                if len(self.social_info_counts) > 0:
+                    self.get_logger().info("*** Uninformed ***")
+                    self.my_wind_direction_opinion = self.get_highest_in_dict(self.social_info_counts)
             
             timestamp = datetime.datetime.now().isoformat()
             self.csv_index += 1
@@ -162,7 +164,7 @@ class PublishWindDirection(Node):
             current_time = now.strftime("%H:%M:%S")
             # TODO
             # self.get_logger().info(f"TIME: Decision making completed at: {current_time}.")
-            self.get_logger().info(f"-----------------------------------------------------")
+            self.get_logger().info(f"------------------")
 
         except Exception as e:
             self.get_logger().error(f"[func:get_opinion_make_decision] Service call failed: {e}")
@@ -200,8 +202,8 @@ class PublishWindDirection(Node):
         ground_truth_wind_direction = (cam_angle + self.robot_yaw) % 360
         #TODO
         # self.get_logger().info(f"***Cam angle= {cam_angle}, vico ang deg= {self.robot_yaw} Ground Truth= {ground_truth_wind_direction}")
-        if self.informed:
-            self.get_logger().info(f"***Cam angle= {cam_angle}")
+        # if self.informed:
+        #     self.get_logger().info(f"***Cam angle= {cam_angle}")
         self.my_wind_direction = '1'
         if (ground_truth_wind_direction < 45 and ground_truth_wind_direction >= 0) or (ground_truth_wind_direction < 360 and ground_truth_wind_direction >= 315):
             self.my_wind_direction = 'N'
@@ -278,7 +280,7 @@ class PublishWindDirection(Node):
     def process_image_get_direction(self, img_name='cam_pic.jpg'):
         self.take_picture(img_name)
         time.sleep(0.5) #originally 2 sec
-        print("--Processing Picture--")
+        # print("--Processing Picture--")
         # Load the image
         image = cv2.imread(f'{img_name}')
 
@@ -317,11 +319,11 @@ class PublishWindDirection(Node):
         image = cv2.putText(image, f'Angle={true_cam_angle:.2f}', (1296,972), cv2.FONT_HERSHEY_SIMPLEX, 
                    fontScale=2, color=(5, 10, 255), thickness=5, lineType=cv2.LINE_AA)
         cv2.imwrite(f'processed_{img_name}', image)
-        print("--Picture Processing Done--")
+        # print("--Picture Processing Done--")
         return true_cam_angle
         
     def take_picture(self, save_image_name):
-        print("--Taking picture--")
+        # print("--Taking picture--")
         
         tuning_file = "af_jsons/ov5647_af.json"
         # Run the libcamera-still command with autofocus configuration
