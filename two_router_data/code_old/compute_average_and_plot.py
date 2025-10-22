@@ -4,8 +4,8 @@ from pathlib import Path
 from collections import defaultdict
 
 # --- Configuration ---
-runs = ["run18", "run19", "run20", "run21", "run23"]
-# runs_ir08 = ["run8", "run9", "run10", "run11","run12"]
+# runs = ["run18", "run19", "run20", "run21", "run23"]
+runs_ir08 = ["run8", "run9", "run10", "run11","run12"]
 base_dir = Path("data")                   
 filename = "results_" # prefix before run name
 dirs = ["N", "E", "S", "W"]
@@ -13,10 +13,10 @@ treat_missing_as_zero = False
 
 # --- Load CSVs ---
 dfs = []
-for run in runs:
+for run in runs_ir08:
     # construct path like: run15/data/results_run15.csv
-    # path = "truly_successful_runs" / Path("ir0.8") / Path(run) / "data" / f"1500_results_{run}.csv"
-    path = "truly_successful_runs" / Path(run) / "data" / f"1500_results_{run}.csv"
+    path = "truly_successful_runs" / Path("ir0.8") / Path(run) / "data" / f"1500_results_{run}.csv"
+    # path = "truly_successful_runs" / Path(run) / "data" / f"1500_results_{run}.csv"
     if not path.exists():  
         print(f"Warning: {path} not found, skipping.")
         continue
@@ -44,8 +44,8 @@ combined = pd.concat(dfs)
 avg = combined.groupby(level=0).mean().sort_index()
 
 # --- Save averaged result ---
-# output_path = "truly_successful_runs/ir0.8/1500_averaged_results.csv"
-output_path = "truly_successful_runs/1500_averaged_results.csv"
+output_path = "truly_successful_runs/ir0.8/1500_averaged_results.csv"
+# output_path = "truly_successful_runs/1500_averaged_results.csv"
 avg.to_csv(output_path, index_label="counter")
 print(f"Averaged table saved to {output_path}")
 
