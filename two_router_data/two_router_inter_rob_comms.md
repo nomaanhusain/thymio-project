@@ -23,7 +23,7 @@ In this guide, I’ll walk you through a simplified example with two devices, on
 
 Once you understand this two-device setup, you can scale it up easily — the same configuration steps apply to larger systems (e.g., 10 devices per router or more).
 
-### Router Setup
+### Router and PC Setup
 Start by configuring both routers that will form the backbone of your network setup. Each router will manage a separate subnet to ensure stable communication when scaling to multiple devices.
 
 1. Configure **Router 1** and **Router 2**
@@ -82,7 +82,105 @@ enp8s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```bash
 sudo sysctl -w net.ipv4.ip_forward=1
 ```
-(You need to run this command after every restart, alternatively you can also set it up to automically execute on boot using systemd)
+(You need to run this command after every restart, alternatively you can also set it up to automically by creating a service and enabling it via systemctl command)
+
+#### Start a Fast DDS Discovery Server
+
+(Assuming ROS 2 is already installed on the Ubuntu PC.)
+
+1. On the Ubuntu PC, create a new file named ```setup-ros2-discovery.sh```: 
+    ```bash
+    touch setup-ros2-discovery.sh
+    ```
+2. Open the file and paste the following lines:
+    ```bash
+    export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+    export ROS_DISCOVERY_SERVER=127.0.0.1:11811
+    export ROS_SUPER_CLIENT=True
+    ```
+    Save and close the file.
+3. Source this file in your terminal, this ensures the environment variables are active in your terminal:
+    ```bash
+    source setup-ros2-discovery.sh
+    ```
+4. In the same terminal, start the Fast DDS server using the following command:
+    ```bash
+    fastdds discovery --server-id 0
+    ```
+
+**Note**: 
+Before starting any ROS 2 nodes (publishers, subscribers, or service clients), ensure that the same setup file is **sourced in every terminal**. This allows all nodes to use the discovery server for participant registration and topic discovery.
+
+### Robot setup
+
+*(While this guide is written in the context of robotics, the same procedure applies to any devices that need ROS 2 communication across separate networks.)*
+
+**Note**: In this guide, the term Robot refers to a single-board computer (SBC), such as a Raspberry Pi, typically mounted on and controlling a robot platform.
+
+To demonstrate the setup, we’ll use two robots:
+ - **Robot 1** connected to **Router 1**
+ - **Robot 2** connected to **Router 2**
+
+Example IP configuration:
+- Robot 1: 192.168.4.10
+- Robot 2: 192.168.3.10
+
+1. **Add IP routes.** Each robot needs to know how to reach the subnet of the other router through the Ubuntu PC acting as a gateway.
+    - On Robot 1, run the command:
+        ```bash
+        sudo ip route add 192.168.3.0/24 via 192.168.4.5
+        ```
+    - On Robot 2, run the command:
+        ```bash
+        sudo ip route add 192.168.4.0/24 via 192.168.3.8
+        ```
+    Here, the Ubuntu PC has IP addresses 192.168.4.5 and 192.168.3.8 on its respective Ethernet interfaces.
+    These commands tell:
+
+    - Robot 1 (on subnet 4) how to reach subnet 3 via the Ubuntu PC
+
+    - Robot 2 (on subnet 3) how to reach subnet 4 via the Ubuntu PC
+
+    You can verify if the path was added by running the command:
+    ```bash
+    ip route
+    ```
+    **Note**: These routes will not persist after a reboot. You’ll need to reapply them after each restart, or add them permanently via your network configuration files or systemd services.
+    
+    *At this point you should be able to ping Robot 1 from Robot 2 and vice versa.*
+
+2. On both the Robots, create the ROS 2 Discovery Setup File:
+    ```bash
+    touch setup-ros2-discovery.sh
+    ```
+3. The contents of this file will differ between robots
+    - On Robot 1 (as it is on subnet 4):
+    ```bash
+    export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+    export ROS_DISCOVERY_SERVER=192.168.4.5:11811
+    export ROS_SUPER_CLIENT=True
+    ```
+    - On Robot 2 (as it is on subnet 3):
+    ```bash
+    export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+    export ROS_DISCOVERY_SERVER=192.168.3.8:11811
+    export ROS_SUPER_CLIENT=True
+    ```
+
+4. On each robot, source the respective setup file before running any ROS 2 nodes::
+    ```bash
+    source setup-ros2-discovery.sh
+    ```
+
+Once sourced, ROS 2 nodes running on different subnets should be able to discover each other. You can verify this using:
+```bash
+ros2 topic list
+```
+
+**Important:**
+
+    Always source the respective setup file before launching publishers, subscribers, or services. Both the publishing and subscribing devices must source the respective setup file for topics and services to be visible across networks.
+
+**The IP addresses shown in this tutorial are just examples — make sure to use the ones that match your own network configuration.**
 
 
- 
