@@ -82,7 +82,7 @@ Once you have sucessfully connected the two routers, they would look like this:
     ```bash
     sudo sysctl -w net.ipv4.ip_forward=1
     ```
-(You need to run this command after every restart, alternatively you can also set it up to automically by creating a service and enabling it via systemctl command)
+(You need to run this command after every restart, alternatively you can also set it up to automically run on boot by creating a service and enabling it via systemctl command)
 
 #### Start a Fast DDS Discovery Server
 
