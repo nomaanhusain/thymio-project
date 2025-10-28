@@ -176,7 +176,11 @@ Once sourced, ROS 2 nodes running on different subnets should be able to discove
 ```bash
 ros2 topic list
 ```
-
+If you are not able to see the topics run:
+```bash
+ros2 daemon stop
+ros2 topic list
+```
 **Important:**
 
 Always source the respective setup file before launching publishers, subscribers, or services. Both the publishing and subscribing devices must source the respective setup file for topics and services to be visible across networks.
