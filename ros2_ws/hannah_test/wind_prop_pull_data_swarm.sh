@@ -3,7 +3,7 @@
 CSV_FILE="ips_swarm.csv"
 USERNAME="thymio"
 PASSWORD="thymio"
-REMOTE_LOG_DIR="~/ros2_ws/wind_properties_test"  # Update this to the actual log directory on the robot
+REMOTE_LOG_DIR="~/ros2_ws/hannah_test"  # Update this to the actual log directory on the robot
 
 while IFS=',' read -r ip; do
     # Extract last two octets from IP

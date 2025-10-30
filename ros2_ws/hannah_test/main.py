@@ -105,16 +105,21 @@ def main():
     writer = csv.writer(file)
     writer.writerow(['index', 'timestamp', 'angle'])
     index = 0
+    time_limit = 610
     try:
         while True:
             if time.time() - timer > 5:
-                timer = time.time()
                 cam_angle = process_image_get_direction()
                 print(f"Fin Angle: {cam_angle}")
-                writer.writerow([index, time.time(), cam_angle])
+                timer = time.time()
+                writer.writerow([index, timer, cam_angle])
+                print("------")
+                print(f"Time Left: {(timer - start_time) - time_limit}s")
+                print(f"{index} | {timer} | {cam_angle}")
+                print("------")
                 index += 1
                 file.flush()
-            if time.time() -  start_time > 630:
+            if timer -  start_time > time_limit:
                 sys.exit(130)
             
 
