@@ -12,8 +12,8 @@ import pandas as pd
 # ---- Configuration ---------------------------------------------------------
 
 DATA_ROOT = Path("/home/nomaan/thymio-test/two_router_data/wind_test")
-REGION_NAME = "north"
-OUTPUT_IMAGE = Path("north_sensor_heatmap.png")
+REGION_NAME = "south"
+OUTPUT_IMAGE = Path("south_sensor_heatmap.png")
 
 # 3x3 layout describing which folder sits in each grid slot; use None for blanks.
 GRID_ORDER: List[List[Optional[str]]] = [
@@ -125,7 +125,6 @@ def polar_ring_heatmap(
         constrained_layout=True,
         squeeze=False,
     )
-    plt.title(f"{wind_source_text} ↓")
     cmap = plt.get_cmap(cmap_name)
     bin_edges = np.linspace(0.0, 360.0, num=bins + 1)
 
