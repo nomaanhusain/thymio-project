@@ -2,11 +2,11 @@
 
 ## Problem
 When deploying multiple robots (for example, Raspberry Pi-based systems) running ROS 2 over Wi-Fi, communication reliability quickly becomes a bottleneck. While small setups with up to 10–12 devices typically work without major issues, larger networks often suffer from unstable connections, discovery failures, or dropped messages.</br>
-This guide presents a practical approach to enabling reliable inter-device communication at scale in ROS 2 using standard Wi-Fi networks.
+This guide presents a practical approach to enabling reliable inter-device communication at scale in ROS 2 using standard Wi-Fi networks. This guide is based on a system running ROS 2 Humble, but in theory should work with other ROS 2 versions.
 
 ## What you need
 
-1. A Ubuntu PC with multiple Ethernet ports that support simultaneous connections to multiple networks.
+1. A Ubuntu PC with ROS 2 and multiple Ethernet ports that support simultaneous connections to multiple networks.
     - A PC equipped with an additional network card (installed in a PCI-Express slot) usually allows connections to multiple networks at the same time.
 
 2. Multiple Wi-Fi routers.

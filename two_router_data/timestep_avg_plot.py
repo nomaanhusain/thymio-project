@@ -68,14 +68,13 @@ LINE_COLORS = {
 # plt.tight_layout()
 # plt.show()
 
-KEEP_HARMONICS = 5  # increase to keep more wiggle; decrease for smoother trends
+KEEP_HARMONICS = 20  # increase to keep more wiggle; decrease for smoother trends
 
 # PLOT_ORDER = ["X", "N", "S", "E", "W"]  # order in legend/plot
 PLOT_ORDER = ["X", "E", "W"]  # order in legend/plot
 
 def load_clean(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
-
     # Fix accidental index column
     if "counter" not in df.columns:
         for c in df.columns:
@@ -204,5 +203,5 @@ plt.tick_params(axis='x', labelsize=16)  # x-axis ticks
 plt.tick_params(axis='y', labelsize=16)  # y-axis ticks
 plt.legend(ncol=2)
 plt.tight_layout()
-plt.savefig("truly_successful_runs/real_world_comp_ir08.png", dpi=300, transparent=True)
+# plt.savefig("truly_successful_runs/real_world_comp_ir08.png", dpi=300, transparent=True)
 plt.show()
