@@ -17,11 +17,11 @@ This guide presents an approach to enabling reliable inter-device communication 
 ## Setup
 
 
-To illustrate the process, let’s consider a setup with 20 robots. Since a single Wi-Fi network can reliably handle around 10-12 devices, we’ll use two routers to distribute the load — 10 robots connected to each router.
+To illustrate the process, let’s consider a scenario with 20 robots. Since a single Wi-Fi network can reliably handle around 10-12 devices, we’ll need use two routers to distribute the load — 10 robots connected to each router.
 
 In this guide, I’ll walk you through a simplified example with two robots, one connected to **Router 1** and the other to **Router 2**. You’ll learn how to configure the network, verify connectivity, and enable ROS 2 communication between them.
 
-Once you understand this two-device setup, you can scale it up easily — the same configuration steps apply to larger systems (e.g., 10 robots per router or more).
+Once you understand this two-device setup, you can scale it up easily — the same configuration steps apply to larger systems (e.g., 10 robots per router).
 
 ### Router and PC Setup
 Start by configuring both routers that will form the backbone of your network setup. Each router will manage a separate subnet to ensure stable communication when scaling to many robots.
@@ -42,7 +42,7 @@ Start by configuring both routers that will form the backbone of your network se
 
 3. Connect the routers to the Ubuntu PC
 
-    - Use Ethernet cables to connect each router to a different Ethernet port on your Ubuntu PC.
+    - Use Ethernet cables to connect each router to a Ethernet port on your Ubuntu PC.
 
     - After connection, the PC should detect both networks as separate wired interfaces (for example, enp7s0 and enp8s0).
 
