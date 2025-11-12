@@ -10,7 +10,8 @@ def average_runs(base_dir: str, runs: list[str], output_csv: str):
     csv_files = []
     for r in runs:
         data_dir = os.path.join(base_dir, r, "data")
-        csv_files.extend(glob.glob(os.path.join(data_dir, "time*.csv")))
+        # csv_files.extend(glob.glob(os.path.join(data_dir, "timespet_ds*.csv")))
+        csv_files.extend(glob.glob(os.path.join(data_dir, "timespet_cam*.csv")))
 
     if not csv_files:
         raise FileNotFoundError("No CSVs found in the given run folders.")
@@ -51,10 +52,11 @@ def average_runs(base_dir: str, runs: list[str], output_csv: str):
     print(f"Averaged CSV saved to: {output_csv}")
 
 
-# base_fol = "truly_successful_runs/"
-base_fol = "truly_successful_runs/ir0.8/"
-# runs_list = ["run18", "run19", "run20", "run21", "run23"]
-runs_list = ["run8", "run9", "run10", "run11","run12"]
+base_fol = "truly_successful_runs/"
+# base_fol = "truly_successful_runs/ir0.8/"
+runs_list = ["run18", "run19", "run20", "run21", "run23"]
+# runs_list = ["run8", "run9", "run10", "run11","run12"]
 # csv_out = "truly_successful_runs/timewise_avg_data.csv"
-csv_out = "truly_successful_runs/ir0.8/timewise_avg_data.csv"
+csv_out = "truly_successful_runs/timewise_cam_reading_avg_data.csv"
+# csv_out = "truly_successful_runs/ir0.8/timewise_avg_data.csv"
 average_runs(base_fol, runs_list, csv_out)

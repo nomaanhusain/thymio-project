@@ -1,8 +1,8 @@
 # Inter-Device Communication at Scale in ROS 2 Using Wi-Fi
 
 ## Problem
-When deploying multiple robots (for example, Raspberry Pi-based systems) running ROS 2 over Wi-Fi, communication reliability quickly becomes a bottleneck. While small setups with up to 10–12 devices typically work without major issues, larger networks often suffer from unstable connections, discovery failures, or dropped messages.</br>
-This guide presents a practical approach to enabling reliable inter-device communication at scale in ROS 2 using standard Wi-Fi networks. This guide is based on a system running ROS 2 Humble, but in theory should work with other ROS 2 versions.
+When deploying multiple robots (for example, Raspberry Pi-based systems) running ROS 2 over Wi-Fi, communication reliability quickly becomes a bottleneck. While small setups with up to 10–12 devices typically work without major issues, larger networks suffer from unstable connections, discovery failures, or dropped messages.</br>
+This guide presents an approach to enabling reliable inter-device communication at scale in ROS 2 using standard Wi-Fi networks. This guide is based on a system running ROS 2 Humble, but in theory should work with other ROS 2 versions.
 
 ## What you need
 

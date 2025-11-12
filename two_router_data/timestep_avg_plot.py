@@ -68,7 +68,7 @@ LINE_COLORS = {
 # plt.tight_layout()
 # plt.show()
 
-KEEP_HARMONICS = 20  # increase to keep more wiggle; decrease for smoother trends
+KEEP_HARMONICS = 18  # increase to keep more wiggle; decrease for smoother trends
 
 # PLOT_ORDER = ["X", "N", "S", "E", "W"]  # order in legend/plot
 PLOT_ORDER = ["X", "E", "W"]  # order in legend/plot
@@ -115,6 +115,7 @@ plt.figure(figsize=(10, 5))
 plt.xlabel("Time (Sec.)",size=16)
 plt.ylabel("Opinion Count",size=16)
 plt.ylim(0,20)
+plt.xlim(0,1120)
 plt.grid(True, alpha=0.3)
 
 west_ir1 = None

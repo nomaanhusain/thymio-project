@@ -12,7 +12,7 @@ from collections import defaultdict, Counter
 # "run18", "run19", "run20", "run21", "run23" for ir=1.0
 # "run8", "run9", "run10", "run11","run12" for ir=0.8
 
-run = "run22"
+run = "run23"
 # root_dir = f"truly_successful_runs/ir0.8/{run}/data"
 root_dir = f"truly_successful_runs/{run}/data"
 
@@ -62,7 +62,6 @@ for folder in os.listdir(root_dir):
                     largest_global_frame = int(row['global_frame_number'])
 print(f"Smallest frame no: {smallest_global_frame}")
 print(f"largest frame no: {largest_global_frame}")
-
 run_data = defaultdict(Counter)
 for folder in os.listdir(root_dir):
     folder_path = os.path.join(root_dir, folder)
@@ -86,7 +85,7 @@ for folder in os.listdir(root_dir):
                         continue
                     if int(row['global_frame_number']) < timestep:
                         needed_timestep = int(row['global_frame_number'])
-                        message_at_timestep =  row['message']
+                        message_at_timestep =  row['cam_wind_direction']
                         continue
                     break
                 
@@ -108,5 +107,5 @@ df.reset_index(drop=True, inplace=True)
 df.insert(0, "counter", range(1, len(df) + 1))
 
 # Save to CSV
-df.to_csv(f"{root_dir}/timespet_ds_{run}.csv", index=False)
+df.to_csv(f"{root_dir}/timespet_cam_reading_{run}.csv", index=False)
 
